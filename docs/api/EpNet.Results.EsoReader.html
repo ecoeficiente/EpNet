@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EsoReader
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EsoReader
+   ">
+    <meta name="generator" content="docfx 2.39.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="EpNet.Results.EsoReader">
+  
+  
+  <h1 id="EpNet_Results_EsoReader" data-uid="EpNet.Results.EsoReader" class="text-break">Class EsoReader
+  </h1>
+  <div class="markdown level0 summary"><p>Reads and writes result files in eso format.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">EsoReader</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="EpNet.Results.html">EpNet.Results</a></h6>
+  <h6><strong>Assembly</strong>: EpNet.dll</h6>
+  <h5 id="EpNet_Results_EsoReader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EsoReader</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="EpNet_Results_EsoReader__ctor_" data-uid="EpNet.Results.EsoReader.#ctor*"></a>
+  <h4 id="EpNet_Results_EsoReader__ctor" data-uid="EpNet.Results.EsoReader.#ctor">EsoReader()</h4>
+  <div class="markdown level1 summary"><p>Reads eplusout.eso from default DesignBuilder EnergyPlus folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EsoReader()</code></pre>
+  </div>
+  
+  
+  <a id="EpNet_Results_EsoReader__ctor_" data-uid="EpNet.Results.EsoReader.#ctor*"></a>
+  <h4 id="EpNet_Results_EsoReader__ctor_System_String_" data-uid="EpNet.Results.EsoReader.#ctor(System.String)">EsoReader(String)</h4>
+  <div class="markdown level1 summary"><p>Reads an Eso file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EsoReader(string esoFilePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">esoFilePath</span></td>
+        <td><p>Eso file absolute path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_EsoReader__ctor_" data-uid="EpNet.Results.EsoReader.#ctor*"></a>
+  <h4 id="EpNet_Results_EsoReader__ctor_System_String___" data-uid="EpNet.Results.EsoReader.#ctor(System.String[])">EsoReader(String[])</h4>
+  <div class="markdown level1 summary"><p>Reads more than one eso file as a joined set of results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EsoReader(params string[] esoFilePaths)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">esoFilePaths</span></td>
+        <td><p>List of absolute paths.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="EpNet_Results_EsoReader_Id_" data-uid="EpNet.Results.EsoReader.Id*"></a>
+  <h4 id="EpNet_Results_EsoReader_Id" data-uid="EpNet.Results.EsoReader.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Returns a unique Id for a resultset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Id integer number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_EsoReader_NewResults_" data-uid="EpNet.Results.EsoReader.NewResults*"></a>
+  <h4 id="EpNet_Results_EsoReader_NewResults" data-uid="EpNet.Results.EsoReader.NewResults">NewResults</h4>
+  <div class="markdown level1 summary"><p>Retrieves the new (just added) resultsets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ResultSet&gt; NewResults { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
+        <td><p>ResultSet list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_EsoReader_OldResults_" data-uid="EpNet.Results.EsoReader.OldResults*"></a>
+  <h4 id="EpNet_Results_EsoReader_OldResults" data-uid="EpNet.Results.EsoReader.OldResults">OldResults</h4>
+  <div class="markdown level1 summary"><p>Retrieves the list of existent resultsets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ResultSet&gt; OldResults { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
+        <td><p>ResultSet list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_EsoReader_Results_" data-uid="EpNet.Results.EsoReader.Results*"></a>
+  <h4 id="EpNet_Results_EsoReader_Results" data-uid="EpNet.Results.EsoReader.Results">Results</h4>
+  <div class="markdown level1 summary"><p>Retrieves the list of existent + newly created resultsets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet&gt; Results { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
+        <td><p>ResultSet list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="EpNet_Results_EsoReader_Add_" data-uid="EpNet.Results.EsoReader.Add*"></a>
+  <h4 id="EpNet_Results_EsoReader_Add_EpNet_Results_ResultSet_" data-uid="EpNet.Results.EsoReader.Add(EpNet.Results.ResultSet)">Add(ResultSet)</h4>
+  <div class="markdown level1 summary"><p>Add a resultset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(ResultSet result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>ResultSet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_EsoReader_Add_" data-uid="EpNet.Results.EsoReader.Add*"></a>
+  <h4 id="EpNet_Results_EsoReader_Add_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__" data-uid="EpNet.Results.EsoReader.Add(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})">Add(IEnumerable&lt;ResultSet&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a list of resultsets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(IEnumerable&lt;ResultSet&gt; results)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
+        <td><span class="parametername">results</span></td>
+        <td><p>List of resultsets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_EsoReader_AddEsoFile_" data-uid="EpNet.Results.EsoReader.AddEsoFile*"></a>
+  <h4 id="EpNet_Results_EsoReader_AddEsoFile_System_String_" data-uid="EpNet.Results.EsoReader.AddEsoFile(System.String)">AddEsoFile(String)</h4>
+  <div class="markdown level1 summary"><p>Reads another eso file and combines it with current results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEsoFile(string esoFilePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">esoFilePath</span></td>
+        <td><p>Absolute eso file path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_EsoReader_Save_" data-uid="EpNet.Results.EsoReader.Save*"></a>
+  <h4 id="EpNet_Results_EsoReader_Save_System_Boolean_" data-uid="EpNet.Results.EsoReader.Save(System.Boolean)">Save(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Saves the eso file overwriting current eso file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(bool newResultsOnly = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">newResultsOnly</span></td>
+        <td><p>Only save newly created results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_EsoReader_Save_" data-uid="EpNet.Results.EsoReader.Save*"></a>
+  <h4 id="EpNet_Results_EsoReader_Save_System_String_System_Boolean_" data-uid="EpNet.Results.EsoReader.Save(System.String,System.Boolean)">Save(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Saves the eso file in an new file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(string esoFilePath, bool newResultsOnly = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">esoFilePath</span></td>
+        <td><p>Absolute path for the new eso file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">newResultsOnly</span></td>
+        <td><p>Only save newly created results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

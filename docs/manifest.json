@@ -1,0 +1,419 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/ecoef/Dropbox/VISUAL STUDIO/VS2015/Energyplus2/EpNet/EpNet",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.ExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.ExtensionMethods.html",
+          "hash": "l5MBo18Ymo7+RxhOtw0RjA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Field.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Field.html",
+          "hash": "nmcX3d5HBcH/r4NSF9Aiug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Helpers.ExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Helpers.ExtensionMethods.html",
+          "hash": "zkzwGha2qxBFv6rl/JSEsg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Helpers.html",
+          "hash": "v9moiGPIdGRNDilCiOc/1A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Idd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Idd.html",
+          "hash": "fICq+LLFI6b5yZctGHR9FA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.IdfObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.IdfObject.html",
+          "hash": "S/W0glhJ5jDfvEftq6QkfQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.IdfReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.IdfReader.html",
+          "hash": "GOK7kSvCRuPuN5YHCP3PsQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.LEED.LEED.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.LEED.LEED.html",
+          "hash": "PNDWiQk6mEyQpGqwPSejlw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.LEED.SystemProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.LEED.SystemProperties.html",
+          "hash": "b2fzLzxtG+dCERKhf8NmMA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.LEED.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.LEED.html",
+          "hash": "Cxn2lk2GpiFu6HnUQx/TFA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Psychrometrics.Psychro.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Psychrometrics.Psychro.html",
+          "hash": "RI740yK/psnhpxQHWwfCDQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Psychrometrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Psychrometrics.html",
+          "hash": "BmMBg6htO4Xq+q/fmH2/1A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Results.Csv.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Results.Csv.html",
+          "hash": "Tc806LG4VhqGJ+W6NNY0jw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Results.EioReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Results.EioReader.html",
+          "hash": "C7v3YeJO8gCTHzR6tJN0nw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Results.EsoReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Results.EsoReader.html",
+          "hash": "MYj707dkjL8271ilY5z7tA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Results.ExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Results.ExtensionMethods.html",
+          "hash": "hdjqq2u66WDGVK9E/rjTrA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Results.Frequencies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Results.Frequencies.html",
+          "hash": "+Y6l5nKAAbw1PHjTD6I5cg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Results.ResultDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Results.ResultDescriptor.html",
+          "hash": "TkgfukJGDuhmuevKOBVDtw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Results.ResultSet.TimeSeriesData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Results.ResultSet.TimeSeriesData.html",
+          "hash": "mSNCvz3WbrRtCAW1ShCGEQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Results.ResultSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Results.ResultSet.html",
+          "hash": "SLfeG8J+Yv0PIovhig6/ZA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Results.ResultTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Results.ResultTable.html",
+          "hash": "c/Wt1hf1U5rH+7Xn/XpB2Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Results.Ssz.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Results.Ssz.html",
+          "hash": "E2KcETG1XL53/71ggrmPBw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Results.TableReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Results.TableReader.html",
+          "hash": "J7jCS5HDvIssVTrWwovTEA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Results.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Results.html",
+          "hash": "9e6Bfha6bjottYA9e0+fXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.html",
+          "hash": "5RfNOuWzYtdvM5Z8NXbxeQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "1ghItQTWsQ4v3ZUk0xkdlg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "vAhybFfTOe46/+PduP3irA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "d4f3rpgCU11nGw8SmREEIQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "RaMZPoTTAV/NI/8wgiXjHg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "xcQKjTUyKlioNQMmid3yZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

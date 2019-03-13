@@ -1,0 +1,1525 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ResultTable
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ResultTable
+   ">
+    <meta name="generator" content="docfx 2.39.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="EpNet.Results.ResultTable">
+  
+  
+  <h1 id="EpNet_Results_ResultTable" data-uid="EpNet.Results.ResultTable" class="text-break">Class ResultTable
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ResultTable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="EpNet.Results.html">EpNet.Results</a></h6>
+  <h6><strong>Assembly</strong>: EpNet.dll</h6>
+  <h5 id="EpNet_Results_ResultTable_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ResultTable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="EpNet_Results_ResultTable_Header_" data-uid="EpNet.Results.ResultTable.Header*"></a>
+  <h4 id="EpNet_Results_ResultTable_Header" data-uid="EpNet.Results.ResultTable.Header">Header</h4>
+  <div class="markdown level1 summary"><p>Stores the header of each column.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; Header { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>List of headers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_Item_" data-uid="EpNet.Results.ResultTable.Item*"></a>
+  <h4 id="EpNet_Results_ResultTable_Item_System_Int32_" data-uid="EpNet.Results.ResultTable.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Gets a table numeric column by its zero-based position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;double&gt; this[int column] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">column</span></td>
+        <td><p>Zero-based position</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><p>Result column.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_Item_" data-uid="EpNet.Results.ResultTable.Item*"></a>
+  <h4 id="EpNet_Results_ResultTable_Item_System_String_" data-uid="EpNet.Results.ResultTable.Item(System.String)">Item[String]</h4>
+  <div class="markdown level1 summary"><p>Gets a table numeric column by its header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;double&gt; this[string column] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">column</span></td>
+        <td><p>Column header</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><p>Result column.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_Rows_" data-uid="EpNet.Results.ResultTable.Rows*"></a>
+  <h4 id="EpNet_Results_ResultTable_Rows" data-uid="EpNet.Results.ResultTable.Rows">Rows</h4>
+  <div class="markdown level1 summary"><p>Stores the rows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;List&lt;string&gt;&gt; Rows { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>List of rows (as list of strings).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="EpNet_Results_ResultTable_Compare_" data-uid="EpNet.Results.ResultTable.Compare*"></a>
+  <h4 id="EpNet_Results_ResultTable_Compare_EpNet_Results_ResultTable_" data-uid="EpNet.Results.ResultTable.Compare(EpNet.Results.ResultTable)">Compare(ResultTable)</h4>
+  <div class="markdown level1 summary"><p>Returns a text specifying how the tables are different. Empty if equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Compare(ResultTable table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.ResultTable.html">ResultTable</a></td>
+        <td><span class="parametername">table</span></td>
+        <td><p>Table to compare with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Text message on how the tables are different.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_Equals_" data-uid="EpNet.Results.ResultTable.Equals*"></a>
+  <h4 id="EpNet_Results_ResultTable_Equals_EpNet_Results_ResultTable_" data-uid="EpNet.Results.ResultTable.Equals(EpNet.Results.ResultTable)">Equals(ResultTable)</h4>
+  <div class="markdown level1 summary"><p>Determines whether 2 tables are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(ResultTable table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.ResultTable.html">ResultTable</a></td>
+        <td><span class="parametername">table</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the tables are equal; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_Get_" data-uid="EpNet.Results.ResultTable.Get*"></a>
+  <h4 id="EpNet_Results_ResultTable_Get_System_Int32_System_Int32_" data-uid="EpNet.Results.ResultTable.Get(System.Int32,System.Int32)">Get(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Get text value from a row and header positions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Get(int rowNumber, int columnNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rowNumber</span></td>
+        <td><p>Row zero-based position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">columnNumber</span></td>
+        <td><p>Column zero-based position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>Text value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_Get_" data-uid="EpNet.Results.ResultTable.Get*"></a>
+  <h4 id="EpNet_Results_ResultTable_Get_System_Int32_System_String_" data-uid="EpNet.Results.ResultTable.Get(System.Int32,System.String)">Get(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Get numeric value from a row position and header name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Get(int rowNumber, string columnHeader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rowNumber</span></td>
+        <td><p>Row zero-based position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">columnHeader</span></td>
+        <td><p>Column header name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>Numeric value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_Get_" data-uid="EpNet.Results.ResultTable.Get*"></a>
+  <h4 id="EpNet_Results_ResultTable_Get_System_String_System_Int32_" data-uid="EpNet.Results.ResultTable.Get(System.String,System.Int32)">Get(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Get numeric value from a row header and column position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Get(string rowHeader, int columnNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">rowHeader</span></td>
+        <td><p>Row zero-based position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">columnNumber</span></td>
+        <td><p>Column zero-based position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>Numeric value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_Get_" data-uid="EpNet.Results.ResultTable.Get*"></a>
+  <h4 id="EpNet_Results_ResultTable_Get_System_String_System_String_" data-uid="EpNet.Results.ResultTable.Get(System.String,System.String)">Get(String, String)</h4>
+  <div class="markdown level1 summary"><p>Get numeric value from a row header and column header name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Get(string rowHeader, string columnHeader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">rowHeader</span></td>
+        <td><p>Row header name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">columnHeader</span></td>
+        <td><p>Column header name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>Numeric value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetColumn_" data-uid="EpNet.Results.ResultTable.GetColumn*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetColumn_System_Int32_" data-uid="EpNet.Results.ResultTable.GetColumn(System.Int32)">GetColumn(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a table numeric column by its zero-based position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;double&gt; GetColumn(int column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">column</span></td>
+        <td><p>Zero-based position</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><p>Result column.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetColumn_" data-uid="EpNet.Results.ResultTable.GetColumn*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetColumn_System_String_" data-uid="EpNet.Results.ResultTable.GetColumn(System.String)">GetColumn(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a table numeric column by its header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;double&gt; GetColumn(string column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">column</span></td>
+        <td><p>Column header</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><p>Result column.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetData_System_Int32_System_Int32_" data-uid="EpNet.Results.ResultTable.GetData(System.Int32,System.Int32)">GetData(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as numeric Values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, double&gt; GetData(int componentColumn, int valueColumn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">componentColumn</span></td>
+        <td><p>Zero-based column position for generating the Keys</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">valueColumn</span></td>
+        <td><p>Zero-based column position for generating the Values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Double</span>&gt;</td>
+        <td><p>A Dictionary with Keys from column 1 and Values from column 2 </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetData_System_Int32_System_String_" data-uid="EpNet.Results.ResultTable.GetData(System.Int32,System.String)">GetData(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as numeric Values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, double&gt; GetData(int componentColumn, string valueColumn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">componentColumn</span></td>
+        <td><p>Zero-based column position for generating the Keys</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">valueColumn</span></td>
+        <td><p>Column header for generating the Values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Double</span>&gt;</td>
+        <td><p>A Dictionary with Keys from column 1 and Values from column 2 </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetData_System_String_System_Int32_" data-uid="EpNet.Results.ResultTable.GetData(System.String,System.Int32)">GetData(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as numeric Values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, double&gt; GetData(string componentColumn, int valueColumn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">componentColumn</span></td>
+        <td><p>Column header for generating the Keys</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">valueColumn</span></td>
+        <td><p>Zero-based column position for generating the Values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Double</span>&gt;</td>
+        <td><p>A Dictionary with Keys from column 1 and Values from column 2 </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetData_System_String_System_String_" data-uid="EpNet.Results.ResultTable.GetData(System.String,System.String)">GetData(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as numeric Values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, double&gt; GetData(string componentColumn, string valueColumn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">componentColumn</span></td>
+        <td><p>Column header for generating the Keys</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">valueColumn</span></td>
+        <td><p>Column header for generating the Values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Double</span>&gt;</td>
+        <td><p>A Dictionary with Keys from column 1 and Values from column 2 </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetData__1_System_Int32_System_Int32_" data-uid="EpNet.Results.ResultTable.GetData``1(System.Int32,System.Int32)">GetData&lt;T&gt;(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as T Values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, T&gt; GetData&lt;T&gt;(int componentColumn, int valueColumn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">componentColumn</span></td>
+        <td><p>Zero-based column position for generating the Keys</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">valueColumn</span></td>
+        <td><p>Zero-based column position for generating the Values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, T&gt;</td>
+        <td><p>A Dictionary with Keys from column 1 and Values from column 2 </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>double or string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetData__1_System_Int32_System_String_" data-uid="EpNet.Results.ResultTable.GetData``1(System.Int32,System.String)">GetData&lt;T&gt;(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as T Values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, T&gt; GetData&lt;T&gt;(int componentColumn, string valueColumn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">componentColumn</span></td>
+        <td><p>Zero-based column position for generating the Keys</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">valueColumn</span></td>
+        <td><p>Column header for generating the Values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, T&gt;</td>
+        <td><p>A Dictionary with Keys from column 1 and Values from column 2 </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>double or string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetData__1_System_String_System_Int32_" data-uid="EpNet.Results.ResultTable.GetData``1(System.String,System.Int32)">GetData&lt;T&gt;(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as T Values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, T&gt; GetData&lt;T&gt;(string componentColumn, int valueColumn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">componentColumn</span></td>
+        <td><p>Column header for generating the Keys</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">valueColumn</span></td>
+        <td><p>Zero-based column position for generating the Values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, T&gt;</td>
+        <td><p>A Dictionary with Keys from column 1 and Values from column 2 </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>double or string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetData__1_System_String_System_String_" data-uid="EpNet.Results.ResultTable.GetData``1(System.String,System.String)">GetData&lt;T&gt;(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as T Values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, T&gt; GetData&lt;T&gt;(string componentColumn, string valueColumn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">componentColumn</span></td>
+        <td><p>Column header for generating the Keys</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">valueColumn</span></td>
+        <td><p>Column header for generating the Values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, T&gt;</td>
+        <td><p>A Dictionary with Keys from column 1 and Values from column 2 </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>double or string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetText_" data-uid="EpNet.Results.ResultTable.GetText*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetText_System_Int32_System_Int32_" data-uid="EpNet.Results.ResultTable.GetText(System.Int32,System.Int32)">GetText(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Get text value from a row and header positions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetText(int rowNumber, int columnNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rowNumber</span></td>
+        <td><p>Row zero-based position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">columnNumber</span></td>
+        <td><p>Column zero-based position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Text value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetText_" data-uid="EpNet.Results.ResultTable.GetText*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetText_System_Int32_System_String_" data-uid="EpNet.Results.ResultTable.GetText(System.Int32,System.String)">GetText(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Get text value from a row position and header name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetText(int rowNumber, string columnHeader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rowNumber</span></td>
+        <td><p>Row zero-based position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">columnHeader</span></td>
+        <td><p>Column header name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Text value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetText_" data-uid="EpNet.Results.ResultTable.GetText*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetText_System_String_System_Int32_" data-uid="EpNet.Results.ResultTable.GetText(System.String,System.Int32)">GetText(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Get text value from a row header and column position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetText(string rowHeader, int columnNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">rowHeader</span></td>
+        <td><p>Row zero-based position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">columnNumber</span></td>
+        <td><p>Column zero-based position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Text value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetText_" data-uid="EpNet.Results.ResultTable.GetText*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetText_System_String_System_String_" data-uid="EpNet.Results.ResultTable.GetText(System.String,System.String)">GetText(String, String)</h4>
+  <div class="markdown level1 summary"><p>Get text value from a row header and column header name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetText(string rowHeader, string columnHeader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">rowHeader</span></td>
+        <td><p>Row header name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">columnHeader</span></td>
+        <td><p>Column header name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Text value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetTextColumn_" data-uid="EpNet.Results.ResultTable.GetTextColumn*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetTextColumn_System_Int32_" data-uid="EpNet.Results.ResultTable.GetTextColumn(System.Int32)">GetTextColumn(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a table text column by its zero-based position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetTextColumn(int column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">column</span></td>
+        <td><p>Zero-based position</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>Result column.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_GetTextColumn_" data-uid="EpNet.Results.ResultTable.GetTextColumn*"></a>
+  <h4 id="EpNet_Results_ResultTable_GetTextColumn_System_String_" data-uid="EpNet.Results.ResultTable.GetTextColumn(System.String)">GetTextColumn(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a table text column by its header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetTextColumn(string column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">column</span></td>
+        <td><p>Column header</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>Result column.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="EpNet_Results_ResultTable_op_Equality_" data-uid="EpNet.Results.ResultTable.op_Equality*"></a>
+  <h4 id="EpNet_Results_ResultTable_op_Equality_EpNet_Results_ResultTable_EpNet_Results_ResultTable_" data-uid="EpNet.Results.ResultTable.op_Equality(EpNet.Results.ResultTable,EpNet.Results.ResultTable)">Equality(ResultTable, ResultTable)</h4>
+  <div class="markdown level1 summary"><p>Determines whether 2 tables are different.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(ResultTable a, ResultTable b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.ResultTable.html">ResultTable</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First table to compare</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.ResultTable.html">ResultTable</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second string to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the tables are different; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultTable_op_Inequality_" data-uid="EpNet.Results.ResultTable.op_Inequality*"></a>
+  <h4 id="EpNet_Results_ResultTable_op_Inequality_EpNet_Results_ResultTable_EpNet_Results_ResultTable_" data-uid="EpNet.Results.ResultTable.op_Inequality(EpNet.Results.ResultTable,EpNet.Results.ResultTable)">Inequality(ResultTable, ResultTable)</h4>
+  <div class="markdown level1 summary"><p>Determines whether 2 tables are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(ResultTable a, ResultTable b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.ResultTable.html">ResultTable</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First table to compare</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.ResultTable.html">ResultTable</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second string to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the tables are equal; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

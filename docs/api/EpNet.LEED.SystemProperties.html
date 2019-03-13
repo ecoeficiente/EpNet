@@ -1,0 +1,586 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SystemProperties
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SystemProperties
+   ">
+    <meta name="generator" content="docfx 2.39.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="EpNet.LEED.SystemProperties">
+  
+  
+  <h1 id="EpNet_LEED_SystemProperties" data-uid="EpNet.LEED.SystemProperties" class="text-break">Class SystemProperties
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a list of Air-side HVAC systems (3-8) with common properties and provides Pressure Drop Adjustment calculation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SystemProperties</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="EpNet.LEED.html">EpNet.LEED</a></h6>
+  <h6><strong>Assembly</strong>: EpNet.dll</h6>
+  <h5 id="EpNet_LEED_SystemProperties_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SystemProperties</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="EpNet_LEED_SystemProperties__ctor_" data-uid="EpNet.LEED.SystemProperties.#ctor*"></a>
+  <h4 id="EpNet_LEED_SystemProperties__ctor_System_Int32_" data-uid="EpNet.LEED.SystemProperties.#ctor(System.Int32)">SystemProperties(Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a definition of system properties of a specified type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SystemProperties(int type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>System type (3-8)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="EpNet_LEED_SystemProperties_ExhaustFumeHoods_" data-uid="EpNet.LEED.SystemProperties.ExhaustFumeHoods*"></a>
+  <h4 id="EpNet_LEED_SystemProperties_ExhaustFumeHoods" data-uid="EpNet.LEED.SystemProperties.ExhaustFumeHoods">ExhaustFumeHoods</h4>
+  <div class="markdown level1 summary"><p>Exhaust system serving fume hoods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ExhaustFumeHoods { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if exhaust system serving fume hoods present.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_LEED_SystemProperties_FullyDucted_" data-uid="EpNet.LEED.SystemProperties.FullyDucted*"></a>
+  <h4 id="EpNet_LEED_SystemProperties_FullyDucted" data-uid="EpNet.LEED.SystemProperties.FullyDucted">FullyDucted</h4>
+  <div class="markdown level1 summary"><p>Fully ducted return and/or exhaust air systems (except laboratory).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FullyDucted { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if fully ducted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_LEED_SystemProperties_FullyDuctedLab_" data-uid="EpNet.LEED.SystemProperties.FullyDuctedLab*"></a>
+  <h4 id="EpNet_LEED_SystemProperties_FullyDuctedLab" data-uid="EpNet.LEED.SystemProperties.FullyDuctedLab">FullyDuctedLab</h4>
+  <div class="markdown level1 summary"><p>Fully ducted return and/or exhaust air systems in a laboratory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FullyDuctedLab { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if fully ducted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_LEED_SystemProperties_Merv13to15_" data-uid="EpNet.LEED.SystemProperties.Merv13to15*"></a>
+  <h4 id="EpNet_LEED_SystemProperties_Merv13to15" data-uid="EpNet.LEED.SystemProperties.Merv13to15">Merv13to15</h4>
+  <div class="markdown level1 summary"><p>Particulate filtration credit: MERV 13 through 15.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Merv13to15 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if MERV 13-15 filters present.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_LEED_SystemProperties_Merv9to12_" data-uid="EpNet.LEED.SystemProperties.Merv9to12*"></a>
+  <h4 id="EpNet_LEED_SystemProperties_Merv9to12" data-uid="EpNet.LEED.SystemProperties.Merv9to12">Merv9to12</h4>
+  <div class="markdown level1 summary"><p>Particulate filtration credit: MERV 9 through 12.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Merv9to12 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if MERV 9-12 filters present.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_LEED_SystemProperties_Other_" data-uid="EpNet.LEED.SystemProperties.Other*"></a>
+  <h4 id="EpNet_LEED_SystemProperties_Other" data-uid="EpNet.LEED.SystemProperties.Other">Other</h4>
+  <div class="markdown level1 summary"><p>Additional adjustment calculated externally (pressure adj x airflow) </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Other { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>Additional adjustment (Pa·l/s)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_LEED_SystemProperties_OtherAirflow_" data-uid="EpNet.LEED.SystemProperties.OtherAirflow*"></a>
+  <h4 id="EpNet_LEED_SystemProperties_OtherAirflow" data-uid="EpNet.LEED.SystemProperties.OtherAirflow">OtherAirflow</h4>
+  <div class="markdown level1 summary"><p>Additional adjustment calculated externally which will be multiplied by total airflow. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double OtherAirflow { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>Additional adjustment (Pa)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_LEED_SystemProperties_OtherOutdoor_" data-uid="EpNet.LEED.SystemProperties.OtherOutdoor*"></a>
+  <h4 id="EpNet_LEED_SystemProperties_OtherOutdoor" data-uid="EpNet.LEED.SystemProperties.OtherOutdoor">OtherOutdoor</h4>
+  <div class="markdown level1 summary"><p>Additional adjustment calculated externally which will be multiplied by outdoor airflow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double OtherOutdoor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>Additional adjustment (Pa)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_LEED_SystemProperties_ReturnControl_" data-uid="EpNet.LEED.SystemProperties.ReturnControl*"></a>
+  <h4 id="EpNet_LEED_SystemProperties_ReturnControl" data-uid="EpNet.LEED.SystemProperties.ReturnControl">ReturnControl</h4>
+  <div class="markdown level1 summary"><p>Return and/or exhaust airflow control devices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReturnControl { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if airflow control devices present.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_LEED_SystemProperties_SoundAttenuation_" data-uid="EpNet.LEED.SystemProperties.SoundAttenuation*"></a>
+  <h4 id="EpNet_LEED_SystemProperties_SoundAttenuation" data-uid="EpNet.LEED.SystemProperties.SoundAttenuation">SoundAttenuation</h4>
+  <div class="markdown level1 summary"><p>Sound attenuation section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SoundAttenuation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if sound attenuation section present.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_LEED_SystemProperties_SupplyFanFlowFraction_" data-uid="EpNet.LEED.SystemProperties.SupplyFanFlowFraction*"></a>
+  <h4 id="EpNet_LEED_SystemProperties_SupplyFanFlowFraction" data-uid="EpNet.LEED.SystemProperties.SupplyFanFlowFraction">SupplyFanFlowFraction</h4>
+  <div class="markdown level1 summary"><p>Fan flow fraction assigned to supply fan (optional).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double SupplyFanFlowFraction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_LEED_SystemProperties_Systems_" data-uid="EpNet.LEED.SystemProperties.Systems*"></a>
+  <h4 id="EpNet_LEED_SystemProperties_Systems" data-uid="EpNet.LEED.SystemProperties.Systems">Systems</h4>
+  <div class="markdown level1 summary"><p>List of system names which share the same defined system properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; Systems { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>List of system names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_LEED_SystemProperties_Type_" data-uid="EpNet.LEED.SystemProperties.Type*"></a>
+  <h4 id="EpNet_LEED_SystemProperties_Type" data-uid="EpNet.LEED.SystemProperties.Type">Type</h4>
+  <div class="markdown level1 summary"><p>System type according to Ashae system definition (3-8)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>System type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_LEED_SystemProperties_UseOutdoorAirflow_" data-uid="EpNet.LEED.SystemProperties.UseOutdoorAirflow*"></a>
+  <h4 id="EpNet_LEED_SystemProperties_UseOutdoorAirflow" data-uid="EpNet.LEED.SystemProperties.UseOutdoorAirflow">UseOutdoorAirflow</h4>
+  <div class="markdown level1 summary"><p>True if pressure drop adjustment must be calculated only for outdoor airflow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseOutdoorAirflow { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="EpNet_LEED_SystemProperties_GetPressureDropAdjustment_" data-uid="EpNet.LEED.SystemProperties.GetPressureDropAdjustment*"></a>
+  <h4 id="EpNet_LEED_SystemProperties_GetPressureDropAdjustment_System_Double_System_Double_" data-uid="EpNet.LEED.SystemProperties.GetPressureDropAdjustment(System.Double,System.Double)">GetPressureDropAdjustment(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Gets the pressure drop adjustment for this definition of properties and a specified airflow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetPressureDropAdjustment(double totalAirflow = 0, double outdoorAirflow = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">totalAirflow</span></td>
+        <td><p>Total airflow in the system (l/s)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">outdoorAirflow</span></td>
+        <td><p>Outdoor Airflow (only if exhaust fume hoods), (l/s)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

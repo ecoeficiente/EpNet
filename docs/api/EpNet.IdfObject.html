@@ -1,0 +1,1000 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IdfObject
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IdfObject
+   ">
+    <meta name="generator" content="docfx 2.39.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="EpNet.IdfObject">
+  
+  
+  <h1 id="EpNet_IdfObject" data-uid="EpNet.IdfObject" class="text-break">Class IdfObject
+  </h1>
+  <div class="markdown level0 summary"><p>Represents an individual idf object, as a enumeration of fields</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">IdfObject</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="EpNet.html">EpNet</a></h6>
+  <h6><strong>Assembly</strong>: EpNet.dll</h6>
+  <h5 id="EpNet_IdfObject_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class IdfObject : IEnumerable&lt;Field&gt;, IEnumerable, IEquatable&lt;IdfObject&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="EpNet_IdfObject__ctor_" data-uid="EpNet.IdfObject.#ctor*"></a>
+  <h4 id="EpNet_IdfObject__ctor" data-uid="EpNet.IdfObject.#ctor">IdfObject()</h4>
+  <div class="markdown level1 summary"><p>Creates a new IdfObject instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IdfObject()</code></pre>
+  </div>
+  
+  
+  <a id="EpNet_IdfObject__ctor_" data-uid="EpNet.IdfObject.#ctor*"></a>
+  <h4 id="EpNet_IdfObject__ctor_System_String___" data-uid="EpNet.IdfObject.#ctor(System.String[])">IdfObject(String[])</h4>
+  <div class="markdown level1 summary"><p>Creates a new IdfObject instance from a list of fields</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IdfObject(params string[] fields)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>List of fields</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="EpNet_IdfObject_Comments_" data-uid="EpNet.IdfObject.Comments*"></a>
+  <h4 id="EpNet_IdfObject_Comments" data-uid="EpNet.IdfObject.Comments">Comments</h4>
+  <div class="markdown level1 summary"><p>List of idf comments in the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; Comments { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>Idf comments.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_Count_" data-uid="EpNet.IdfObject.Count*"></a>
+  <h4 id="EpNet_IdfObject_Count" data-uid="EpNet.IdfObject.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Number of fields in the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Number of fields.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_Fields_" data-uid="EpNet.IdfObject.Fields*"></a>
+  <h4 id="EpNet_IdfObject_Fields" data-uid="EpNet.IdfObject.Fields">Fields</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Field&gt; Fields { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.Field.html">Field</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_IdfClass_" data-uid="EpNet.IdfObject.IdfClass*"></a>
+  <h4 id="EpNet_IdfObject_IdfClass" data-uid="EpNet.IdfObject.IdfClass">IdfClass</h4>
+  <div class="markdown level1 summary"><p>Idf class of the object (e.g.Runperiod, BuildingSurface:Detailed, Zone...).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IdfClass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Name of the IdfClass</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_IdfReader_" data-uid="EpNet.IdfObject.IdfReader*"></a>
+  <h4 id="EpNet_IdfObject_IdfReader" data-uid="EpNet.IdfObject.IdfReader">IdfReader</h4>
+  <div class="markdown level1 summary"><p>Reference to the parent IdfReader that owns this IdfObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IdfReader IdfReader { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><p>Parent IdfReader</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_Item_" data-uid="EpNet.IdfObject.Item*"></a>
+  <h4 id="EpNet_IdfObject_Item_System_Int32_" data-uid="EpNet.IdfObject.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Returns the field in a specific position from the idf object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Field this[int index] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Zero-based index of the field.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.Field.html">Field</a></td>
+        <td><p>Field object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_Item_" data-uid="EpNet.IdfObject.Item*"></a>
+  <h4 id="EpNet_IdfObject_Item_System_String_" data-uid="EpNet.IdfObject.Item(System.String)">Item[String]</h4>
+  <div class="markdown level1 summary"><p>Returns the field with a specified name from the idf object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Field this[string name] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Standard name of the field (as found in Energy+.idd file)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.Field.html">Field</a></td>
+        <td><p>Field object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_PreComments_" data-uid="EpNet.IdfObject.PreComments*"></a>
+  <h4 id="EpNet_IdfObject_PreComments" data-uid="EpNet.IdfObject.PreComments">PreComments</h4>
+  <div class="markdown level1 summary"><p>List of idf comments preceding the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; PreComments { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>Comments preceding the idf object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="EpNet_IdfObject_AddField_" data-uid="EpNet.IdfObject.AddField*"></a>
+  <h4 id="EpNet_IdfObject_AddField_System_String_System_String_" data-uid="EpNet.IdfObject.AddField(System.String,System.String)">AddField(String, String)</h4>
+  <div class="markdown level1 summary"><p>Append one field to an idf object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddField(string field, string comment = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">field</span></td>
+        <td><p>Field value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">comment</span></td>
+        <td><p>Field comment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_AddFields_" data-uid="EpNet.IdfObject.AddFields*"></a>
+  <h4 id="EpNet_IdfObject_AddFields_System_String___" data-uid="EpNet.IdfObject.AddFields(System.String[])">AddFields(String[])</h4>
+  <div class="markdown level1 summary"><p>Append fields to an idf object. Comments are defaulted to blank.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFields(params string[] fields)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>List of fields</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_Clone_" data-uid="EpNet.IdfObject.Clone*"></a>
+  <h4 id="EpNet_IdfObject_Clone" data-uid="EpNet.IdfObject.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the specified idf object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IdfObject Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><p>Cloned idf object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_Equals_" data-uid="EpNet.IdfObject.Equals*"></a>
+  <h4 id="EpNet_IdfObject_Equals_EpNet_IdfObject_" data-uid="EpNet.IdfObject.Equals(EpNet.IdfObject)">Equals(IdfObject)</h4>
+  <div class="markdown level1 summary"><p>Determines whether this instance and a specified object, have the same field values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IdfObject obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if all the fields are the same as in this instance; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_EqualsParameters_" data-uid="EpNet.IdfObject.EqualsParameters*"></a>
+  <h4 id="EpNet_IdfObject_EqualsParameters_EpNet_IdfObject_" data-uid="EpNet.IdfObject.EqualsParameters(EpNet.IdfObject)">EqualsParameters(IdfObject)</h4>
+  <div class="markdown level1 summary"><p>Determines whether all the fields, but the name, in two specified idf objects are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EqualsParameters(IdfObject idfObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">idfObject</span></td>
+        <td><p>Second object to be compared with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if equal but name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_InsertField_" data-uid="EpNet.IdfObject.InsertField*"></a>
+  <h4 id="EpNet_IdfObject_InsertField_System_Int32_System_String_System_String_" data-uid="EpNet.IdfObject.InsertField(System.Int32,System.String,System.String)">InsertField(Int32, String, String)</h4>
+  <div class="markdown level1 summary"><p>Insert one field to an idf object at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertField(int index, string field, string comment = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index at which the field will be inserted</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">field</span></td>
+        <td><p>Field value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">comment</span></td>
+        <td><p>Field comment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_InsertFields_" data-uid="EpNet.IdfObject.InsertFields*"></a>
+  <h4 id="EpNet_IdfObject_InsertFields_System_Int32_System_String___" data-uid="EpNet.IdfObject.InsertFields(System.Int32,System.String[])">InsertFields(Int32, String[])</h4>
+  <div class="markdown level1 summary"><p>Insert a list of fields to an idf object at the specified index. Comments are defaulted to blank.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertFields(int index, params string[] fields)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index at which the fields will be inserted</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>List of fields</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_RemoveField_" data-uid="EpNet.IdfObject.RemoveField*"></a>
+  <h4 id="EpNet_IdfObject_RemoveField_System_Int32_" data-uid="EpNet.IdfObject.RemoveField(System.Int32)">RemoveField(Int32)</h4>
+  <div class="markdown level1 summary"><p>Remove one field to an idf object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveField(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Field index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_RemoveFields_" data-uid="EpNet.IdfObject.RemoveFields*"></a>
+  <h4 id="EpNet_IdfObject_RemoveFields_System_Int32_System_Int32_" data-uid="EpNet.IdfObject.RemoveFields(System.Int32,System.Int32)">RemoveFields(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Remove fields to an idf object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveFields(int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Start field index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of fields to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_ToASCII_" data-uid="EpNet.IdfObject.ToASCII*"></a>
+  <h4 id="EpNet_IdfObject_ToASCII_System_Boolean_" data-uid="EpNet.IdfObject.ToASCII(System.Boolean)">ToASCII(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToASCII(bool comments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">comments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_ToString_" data-uid="EpNet.IdfObject.ToString*"></a>
+  <h4 id="EpNet_IdfObject_ToString" data-uid="EpNet.IdfObject.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Gets the formatted text representation of the idf object in EnergyPlus format including comments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>idf text string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  
+  
+  <a id="EpNet_IdfObject_ToString_" data-uid="EpNet.IdfObject.ToString*"></a>
+  <h4 id="EpNet_IdfObject_ToString_System_Boolean_" data-uid="EpNet.IdfObject.ToString(System.Boolean)">ToString(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the formatted text representation of the idf object in EnergyPlus format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(bool comments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">comments</span></td>
+        <td><p>sets whether comments are included in the output string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>idf text string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="EpNet_IdfObject_op_Equality_" data-uid="EpNet.IdfObject.op_Equality*"></a>
+  <h4 id="EpNet_IdfObject_op_Equality_EpNet_IdfObject_EpNet_IdfObject_" data-uid="EpNet.IdfObject.op_Equality(EpNet.IdfObject,EpNet.IdfObject)">Equality(IdfObject, IdfObject)</h4>
+  <div class="markdown level1 summary"><p>Determines whether all the fields, including the name, in two specified idf objects are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(IdfObject a, IdfObject b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The first idf object to compare</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The second idf object to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the value of a is the same as the value of b; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_op_Inequality_" data-uid="EpNet.IdfObject.op_Inequality*"></a>
+  <h4 id="EpNet_IdfObject_op_Inequality_EpNet_IdfObject_EpNet_IdfObject_" data-uid="EpNet.IdfObject.op_Inequality(EpNet.IdfObject,EpNet.IdfObject)">Inequality(IdfObject, IdfObject)</h4>
+  <div class="markdown level1 summary"><p>Determines if two specified idf objects are different by at least one field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(IdfObject a, IdfObject b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The first idf object to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The second idf object to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>false if the all the fields in a are the same as the fields in b; otherwise, true.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetResistance_EpNet_IdfObject_">ExtensionMethods.GetResistance(IdfObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetOpeningArea_EpNet_IdfObject_">ExtensionMethods.GetOpeningArea(IdfObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetNetArea_EpNet_IdfObject_">ExtensionMethods.GetNetArea(IdfObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetWidth_EpNet_IdfObject_">ExtensionMethods.GetWidth(IdfObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetHeight_EpNet_IdfObject_">ExtensionMethods.GetHeight(IdfObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetArea_EpNet_IdfObject_">ExtensionMethods.GetArea(IdfObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetAzimuth_EpNet_IdfObject_">ExtensionMethods.GetAzimuth(IdfObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetTilt_EpNet_IdfObject_">ExtensionMethods.GetTilt(IdfObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetOrientation_EpNet_IdfObject_">ExtensionMethods.GetOrientation(IdfObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetOutdoorAirFlow_EpNet_IdfObject_">ExtensionMethods.GetOutdoorAirFlow(IdfObject)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

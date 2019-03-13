@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>EpNet .Net library online help </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="EpNet .Net library online help ">
+    <meta name="generator" content="docfx 2.39.2.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="epnet-net-library-online-help"><strong>EpNet</strong> .Net library online help</h1>
+
+<p><strong>EpNet</strong> is a .Net library which provides very useful utilities to manipulate EnergyPlus files.</p>
+<p>It makes very easy to modify idf files but it additionally allows to read and write EnergyPlus result eso files or extract data from csv table outputs.</p>
+<p>EpNet is integrated in DesignBuilder Scripting module where scripts developed with EpNet are usually executed after idf generation and before simulation.</p>
+<blockquote><p>EpNet library is developed and mantained by Germ&aacute;n Campos, <a href="https://www.ecoeficiente.es">www.ecoeficiente.es</a>.</p>
+</blockquote>
+<h2 id="usage-examples">Usage examples:</h2>
+<p>The easiest way to understand how to use EpNet library is to look at the following examples and use the Api Reference.</p>
+<p>The class that reads the idf file and stores the list of idf objects is <a class="xref" href="api/EpNet.IdfReader.html">IdfReader</a>.</p>
+<p>So, first of all we have to create an IdfReader object:</p>
+<pre><code class="lang-cs">var Idf = IdfReader();
+</code></pre><p>After processing the Idf, the file must be saved:</p>
+<pre><code class="lang-cs">Idf.Save();
+</code></pre><p>Now, let&#39;s see some of the things we can do with the IdfReader object.</p>
+<h3 id="example-1">Example 1</h3>
+<p>Get all the zones in the idf:</p>
+<pre><code class="lang-cs">var zones = Idf[&quot;Zone&quot;];
+</code></pre><p>Get all the surfaces in the idf:</p>
+<pre><code class="lang-cs">var surfaces = Idf[&quot;BuildingSurface:Detailed&quot;];
+</code></pre><p><em>zones</em> and <em>surfaces</em> are now a List of IdfObjects</p>
+<p>An <a class="xref" href="api/EpNet.IdfObject.html">IdfObject</a> has [Fields](xref:EpNet.Field] and each field can have a value (Value or Number) and a Commment.</p>
+<p>Fields can be accessed by its zero-based <strong>index</strong> or by their <strong>name</strong> (according to Energy+.idd).</p>
+<p>Let&#39;s pick the first zone:</p>
+<pre><code class="lang-cs">var zone = zones[0];
+</code></pre><p>And change its name to &quot;Zone1&quot;:</p>
+<div class="tabGroup" id="tabgroup_D+Ap1HJHja">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_D+Ap1HJHja_tabid-1" role="tab" aria-controls="tabpanel_D+Ap1HJHja_tabid-1" data-tab="tabid-1" tabindex="0" aria-selected="true">Accessing fields by <strong>index</strong></a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_D+Ap1HJHja_tabid-2" role="tab" aria-controls="tabpanel_D+Ap1HJHja_tabid-2" data-tab="tabid-2" tabindex="-1">Accessing fields by <strong>name</strong></a>
+</li>
+</ul>
+<section id="tabpanel_D+Ap1HJHja_tabid-1" role="tabpanel" data-tab="tabid-1">
+<pre><code class="lang-cs">zone[0].Value = &quot;Zone1&quot;;
+</code></pre></section>
+<section id="tabpanel_D+Ap1HJHja_tabid-2" role="tabpanel" data-tab="tabid-2" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-cs">zone[&quot;Name&quot;].Value = &quot;Zone1&quot;;
+</code></pre></section>
+</div>
+<p>Text values are accessed through <a class="xref" href="api/EpNet.Field.html#EpNet_Field_Value"><strong>Value</strong></a> property while numeric values are usually accessed through <a href="EpNet.Field.Number"><strong>Number</strong></a> property (unless you want to treat them as a string value).</p>
+<div class="tabGroup" id="tabgroup_D+Ap1HJHja-1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_D+Ap1HJHja-1_tabid-5" role="tab" aria-controls="tabpanel_D+Ap1HJHja-1_tabid-5" data-tab="tabid-5" tabindex="0" aria-selected="true">Accessing fields by <strong>index</strong></a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_D+Ap1HJHja-1_tabid-6" role="tab" aria-controls="tabpanel_D+Ap1HJHja-1_tabid-6" data-tab="tabid-6" tabindex="-1">Accessing fields by <strong>name</strong></a>
+</li>
+</ul>
+<section id="tabpanel_D+Ap1HJHja-1_tabid-5" role="tabpanel" data-tab="tabid-5">
+<pre><code class="lang-cs">double zoneArea = zone[9].Number;
+string zoneAreaValue = zone[9].Value;
+
+zone[9].Number = zoneArea * 2; //Duplicate zone area.
+zone[0].Value = zoneAreaValue + &quot;sqm.Zone1&quot;; //Include zone area in its name. 
+</code></pre></section>
+<section id="tabpanel_D+Ap1HJHja-1_tabid-6" role="tabpanel" data-tab="tabid-6" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-cs">double zoneArea = zone[&quot;Floor Area&quot;].Number;
+string zoneAreaValue = zone[&quot;Floor Area&quot;].Value;
+
+zone[&quot;Floor Area&quot;].Number = zoneArea * 2; //Duplicate zone area.
+zone[&quot;Name&quot;].Value = zoneAreaValue + &quot;sqm.Zone1&quot;; //Include zone area in its name. 
+</code></pre></section>
+</div>
+<h3 id="example-2">Example 2</h3>
+<p>The following code updates simple glazing parameters to include the impact of a frame fraction.</p>
+<div class="tabGroup" id="tabgroup_D+Ap1HJHja-2">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_D+Ap1HJHja-2_tabid-3" role="tab" aria-controls="tabpanel_D+Ap1HJHja-2_tabid-3" data-tab="tabid-3" tabindex="0" aria-selected="true">Accessing fields by <strong>index</strong></a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_D+Ap1HJHja-2_tabid-4" role="tab" aria-controls="tabpanel_D+Ap1HJHja-2_tabid-4" data-tab="tabid-4" tabindex="-1">Accessing fields by <strong>name</strong></a>
+</li>
+</ul>
+<section id="tabpanel_D+Ap1HJHja-2_tabid-3" role="tabpanel" data-tab="tabid-3">
+<pre><code class="lang-csharp" name="FrameFraction" title="Frame Fraction">var glass = Idf[&quot;WindowMaterial:SimpleGlazingSystem&quot;];
+            var frameFrac= 0.15;
+            var frameU = 2.8;
+            var frameAbs = 0.9;
+            foreach (var g in glass)
+            {
+                var U = g[1].Number;
+                var SHGC = g[2].Number;
+                var t = g[3].Number;
+
+                g[1].Number = U*(1-frameFrac)+frameFrac*frameU;
+                g[2].Number = SHGC*(1-frameFrac)+0.04*frameAbs*frameU;
+                g[3].Number = t*(1-frameFrac);
+            }
+</code></pre></section>
+<section id="tabpanel_D+Ap1HJHja-2_tabid-4" role="tabpanel" data-tab="tabid-4" aria-hidden="true" hidden="hidden">
+<pre><code class="lang-csharp" name="RrameFraction">var glass = Idf[&quot;WindowMaterial:SimpleGlazingSystem&quot;];
+            var frameFrac= 0.15;
+            var frameU = 2.8;
+            var frameAbs = 0.9;
+            foreach (var g in glass)
+            {
+                var U = g[&quot;U-Factor&quot;].Number;
+                var SHGC = g[&quot;Solar Heat Gain Coefficient&quot;].Number;
+                var t = g[&quot;Visible Transmittance&quot;].Number;
+
+                g[&quot;U-Factor&quot;].Number = U*(1-frameFrac)+frameFrac*frameU;
+                g[&quot;Solar Heat Gain Coefficient&quot;].Number = SHGC*(1-frameFrac)+0.04*frameAbs*frameU;
+                g[&quot;Visible Transmittance&quot;].Number = t*(1-frameFrac);
+            }
+</code></pre></section>
+</div>
+<h3 id="example-3">Example 3</h3>
+<p>Let&#39;s do something more complex. We will <em>change the insulation material layer in the facades that belong to zones larger than 100 sqm.</em></p>
+<p>We will use <strong>LINQ extension methods</strong> which are very useful and simplify the code when used with EpNet.</p>
+<pre><code class="lang-cs">var zones = Idf[&quot;Zone&quot;];
+var surfaces = Idf[&quot;BuildingSurface:Detailed&quot;];
+
+//Load method can read an idf file or parse a text string in idf format.
+//In this case, we use it to create a new insulation material named &quot;XPS&quot;.
+Idf.Load(&quot;Material,XPS,Smooth,0.05,0.04,80,1450,0.9,0.7,0.7;&quot;);
+
+//We use &quot;First&quot; extension method to search the first construction whose name is &quot;Facade&quot;.
+var facade = Idf[&quot;Construction&quot;].First(c =&gt; c[&quot;Name&quot;] == &quot;Facade&quot;);
+
+//We make a copy of this construction.
+var newFacade = facade.Clone();
+
+//Change its name,
+newFacade[&quot;Name&quot;].Value = &quot;New Facade&quot;;
+
+//and search the first Field that contains &quot;MW&quot; and change its value to &quot;XPS&quot;.
+newFacade.First(f =&gt; f.Contains(&quot;MW&quot;)).Value = &quot;XPS&quot;;
+
+//Finally, we add it to the Idf.
+Idf.Add(newFacade);
+
+//We select all the zones with an area &gt; 100
+foreach (var zone in zones.Where(z =&gt; z[&quot;Floor Area&quot;].Number &gt; 100))
+
+//and from all surfaces of type wall we choose those that belong to those zones
+foreach (var surface in surfaces.Where(s =&gt; s[&quot;Surface Type&quot;] == &quot;Wall&quot; &amp;&amp; s[&quot;Zone Name&quot;] == zone[&quot;Name&quot;]))
+    surface[&quot;Construction Name&quot;].Value = &quot;New Facade&quot;; //and change their construction to the new facade.
+</code></pre><h3 id="example-4">Example 4</h3>
+<p>There are many things that can be done with EpNet, such as working with results.
+This example uses <a class="xref" href="api/EpNet.Results.EsoReader.html">EsoReader</a> to read eso results, select some, add them and get them translated to another time frequency and units.</p>
+<pre><code class="lang-cs">var Eso = new EsoReader(); //Loads eplusout.eso from simulation folder.
+
+//Let&#39;s select those hourly results referred to zones and with W as unit.
+var zoneResults = Eso.Results
+    .Where(r =&gt; r.ReportType.StartsWith(&quot;Zone&quot;) &amp;&amp; r.Frequency == Frequencies.Hourly &amp;&amp; r.Units == &quot;W&quot;)
+    .GroupBy(g =&gt; g.ReportType);
+
+foreach (var zoneResult in zoneResults)
+{
+    //Sum them and change component name to &quot;Zone Total&quot;
+    var zoneTotal = zoneResult.Sum().SetComponent(&quot;Zone Total&quot;);
+    //Average them and change component name to &quot;Zone Average&quot;
+    var zoneAverage = zoneResult.Average().SetComponent(&quot;Zone Average&quot;);
+
+    //Add them to the EsoReader
+    Eso.Add(zoneAverage);
+    Eso.Add(zoneTotal);
+
+    //Add zone totals but translated to monthly frequency and MBtu
+    Eso.Add(zoneTotal.ToFrequency(Frequencies.Monthly).SetUnits(&quot;MBtu&quot;)*3.412e-3);
+}
+
+Eso.Save(); //The eso file is overwritten with old and new results.
+</code></pre><h3 id="example-5">Example 5</h3>
+<p>You can even set equipment efficiencies according to Ashrae 90.1 minimum efficiency requirement for LEED baseline models.</p>
+<pre><code class="lang-cs">
+//Read EnergyPlus comma delimited result file.
+var tablePath = @&quot;eplustbl.csv&quot;;
+var tableReader = new TableReader(tablePath);
+
+//Get a dictionary&lt;Key,Value&gt; with column 0 as keys and column 2 as values from Coil:Cooling:DX:SingleSpeed table.
+var coolingCoils = tableReader.GetTable(&quot;Coil:Cooling:DX:SingleSpeed&quot;).GetData(0, 2);
+
+//Loop through the cooling coils and assign Ashrae minimum efficiency for a System 4 DX cooling coil.
+foreach (var coil in coolingCoils)
+{
+    Idf[&quot;Coil:Cooling:DX:SingleSpeed&quot;].First(o =&gt; o[0].Equals(coil.Key))[4].Number = LEED.EER(4, coil.Value);
+}
+
+//Repeat for heating coils
+var heatingCoils = tableReader.GetTable(&quot;Coil:Heating:DX:SingleSpeed&quot;).GetData(0, 2);
+foreach (var coil in heatingCoils)
+{
+    Idf[&quot;Coil:Heating:DX:SingleSpeed&quot;].First(o =&gt; o[0].Equals(coil.Key))[3].Number = LEED.COP(4, coil.Value);
+}
+</code></pre><p>Or set fan power according to Ashrae procedure for baseline fans.</p>
+<pre><code class="lang-cs">//Set system properties for System 4 airloops in the model.
+var sP4 = new SystemProperties(4);
+sP4.FullyDucted = true; //Configure the pressure loss in the system
+sP4.Merv13to15 = true;
+
+//Get airloop names (GetAirloopZones gets a dictionary with airloop as Keys and List of zones as Values)
+var airloops = Idf.GetAirloopZones().Keys;
+
+//Assign airloops that meet those properties.
+sP4.Systems.AddRange(airloops);
+
+//Set Fan Pressures for those system 4 airloop fans.
+Idf.SetFanPressures(@&quot;eplustbl.csv&quot;, sP4);
+</code></pre><h3 id="example-6">Example 6</h3>
+<p>Finally, thanks to DesignBuilder API, C# (with or without EpNet) can be used to change DesignBuilder model as in this example:</p>
+<pre><code class="lang-cs">//Get a dictionary with current names as Keys and updated names as Values
+var zoneNames=Csv.GetData&lt;string&gt;(@&quot;c:\temp\ZoneNames.csv&quot;);
+
+//Get a reference to model site
+var site = ApiEnvironment.Site;
+
+//Loop through buildings and zones
+foreach (var building in site.Buildings)
+    foreach (var block in building.BuildingsBlocks)
+        foreach (var zone in block.Zones)
+        {
+            //Get the name of the zone from DesignBuilder model
+            var name = zone.getAttribute(&quot;Title&quot;);
+
+            //If it is in the list of names to be updated
+            if (zoneNames.ContainsKey(name))             
+            zone.setAttribute(&quot;Title&quot;, zoneNames[name]);//Update the name
+        }
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
