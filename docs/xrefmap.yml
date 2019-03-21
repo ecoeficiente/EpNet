@@ -1098,12 +1098,12 @@ references:
   commentId: T:EpNet.LEED.LEED
   fullName: EpNet.LEED.LEED
   nameWithType: LEED
-- uid: EpNet.LEED.LEED.AllowedFanPower(System.Double,EpNet.LEED.SystemProperties,System.Double)
-  name: AllowedFanPower(Double, SystemProperties, Double)
-  href: api/EpNet.LEED.LEED.html#EpNet_LEED_LEED_AllowedFanPower_System_Double_EpNet_LEED_SystemProperties_System_Double_
-  commentId: M:EpNet.LEED.LEED.AllowedFanPower(System.Double,EpNet.LEED.SystemProperties,System.Double)
-  fullName: EpNet.LEED.LEED.AllowedFanPower(System.Double, EpNet.LEED.SystemProperties, System.Double)
-  nameWithType: LEED.AllowedFanPower(Double, SystemProperties, Double)
+- uid: EpNet.LEED.LEED.AllowedFanPower(EpNet.LEED.SystemProperties,System.Double,System.Double)
+  name: AllowedFanPower(SystemProperties, Double, Double)
+  href: api/EpNet.LEED.LEED.html#EpNet_LEED_LEED_AllowedFanPower_EpNet_LEED_SystemProperties_System_Double_System_Double_
+  commentId: M:EpNet.LEED.LEED.AllowedFanPower(EpNet.LEED.SystemProperties,System.Double,System.Double)
+  fullName: EpNet.LEED.LEED.AllowedFanPower(EpNet.LEED.SystemProperties, System.Double, System.Double)
+  nameWithType: LEED.AllowedFanPower(SystemProperties, Double, Double)
 - uid: EpNet.LEED.LEED.AllowedFanPower*
   name: AllowedFanPower
   href: api/EpNet.LEED.LEED.html#EpNet_LEED_LEED_AllowedFanPower_
@@ -1200,6 +1200,77 @@ references:
   isSpec: "True"
   fullName: EpNet.LEED.SystemProperties.SystemProperties
   nameWithType: SystemProperties.SystemProperties
+- uid: EpNet.LEED.SystemProperties.AdditionalDrop
+  name: AdditionalDrop
+  href: api/EpNet.LEED.SystemProperties.html#EpNet_LEED_SystemProperties_AdditionalDrop
+  commentId: P:EpNet.LEED.SystemProperties.AdditionalDrop
+  fullName: EpNet.LEED.SystemProperties.AdditionalDrop
+  nameWithType: SystemProperties.AdditionalDrop
+- uid: EpNet.LEED.SystemProperties.AdditionalDrop*
+  name: AdditionalDrop
+  href: api/EpNet.LEED.SystemProperties.html#EpNet_LEED_SystemProperties_AdditionalDrop_
+  commentId: Overload:EpNet.LEED.SystemProperties.AdditionalDrop
+  isSpec: "True"
+  fullName: EpNet.LEED.SystemProperties.AdditionalDrop
+  nameWithType: SystemProperties.AdditionalDrop
+- uid: EpNet.LEED.SystemProperties.Drop
+  name: SystemProperties.Drop
+  href: api/EpNet.LEED.SystemProperties.Drop.html
+  commentId: T:EpNet.LEED.SystemProperties.Drop
+  fullName: EpNet.LEED.SystemProperties.Drop
+  nameWithType: SystemProperties.Drop
+- uid: EpNet.LEED.SystemProperties.Drop.Active
+  name: Active
+  href: api/EpNet.LEED.SystemProperties.Drop.html#EpNet_LEED_SystemProperties_Drop_Active
+  commentId: P:EpNet.LEED.SystemProperties.Drop.Active
+  fullName: EpNet.LEED.SystemProperties.Drop.Active
+  nameWithType: SystemProperties.Drop.Active
+- uid: EpNet.LEED.SystemProperties.Drop.Active*
+  name: Active
+  href: api/EpNet.LEED.SystemProperties.Drop.html#EpNet_LEED_SystemProperties_Drop_Active_
+  commentId: Overload:EpNet.LEED.SystemProperties.Drop.Active
+  isSpec: "True"
+  fullName: EpNet.LEED.SystemProperties.Drop.Active
+  nameWithType: SystemProperties.Drop.Active
+- uid: EpNet.LEED.SystemProperties.Drop.Airflow
+  name: Airflow
+  href: api/EpNet.LEED.SystemProperties.Drop.html#EpNet_LEED_SystemProperties_Drop_Airflow
+  commentId: P:EpNet.LEED.SystemProperties.Drop.Airflow
+  fullName: EpNet.LEED.SystemProperties.Drop.Airflow
+  nameWithType: SystemProperties.Drop.Airflow
+- uid: EpNet.LEED.SystemProperties.Drop.Airflow*
+  name: Airflow
+  href: api/EpNet.LEED.SystemProperties.Drop.html#EpNet_LEED_SystemProperties_Drop_Airflow_
+  commentId: Overload:EpNet.LEED.SystemProperties.Drop.Airflow
+  isSpec: "True"
+  fullName: EpNet.LEED.SystemProperties.Drop.Airflow
+  nameWithType: SystemProperties.Drop.Airflow
+- uid: EpNet.LEED.SystemProperties.Drop.Outdoor
+  name: Outdoor
+  href: api/EpNet.LEED.SystemProperties.Drop.html#EpNet_LEED_SystemProperties_Drop_Outdoor
+  commentId: P:EpNet.LEED.SystemProperties.Drop.Outdoor
+  fullName: EpNet.LEED.SystemProperties.Drop.Outdoor
+  nameWithType: SystemProperties.Drop.Outdoor
+- uid: EpNet.LEED.SystemProperties.Drop.Outdoor*
+  name: Outdoor
+  href: api/EpNet.LEED.SystemProperties.Drop.html#EpNet_LEED_SystemProperties_Drop_Outdoor_
+  commentId: Overload:EpNet.LEED.SystemProperties.Drop.Outdoor
+  isSpec: "True"
+  fullName: EpNet.LEED.SystemProperties.Drop.Outdoor
+  nameWithType: SystemProperties.Drop.Outdoor
+- uid: EpNet.LEED.SystemProperties.Drop.PressureDrop
+  name: PressureDrop
+  href: api/EpNet.LEED.SystemProperties.Drop.html#EpNet_LEED_SystemProperties_Drop_PressureDrop
+  commentId: P:EpNet.LEED.SystemProperties.Drop.PressureDrop
+  fullName: EpNet.LEED.SystemProperties.Drop.PressureDrop
+  nameWithType: SystemProperties.Drop.PressureDrop
+- uid: EpNet.LEED.SystemProperties.Drop.PressureDrop*
+  name: PressureDrop
+  href: api/EpNet.LEED.SystemProperties.Drop.html#EpNet_LEED_SystemProperties_Drop_PressureDrop_
+  commentId: Overload:EpNet.LEED.SystemProperties.Drop.PressureDrop
+  isSpec: "True"
+  fullName: EpNet.LEED.SystemProperties.Drop.PressureDrop
+  nameWithType: SystemProperties.Drop.PressureDrop
 - uid: EpNet.LEED.SystemProperties.ExhaustFumeHoods
   name: ExhaustFumeHoods
   href: api/EpNet.LEED.SystemProperties.html#EpNet_LEED_SystemProperties_ExhaustFumeHoods
@@ -1291,32 +1362,6 @@ references:
   isSpec: "True"
   fullName: EpNet.LEED.SystemProperties.Other
   nameWithType: SystemProperties.Other
-- uid: EpNet.LEED.SystemProperties.OtherAirflow
-  name: OtherAirflow
-  href: api/EpNet.LEED.SystemProperties.html#EpNet_LEED_SystemProperties_OtherAirflow
-  commentId: P:EpNet.LEED.SystemProperties.OtherAirflow
-  fullName: EpNet.LEED.SystemProperties.OtherAirflow
-  nameWithType: SystemProperties.OtherAirflow
-- uid: EpNet.LEED.SystemProperties.OtherAirflow*
-  name: OtherAirflow
-  href: api/EpNet.LEED.SystemProperties.html#EpNet_LEED_SystemProperties_OtherAirflow_
-  commentId: Overload:EpNet.LEED.SystemProperties.OtherAirflow
-  isSpec: "True"
-  fullName: EpNet.LEED.SystemProperties.OtherAirflow
-  nameWithType: SystemProperties.OtherAirflow
-- uid: EpNet.LEED.SystemProperties.OtherOutdoor
-  name: OtherOutdoor
-  href: api/EpNet.LEED.SystemProperties.html#EpNet_LEED_SystemProperties_OtherOutdoor
-  commentId: P:EpNet.LEED.SystemProperties.OtherOutdoor
-  fullName: EpNet.LEED.SystemProperties.OtherOutdoor
-  nameWithType: SystemProperties.OtherOutdoor
-- uid: EpNet.LEED.SystemProperties.OtherOutdoor*
-  name: OtherOutdoor
-  href: api/EpNet.LEED.SystemProperties.html#EpNet_LEED_SystemProperties_OtherOutdoor_
-  commentId: Overload:EpNet.LEED.SystemProperties.OtherOutdoor
-  isSpec: "True"
-  fullName: EpNet.LEED.SystemProperties.OtherOutdoor
-  nameWithType: SystemProperties.OtherOutdoor
 - uid: EpNet.LEED.SystemProperties.ReturnControl
   name: ReturnControl
   href: api/EpNet.LEED.SystemProperties.html#EpNet_LEED_SystemProperties_ReturnControl
@@ -1382,19 +1427,6 @@ references:
   isSpec: "True"
   fullName: EpNet.LEED.SystemProperties.Type
   nameWithType: SystemProperties.Type
-- uid: EpNet.LEED.SystemProperties.UseOutdoorAirflow
-  name: UseOutdoorAirflow
-  href: api/EpNet.LEED.SystemProperties.html#EpNet_LEED_SystemProperties_UseOutdoorAirflow
-  commentId: P:EpNet.LEED.SystemProperties.UseOutdoorAirflow
-  fullName: EpNet.LEED.SystemProperties.UseOutdoorAirflow
-  nameWithType: SystemProperties.UseOutdoorAirflow
-- uid: EpNet.LEED.SystemProperties.UseOutdoorAirflow*
-  name: UseOutdoorAirflow
-  href: api/EpNet.LEED.SystemProperties.html#EpNet_LEED_SystemProperties_UseOutdoorAirflow_
-  commentId: Overload:EpNet.LEED.SystemProperties.UseOutdoorAirflow
-  isSpec: "True"
-  fullName: EpNet.LEED.SystemProperties.UseOutdoorAirflow
-  nameWithType: SystemProperties.UseOutdoorAirflow
 - uid: EpNet.Psychrometrics
   name: EpNet.Psychrometrics
   href: api/EpNet.Psychrometrics.html

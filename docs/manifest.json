@@ -93,7 +93,19 @@
       "output": {
         ".html": {
           "relative_path": "api/EpNet.LEED.LEED.html",
-          "hash": "PNDWiQk6mEyQpGqwPSejlw=="
+          "hash": "CvUTICt7pDh1PEjf+O2Z6Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.LEED.SystemProperties.Drop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.LEED.SystemProperties.Drop.html",
+          "hash": "+sooB6h+jDWJqUR2Cy2Csg=="
         }
       },
       "is_incremental": true,
@@ -105,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EpNet.LEED.SystemProperties.html",
-          "hash": "b2fzLzxtG+dCERKhf8NmMA=="
+          "hash": "xxdsub4UL+T6qjMY60Do3w=="
         }
       },
       "is_incremental": true,
@@ -117,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EpNet.LEED.html",
-          "hash": "Cxn2lk2GpiFu6HnUQx/TFA=="
+          "hash": "RQoAwfPYwAr3DNIGuQ6xBA=="
         }
       },
       "is_incremental": true,
@@ -321,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "vAhybFfTOe46/+PduP3irA=="
+          "hash": "TNYafj4/24OITLb6VlqxhA=="
         }
       },
       "is_incremental": false,
@@ -341,7 +353,7 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "articles/toc.md",
+      "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
@@ -386,11 +398,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },

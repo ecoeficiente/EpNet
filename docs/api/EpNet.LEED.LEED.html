@@ -91,13 +91,13 @@
   
   
   <a id="EpNet_LEED_LEED_AllowedFanPower_" data-uid="EpNet.LEED.LEED.AllowedFanPower*"></a>
-  <h4 id="EpNet_LEED_LEED_AllowedFanPower_System_Double_EpNet_LEED_SystemProperties_System_Double_" data-uid="EpNet.LEED.LEED.AllowedFanPower(System.Double,EpNet.LEED.SystemProperties,System.Double)">AllowedFanPower(Double, SystemProperties, Double)</h4>
+  <h4 id="EpNet_LEED_LEED_AllowedFanPower_EpNet_LEED_SystemProperties_System_Double_System_Double_" data-uid="EpNet.LEED.LEED.AllowedFanPower(EpNet.LEED.SystemProperties,System.Double,System.Double)">AllowedFanPower(SystemProperties, Double, Double)</h4>
   <div class="markdown level1 summary"><p>Calculates allowed fan power according to Ashrae 90.1-2010 App.G</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double AllowedFanPower(double airflow, SystemProperties systemProperties, double outdoorAirflow = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double AllowedFanPower(SystemProperties systemProperties, double airflow, double outdoorAirflow = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -110,15 +110,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">airflow</span></td>
-        <td><p>Total system airflow (l/s).</p>
-</td>
-      </tr>
-      <tr>
         <td><a class="xref" href="EpNet.LEED.SystemProperties.html">SystemProperties</a></td>
         <td><span class="parametername">systemProperties</span></td>
         <td><p>One instance of SystemProperties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">airflow</span></td>
+        <td><p>Total system airflow (l/s).</p>
 </td>
       </tr>
       <tr>
