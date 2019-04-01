@@ -13,6 +13,19 @@ references:
   commentId: T:EpNet.ExtensionMethods
   fullName: EpNet.ExtensionMethods
   nameWithType: ExtensionMethods
+- uid: EpNet.ExtensionMethods.CommonEnding(System.String,System.String)
+  name: CommonEnding(String, String)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_CommonEnding_System_String_System_String_
+  commentId: M:EpNet.ExtensionMethods.CommonEnding(System.String,System.String)
+  fullName: EpNet.ExtensionMethods.CommonEnding(System.String, System.String)
+  nameWithType: ExtensionMethods.CommonEnding(String, String)
+- uid: EpNet.ExtensionMethods.CommonEnding*
+  name: CommonEnding
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_CommonEnding_
+  commentId: Overload:EpNet.ExtensionMethods.CommonEnding
+  isSpec: "True"
+  fullName: EpNet.ExtensionMethods.CommonEnding
+  nameWithType: ExtensionMethods.CommonEnding
 - uid: EpNet.ExtensionMethods.ContainsIgnoreCase(System.Collections.Generic.IEnumerable{System.String},System.String)
   name: ContainsIgnoreCase(IEnumerable<String>, String)
   href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_ContainsIgnoreCase_System_Collections_Generic_IEnumerable_System_String__System_String_
