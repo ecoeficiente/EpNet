@@ -176,13 +176,13 @@
   
   
   <a id="EpNet_Results_TableReader_GetTable_" data-uid="EpNet.Results.TableReader.GetTable*"></a>
-  <h4 id="EpNet_Results_TableReader_GetTable_System_String_" data-uid="EpNet.Results.TableReader.GetTable(System.String)">GetTable(String)</h4>
+  <h4 id="EpNet_Results_TableReader_GetTable_System_String_System_String_" data-uid="EpNet.Results.TableReader.GetTable(System.String,System.String)">GetTable(String, String)</h4>
   <div class="markdown level1 summary"><p>Gets a table by its title.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ResultTable GetTable(string title)</code></pre>
+    <pre><code class="lang-csharp hljs">public ResultTable GetTable(string title, string report = &quot;&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -198,6 +198,12 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">title</span></td>
         <td><p>Table title.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">report</span></td>
+        <td><p>Report name (optional, useful when same table title is in different reports).</p>
 </td>
       </tr>
     </tbody>

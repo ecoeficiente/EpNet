@@ -2994,12 +2994,12 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.TableReader.TableReader
   nameWithType: TableReader.TableReader
-- uid: EpNet.Results.TableReader.GetTable(System.String)
-  name: GetTable(String)
-  href: api/EpNet.Results.TableReader.html#EpNet_Results_TableReader_GetTable_System_String_
-  commentId: M:EpNet.Results.TableReader.GetTable(System.String)
-  fullName: EpNet.Results.TableReader.GetTable(System.String)
-  nameWithType: TableReader.GetTable(String)
+- uid: EpNet.Results.TableReader.GetTable(System.String,System.String)
+  name: GetTable(String, String)
+  href: api/EpNet.Results.TableReader.html#EpNet_Results_TableReader_GetTable_System_String_System_String_
+  commentId: M:EpNet.Results.TableReader.GetTable(System.String,System.String)
+  fullName: EpNet.Results.TableReader.GetTable(System.String, System.String)
+  nameWithType: TableReader.GetTable(String, String)
 - uid: EpNet.Results.TableReader.GetTable*
   name: GetTable
   href: api/EpNet.Results.TableReader.html#EpNet_Results_TableReader_GetTable_
