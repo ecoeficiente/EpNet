@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EpNet.Results.EsoReader.html",
-          "hash": "MYj707dkjL8271ilY5z7tA=="
+          "hash": "lKMZjI5IOmZ2aLt69EiRNA=="
         }
       },
       "is_incremental": true,
@@ -353,7 +353,7 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "articles/toc.md",
+      "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
@@ -372,7 +372,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "+3Mp14lf5zP30ytHs2IpKw=="
+          "hash": "8fq2rRXgnEB2OLjtMpzGgA=="
         }
       },
       "is_incremental": false,
@@ -403,11 +403,11 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         }

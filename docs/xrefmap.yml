@@ -1908,6 +1908,15 @@ references:
   commentId: M:EpNet.Results.EsoReader.Add(EpNet.Results.ResultSet)
   fullName: EpNet.Results.EsoReader.Add(EpNet.Results.ResultSet)
   nameWithType: EsoReader.Add(ResultSet)
+- uid: EpNet.Results.EsoReader.Add(EpNet.Results.ResultSet[])
+  name: Add(ResultSet[])
+  href: api/EpNet.Results.EsoReader.html#EpNet_Results_EsoReader_Add_EpNet_Results_ResultSet___
+  commentId: M:EpNet.Results.EsoReader.Add(EpNet.Results.ResultSet[])
+  name.vb: Add(ResultSet())
+  fullName: EpNet.Results.EsoReader.Add(EpNet.Results.ResultSet[])
+  fullName.vb: EpNet.Results.EsoReader.Add(EpNet.Results.ResultSet())
+  nameWithType: EsoReader.Add(ResultSet[])
+  nameWithType.vb: EsoReader.Add(ResultSet())
 - uid: EpNet.Results.EsoReader.Add(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
   name: Add(IEnumerable<ResultSet>)
   href: api/EpNet.Results.EsoReader.html#EpNet_Results_EsoReader_Add_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__
