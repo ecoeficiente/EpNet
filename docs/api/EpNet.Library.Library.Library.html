@@ -1,0 +1,731 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Library
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Library
+   ">
+    <meta name="generator" content="docfx 2.39.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="EpNet.Library.Library.Library">
+  
+  
+  <h1 id="EpNet_Library_Library_Library" data-uid="EpNet.Library.Library.Library" class="text-break">Class Library
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Library</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="EpNet.Library.Library.html">EpNet.Library.Library</a></h6>
+  <h6><strong>Assembly</strong>: EpNet.dll</h6>
+  <h5 id="EpNet_Library_Library_Library_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Library</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="EpNet_Library_Library_Library_BaselineRotation_" data-uid="EpNet.Library.Library.Library.BaselineRotation*"></a>
+  <h4 id="EpNet_Library_Library_Library_BaselineRotation_EpNet_IdfReader_" data-uid="EpNet.Library.Library.Library.BaselineRotation(EpNet.IdfReader)">BaselineRotation(IdfReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BaselineRotation(this IdfReader Idf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Library_Library_Library_CO2WindowControl_" data-uid="EpNet.Library.Library.Library.CO2WindowControl*"></a>
+  <h4 id="EpNet_Library_Library_Library_CO2WindowControl_EpNet_IdfReader_System_Func_EpNet_IdfObject_System_Boolean__System_Double_System_Boolean_" data-uid="EpNet.Library.Library.Library.CO2WindowControl(EpNet.IdfReader,System.Func{EpNet.IdfObject,System.Boolean},System.Double,System.Boolean)">CO2WindowControl(IdfReader, Func&lt;IdfObject, Boolean&gt;, Double, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CO2WindowControl(this IdfReader Idf, Func&lt;IdfObject, bool&gt; openingFilter = null, double co2Setpoint = 450, bool reporting = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">openingFilter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">co2Setpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">reporting</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Library_Library_Library_CoilSize_" data-uid="EpNet.Library.Library.Library.CoilSize*"></a>
+  <h4 id="EpNet_Library_Library_Library_CoilSize_EpNet_IdfReader_System_String_System_Double_System_Double_" data-uid="EpNet.Library.Library.Library.CoilSize(EpNet.IdfReader,System.String,System.Double,System.Double)">CoilSize(IdfReader, String, Double, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CoilSize(this IdfReader Idf, string airloop, double heatingCapacity = -1, double coolingCapacity = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">airloop</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">heatingCapacity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">coolingCapacity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Library_Library_Library_FreeCoolingDOAS_" data-uid="EpNet.Library.Library.Library.FreeCoolingDOAS*"></a>
+  <h4 id="EpNet_Library_Library_Library_FreeCoolingDOAS_EpNet_IdfReader_System_String___" data-uid="EpNet.Library.Library.Library.FreeCoolingDOAS(EpNet.IdfReader,System.String[])">FreeCoolingDOAS(IdfReader, String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FreeCoolingDOAS(this IdfReader Idf, params string[] AHUS)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">AHUS</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Library_Library_Library_FreeCoolingMixedAir_" data-uid="EpNet.Library.Library.Library.FreeCoolingMixedAir*"></a>
+  <h4 id="EpNet_Library_Library_Library_FreeCoolingMixedAir_EpNet_IdfReader_System_Boolean_System_String___" data-uid="EpNet.Library.Library.Library.FreeCoolingMixedAir(EpNet.IdfReader,System.Boolean,System.String[])">FreeCoolingMixedAir(IdfReader, Boolean, String[])</h4>
+  <div class="markdown level1 summary"><p>This is used to provide a cooling setpoint in mixed air so that free-cooling works when there is cooling demand but a Scheduled
+Setpoint Manager is used at the AHU outlet with a constant temperature, which will not provide free-cooling at it&apos;s full extent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FreeCoolingMixedAir(this IdfReader Idf, bool useAhuExtractFan, params string[] AHUS)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useAhuExtractFan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">AHUS</span></td>
+        <td><p>Airloop name list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Library_Library_Library_IsBaseline_" data-uid="EpNet.Library.Library.Library.IsBaseline*"></a>
+  <h4 id="EpNet_Library_Library_Library_IsBaseline_EpNet_IdfReader_" data-uid="EpNet.Library.Library.Library.IsBaseline(EpNet.IdfReader)">IsBaseline(IdfReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsBaseline(this IdfReader Idf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Library_Library_Library_OutdoorAirFromZone_" data-uid="EpNet.Library.Library.Library.OutdoorAirFromZone*"></a>
+  <h4 id="EpNet_Library_Library_Library_OutdoorAirFromZone_EpNet_IdfReader_System_String_System_String___" data-uid="EpNet.Library.Library.Library.OutdoorAirFromZone(EpNet.IdfReader,System.String,System.String[])">OutdoorAirFromZone(IdfReader, String, String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OutdoorAirFromZone(this IdfReader Idf, string bufferZone, params string[] systems)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">bufferZone</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">systems</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Library_Library_Library_PlaceShell_" data-uid="EpNet.Library.Library.Library.PlaceShell*"></a>
+  <h4 id="EpNet_Library_Library_Library_PlaceShell_EpNet_IdfReader_System_Double_System_Double_System_Double_System_Double_System_String_System_String_" data-uid="EpNet.Library.Library.Library.PlaceShell(EpNet.IdfReader,System.Double,System.Double,System.Double,System.Double,System.String,System.String)">PlaceShell(IdfReader, Double, Double, Double, Double, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PlaceShell(this IdfReader Idf, double north, double xOffset, double yOffset, double zOffset, string exteriorZoneNameStartsWith, string otherZonesToMoveStartWith = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">north</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">xOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">yOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">zOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">exteriorZoneNameStartsWith</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">otherZonesToMoveStartWith</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Library_Library_Library_PVWatts_" data-uid="EpNet.Library.Library.Library.PVWatts*"></a>
+  <h4 id="EpNet_Library_Library_Library_PVWatts_EpNet_IdfReader_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_" data-uid="EpNet.Library.Library.Library.PVWatts(EpNet.IdfReader,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)">PVWatts(IdfReader, Double, Double, Double, Double, Double, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PVWatts(this IdfReader Idf, double pvPower, double tilt, double azimuth, double inverterEfficiency = 0.96, double systemLosses = 0.14, string moduleType = &quot;Standard&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">pvPower</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tilt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">azimuth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">inverterEfficiency</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">systemLosses</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">moduleType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Library_Library_Library_RemoveUnusedSchedules_" data-uid="EpNet.Library.Library.Library.RemoveUnusedSchedules*"></a>
+  <h4 id="EpNet_Library_Library_Library_RemoveUnusedSchedules_EpNet_IdfReader_" data-uid="EpNet.Library.Library.Library.RemoveUnusedSchedules(EpNet.IdfReader)">RemoveUnusedSchedules(IdfReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveUnusedSchedules(this IdfReader Idf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Library_Library_Library_System4_" data-uid="EpNet.Library.Library.Library.System4*"></a>
+  <h4 id="EpNet_Library_Library_Library_System4_EpNet_IdfReader_EpNet_LEED_SystemProperties_System_String_" data-uid="EpNet.Library.Library.Library.System4(EpNet.IdfReader,EpNet.LEED.SystemProperties,System.String)">System4(IdfReader, SystemProperties, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void System4(this IdfReader Idf, SystemProperties system, string csvTableName = &quot;eplustbl&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EpNet.LEED.SystemProperties.html">SystemProperties</a></td>
+        <td><span class="parametername">system</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">csvTableName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Library_Library_Library_System6_" data-uid="EpNet.Library.Library.Library.System6*"></a>
+  <h4 id="EpNet_Library_Library_Library_System6_EpNet_IdfReader_EpNet_LEED_SystemProperties_System_String_" data-uid="EpNet.Library.Library.Library.System6(EpNet.IdfReader,EpNet.LEED.SystemProperties,System.String)">System6(IdfReader, SystemProperties, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void System6(this IdfReader Idf, SystemProperties system, string csvTableName = &quot;eplustbl&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EpNet.LEED.SystemProperties.html">SystemProperties</a></td>
+        <td><span class="parametername">system</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">csvTableName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Library_Library_Library_VariableDOAS_" data-uid="EpNet.Library.Library.Library.VariableDOAS*"></a>
+  <h4 id="EpNet_Library_Library_Library_VariableDOAS_EpNet_IdfReader_System_Double_System_String___" data-uid="EpNet.Library.Library.Library.VariableDOAS(EpNet.IdfReader,System.Double,System.String[])">VariableDOAS(IdfReader, Double, String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void VariableDOAS(this IdfReader Idf, double fanMinFraction, params string[] systems)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">fanMinFraction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">systems</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Library_Library_Library_VRFFanOnOffToFanSystemModel_" data-uid="EpNet.Library.Library.Library.VRFFanOnOffToFanSystemModel*"></a>
+  <h4 id="EpNet_Library_Library_Library_VRFFanOnOffToFanSystemModel_EpNet_IdfReader_" data-uid="EpNet.Library.Library.Library.VRFFanOnOffToFanSystemModel(EpNet.IdfReader)">VRFFanOnOffToFanSystemModel(IdfReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void VRFFanOnOffToFanSystemModel(this IdfReader Idf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Library_Library_Library_VrfFans_" data-uid="EpNet.Library.Library.Library.VrfFans*"></a>
+  <h4 id="EpNet_Library_Library_Library_VrfFans_EpNet_IdfReader_" data-uid="EpNet.Library.Library.Library.VrfFans(EpNet.IdfReader)">VrfFans(IdfReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void VrfFans(this IdfReader Idf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Library_Library_Library_ZoneArea_" data-uid="EpNet.Library.Library.Library.ZoneArea*"></a>
+  <h4 id="EpNet_Library_Library_Library_ZoneArea_EpNet_IdfReader_System_String_System_Double_" data-uid="EpNet.Library.Library.Library.ZoneArea(EpNet.IdfReader,System.String,System.Double)">ZoneArea(IdfReader, String, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ZoneArea(this IdfReader Idf, string zone, double area)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><span class="parametername">Idf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">zone</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">area</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

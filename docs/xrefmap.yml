@@ -1440,6 +1440,241 @@ references:
   isSpec: "True"
   fullName: EpNet.LEED.SystemProperties.Type
   nameWithType: SystemProperties.Type
+- uid: EpNet.Library.Library
+  name: EpNet.Library.Library
+  href: api/EpNet.Library.Library.html
+  commentId: N:EpNet.Library.Library
+  fullName: EpNet.Library.Library
+  nameWithType: EpNet.Library.Library
+- uid: EpNet.Library.Library.Library
+  name: Library
+  href: api/EpNet.Library.Library.Library.html
+  commentId: T:EpNet.Library.Library.Library
+  fullName: EpNet.Library.Library.Library
+  nameWithType: Library
+- uid: EpNet.Library.Library.Library.BaselineRotation(EpNet.IdfReader)
+  name: BaselineRotation(IdfReader)
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_BaselineRotation_EpNet_IdfReader_
+  commentId: M:EpNet.Library.Library.Library.BaselineRotation(EpNet.IdfReader)
+  fullName: EpNet.Library.Library.Library.BaselineRotation(EpNet.IdfReader)
+  nameWithType: Library.BaselineRotation(IdfReader)
+- uid: EpNet.Library.Library.Library.BaselineRotation*
+  name: BaselineRotation
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_BaselineRotation_
+  commentId: Overload:EpNet.Library.Library.Library.BaselineRotation
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.BaselineRotation
+  nameWithType: Library.BaselineRotation
+- uid: EpNet.Library.Library.Library.CO2WindowControl(EpNet.IdfReader,System.Func{EpNet.IdfObject,System.Boolean},System.Double,System.Boolean)
+  name: CO2WindowControl(IdfReader, Func<IdfObject, Boolean>, Double, Boolean)
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_CO2WindowControl_EpNet_IdfReader_System_Func_EpNet_IdfObject_System_Boolean__System_Double_System_Boolean_
+  commentId: M:EpNet.Library.Library.Library.CO2WindowControl(EpNet.IdfReader,System.Func{EpNet.IdfObject,System.Boolean},System.Double,System.Boolean)
+  name.vb: CO2WindowControl(IdfReader, Func(Of IdfObject, Boolean), Double, Boolean)
+  fullName: EpNet.Library.Library.Library.CO2WindowControl(EpNet.IdfReader, System.Func<EpNet.IdfObject, System.Boolean>, System.Double, System.Boolean)
+  fullName.vb: EpNet.Library.Library.Library.CO2WindowControl(EpNet.IdfReader, System.Func(Of EpNet.IdfObject, System.Boolean), System.Double, System.Boolean)
+  nameWithType: Library.CO2WindowControl(IdfReader, Func<IdfObject, Boolean>, Double, Boolean)
+  nameWithType.vb: Library.CO2WindowControl(IdfReader, Func(Of IdfObject, Boolean), Double, Boolean)
+- uid: EpNet.Library.Library.Library.CO2WindowControl*
+  name: CO2WindowControl
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_CO2WindowControl_
+  commentId: Overload:EpNet.Library.Library.Library.CO2WindowControl
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.CO2WindowControl
+  nameWithType: Library.CO2WindowControl
+- uid: EpNet.Library.Library.Library.CoilSize(EpNet.IdfReader,System.String,System.Double,System.Double)
+  name: CoilSize(IdfReader, String, Double, Double)
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_CoilSize_EpNet_IdfReader_System_String_System_Double_System_Double_
+  commentId: M:EpNet.Library.Library.Library.CoilSize(EpNet.IdfReader,System.String,System.Double,System.Double)
+  fullName: EpNet.Library.Library.Library.CoilSize(EpNet.IdfReader, System.String, System.Double, System.Double)
+  nameWithType: Library.CoilSize(IdfReader, String, Double, Double)
+- uid: EpNet.Library.Library.Library.CoilSize*
+  name: CoilSize
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_CoilSize_
+  commentId: Overload:EpNet.Library.Library.Library.CoilSize
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.CoilSize
+  nameWithType: Library.CoilSize
+- uid: EpNet.Library.Library.Library.FreeCoolingDOAS(EpNet.IdfReader,System.String[])
+  name: FreeCoolingDOAS(IdfReader, String[])
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_FreeCoolingDOAS_EpNet_IdfReader_System_String___
+  commentId: M:EpNet.Library.Library.Library.FreeCoolingDOAS(EpNet.IdfReader,System.String[])
+  name.vb: FreeCoolingDOAS(IdfReader, String())
+  fullName: EpNet.Library.Library.Library.FreeCoolingDOAS(EpNet.IdfReader, System.String[])
+  fullName.vb: EpNet.Library.Library.Library.FreeCoolingDOAS(EpNet.IdfReader, System.String())
+  nameWithType: Library.FreeCoolingDOAS(IdfReader, String[])
+  nameWithType.vb: Library.FreeCoolingDOAS(IdfReader, String())
+- uid: EpNet.Library.Library.Library.FreeCoolingDOAS*
+  name: FreeCoolingDOAS
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_FreeCoolingDOAS_
+  commentId: Overload:EpNet.Library.Library.Library.FreeCoolingDOAS
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.FreeCoolingDOAS
+  nameWithType: Library.FreeCoolingDOAS
+- uid: EpNet.Library.Library.Library.FreeCoolingMixedAir(EpNet.IdfReader,System.Boolean,System.String[])
+  name: FreeCoolingMixedAir(IdfReader, Boolean, String[])
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_FreeCoolingMixedAir_EpNet_IdfReader_System_Boolean_System_String___
+  commentId: M:EpNet.Library.Library.Library.FreeCoolingMixedAir(EpNet.IdfReader,System.Boolean,System.String[])
+  name.vb: FreeCoolingMixedAir(IdfReader, Boolean, String())
+  fullName: EpNet.Library.Library.Library.FreeCoolingMixedAir(EpNet.IdfReader, System.Boolean, System.String[])
+  fullName.vb: EpNet.Library.Library.Library.FreeCoolingMixedAir(EpNet.IdfReader, System.Boolean, System.String())
+  nameWithType: Library.FreeCoolingMixedAir(IdfReader, Boolean, String[])
+  nameWithType.vb: Library.FreeCoolingMixedAir(IdfReader, Boolean, String())
+- uid: EpNet.Library.Library.Library.FreeCoolingMixedAir*
+  name: FreeCoolingMixedAir
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_FreeCoolingMixedAir_
+  commentId: Overload:EpNet.Library.Library.Library.FreeCoolingMixedAir
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.FreeCoolingMixedAir
+  nameWithType: Library.FreeCoolingMixedAir
+- uid: EpNet.Library.Library.Library.IsBaseline(EpNet.IdfReader)
+  name: IsBaseline(IdfReader)
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_IsBaseline_EpNet_IdfReader_
+  commentId: M:EpNet.Library.Library.Library.IsBaseline(EpNet.IdfReader)
+  fullName: EpNet.Library.Library.Library.IsBaseline(EpNet.IdfReader)
+  nameWithType: Library.IsBaseline(IdfReader)
+- uid: EpNet.Library.Library.Library.IsBaseline*
+  name: IsBaseline
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_IsBaseline_
+  commentId: Overload:EpNet.Library.Library.Library.IsBaseline
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.IsBaseline
+  nameWithType: Library.IsBaseline
+- uid: EpNet.Library.Library.Library.OutdoorAirFromZone(EpNet.IdfReader,System.String,System.String[])
+  name: OutdoorAirFromZone(IdfReader, String, String[])
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_OutdoorAirFromZone_EpNet_IdfReader_System_String_System_String___
+  commentId: M:EpNet.Library.Library.Library.OutdoorAirFromZone(EpNet.IdfReader,System.String,System.String[])
+  name.vb: OutdoorAirFromZone(IdfReader, String, String())
+  fullName: EpNet.Library.Library.Library.OutdoorAirFromZone(EpNet.IdfReader, System.String, System.String[])
+  fullName.vb: EpNet.Library.Library.Library.OutdoorAirFromZone(EpNet.IdfReader, System.String, System.String())
+  nameWithType: Library.OutdoorAirFromZone(IdfReader, String, String[])
+  nameWithType.vb: Library.OutdoorAirFromZone(IdfReader, String, String())
+- uid: EpNet.Library.Library.Library.OutdoorAirFromZone*
+  name: OutdoorAirFromZone
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_OutdoorAirFromZone_
+  commentId: Overload:EpNet.Library.Library.Library.OutdoorAirFromZone
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.OutdoorAirFromZone
+  nameWithType: Library.OutdoorAirFromZone
+- uid: EpNet.Library.Library.Library.PlaceShell(EpNet.IdfReader,System.Double,System.Double,System.Double,System.Double,System.String,System.String)
+  name: PlaceShell(IdfReader, Double, Double, Double, Double, String, String)
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_PlaceShell_EpNet_IdfReader_System_Double_System_Double_System_Double_System_Double_System_String_System_String_
+  commentId: M:EpNet.Library.Library.Library.PlaceShell(EpNet.IdfReader,System.Double,System.Double,System.Double,System.Double,System.String,System.String)
+  fullName: EpNet.Library.Library.Library.PlaceShell(EpNet.IdfReader, System.Double, System.Double, System.Double, System.Double, System.String, System.String)
+  nameWithType: Library.PlaceShell(IdfReader, Double, Double, Double, Double, String, String)
+- uid: EpNet.Library.Library.Library.PlaceShell*
+  name: PlaceShell
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_PlaceShell_
+  commentId: Overload:EpNet.Library.Library.Library.PlaceShell
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.PlaceShell
+  nameWithType: Library.PlaceShell
+- uid: EpNet.Library.Library.Library.PVWatts(EpNet.IdfReader,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)
+  name: PVWatts(IdfReader, Double, Double, Double, Double, Double, String)
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_PVWatts_EpNet_IdfReader_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_
+  commentId: M:EpNet.Library.Library.Library.PVWatts(EpNet.IdfReader,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)
+  fullName: EpNet.Library.Library.Library.PVWatts(EpNet.IdfReader, System.Double, System.Double, System.Double, System.Double, System.Double, System.String)
+  nameWithType: Library.PVWatts(IdfReader, Double, Double, Double, Double, Double, String)
+- uid: EpNet.Library.Library.Library.PVWatts*
+  name: PVWatts
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_PVWatts_
+  commentId: Overload:EpNet.Library.Library.Library.PVWatts
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.PVWatts
+  nameWithType: Library.PVWatts
+- uid: EpNet.Library.Library.Library.RemoveUnusedSchedules(EpNet.IdfReader)
+  name: RemoveUnusedSchedules(IdfReader)
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_RemoveUnusedSchedules_EpNet_IdfReader_
+  commentId: M:EpNet.Library.Library.Library.RemoveUnusedSchedules(EpNet.IdfReader)
+  fullName: EpNet.Library.Library.Library.RemoveUnusedSchedules(EpNet.IdfReader)
+  nameWithType: Library.RemoveUnusedSchedules(IdfReader)
+- uid: EpNet.Library.Library.Library.RemoveUnusedSchedules*
+  name: RemoveUnusedSchedules
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_RemoveUnusedSchedules_
+  commentId: Overload:EpNet.Library.Library.Library.RemoveUnusedSchedules
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.RemoveUnusedSchedules
+  nameWithType: Library.RemoveUnusedSchedules
+- uid: EpNet.Library.Library.Library.System4(EpNet.IdfReader,EpNet.LEED.SystemProperties,System.String)
+  name: System4(IdfReader, SystemProperties, String)
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_System4_EpNet_IdfReader_EpNet_LEED_SystemProperties_System_String_
+  commentId: M:EpNet.Library.Library.Library.System4(EpNet.IdfReader,EpNet.LEED.SystemProperties,System.String)
+  fullName: EpNet.Library.Library.Library.System4(EpNet.IdfReader, EpNet.LEED.SystemProperties, System.String)
+  nameWithType: Library.System4(IdfReader, SystemProperties, String)
+- uid: EpNet.Library.Library.Library.System4*
+  name: System4
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_System4_
+  commentId: Overload:EpNet.Library.Library.Library.System4
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.System4
+  nameWithType: Library.System4
+- uid: EpNet.Library.Library.Library.System6(EpNet.IdfReader,EpNet.LEED.SystemProperties,System.String)
+  name: System6(IdfReader, SystemProperties, String)
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_System6_EpNet_IdfReader_EpNet_LEED_SystemProperties_System_String_
+  commentId: M:EpNet.Library.Library.Library.System6(EpNet.IdfReader,EpNet.LEED.SystemProperties,System.String)
+  fullName: EpNet.Library.Library.Library.System6(EpNet.IdfReader, EpNet.LEED.SystemProperties, System.String)
+  nameWithType: Library.System6(IdfReader, SystemProperties, String)
+- uid: EpNet.Library.Library.Library.System6*
+  name: System6
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_System6_
+  commentId: Overload:EpNet.Library.Library.Library.System6
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.System6
+  nameWithType: Library.System6
+- uid: EpNet.Library.Library.Library.VariableDOAS(EpNet.IdfReader,System.Double,System.String[])
+  name: VariableDOAS(IdfReader, Double, String[])
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_VariableDOAS_EpNet_IdfReader_System_Double_System_String___
+  commentId: M:EpNet.Library.Library.Library.VariableDOAS(EpNet.IdfReader,System.Double,System.String[])
+  name.vb: VariableDOAS(IdfReader, Double, String())
+  fullName: EpNet.Library.Library.Library.VariableDOAS(EpNet.IdfReader, System.Double, System.String[])
+  fullName.vb: EpNet.Library.Library.Library.VariableDOAS(EpNet.IdfReader, System.Double, System.String())
+  nameWithType: Library.VariableDOAS(IdfReader, Double, String[])
+  nameWithType.vb: Library.VariableDOAS(IdfReader, Double, String())
+- uid: EpNet.Library.Library.Library.VariableDOAS*
+  name: VariableDOAS
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_VariableDOAS_
+  commentId: Overload:EpNet.Library.Library.Library.VariableDOAS
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.VariableDOAS
+  nameWithType: Library.VariableDOAS
+- uid: EpNet.Library.Library.Library.VRFFanOnOffToFanSystemModel(EpNet.IdfReader)
+  name: VRFFanOnOffToFanSystemModel(IdfReader)
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_VRFFanOnOffToFanSystemModel_EpNet_IdfReader_
+  commentId: M:EpNet.Library.Library.Library.VRFFanOnOffToFanSystemModel(EpNet.IdfReader)
+  fullName: EpNet.Library.Library.Library.VRFFanOnOffToFanSystemModel(EpNet.IdfReader)
+  nameWithType: Library.VRFFanOnOffToFanSystemModel(IdfReader)
+- uid: EpNet.Library.Library.Library.VRFFanOnOffToFanSystemModel*
+  name: VRFFanOnOffToFanSystemModel
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_VRFFanOnOffToFanSystemModel_
+  commentId: Overload:EpNet.Library.Library.Library.VRFFanOnOffToFanSystemModel
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.VRFFanOnOffToFanSystemModel
+  nameWithType: Library.VRFFanOnOffToFanSystemModel
+- uid: EpNet.Library.Library.Library.VrfFans(EpNet.IdfReader)
+  name: VrfFans(IdfReader)
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_VrfFans_EpNet_IdfReader_
+  commentId: M:EpNet.Library.Library.Library.VrfFans(EpNet.IdfReader)
+  fullName: EpNet.Library.Library.Library.VrfFans(EpNet.IdfReader)
+  nameWithType: Library.VrfFans(IdfReader)
+- uid: EpNet.Library.Library.Library.VrfFans*
+  name: VrfFans
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_VrfFans_
+  commentId: Overload:EpNet.Library.Library.Library.VrfFans
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.VrfFans
+  nameWithType: Library.VrfFans
+- uid: EpNet.Library.Library.Library.ZoneArea(EpNet.IdfReader,System.String,System.Double)
+  name: ZoneArea(IdfReader, String, Double)
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_ZoneArea_EpNet_IdfReader_System_String_System_Double_
+  commentId: M:EpNet.Library.Library.Library.ZoneArea(EpNet.IdfReader,System.String,System.Double)
+  fullName: EpNet.Library.Library.Library.ZoneArea(EpNet.IdfReader, System.String, System.Double)
+  nameWithType: Library.ZoneArea(IdfReader, String, Double)
+- uid: EpNet.Library.Library.Library.ZoneArea*
+  name: ZoneArea
+  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_ZoneArea_
+  commentId: Overload:EpNet.Library.Library.Library.ZoneArea
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library.ZoneArea
+  nameWithType: Library.ZoneArea
 - uid: EpNet.Psychrometrics
   name: EpNet.Psychrometrics
   href: api/EpNet.Psychrometrics.html

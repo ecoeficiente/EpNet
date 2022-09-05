@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EpNet.IdfReader.html",
-          "hash": "GOK7kSvCRuPuN5YHCP3PsQ=="
+          "hash": "Rqyp2o8v9CwqLg1l8sLp+A=="
         }
       },
       "is_incremental": true,
@@ -130,6 +130,30 @@
         ".html": {
           "relative_path": "api/EpNet.LEED.html",
           "hash": "RQoAwfPYwAr3DNIGuQ6xBA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Library.Library.Library.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Library.Library.Library.html",
+          "hash": "fTWS8CJUQLMHnufiit+mlA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EpNet.Library.Library.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EpNet.Library.Library.html",
+          "hash": "0CDfflniPQrpUNnt2Np+bA=="
         }
       },
       "is_incremental": true,
@@ -333,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "TNYafj4/24OITLb6VlqxhA=="
+          "hash": "U29DVevwRV+G++vnlUE5lw=="
         }
       },
       "is_incremental": false,
@@ -353,7 +377,7 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "articles/toc.yml",
+      "source_relative_path": "articles/toc.md",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
@@ -375,7 +399,7 @@
           "hash": "8fq2rRXgnEB2OLjtMpzGgA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -403,11 +427,11 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         }
