@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ExtensionMethods
    ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -130,6 +130,158 @@
         <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
         <td><p>Resulting Result Set.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ExtensionMethods_ContainsComponent_" data-uid="EpNet.Results.ExtensionMethods.ContainsComponent*"></a>
+  <h4 id="EpNet_Results_ExtensionMethods_ContainsComponent_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__" data-uid="EpNet.Results.ExtensionMethods.ContainsComponent(EpNet.Results.ResultSet,System.Collections.Generic.IEnumerable{System.String})">ContainsComponent(ResultSet, IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ContainsComponent(this ResultSet result, IEnumerable&lt;string&gt; values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ExtensionMethods_ContainsReport_" data-uid="EpNet.Results.ExtensionMethods.ContainsReport*"></a>
+  <h4 id="EpNet_Results_ExtensionMethods_ContainsReport_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__" data-uid="EpNet.Results.ExtensionMethods.ContainsReport(EpNet.Results.ResultSet,System.Collections.Generic.IEnumerable{System.String})">ContainsReport(ResultSet, IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ContainsReport(this ResultSet result, IEnumerable&lt;string&gt; values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ExtensionMethods_Get_" data-uid="EpNet.Results.ExtensionMethods.Get*"></a>
+  <h4 id="EpNet_Results_ExtensionMethods_Get_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_String_System_String_EpNet_Results_Frequencies_" data-uid="EpNet.Results.ExtensionMethods.Get(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.String,System.String,EpNet.Results.Frequencies)">Get(IEnumerable&lt;ResultSet&gt;, String, String, Frequencies)</h4>
+  <div class="markdown level1 summary"><p>Gets the result that matches the conditions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet Get(this IEnumerable&lt;ResultSet&gt; results, string component, string resultType, Frequencies frequency)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
+        <td><span class="parametername">results</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resultType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></td>
+        <td><span class="parametername">frequency</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

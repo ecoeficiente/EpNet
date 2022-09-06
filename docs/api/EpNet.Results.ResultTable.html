@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ResultTable
    ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -531,7 +531,7 @@
   
   <a id="EpNet_Results_ResultTable_GetColumn_" data-uid="EpNet.Results.ResultTable.GetColumn*"></a>
   <h4 id="EpNet_Results_ResultTable_GetColumn_System_Int32_" data-uid="EpNet.Results.ResultTable.GetColumn(System.Int32)">GetColumn(Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets a table numeric column by its zero-based position.</p>
+  <div class="markdown level1 summary"><p>Gets a table numeric column by its zero-based position. Non-numeric values (blank,-, etc) are returned as 0.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -576,7 +576,7 @@
   
   <a id="EpNet_Results_ResultTable_GetColumn_" data-uid="EpNet.Results.ResultTable.GetColumn*"></a>
   <h4 id="EpNet_Results_ResultTable_GetColumn_System_String_" data-uid="EpNet.Results.ResultTable.GetColumn(System.String)">GetColumn(String)</h4>
-  <div class="markdown level1 summary"><p>Gets a table numeric column by its header.</p>
+  <div class="markdown level1 summary"><p>Gets a table numeric column by its header. Non-numeric values (blank,-, etc) are returned as 0.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -621,7 +621,7 @@
   
   <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
   <h4 id="EpNet_Results_ResultTable_GetData_System_Int32_System_Int32_" data-uid="EpNet.Results.ResultTable.GetData(System.Int32,System.Int32)">GetData(Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as numeric Values.</p>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as numeric Values. Non-numeric values (blank,-, etc) are returned as 0.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -672,7 +672,7 @@
   
   <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
   <h4 id="EpNet_Results_ResultTable_GetData_System_Int32_System_String_" data-uid="EpNet.Results.ResultTable.GetData(System.Int32,System.String)">GetData(Int32, String)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as numeric Values.</p>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as numeric Values. Non-numeric values (blank,-, etc) are returned as 0.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -723,7 +723,7 @@
   
   <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
   <h4 id="EpNet_Results_ResultTable_GetData_System_String_System_Int32_" data-uid="EpNet.Results.ResultTable.GetData(System.String,System.Int32)">GetData(String, Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as numeric Values.</p>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as numeric Values. Non-numeric values (blank,-, etc) are returned as 0.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -774,7 +774,7 @@
   
   <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
   <h4 id="EpNet_Results_ResultTable_GetData_System_String_System_String_" data-uid="EpNet.Results.ResultTable.GetData(System.String,System.String)">GetData(String, String)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as numeric Values.</p>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as numeric Values. Non-numeric values (blank,-, etc) are returned as 0.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -825,7 +825,7 @@
   
   <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
   <h4 id="EpNet_Results_ResultTable_GetData__1_System_Int32_System_Int32_" data-uid="EpNet.Results.ResultTable.GetData``1(System.Int32,System.Int32)">GetData&lt;T&gt;(Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as T Values.</p>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as T Values. Blank cells are not returned.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -892,7 +892,7 @@
   
   <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
   <h4 id="EpNet_Results_ResultTable_GetData__1_System_Int32_System_String_" data-uid="EpNet.Results.ResultTable.GetData``1(System.Int32,System.String)">GetData&lt;T&gt;(Int32, String)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as T Values.</p>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as T Values. Blank cells are not returned.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -959,7 +959,7 @@
   
   <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
   <h4 id="EpNet_Results_ResultTable_GetData__1_System_String_System_Int32_" data-uid="EpNet.Results.ResultTable.GetData``1(System.String,System.Int32)">GetData&lt;T&gt;(String, Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as T Values.</p>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as T Values. Blank cells are not returned.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1026,7 +1026,7 @@
   
   <a id="EpNet_Results_ResultTable_GetData_" data-uid="EpNet.Results.ResultTable.GetData*"></a>
   <h4 id="EpNet_Results_ResultTable_GetData__1_System_String_System_String_" data-uid="EpNet.Results.ResultTable.GetData``1(System.String,System.String)">GetData&lt;T&gt;(String, String)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as T Values.</p>
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a result table with a specified column as string Keys and a specified column as T Values. Blank cells are not returned.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1342,7 +1342,7 @@
   
   <a id="EpNet_Results_ResultTable_GetTextColumn_" data-uid="EpNet.Results.ResultTable.GetTextColumn*"></a>
   <h4 id="EpNet_Results_ResultTable_GetTextColumn_System_String_" data-uid="EpNet.Results.ResultTable.GetTextColumn(System.String)">GetTextColumn(String)</h4>
-  <div class="markdown level1 summary"><p>Gets a table text column by its header.</p>
+  <div class="markdown level1 summary"><p>Gets a table text column by its header. Blank cells are not returned.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

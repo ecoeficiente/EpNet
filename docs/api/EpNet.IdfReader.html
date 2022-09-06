@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class IdfReader
    ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -290,6 +290,31 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
   </table>
   
   
+  <a id="EpNet_IdfReader_EnergyPlusPath_" data-uid="EpNet.IdfReader.EnergyPlusPath*"></a>
+  <h4 id="EpNet_IdfReader_EnergyPlusPath" data-uid="EpNet.IdfReader.EnergyPlusPath">EnergyPlusPath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EnergyPlusPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="EpNet_IdfReader_Idd_" data-uid="EpNet.IdfReader.Idd*"></a>
   <h4 id="EpNet_IdfReader_Idd" data-uid="EpNet.IdfReader.Idd">Idd</h4>
   <div class="markdown level1 summary"><p>Reference to the Idd object that holds the variable names from the Energy+.idd</p>
@@ -337,6 +362,31 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfReader_IdfEncoding_" data-uid="EpNet.IdfReader.IdfEncoding*"></a>
+  <h4 id="EpNet_IdfReader_IdfEncoding" data-uid="EpNet.IdfReader.IdfEncoding">IdfEncoding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Encoding IdfEncoding { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Text.Encoding</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -416,8 +466,124 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
   <h5 id="EpNet_IdfReader_Item_System_String__examples">Examples</h5>
   <pre><code>var allZones = Idf[&quot;Zone&quot;];</code></pre>
 
+  
+  
+  <a id="EpNet_IdfReader_Item_" data-uid="EpNet.IdfReader.Item*"></a>
+  <h4 id="EpNet_IdfReader_Item_System_String___" data-uid="EpNet.IdfReader.Item(System.String[])">Item[String[]]</h4>
+  <div class="markdown level1 summary"><p>List of all the idf objects from the specified idf classes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IdfObject&gt; this[params string[] idfClasses] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">idfClasses</span></td>
+        <td><p>idf classes to use as a filter</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
+        <td><p>idf objects list from a list of classes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="EpNet_IdfReader_Item_System_String____examples">Examples</h5>
+  <pre><code>var zoneEquipment = Idf[&quot;ZoneHVAC:FourPipeFanCoil&quot;,&quot;ZoneHVAC:PackagedTerminalAirConditioner&quot;,&quot;ZoneHVAC:PackagedTerminalHeatPump&quot;];</code></pre>
+
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="EpNet_IdfReader_AddKPI_" data-uid="EpNet.IdfReader.AddKPI*"></a>
+  <h4 id="EpNet_IdfReader_AddKPI_DB_Api_Site_System_String_System_String_" data-uid="EpNet.IdfReader.AddKPI(DB.Api.Site,System.String,System.String)">AddKPI(Site, String, String)</h4>
+  <div class="markdown level1 summary"><p>Used only for parametric analysis. Adds a KPI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddKPI(Site site, string name, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DB.Api.Site</span></td>
+        <td><span class="parametername">site</span></td>
+        <td><p>ApiEnvironment.Site has to be passed as a parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the KPI table, as in the Parametric/Optimisation settings</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value for the KPI</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfReader_Clone_" data-uid="EpNet.IdfReader.Clone*"></a>
+  <h4 id="EpNet_IdfReader_Clone" data-uid="EpNet.IdfReader.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Returns a new cloned instance of the IdfReader</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IdfReader Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
+        <td><p>Cloned IdfReader instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="EpNet_IdfReader_Clone_" data-uid="EpNet.IdfReader.Clone*"></a>
@@ -451,7 +617,7 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
   
   <a id="EpNet_IdfReader_GetVariable_" data-uid="EpNet.IdfReader.GetVariable*"></a>
   <h4 id="EpNet_IdfReader_GetVariable_System_String_" data-uid="EpNet.IdfReader.GetVariable(System.String)">GetVariable(String)</h4>
-  <div class="markdown level1 summary"><p>Gets the value of the parametric variable defined in DesignBuilder optimization module as a Custom Script variable.</p>
+  <div class="markdown level1 summary"><p>Gets the value of the parametric variable defined in DesignBuilder optimization module as a Custom Idf variable.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -496,7 +662,7 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
   
   <a id="EpNet_IdfReader_Load_" data-uid="EpNet.IdfReader.Load*"></a>
   <h4 id="EpNet_IdfReader_Load_System_String_" data-uid="EpNet.IdfReader.Load(System.String)">Load(String)</h4>
-  <div class="markdown level1 summary"><p>Loads a portion of idf to an existing idf model.</p>
+  <div class="markdown level1 summary"><p>Loads a portion of idf to an existing idf model. Do not include comments.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -517,6 +683,35 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">idf</span></td>
         <td><p>Text containing the idf to load.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfReader_Load_" data-uid="EpNet.IdfReader.Load*"></a>
+  <h4 id="EpNet_IdfReader_Load_System_String___" data-uid="EpNet.IdfReader.Load(System.String[])">Load(String[])</h4>
+  <div class="markdown level1 summary"><p>Loads a single IdfObject its sequence of elements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(string[] fields)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>idfclass, field1, field2 ...</p>
 </td>
       </tr>
     </tbody>
@@ -692,16 +887,31 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
   <div><span class="xref">System.Object.ToString()</span></div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_List_EpNet_IdfObject__System_Int32_System_Int32_">ExtensionMethods.GetData&lt;T&gt;(List&lt;IdfObject&gt;, Int32, Int32)</a>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Int32_System_Int32_">ExtensionMethods.GetData&lt;T&gt;(IEnumerable&lt;IdfObject&gt;, Int32, Int32)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData_System_Collections_Generic_List_EpNet_IdfObject__System_Int32_System_Int32_">ExtensionMethods.GetData(List&lt;IdfObject&gt;, Int32, Int32)</a>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Int32_System_Int32_">ExtensionMethods.GetData(IEnumerable&lt;IdfObject&gt;, Int32, Int32)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_List_EpNet_IdfObject__System_String_System_String_">ExtensionMethods.GetData&lt;T&gt;(List&lt;IdfObject&gt;, String, String)</a>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_System_String_">ExtensionMethods.GetData&lt;T&gt;(IEnumerable&lt;IdfObject&gt;, String, String)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData_System_Collections_Generic_List_EpNet_IdfObject__System_String_System_String_">ExtensionMethods.GetData(List&lt;IdfObject&gt;, String, String)</a>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_System_String_">ExtensionMethods.GetData(IEnumerable&lt;IdfObject&gt;, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_Double__System_String_System_String_">ExtensionMethods.Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;String, Double&gt;, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_String__System_String_System_String_">ExtensionMethods.Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;String, String&gt;, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_Double__System_Int32_System_Int32_">ExtensionMethods.Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;String, Double&gt;, Int32, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_String__System_Int32_System_Int32_">ExtensionMethods.Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;String, String&gt;, Int32, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetByName_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_">ExtensionMethods.GetByName(IEnumerable&lt;IdfObject&gt;, String)</a>
   </div>
   <div>
       <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetAirloopZones_EpNet_IdfReader_">ExtensionMethods.GetAirloopZones(IdfReader)</a>
@@ -713,7 +923,7 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
       <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_CleanSchedules_EpNet_IdfReader_">ExtensionMethods.CleanSchedules(IdfReader)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GenerateScheduleViews_EpNet_IdfReader_System_Boolean_">ExtensionMethods.GenerateScheduleViews(IdfReader, Boolean)</a>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GenerateScheduleViews_EpNet_IdfReader_System_Boolean_System_String___">ExtensionMethods.GenerateScheduleViews(IdfReader, Boolean, String[])</a>
   </div>
   <div>
       <a class="xref" href="EpNet.LEED.LEED.html#EpNet_LEED_LEED_SetFanPressures_EpNet_IdfReader_System_String_EpNet_LEED_SystemProperties___">LEED.SetFanPressures(IdfReader, String, SystemProperties[])</a>
@@ -726,54 +936,6 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
   </div>
   <div>
       <a class="xref" href="EpNet.LEED.LEED.html#EpNet_LEED_LEED_InfiltrationRateAshrae_EpNet_IdfReader_System_Collections_Generic_IEnumerable_System_String__">LEED.InfiltrationRateAshrae(IdfReader, IEnumerable&lt;String&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_RemoveUnusedSchedules_EpNet_IdfReader_">Library.RemoveUnusedSchedules(IdfReader)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_CO2WindowControl_EpNet_IdfReader_System_Func_EpNet_IdfObject_System_Boolean__System_Double_System_Boolean_">Library.CO2WindowControl(IdfReader, Func&lt;IdfObject, Boolean&gt;, Double, Boolean)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_VRFFanOnOffToFanSystemModel_EpNet_IdfReader_">Library.VRFFanOnOffToFanSystemModel(IdfReader)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_PlaceShell_EpNet_IdfReader_System_Double_System_Double_System_Double_System_Double_System_String_System_String_">Library.PlaceShell(IdfReader, Double, Double, Double, Double, String, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_OutdoorAirFromZone_EpNet_IdfReader_System_String_System_String___">Library.OutdoorAirFromZone(IdfReader, String, String[])</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_VariableDOAS_EpNet_IdfReader_System_Double_System_String___">Library.VariableDOAS(IdfReader, Double, String[])</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_VrfFans_EpNet_IdfReader_">Library.VrfFans(IdfReader)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_ZoneArea_EpNet_IdfReader_System_String_System_Double_">Library.ZoneArea(IdfReader, String, Double)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_System6_EpNet_IdfReader_EpNet_LEED_SystemProperties_System_String_">Library.System6(IdfReader, SystemProperties, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_BaselineRotation_EpNet_IdfReader_">Library.BaselineRotation(IdfReader)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_IsBaseline_EpNet_IdfReader_">Library.IsBaseline(IdfReader)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_PVWatts_EpNet_IdfReader_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_">Library.PVWatts(IdfReader, Double, Double, Double, Double, Double, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_System4_EpNet_IdfReader_EpNet_LEED_SystemProperties_System_String_">Library.System4(IdfReader, SystemProperties, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_CoilSize_EpNet_IdfReader_System_String_System_Double_System_Double_">Library.CoilSize(IdfReader, String, Double, Double)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_FreeCoolingDOAS_EpNet_IdfReader_System_String___">Library.FreeCoolingDOAS(IdfReader, String[])</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_FreeCoolingMixedAir_EpNet_IdfReader_System_Boolean_System_String___">Library.FreeCoolingMixedAir(IdfReader, Boolean, String[])</a>
   </div>
 </article>
           </div>

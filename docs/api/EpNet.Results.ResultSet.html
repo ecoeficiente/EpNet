@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ResultSet
    ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -189,6 +189,33 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><p>Compponent Name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultSet_Count_" data-uid="EpNet.Results.ResultSet.Count*"></a>
+  <h4 id="EpNet_Results_ResultSet_Count" data-uid="EpNet.Results.ResultSet.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Returns the number of result values in the result set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Number of values.</p>
 </td>
       </tr>
     </tbody>
@@ -451,33 +478,6 @@
   </table>
   
   
-  <a id="EpNet_Results_ResultSet_Count_" data-uid="EpNet.Results.ResultSet.Count*"></a>
-  <h4 id="EpNet_Results_ResultSet_Count" data-uid="EpNet.Results.ResultSet.Count">Count()</h4>
-  <div class="markdown level1 summary"><p>Returns the number of result values in the result set.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Count()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>Number of values.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="EpNet_Results_ResultSet_GetDate_" data-uid="EpNet.Results.ResultSet.GetDate*"></a>
   <h4 id="EpNet_Results_ResultSet_GetDate_System_Int32_" data-uid="EpNet.Results.ResultSet.GetDate(System.Int32)">GetDate(Int32)</h4>
   <div class="markdown level1 summary"><p>Gets the datetime from a specified index.</p>
@@ -730,6 +730,221 @@
   </table>
   
   
+  <a id="EpNet_Results_ResultSet_Match_" data-uid="EpNet.Results.ResultSet.Match*"></a>
+  <h4 id="EpNet_Results_ResultSet_Match_System_String_System_String_" data-uid="EpNet.Results.ResultSet.Match(System.String,System.String)">Match(String, String)</h4>
+  <div class="markdown level1 summary"><p>Returns true if component and report match the provided values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Match(string component, string reportType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reportType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultSet_Match_" data-uid="EpNet.Results.ResultSet.Match*"></a>
+  <h4 id="EpNet_Results_ResultSet_Match_System_String_System_String_EpNet_Results_Frequencies_" data-uid="EpNet.Results.ResultSet.Match(System.String,System.String,EpNet.Results.Frequencies)">Match(String, String, Frequencies)</h4>
+  <div class="markdown level1 summary"><p>Returns true if component and report match the provided values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Match(string component, string reportType, Frequencies frequency)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reportType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></td>
+        <td><span class="parametername">frequency</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultSet_MatchComponent_" data-uid="EpNet.Results.ResultSet.MatchComponent*"></a>
+  <h4 id="EpNet_Results_ResultSet_MatchComponent_System_String_" data-uid="EpNet.Results.ResultSet.MatchComponent(System.String)">MatchComponent(String)</h4>
+  <div class="markdown level1 summary"><p>Returns true if component matches the provided value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MatchComponent(string component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultSet_MatchReport_" data-uid="EpNet.Results.ResultSet.MatchReport*"></a>
+  <h4 id="EpNet_Results_ResultSet_MatchReport_System_String_" data-uid="EpNet.Results.ResultSet.MatchReport(System.String)">MatchReport(String)</h4>
+  <div class="markdown level1 summary"><p>Returns true if report matches the provided value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MatchReport(string reportType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reportType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_ResultSet_SetValue_" data-uid="EpNet.Results.ResultSet.SetValue*"></a>
+  <h4 id="EpNet_Results_ResultSet_SetValue_System_Double_" data-uid="EpNet.Results.ResultSet.SetValue(System.Double)">SetValue(Double)</h4>
+  <div class="markdown level1 summary"><p>Sets a single value for all the data values in the ResultSet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="EpNet_Results_ResultSet_Sum_" data-uid="EpNet.Results.ResultSet.Sum*"></a>
   <h4 id="EpNet_Results_ResultSet_Sum_EpNet_Results_ResultSet___" data-uid="EpNet.Results.ResultSet.Sum(EpNet.Results.ResultSet[])">Sum(ResultSet[])</h4>
   <div class="markdown level1 summary"><p>Sums an array of result sets.</p>
@@ -908,7 +1123,7 @@
   
   <a id="EpNet_Results_ResultSet_op_Division_" data-uid="EpNet.Results.ResultSet.op_Division*"></a>
   <h4 id="EpNet_Results_ResultSet_op_Division_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_Division(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">Division(ResultSet, ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Divides one result set by another.</p>
+  <div class="markdown level1 summary"><p>Divides one result set by another. If division by cero inserts 0 value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1267,6 +1482,12 @@
   </div>
   <div>
       <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetUnits_EpNet_Results_ResultSet_System_String_">ExtensionMethods.SetUnits(ResultSet, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ContainsComponent_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__">ExtensionMethods.ContainsComponent(ResultSet, IEnumerable&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ContainsReport_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__">ExtensionMethods.ContainsReport(ResultSet, IEnumerable&lt;String&gt;)</a>
   </div>
 </article>
           </div>

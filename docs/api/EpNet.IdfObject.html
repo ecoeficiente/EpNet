@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class IdfObject
    ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -104,6 +104,35 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IdfObject()</code></pre>
   </div>
+  
+  
+  <a id="EpNet_IdfObject__ctor_" data-uid="EpNet.IdfObject.#ctor*"></a>
+  <h4 id="EpNet_IdfObject__ctor_System_Collections_Generic_IEnumerable_System_String__" data-uid="EpNet.IdfObject.#ctor(System.Collections.Generic.IEnumerable{System.String})">IdfObject(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new IdfObject instance from a IEnumerable of of field strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IdfObject(IEnumerable&lt;string&gt; fields)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>List of fields</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="EpNet_IdfObject__ctor_" data-uid="EpNet.IdfObject.#ctor*"></a>
@@ -360,6 +389,33 @@
   </table>
   
   
+  <a id="EpNet_IdfObject_Name_" data-uid="EpNet.IdfObject.Name*"></a>
+  <h4 id="EpNet_IdfObject_Name" data-uid="EpNet.IdfObject.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Returns the first value of the idfobject. Usually the name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Name of the idfobject</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="EpNet_IdfObject_PreComments_" data-uid="EpNet.IdfObject.PreComments*"></a>
   <h4 id="EpNet_IdfObject_PreComments" data-uid="EpNet.IdfObject.PreComments">PreComments</h4>
   <div class="markdown level1 summary"><p>List of idf comments preceding the object.</p>
@@ -474,6 +530,51 @@
       <tr>
         <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
         <td><p>Cloned idf object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfObject_ContainsValue_" data-uid="EpNet.IdfObject.ContainsValue*"></a>
+  <h4 id="EpNet_IdfObject_ContainsValue_System_String_" data-uid="EpNet.IdfObject.ContainsValue(System.String)">ContainsValue(String)</h4>
+  <div class="markdown level1 summary"><p>Returns true if any field of the idfobject contains the provided string value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsValue(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>value to search for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if contains the value. false otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -823,6 +924,63 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="EpNet_IdfObject_Values_" data-uid="EpNet.IdfObject.Values*"></a>
+  <h4 id="EpNet_IdfObject_Values_System_Int32_System_Int32_System_Int32_" data-uid="EpNet.IdfObject.Values(System.Int32,System.Int32,System.Int32)">Values(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a selection of the string values of the fields</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; Values(int start = 1, int skip = 1, int end = 1000)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>First position to start</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td><p>Values to skip between previous and next selected value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">end</span></td>
+        <td><p>Last position to select</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>List of selected values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="operators">Operators
   </h3>
   
@@ -936,6 +1094,9 @@
       <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetResistance_EpNet_IdfObject_">ExtensionMethods.GetResistance(IdfObject)</a>
   </div>
   <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetInsulationResistance_EpNet_IdfObject_">ExtensionMethods.GetInsulationResistance(IdfObject)</a>
+  </div>
+  <div>
       <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetOpeningArea_EpNet_IdfObject_">ExtensionMethods.GetOpeningArea(IdfObject)</a>
   </div>
   <div>
@@ -958,6 +1119,24 @@
   </div>
   <div>
       <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetOrientation_EpNet_IdfObject_">ExtensionMethods.GetOrientation(IdfObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetOrientationCTE_EpNet_IdfObject_">ExtensionMethods.GetOrientationCTE(IdfObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetMaxZ_EpNet_IdfObject_">ExtensionMethods.GetMaxZ(IdfObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetMinZ_EpNet_IdfObject_">ExtensionMethods.GetMinZ(IdfObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetPerimeterAt_EpNet_IdfObject_System_Double_">ExtensionMethods.GetPerimeterAt(IdfObject, Double)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetPerimeter_EpNet_IdfObject_">ExtensionMethods.GetPerimeter(IdfObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_ScaleWindow_EpNet_IdfObject_System_Double_">ExtensionMethods.ScaleWindow(IdfObject, Double)</a>
   </div>
   <div>
       <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetOutdoorAirFlow_EpNet_IdfObject_">ExtensionMethods.GetOutdoorAirFlow(IdfObject)</a>

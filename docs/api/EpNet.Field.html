@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Field
    ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -247,6 +247,96 @@
   </table>
   
   
+  <a id="EpNet_Field_ContainsIgnoreCase_" data-uid="EpNet.Field.ContainsIgnoreCase*"></a>
+  <h4 id="EpNet_Field_ContainsIgnoreCase_System_String_" data-uid="EpNet.Field.ContainsIgnoreCase(System.String)">ContainsIgnoreCase(String)</h4>
+  <div class="markdown level1 summary"><p>Returns a value indicating whether a specified substring occurs within the string value of the field. Case is ignored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsIgnoreCase(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Substring to be searched within the field.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if field contains substring. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Field_ContainsIgnoreCase_" data-uid="EpNet.Field.ContainsIgnoreCase*"></a>
+  <h4 id="EpNet_Field_ContainsIgnoreCase_System_String___" data-uid="EpNet.Field.ContainsIgnoreCase(System.String[])">ContainsIgnoreCase(String[])</h4>
+  <div class="markdown level1 summary"><p>Determines whether any of the specified substrings occurs within this string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsIgnoreCase(params string[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Search substrings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if current string contains search substring.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="EpNet_Field_EndsWith_" data-uid="EpNet.Field.EndsWith*"></a>
   <h4 id="EpNet_Field_EndsWith_System_String_" data-uid="EpNet.Field.EndsWith(System.String)">EndsWith(String)</h4>
   <div class="markdown level1 summary"><p>Determines whether the end of the string value of the field matches the specified substring.</p>
@@ -448,6 +538,51 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>true if the field is numeric; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Field_Match_" data-uid="EpNet.Field.Match*"></a>
+  <h4 id="EpNet_Field_Match_System_String_" data-uid="EpNet.Field.Match(System.String)">Match(String)</h4>
+  <div class="markdown level1 summary"><p>Returns the first IdfObject from the supplied class whose first field matches this field</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IdfObject Match(string idfClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idfClass</span></td>
+        <td><p>IdfClass to search for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><p>Matching idfobject</p>
 </td>
       </tr>
     </tbody>

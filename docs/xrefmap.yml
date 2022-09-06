@@ -41,6 +41,15 @@ references:
   commentId: M:EpNet.ExtensionMethods.ContainsIgnoreCase(System.String,System.String)
   fullName: EpNet.ExtensionMethods.ContainsIgnoreCase(System.String, System.String)
   nameWithType: ExtensionMethods.ContainsIgnoreCase(String, String)
+- uid: EpNet.ExtensionMethods.ContainsIgnoreCase(System.String,System.String[])
+  name: ContainsIgnoreCase(String, String[])
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_ContainsIgnoreCase_System_String_System_String___
+  commentId: M:EpNet.ExtensionMethods.ContainsIgnoreCase(System.String,System.String[])
+  name.vb: ContainsIgnoreCase(String, String())
+  fullName: EpNet.ExtensionMethods.ContainsIgnoreCase(System.String, System.String[])
+  fullName.vb: EpNet.ExtensionMethods.ContainsIgnoreCase(System.String, System.String())
+  nameWithType: ExtensionMethods.ContainsIgnoreCase(String, String[])
+  nameWithType.vb: ExtensionMethods.ContainsIgnoreCase(String, String())
 - uid: EpNet.ExtensionMethods.ContainsIgnoreCase*
   name: ContainsIgnoreCase
   href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_ContainsIgnoreCase_
@@ -61,24 +70,53 @@ references:
   isSpec: "True"
   fullName: EpNet.ExtensionMethods.EndsWithIgnoreCase
   nameWithType: ExtensionMethods.EndsWithIgnoreCase
-- uid: EpNet.ExtensionMethods.GetData(System.Collections.Generic.List{EpNet.IdfObject},System.Int32,System.Int32)
-  name: GetData(List<IdfObject>, Int32, Int32)
-  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData_System_Collections_Generic_List_EpNet_IdfObject__System_Int32_System_Int32_
-  commentId: M:EpNet.ExtensionMethods.GetData(System.Collections.Generic.List{EpNet.IdfObject},System.Int32,System.Int32)
-  name.vb: GetData(List(Of IdfObject), Int32, Int32)
-  fullName: EpNet.ExtensionMethods.GetData(System.Collections.Generic.List<EpNet.IdfObject>, System.Int32, System.Int32)
-  fullName.vb: EpNet.ExtensionMethods.GetData(System.Collections.Generic.List(Of EpNet.IdfObject), System.Int32, System.Int32)
-  nameWithType: ExtensionMethods.GetData(List<IdfObject>, Int32, Int32)
-  nameWithType.vb: ExtensionMethods.GetData(List(Of IdfObject), Int32, Int32)
-- uid: EpNet.ExtensionMethods.GetData(System.Collections.Generic.List{EpNet.IdfObject},System.String,System.String)
-  name: GetData(List<IdfObject>, String, String)
-  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData_System_Collections_Generic_List_EpNet_IdfObject__System_String_System_String_
-  commentId: M:EpNet.ExtensionMethods.GetData(System.Collections.Generic.List{EpNet.IdfObject},System.String,System.String)
-  name.vb: GetData(List(Of IdfObject), String, String)
-  fullName: EpNet.ExtensionMethods.GetData(System.Collections.Generic.List<EpNet.IdfObject>, System.String, System.String)
-  fullName.vb: EpNet.ExtensionMethods.GetData(System.Collections.Generic.List(Of EpNet.IdfObject), System.String, System.String)
-  nameWithType: ExtensionMethods.GetData(List<IdfObject>, String, String)
-  nameWithType.vb: ExtensionMethods.GetData(List(Of IdfObject), String, String)
+- uid: EpNet.ExtensionMethods.EqualsIgnoreCase(System.String,System.String)
+  name: EqualsIgnoreCase(String, String)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_EqualsIgnoreCase_System_String_System_String_
+  commentId: M:EpNet.ExtensionMethods.EqualsIgnoreCase(System.String,System.String)
+  fullName: EpNet.ExtensionMethods.EqualsIgnoreCase(System.String, System.String)
+  nameWithType: ExtensionMethods.EqualsIgnoreCase(String, String)
+- uid: EpNet.ExtensionMethods.EqualsIgnoreCase*
+  name: EqualsIgnoreCase
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_EqualsIgnoreCase_
+  commentId: Overload:EpNet.ExtensionMethods.EqualsIgnoreCase
+  isSpec: "True"
+  fullName: EpNet.ExtensionMethods.EqualsIgnoreCase
+  nameWithType: ExtensionMethods.EqualsIgnoreCase
+- uid: EpNet.ExtensionMethods.GetByName(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.String)
+  name: GetByName(IEnumerable<IdfObject>, String)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetByName_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_
+  commentId: M:EpNet.ExtensionMethods.GetByName(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.String)
+  name.vb: GetByName(IEnumerable(Of IdfObject), String)
+  fullName: EpNet.ExtensionMethods.GetByName(System.Collections.Generic.IEnumerable<EpNet.IdfObject>, System.String)
+  fullName.vb: EpNet.ExtensionMethods.GetByName(System.Collections.Generic.IEnumerable(Of EpNet.IdfObject), System.String)
+  nameWithType: ExtensionMethods.GetByName(IEnumerable<IdfObject>, String)
+  nameWithType.vb: ExtensionMethods.GetByName(IEnumerable(Of IdfObject), String)
+- uid: EpNet.ExtensionMethods.GetByName*
+  name: GetByName
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetByName_
+  commentId: Overload:EpNet.ExtensionMethods.GetByName
+  isSpec: "True"
+  fullName: EpNet.ExtensionMethods.GetByName
+  nameWithType: ExtensionMethods.GetByName
+- uid: EpNet.ExtensionMethods.GetData(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Int32,System.Int32)
+  name: GetData(IEnumerable<IdfObject>, Int32, Int32)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Int32_System_Int32_
+  commentId: M:EpNet.ExtensionMethods.GetData(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Int32,System.Int32)
+  name.vb: GetData(IEnumerable(Of IdfObject), Int32, Int32)
+  fullName: EpNet.ExtensionMethods.GetData(System.Collections.Generic.IEnumerable<EpNet.IdfObject>, System.Int32, System.Int32)
+  fullName.vb: EpNet.ExtensionMethods.GetData(System.Collections.Generic.IEnumerable(Of EpNet.IdfObject), System.Int32, System.Int32)
+  nameWithType: ExtensionMethods.GetData(IEnumerable<IdfObject>, Int32, Int32)
+  nameWithType.vb: ExtensionMethods.GetData(IEnumerable(Of IdfObject), Int32, Int32)
+- uid: EpNet.ExtensionMethods.GetData(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.String,System.String)
+  name: GetData(IEnumerable<IdfObject>, String, String)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_System_String_
+  commentId: M:EpNet.ExtensionMethods.GetData(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.String,System.String)
+  name.vb: GetData(IEnumerable(Of IdfObject), String, String)
+  fullName: EpNet.ExtensionMethods.GetData(System.Collections.Generic.IEnumerable<EpNet.IdfObject>, System.String, System.String)
+  fullName.vb: EpNet.ExtensionMethods.GetData(System.Collections.Generic.IEnumerable(Of EpNet.IdfObject), System.String, System.String)
+  nameWithType: ExtensionMethods.GetData(IEnumerable<IdfObject>, String, String)
+  nameWithType.vb: ExtensionMethods.GetData(IEnumerable(Of IdfObject), String, String)
 - uid: EpNet.ExtensionMethods.GetData*
   name: GetData
   href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData_
@@ -86,24 +124,46 @@ references:
   isSpec: "True"
   fullName: EpNet.ExtensionMethods.GetData
   nameWithType: ExtensionMethods.GetData
-- uid: EpNet.ExtensionMethods.GetData``1(System.Collections.Generic.List{EpNet.IdfObject},System.Int32,System.Int32)
-  name: GetData<T>(List<IdfObject>, Int32, Int32)
-  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_List_EpNet_IdfObject__System_Int32_System_Int32_
-  commentId: M:EpNet.ExtensionMethods.GetData``1(System.Collections.Generic.List{EpNet.IdfObject},System.Int32,System.Int32)
-  name.vb: GetData(Of T)(List(Of IdfObject), Int32, Int32)
-  fullName: EpNet.ExtensionMethods.GetData<T>(System.Collections.Generic.List<EpNet.IdfObject>, System.Int32, System.Int32)
-  fullName.vb: EpNet.ExtensionMethods.GetData(Of T)(System.Collections.Generic.List(Of EpNet.IdfObject), System.Int32, System.Int32)
-  nameWithType: ExtensionMethods.GetData<T>(List<IdfObject>, Int32, Int32)
-  nameWithType.vb: ExtensionMethods.GetData(Of T)(List(Of IdfObject), Int32, Int32)
-- uid: EpNet.ExtensionMethods.GetData``1(System.Collections.Generic.List{EpNet.IdfObject},System.String,System.String)
-  name: GetData<T>(List<IdfObject>, String, String)
-  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_List_EpNet_IdfObject__System_String_System_String_
-  commentId: M:EpNet.ExtensionMethods.GetData``1(System.Collections.Generic.List{EpNet.IdfObject},System.String,System.String)
-  name.vb: GetData(Of T)(List(Of IdfObject), String, String)
-  fullName: EpNet.ExtensionMethods.GetData<T>(System.Collections.Generic.List<EpNet.IdfObject>, System.String, System.String)
-  fullName.vb: EpNet.ExtensionMethods.GetData(Of T)(System.Collections.Generic.List(Of EpNet.IdfObject), System.String, System.String)
-  nameWithType: ExtensionMethods.GetData<T>(List<IdfObject>, String, String)
-  nameWithType.vb: ExtensionMethods.GetData(Of T)(List(Of IdfObject), String, String)
+- uid: EpNet.ExtensionMethods.GetData``1(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Int32,System.Int32)
+  name: GetData<T>(IEnumerable<IdfObject>, Int32, Int32)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Int32_System_Int32_
+  commentId: M:EpNet.ExtensionMethods.GetData``1(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Int32,System.Int32)
+  name.vb: GetData(Of T)(IEnumerable(Of IdfObject), Int32, Int32)
+  fullName: EpNet.ExtensionMethods.GetData<T>(System.Collections.Generic.IEnumerable<EpNet.IdfObject>, System.Int32, System.Int32)
+  fullName.vb: EpNet.ExtensionMethods.GetData(Of T)(System.Collections.Generic.IEnumerable(Of EpNet.IdfObject), System.Int32, System.Int32)
+  nameWithType: ExtensionMethods.GetData<T>(IEnumerable<IdfObject>, Int32, Int32)
+  nameWithType.vb: ExtensionMethods.GetData(Of T)(IEnumerable(Of IdfObject), Int32, Int32)
+- uid: EpNet.ExtensionMethods.GetData``1(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.String,System.String)
+  name: GetData<T>(IEnumerable<IdfObject>, String, String)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_System_String_
+  commentId: M:EpNet.ExtensionMethods.GetData``1(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.String,System.String)
+  name.vb: GetData(Of T)(IEnumerable(Of IdfObject), String, String)
+  fullName: EpNet.ExtensionMethods.GetData<T>(System.Collections.Generic.IEnumerable<EpNet.IdfObject>, System.String, System.String)
+  fullName.vb: EpNet.ExtensionMethods.GetData(Of T)(System.Collections.Generic.IEnumerable(Of EpNet.IdfObject), System.String, System.String)
+  nameWithType: ExtensionMethods.GetData<T>(IEnumerable<IdfObject>, String, String)
+  nameWithType.vb: ExtensionMethods.GetData(Of T)(IEnumerable(Of IdfObject), String, String)
+- uid: EpNet.ExtensionMethods.OR(System.Boolean,System.Boolean)
+  name: OR(Boolean, Boolean)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_OR_System_Boolean_System_Boolean_
+  commentId: M:EpNet.ExtensionMethods.OR(System.Boolean,System.Boolean)
+  fullName: EpNet.ExtensionMethods.OR(System.Boolean, System.Boolean)
+  nameWithType: ExtensionMethods.OR(Boolean, Boolean)
+- uid: EpNet.ExtensionMethods.OR(System.Collections.Generic.IEnumerable{System.Boolean})
+  name: OR(IEnumerable<Boolean>)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_OR_System_Collections_Generic_IEnumerable_System_Boolean__
+  commentId: M:EpNet.ExtensionMethods.OR(System.Collections.Generic.IEnumerable{System.Boolean})
+  name.vb: OR(IEnumerable(Of Boolean))
+  fullName: EpNet.ExtensionMethods.OR(System.Collections.Generic.IEnumerable<System.Boolean>)
+  fullName.vb: EpNet.ExtensionMethods.OR(System.Collections.Generic.IEnumerable(Of System.Boolean))
+  nameWithType: ExtensionMethods.OR(IEnumerable<Boolean>)
+  nameWithType.vb: ExtensionMethods.OR(IEnumerable(Of Boolean))
+- uid: EpNet.ExtensionMethods.OR*
+  name: OR
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_OR_
+  commentId: Overload:EpNet.ExtensionMethods.OR
+  isSpec: "True"
+  fullName: EpNet.ExtensionMethods.OR
+  nameWithType: ExtensionMethods.OR
 - uid: EpNet.ExtensionMethods.StartsWithIgnoreCase(System.String,System.String)
   name: StartsWithIgnoreCase(String, String)
   href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_StartsWithIgnoreCase_System_String_System_String_
@@ -168,6 +228,49 @@ references:
   isSpec: "True"
   fullName: EpNet.ExtensionMethods.TrimFromEnd
   nameWithType: ExtensionMethods.TrimFromEnd
+- uid: EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Collections.Generic.Dictionary{System.String,System.Double},System.Int32,System.Int32)
+  name: Update(IEnumerable<IdfObject>, Dictionary<String, Double>, Int32, Int32)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_Double__System_Int32_System_Int32_
+  commentId: M:EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Collections.Generic.Dictionary{System.String,System.Double},System.Int32,System.Int32)
+  name.vb: Update(IEnumerable(Of IdfObject), Dictionary(Of String, Double), Int32, Int32)
+  fullName: EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable<EpNet.IdfObject>, System.Collections.Generic.Dictionary<System.String, System.Double>, System.Int32, System.Int32)
+  fullName.vb: EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable(Of EpNet.IdfObject), System.Collections.Generic.Dictionary(Of System.String, System.Double), System.Int32, System.Int32)
+  nameWithType: ExtensionMethods.Update(IEnumerable<IdfObject>, Dictionary<String, Double>, Int32, Int32)
+  nameWithType.vb: ExtensionMethods.Update(IEnumerable(Of IdfObject), Dictionary(Of String, Double), Int32, Int32)
+- uid: EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Collections.Generic.Dictionary{System.String,System.Double},System.String,System.String)
+  name: Update(IEnumerable<IdfObject>, Dictionary<String, Double>, String, String)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_Double__System_String_System_String_
+  commentId: M:EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Collections.Generic.Dictionary{System.String,System.Double},System.String,System.String)
+  name.vb: Update(IEnumerable(Of IdfObject), Dictionary(Of String, Double), String, String)
+  fullName: EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable<EpNet.IdfObject>, System.Collections.Generic.Dictionary<System.String, System.Double>, System.String, System.String)
+  fullName.vb: EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable(Of EpNet.IdfObject), System.Collections.Generic.Dictionary(Of System.String, System.Double), System.String, System.String)
+  nameWithType: ExtensionMethods.Update(IEnumerable<IdfObject>, Dictionary<String, Double>, String, String)
+  nameWithType.vb: ExtensionMethods.Update(IEnumerable(Of IdfObject), Dictionary(Of String, Double), String, String)
+- uid: EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,System.Int32)
+  name: Update(IEnumerable<IdfObject>, Dictionary<String, String>, Int32, Int32)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_String__System_Int32_System_Int32_
+  commentId: M:EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,System.Int32)
+  name.vb: Update(IEnumerable(Of IdfObject), Dictionary(Of String, String), Int32, Int32)
+  fullName: EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable<EpNet.IdfObject>, System.Collections.Generic.Dictionary<System.String, System.String>, System.Int32, System.Int32)
+  fullName.vb: EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable(Of EpNet.IdfObject), System.Collections.Generic.Dictionary(Of System.String, System.String), System.Int32, System.Int32)
+  nameWithType: ExtensionMethods.Update(IEnumerable<IdfObject>, Dictionary<String, String>, Int32, Int32)
+  nameWithType.vb: ExtensionMethods.Update(IEnumerable(Of IdfObject), Dictionary(Of String, String), Int32, Int32)
+- uid: EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.String)
+  name: Update(IEnumerable<IdfObject>, Dictionary<String, String>, String, String)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_String__System_String_System_String_
+  commentId: M:EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.String)
+  name.vb: Update(IEnumerable(Of IdfObject), Dictionary(Of String, String), String, String)
+  fullName: EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable<EpNet.IdfObject>, System.Collections.Generic.Dictionary<System.String, System.String>, System.String, System.String)
+  fullName.vb: EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable(Of EpNet.IdfObject), System.Collections.Generic.Dictionary(Of System.String, System.String), System.String, System.String)
+  nameWithType: ExtensionMethods.Update(IEnumerable<IdfObject>, Dictionary<String, String>, String, String)
+  nameWithType.vb: ExtensionMethods.Update(IEnumerable(Of IdfObject), Dictionary(Of String, String), String, String)
+- uid: EpNet.ExtensionMethods.Update*
+  name: Update
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_
+  commentId: Overload:EpNet.ExtensionMethods.Update
+  isSpec: "True"
+  fullName: EpNet.ExtensionMethods.Update
+  nameWithType: ExtensionMethods.Update
 - uid: EpNet.Field
   name: Field
   href: api/EpNet.Field.html
@@ -200,6 +303,28 @@ references:
   isSpec: "True"
   fullName: EpNet.Field.Contains
   nameWithType: Field.Contains
+- uid: EpNet.Field.ContainsIgnoreCase(System.String)
+  name: ContainsIgnoreCase(String)
+  href: api/EpNet.Field.html#EpNet_Field_ContainsIgnoreCase_System_String_
+  commentId: M:EpNet.Field.ContainsIgnoreCase(System.String)
+  fullName: EpNet.Field.ContainsIgnoreCase(System.String)
+  nameWithType: Field.ContainsIgnoreCase(String)
+- uid: EpNet.Field.ContainsIgnoreCase(System.String[])
+  name: ContainsIgnoreCase(String[])
+  href: api/EpNet.Field.html#EpNet_Field_ContainsIgnoreCase_System_String___
+  commentId: M:EpNet.Field.ContainsIgnoreCase(System.String[])
+  name.vb: ContainsIgnoreCase(String())
+  fullName: EpNet.Field.ContainsIgnoreCase(System.String[])
+  fullName.vb: EpNet.Field.ContainsIgnoreCase(System.String())
+  nameWithType: Field.ContainsIgnoreCase(String[])
+  nameWithType.vb: Field.ContainsIgnoreCase(String())
+- uid: EpNet.Field.ContainsIgnoreCase*
+  name: ContainsIgnoreCase
+  href: api/EpNet.Field.html#EpNet_Field_ContainsIgnoreCase_
+  commentId: Overload:EpNet.Field.ContainsIgnoreCase
+  isSpec: "True"
+  fullName: EpNet.Field.ContainsIgnoreCase
+  nameWithType: Field.ContainsIgnoreCase
 - uid: EpNet.Field.EndsWith(System.String)
   name: EndsWith(String)
   href: api/EpNet.Field.html#EpNet_Field_EndsWith_System_String_
@@ -251,6 +376,19 @@ references:
   isSpec: "True"
   fullName: EpNet.Field.IsNumber
   nameWithType: Field.IsNumber
+- uid: EpNet.Field.Match(System.String)
+  name: Match(String)
+  href: api/EpNet.Field.html#EpNet_Field_Match_System_String_
+  commentId: M:EpNet.Field.Match(System.String)
+  fullName: EpNet.Field.Match(System.String)
+  nameWithType: Field.Match(String)
+- uid: EpNet.Field.Match*
+  name: Match
+  href: api/EpNet.Field.html#EpNet_Field_Match_
+  commentId: Overload:EpNet.Field.Match
+  isSpec: "True"
+  fullName: EpNet.Field.Match
+  nameWithType: Field.Match
 - uid: EpNet.Field.Number
   name: Number
   href: api/EpNet.Field.html#EpNet_Field_Number
@@ -378,12 +516,15 @@ references:
   isSpec: "True"
   fullName: EpNet.Helpers.ExtensionMethods.CleanSchedules
   nameWithType: ExtensionMethods.CleanSchedules
-- uid: EpNet.Helpers.ExtensionMethods.GenerateScheduleViews(EpNet.IdfReader,System.Boolean)
-  name: GenerateScheduleViews(IdfReader, Boolean)
-  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GenerateScheduleViews_EpNet_IdfReader_System_Boolean_
-  commentId: M:EpNet.Helpers.ExtensionMethods.GenerateScheduleViews(EpNet.IdfReader,System.Boolean)
-  fullName: EpNet.Helpers.ExtensionMethods.GenerateScheduleViews(EpNet.IdfReader, System.Boolean)
-  nameWithType: ExtensionMethods.GenerateScheduleViews(IdfReader, Boolean)
+- uid: EpNet.Helpers.ExtensionMethods.GenerateScheduleViews(EpNet.IdfReader,System.Boolean,System.String[])
+  name: GenerateScheduleViews(IdfReader, Boolean, String[])
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GenerateScheduleViews_EpNet_IdfReader_System_Boolean_System_String___
+  commentId: M:EpNet.Helpers.ExtensionMethods.GenerateScheduleViews(EpNet.IdfReader,System.Boolean,System.String[])
+  name.vb: GenerateScheduleViews(IdfReader, Boolean, String())
+  fullName: EpNet.Helpers.ExtensionMethods.GenerateScheduleViews(EpNet.IdfReader, System.Boolean, System.String[])
+  fullName.vb: EpNet.Helpers.ExtensionMethods.GenerateScheduleViews(EpNet.IdfReader, System.Boolean, System.String())
+  nameWithType: ExtensionMethods.GenerateScheduleViews(IdfReader, Boolean, String[])
+  nameWithType.vb: ExtensionMethods.GenerateScheduleViews(IdfReader, Boolean, String())
 - uid: EpNet.Helpers.ExtensionMethods.GenerateScheduleViews*
   name: GenerateScheduleViews
   href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GenerateScheduleViews_
@@ -443,6 +584,45 @@ references:
   isSpec: "True"
   fullName: EpNet.Helpers.ExtensionMethods.GetHeight
   nameWithType: ExtensionMethods.GetHeight
+- uid: EpNet.Helpers.ExtensionMethods.GetInsulationResistance(EpNet.IdfObject)
+  name: GetInsulationResistance(IdfObject)
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetInsulationResistance_EpNet_IdfObject_
+  commentId: M:EpNet.Helpers.ExtensionMethods.GetInsulationResistance(EpNet.IdfObject)
+  fullName: EpNet.Helpers.ExtensionMethods.GetInsulationResistance(EpNet.IdfObject)
+  nameWithType: ExtensionMethods.GetInsulationResistance(IdfObject)
+- uid: EpNet.Helpers.ExtensionMethods.GetInsulationResistance*
+  name: GetInsulationResistance
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetInsulationResistance_
+  commentId: Overload:EpNet.Helpers.ExtensionMethods.GetInsulationResistance
+  isSpec: "True"
+  fullName: EpNet.Helpers.ExtensionMethods.GetInsulationResistance
+  nameWithType: ExtensionMethods.GetInsulationResistance
+- uid: EpNet.Helpers.ExtensionMethods.GetMaxZ(EpNet.IdfObject)
+  name: GetMaxZ(IdfObject)
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetMaxZ_EpNet_IdfObject_
+  commentId: M:EpNet.Helpers.ExtensionMethods.GetMaxZ(EpNet.IdfObject)
+  fullName: EpNet.Helpers.ExtensionMethods.GetMaxZ(EpNet.IdfObject)
+  nameWithType: ExtensionMethods.GetMaxZ(IdfObject)
+- uid: EpNet.Helpers.ExtensionMethods.GetMaxZ*
+  name: GetMaxZ
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetMaxZ_
+  commentId: Overload:EpNet.Helpers.ExtensionMethods.GetMaxZ
+  isSpec: "True"
+  fullName: EpNet.Helpers.ExtensionMethods.GetMaxZ
+  nameWithType: ExtensionMethods.GetMaxZ
+- uid: EpNet.Helpers.ExtensionMethods.GetMinZ(EpNet.IdfObject)
+  name: GetMinZ(IdfObject)
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetMinZ_EpNet_IdfObject_
+  commentId: M:EpNet.Helpers.ExtensionMethods.GetMinZ(EpNet.IdfObject)
+  fullName: EpNet.Helpers.ExtensionMethods.GetMinZ(EpNet.IdfObject)
+  nameWithType: ExtensionMethods.GetMinZ(IdfObject)
+- uid: EpNet.Helpers.ExtensionMethods.GetMinZ*
+  name: GetMinZ
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetMinZ_
+  commentId: Overload:EpNet.Helpers.ExtensionMethods.GetMinZ
+  isSpec: "True"
+  fullName: EpNet.Helpers.ExtensionMethods.GetMinZ
+  nameWithType: ExtensionMethods.GetMinZ
 - uid: EpNet.Helpers.ExtensionMethods.GetNetArea(EpNet.IdfObject)
   name: GetNetArea(IdfObject)
   href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetNetArea_EpNet_IdfObject_
@@ -482,6 +662,19 @@ references:
   isSpec: "True"
   fullName: EpNet.Helpers.ExtensionMethods.GetOrientation
   nameWithType: ExtensionMethods.GetOrientation
+- uid: EpNet.Helpers.ExtensionMethods.GetOrientationCTE(EpNet.IdfObject)
+  name: GetOrientationCTE(IdfObject)
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetOrientationCTE_EpNet_IdfObject_
+  commentId: M:EpNet.Helpers.ExtensionMethods.GetOrientationCTE(EpNet.IdfObject)
+  fullName: EpNet.Helpers.ExtensionMethods.GetOrientationCTE(EpNet.IdfObject)
+  nameWithType: ExtensionMethods.GetOrientationCTE(IdfObject)
+- uid: EpNet.Helpers.ExtensionMethods.GetOrientationCTE*
+  name: GetOrientationCTE
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetOrientationCTE_
+  commentId: Overload:EpNet.Helpers.ExtensionMethods.GetOrientationCTE
+  isSpec: "True"
+  fullName: EpNet.Helpers.ExtensionMethods.GetOrientationCTE
+  nameWithType: ExtensionMethods.GetOrientationCTE
 - uid: EpNet.Helpers.ExtensionMethods.GetOutdoorAirFlow(EpNet.IdfObject)
   name: GetOutdoorAirFlow(IdfObject)
   href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetOutdoorAirFlow_EpNet_IdfObject_
@@ -495,6 +688,32 @@ references:
   isSpec: "True"
   fullName: EpNet.Helpers.ExtensionMethods.GetOutdoorAirFlow
   nameWithType: ExtensionMethods.GetOutdoorAirFlow
+- uid: EpNet.Helpers.ExtensionMethods.GetPerimeter(EpNet.IdfObject)
+  name: GetPerimeter(IdfObject)
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetPerimeter_EpNet_IdfObject_
+  commentId: M:EpNet.Helpers.ExtensionMethods.GetPerimeter(EpNet.IdfObject)
+  fullName: EpNet.Helpers.ExtensionMethods.GetPerimeter(EpNet.IdfObject)
+  nameWithType: ExtensionMethods.GetPerimeter(IdfObject)
+- uid: EpNet.Helpers.ExtensionMethods.GetPerimeter*
+  name: GetPerimeter
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetPerimeter_
+  commentId: Overload:EpNet.Helpers.ExtensionMethods.GetPerimeter
+  isSpec: "True"
+  fullName: EpNet.Helpers.ExtensionMethods.GetPerimeter
+  nameWithType: ExtensionMethods.GetPerimeter
+- uid: EpNet.Helpers.ExtensionMethods.GetPerimeterAt(EpNet.IdfObject,System.Double)
+  name: GetPerimeterAt(IdfObject, Double)
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetPerimeterAt_EpNet_IdfObject_System_Double_
+  commentId: M:EpNet.Helpers.ExtensionMethods.GetPerimeterAt(EpNet.IdfObject,System.Double)
+  fullName: EpNet.Helpers.ExtensionMethods.GetPerimeterAt(EpNet.IdfObject, System.Double)
+  nameWithType: ExtensionMethods.GetPerimeterAt(IdfObject, Double)
+- uid: EpNet.Helpers.ExtensionMethods.GetPerimeterAt*
+  name: GetPerimeterAt
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetPerimeterAt_
+  commentId: Overload:EpNet.Helpers.ExtensionMethods.GetPerimeterAt
+  isSpec: "True"
+  fullName: EpNet.Helpers.ExtensionMethods.GetPerimeterAt
+  nameWithType: ExtensionMethods.GetPerimeterAt
 - uid: EpNet.Helpers.ExtensionMethods.GetResistance(EpNet.IdfObject)
   name: GetResistance(IdfObject)
   href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetResistance_EpNet_IdfObject_
@@ -547,6 +766,19 @@ references:
   isSpec: "True"
   fullName: EpNet.Helpers.ExtensionMethods.GetZoneAirLoop
   nameWithType: ExtensionMethods.GetZoneAirLoop
+- uid: EpNet.Helpers.ExtensionMethods.ScaleWindow(EpNet.IdfObject,System.Double)
+  name: ScaleWindow(IdfObject, Double)
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_ScaleWindow_EpNet_IdfObject_System_Double_
+  commentId: M:EpNet.Helpers.ExtensionMethods.ScaleWindow(EpNet.IdfObject,System.Double)
+  fullName: EpNet.Helpers.ExtensionMethods.ScaleWindow(EpNet.IdfObject, System.Double)
+  nameWithType: ExtensionMethods.ScaleWindow(IdfObject, Double)
+- uid: EpNet.Helpers.ExtensionMethods.ScaleWindow*
+  name: ScaleWindow
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_ScaleWindow_
+  commentId: Overload:EpNet.Helpers.ExtensionMethods.ScaleWindow
+  isSpec: "True"
+  fullName: EpNet.Helpers.ExtensionMethods.ScaleWindow
+  nameWithType: ExtensionMethods.ScaleWindow
 - uid: EpNet.Idd
   name: Idd
   href: api/EpNet.Idd.html
@@ -578,6 +810,15 @@ references:
   commentId: M:EpNet.IdfObject.#ctor
   fullName: EpNet.IdfObject.IdfObject()
   nameWithType: IdfObject.IdfObject()
+- uid: EpNet.IdfObject.#ctor(System.Collections.Generic.IEnumerable{System.String})
+  name: IdfObject(IEnumerable<String>)
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject__ctor_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:EpNet.IdfObject.#ctor(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: IdfObject(IEnumerable(Of String))
+  fullName: EpNet.IdfObject.IdfObject(System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: EpNet.IdfObject.IdfObject(System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: IdfObject.IdfObject(IEnumerable<String>)
+  nameWithType.vb: IdfObject.IdfObject(IEnumerable(Of String))
 - uid: EpNet.IdfObject.#ctor(System.String[])
   name: IdfObject(String[])
   href: api/EpNet.IdfObject.html#EpNet_IdfObject__ctor_System_String___
@@ -649,6 +890,19 @@ references:
   isSpec: "True"
   fullName: EpNet.IdfObject.Comments
   nameWithType: IdfObject.Comments
+- uid: EpNet.IdfObject.ContainsValue(System.String)
+  name: ContainsValue(String)
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_ContainsValue_System_String_
+  commentId: M:EpNet.IdfObject.ContainsValue(System.String)
+  fullName: EpNet.IdfObject.ContainsValue(System.String)
+  nameWithType: IdfObject.ContainsValue(String)
+- uid: EpNet.IdfObject.ContainsValue*
+  name: ContainsValue
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_ContainsValue_
+  commentId: Overload:EpNet.IdfObject.ContainsValue
+  isSpec: "True"
+  fullName: EpNet.IdfObject.ContainsValue
+  nameWithType: IdfObject.ContainsValue
 - uid: EpNet.IdfObject.Count
   name: Count
   href: api/EpNet.IdfObject.html#EpNet_IdfObject_Count
@@ -781,6 +1035,19 @@ references:
   isSpec: "True"
   fullName: EpNet.IdfObject.Item
   nameWithType: IdfObject.Item
+- uid: EpNet.IdfObject.Name
+  name: Name
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_Name
+  commentId: P:EpNet.IdfObject.Name
+  fullName: EpNet.IdfObject.Name
+  nameWithType: IdfObject.Name
+- uid: EpNet.IdfObject.Name*
+  name: Name
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_Name_
+  commentId: Overload:EpNet.IdfObject.Name
+  isSpec: "True"
+  fullName: EpNet.IdfObject.Name
+  nameWithType: IdfObject.Name
 - uid: EpNet.IdfObject.op_Equality(EpNet.IdfObject,EpNet.IdfObject)
   name: Equality(IdfObject, IdfObject)
   href: api/EpNet.IdfObject.html#EpNet_IdfObject_op_Equality_EpNet_IdfObject_EpNet_IdfObject_
@@ -878,6 +1145,19 @@ references:
   isSpec: "True"
   fullName: EpNet.IdfObject.ToString
   nameWithType: IdfObject.ToString
+- uid: EpNet.IdfObject.Values(System.Int32,System.Int32,System.Int32)
+  name: Values(Int32, Int32, Int32)
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_Values_System_Int32_System_Int32_System_Int32_
+  commentId: M:EpNet.IdfObject.Values(System.Int32,System.Int32,System.Int32)
+  fullName: EpNet.IdfObject.Values(System.Int32, System.Int32, System.Int32)
+  nameWithType: IdfObject.Values(Int32, Int32, Int32)
+- uid: EpNet.IdfObject.Values*
+  name: Values
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_Values_
+  commentId: Overload:EpNet.IdfObject.Values
+  isSpec: "True"
+  fullName: EpNet.IdfObject.Values
+  nameWithType: IdfObject.Values
 - uid: EpNet.IdfReader
   name: IdfReader
   href: api/EpNet.IdfReader.html
@@ -915,6 +1195,25 @@ references:
   isSpec: "True"
   fullName: EpNet.IdfReader.IdfReader
   nameWithType: IdfReader.IdfReader
+- uid: EpNet.IdfReader.AddKPI(DB.Api.Site,System.String,System.String)
+  name: AddKPI(Site, String, String)
+  href: api/EpNet.IdfReader.html#EpNet_IdfReader_AddKPI_DB_Api_Site_System_String_System_String_
+  commentId: M:EpNet.IdfReader.AddKPI(DB.Api.Site,System.String,System.String)
+  fullName: EpNet.IdfReader.AddKPI(DB.Api.Site, System.String, System.String)
+  nameWithType: IdfReader.AddKPI(Site, String, String)
+- uid: EpNet.IdfReader.AddKPI*
+  name: AddKPI
+  href: api/EpNet.IdfReader.html#EpNet_IdfReader_AddKPI_
+  commentId: Overload:EpNet.IdfReader.AddKPI
+  isSpec: "True"
+  fullName: EpNet.IdfReader.AddKPI
+  nameWithType: IdfReader.AddKPI
+- uid: EpNet.IdfReader.Clone
+  name: Clone()
+  href: api/EpNet.IdfReader.html#EpNet_IdfReader_Clone
+  commentId: M:EpNet.IdfReader.Clone
+  fullName: EpNet.IdfReader.Clone()
+  nameWithType: IdfReader.Clone()
 - uid: EpNet.IdfReader.Clone(EpNet.IdfObject)
   name: Clone(IdfObject)
   href: api/EpNet.IdfReader.html#EpNet_IdfReader_Clone_EpNet_IdfObject_
@@ -967,6 +1266,19 @@ references:
   isSpec: "True"
   fullName: EpNet.IdfReader.DsbPath
   nameWithType: IdfReader.DsbPath
+- uid: EpNet.IdfReader.EnergyPlusPath
+  name: EnergyPlusPath
+  href: api/EpNet.IdfReader.html#EpNet_IdfReader_EnergyPlusPath
+  commentId: P:EpNet.IdfReader.EnergyPlusPath
+  fullName: EpNet.IdfReader.EnergyPlusPath
+  nameWithType: IdfReader.EnergyPlusPath
+- uid: EpNet.IdfReader.EnergyPlusPath*
+  name: EnergyPlusPath
+  href: api/EpNet.IdfReader.html#EpNet_IdfReader_EnergyPlusPath_
+  commentId: Overload:EpNet.IdfReader.EnergyPlusPath
+  isSpec: "True"
+  fullName: EpNet.IdfReader.EnergyPlusPath
+  nameWithType: IdfReader.EnergyPlusPath
 - uid: EpNet.IdfReader.GetVariable(System.String)
   name: GetVariable(String)
   href: api/EpNet.IdfReader.html#EpNet_IdfReader_GetVariable_System_String_
@@ -1006,6 +1318,19 @@ references:
   isSpec: "True"
   fullName: EpNet.IdfReader.Idf
   nameWithType: IdfReader.Idf
+- uid: EpNet.IdfReader.IdfEncoding
+  name: IdfEncoding
+  href: api/EpNet.IdfReader.html#EpNet_IdfReader_IdfEncoding
+  commentId: P:EpNet.IdfReader.IdfEncoding
+  fullName: EpNet.IdfReader.IdfEncoding
+  nameWithType: IdfReader.IdfEncoding
+- uid: EpNet.IdfReader.IdfEncoding*
+  name: IdfEncoding
+  href: api/EpNet.IdfReader.html#EpNet_IdfReader_IdfEncoding_
+  commentId: Overload:EpNet.IdfReader.IdfEncoding
+  isSpec: "True"
+  fullName: EpNet.IdfReader.IdfEncoding
+  nameWithType: IdfReader.IdfEncoding
 - uid: EpNet.IdfReader.IdfPath
   name: IdfPath
   href: api/EpNet.IdfReader.html#EpNet_IdfReader_IdfPath
@@ -1028,6 +1353,15 @@ references:
   fullName.vb: EpNet.IdfReader.Item(System.String)
   nameWithType: IdfReader.Item[String]
   nameWithType.vb: IdfReader.Item(String)
+- uid: EpNet.IdfReader.Item(System.String[])
+  name: Item[String[]]
+  href: api/EpNet.IdfReader.html#EpNet_IdfReader_Item_System_String___
+  commentId: P:EpNet.IdfReader.Item(System.String[])
+  name.vb: Item(String())
+  fullName: EpNet.IdfReader.Item[System.String[]]
+  fullName.vb: EpNet.IdfReader.Item(System.String())
+  nameWithType: IdfReader.Item[String[]]
+  nameWithType.vb: IdfReader.Item(String())
 - uid: EpNet.IdfReader.Item*
   name: Item
   href: api/EpNet.IdfReader.html#EpNet_IdfReader_Item_
@@ -1041,6 +1375,15 @@ references:
   commentId: M:EpNet.IdfReader.Load(System.String)
   fullName: EpNet.IdfReader.Load(System.String)
   nameWithType: IdfReader.Load(String)
+- uid: EpNet.IdfReader.Load(System.String[])
+  name: Load(String[])
+  href: api/EpNet.IdfReader.html#EpNet_IdfReader_Load_System_String___
+  commentId: M:EpNet.IdfReader.Load(System.String[])
+  name.vb: Load(String())
+  fullName: EpNet.IdfReader.Load(System.String[])
+  fullName.vb: EpNet.IdfReader.Load(System.String())
+  nameWithType: IdfReader.Load(String[])
+  nameWithType.vb: IdfReader.Load(String())
 - uid: EpNet.IdfReader.Load*
   name: Load
   href: api/EpNet.IdfReader.html#EpNet_IdfReader_Load_
@@ -1440,241 +1783,6 @@ references:
   isSpec: "True"
   fullName: EpNet.LEED.SystemProperties.Type
   nameWithType: SystemProperties.Type
-- uid: EpNet.Library.Library
-  name: EpNet.Library.Library
-  href: api/EpNet.Library.Library.html
-  commentId: N:EpNet.Library.Library
-  fullName: EpNet.Library.Library
-  nameWithType: EpNet.Library.Library
-- uid: EpNet.Library.Library.Library
-  name: Library
-  href: api/EpNet.Library.Library.Library.html
-  commentId: T:EpNet.Library.Library.Library
-  fullName: EpNet.Library.Library.Library
-  nameWithType: Library
-- uid: EpNet.Library.Library.Library.BaselineRotation(EpNet.IdfReader)
-  name: BaselineRotation(IdfReader)
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_BaselineRotation_EpNet_IdfReader_
-  commentId: M:EpNet.Library.Library.Library.BaselineRotation(EpNet.IdfReader)
-  fullName: EpNet.Library.Library.Library.BaselineRotation(EpNet.IdfReader)
-  nameWithType: Library.BaselineRotation(IdfReader)
-- uid: EpNet.Library.Library.Library.BaselineRotation*
-  name: BaselineRotation
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_BaselineRotation_
-  commentId: Overload:EpNet.Library.Library.Library.BaselineRotation
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.BaselineRotation
-  nameWithType: Library.BaselineRotation
-- uid: EpNet.Library.Library.Library.CO2WindowControl(EpNet.IdfReader,System.Func{EpNet.IdfObject,System.Boolean},System.Double,System.Boolean)
-  name: CO2WindowControl(IdfReader, Func<IdfObject, Boolean>, Double, Boolean)
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_CO2WindowControl_EpNet_IdfReader_System_Func_EpNet_IdfObject_System_Boolean__System_Double_System_Boolean_
-  commentId: M:EpNet.Library.Library.Library.CO2WindowControl(EpNet.IdfReader,System.Func{EpNet.IdfObject,System.Boolean},System.Double,System.Boolean)
-  name.vb: CO2WindowControl(IdfReader, Func(Of IdfObject, Boolean), Double, Boolean)
-  fullName: EpNet.Library.Library.Library.CO2WindowControl(EpNet.IdfReader, System.Func<EpNet.IdfObject, System.Boolean>, System.Double, System.Boolean)
-  fullName.vb: EpNet.Library.Library.Library.CO2WindowControl(EpNet.IdfReader, System.Func(Of EpNet.IdfObject, System.Boolean), System.Double, System.Boolean)
-  nameWithType: Library.CO2WindowControl(IdfReader, Func<IdfObject, Boolean>, Double, Boolean)
-  nameWithType.vb: Library.CO2WindowControl(IdfReader, Func(Of IdfObject, Boolean), Double, Boolean)
-- uid: EpNet.Library.Library.Library.CO2WindowControl*
-  name: CO2WindowControl
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_CO2WindowControl_
-  commentId: Overload:EpNet.Library.Library.Library.CO2WindowControl
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.CO2WindowControl
-  nameWithType: Library.CO2WindowControl
-- uid: EpNet.Library.Library.Library.CoilSize(EpNet.IdfReader,System.String,System.Double,System.Double)
-  name: CoilSize(IdfReader, String, Double, Double)
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_CoilSize_EpNet_IdfReader_System_String_System_Double_System_Double_
-  commentId: M:EpNet.Library.Library.Library.CoilSize(EpNet.IdfReader,System.String,System.Double,System.Double)
-  fullName: EpNet.Library.Library.Library.CoilSize(EpNet.IdfReader, System.String, System.Double, System.Double)
-  nameWithType: Library.CoilSize(IdfReader, String, Double, Double)
-- uid: EpNet.Library.Library.Library.CoilSize*
-  name: CoilSize
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_CoilSize_
-  commentId: Overload:EpNet.Library.Library.Library.CoilSize
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.CoilSize
-  nameWithType: Library.CoilSize
-- uid: EpNet.Library.Library.Library.FreeCoolingDOAS(EpNet.IdfReader,System.String[])
-  name: FreeCoolingDOAS(IdfReader, String[])
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_FreeCoolingDOAS_EpNet_IdfReader_System_String___
-  commentId: M:EpNet.Library.Library.Library.FreeCoolingDOAS(EpNet.IdfReader,System.String[])
-  name.vb: FreeCoolingDOAS(IdfReader, String())
-  fullName: EpNet.Library.Library.Library.FreeCoolingDOAS(EpNet.IdfReader, System.String[])
-  fullName.vb: EpNet.Library.Library.Library.FreeCoolingDOAS(EpNet.IdfReader, System.String())
-  nameWithType: Library.FreeCoolingDOAS(IdfReader, String[])
-  nameWithType.vb: Library.FreeCoolingDOAS(IdfReader, String())
-- uid: EpNet.Library.Library.Library.FreeCoolingDOAS*
-  name: FreeCoolingDOAS
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_FreeCoolingDOAS_
-  commentId: Overload:EpNet.Library.Library.Library.FreeCoolingDOAS
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.FreeCoolingDOAS
-  nameWithType: Library.FreeCoolingDOAS
-- uid: EpNet.Library.Library.Library.FreeCoolingMixedAir(EpNet.IdfReader,System.Boolean,System.String[])
-  name: FreeCoolingMixedAir(IdfReader, Boolean, String[])
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_FreeCoolingMixedAir_EpNet_IdfReader_System_Boolean_System_String___
-  commentId: M:EpNet.Library.Library.Library.FreeCoolingMixedAir(EpNet.IdfReader,System.Boolean,System.String[])
-  name.vb: FreeCoolingMixedAir(IdfReader, Boolean, String())
-  fullName: EpNet.Library.Library.Library.FreeCoolingMixedAir(EpNet.IdfReader, System.Boolean, System.String[])
-  fullName.vb: EpNet.Library.Library.Library.FreeCoolingMixedAir(EpNet.IdfReader, System.Boolean, System.String())
-  nameWithType: Library.FreeCoolingMixedAir(IdfReader, Boolean, String[])
-  nameWithType.vb: Library.FreeCoolingMixedAir(IdfReader, Boolean, String())
-- uid: EpNet.Library.Library.Library.FreeCoolingMixedAir*
-  name: FreeCoolingMixedAir
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_FreeCoolingMixedAir_
-  commentId: Overload:EpNet.Library.Library.Library.FreeCoolingMixedAir
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.FreeCoolingMixedAir
-  nameWithType: Library.FreeCoolingMixedAir
-- uid: EpNet.Library.Library.Library.IsBaseline(EpNet.IdfReader)
-  name: IsBaseline(IdfReader)
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_IsBaseline_EpNet_IdfReader_
-  commentId: M:EpNet.Library.Library.Library.IsBaseline(EpNet.IdfReader)
-  fullName: EpNet.Library.Library.Library.IsBaseline(EpNet.IdfReader)
-  nameWithType: Library.IsBaseline(IdfReader)
-- uid: EpNet.Library.Library.Library.IsBaseline*
-  name: IsBaseline
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_IsBaseline_
-  commentId: Overload:EpNet.Library.Library.Library.IsBaseline
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.IsBaseline
-  nameWithType: Library.IsBaseline
-- uid: EpNet.Library.Library.Library.OutdoorAirFromZone(EpNet.IdfReader,System.String,System.String[])
-  name: OutdoorAirFromZone(IdfReader, String, String[])
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_OutdoorAirFromZone_EpNet_IdfReader_System_String_System_String___
-  commentId: M:EpNet.Library.Library.Library.OutdoorAirFromZone(EpNet.IdfReader,System.String,System.String[])
-  name.vb: OutdoorAirFromZone(IdfReader, String, String())
-  fullName: EpNet.Library.Library.Library.OutdoorAirFromZone(EpNet.IdfReader, System.String, System.String[])
-  fullName.vb: EpNet.Library.Library.Library.OutdoorAirFromZone(EpNet.IdfReader, System.String, System.String())
-  nameWithType: Library.OutdoorAirFromZone(IdfReader, String, String[])
-  nameWithType.vb: Library.OutdoorAirFromZone(IdfReader, String, String())
-- uid: EpNet.Library.Library.Library.OutdoorAirFromZone*
-  name: OutdoorAirFromZone
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_OutdoorAirFromZone_
-  commentId: Overload:EpNet.Library.Library.Library.OutdoorAirFromZone
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.OutdoorAirFromZone
-  nameWithType: Library.OutdoorAirFromZone
-- uid: EpNet.Library.Library.Library.PlaceShell(EpNet.IdfReader,System.Double,System.Double,System.Double,System.Double,System.String,System.String)
-  name: PlaceShell(IdfReader, Double, Double, Double, Double, String, String)
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_PlaceShell_EpNet_IdfReader_System_Double_System_Double_System_Double_System_Double_System_String_System_String_
-  commentId: M:EpNet.Library.Library.Library.PlaceShell(EpNet.IdfReader,System.Double,System.Double,System.Double,System.Double,System.String,System.String)
-  fullName: EpNet.Library.Library.Library.PlaceShell(EpNet.IdfReader, System.Double, System.Double, System.Double, System.Double, System.String, System.String)
-  nameWithType: Library.PlaceShell(IdfReader, Double, Double, Double, Double, String, String)
-- uid: EpNet.Library.Library.Library.PlaceShell*
-  name: PlaceShell
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_PlaceShell_
-  commentId: Overload:EpNet.Library.Library.Library.PlaceShell
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.PlaceShell
-  nameWithType: Library.PlaceShell
-- uid: EpNet.Library.Library.Library.PVWatts(EpNet.IdfReader,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)
-  name: PVWatts(IdfReader, Double, Double, Double, Double, Double, String)
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_PVWatts_EpNet_IdfReader_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_
-  commentId: M:EpNet.Library.Library.Library.PVWatts(EpNet.IdfReader,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)
-  fullName: EpNet.Library.Library.Library.PVWatts(EpNet.IdfReader, System.Double, System.Double, System.Double, System.Double, System.Double, System.String)
-  nameWithType: Library.PVWatts(IdfReader, Double, Double, Double, Double, Double, String)
-- uid: EpNet.Library.Library.Library.PVWatts*
-  name: PVWatts
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_PVWatts_
-  commentId: Overload:EpNet.Library.Library.Library.PVWatts
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.PVWatts
-  nameWithType: Library.PVWatts
-- uid: EpNet.Library.Library.Library.RemoveUnusedSchedules(EpNet.IdfReader)
-  name: RemoveUnusedSchedules(IdfReader)
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_RemoveUnusedSchedules_EpNet_IdfReader_
-  commentId: M:EpNet.Library.Library.Library.RemoveUnusedSchedules(EpNet.IdfReader)
-  fullName: EpNet.Library.Library.Library.RemoveUnusedSchedules(EpNet.IdfReader)
-  nameWithType: Library.RemoveUnusedSchedules(IdfReader)
-- uid: EpNet.Library.Library.Library.RemoveUnusedSchedules*
-  name: RemoveUnusedSchedules
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_RemoveUnusedSchedules_
-  commentId: Overload:EpNet.Library.Library.Library.RemoveUnusedSchedules
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.RemoveUnusedSchedules
-  nameWithType: Library.RemoveUnusedSchedules
-- uid: EpNet.Library.Library.Library.System4(EpNet.IdfReader,EpNet.LEED.SystemProperties,System.String)
-  name: System4(IdfReader, SystemProperties, String)
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_System4_EpNet_IdfReader_EpNet_LEED_SystemProperties_System_String_
-  commentId: M:EpNet.Library.Library.Library.System4(EpNet.IdfReader,EpNet.LEED.SystemProperties,System.String)
-  fullName: EpNet.Library.Library.Library.System4(EpNet.IdfReader, EpNet.LEED.SystemProperties, System.String)
-  nameWithType: Library.System4(IdfReader, SystemProperties, String)
-- uid: EpNet.Library.Library.Library.System4*
-  name: System4
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_System4_
-  commentId: Overload:EpNet.Library.Library.Library.System4
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.System4
-  nameWithType: Library.System4
-- uid: EpNet.Library.Library.Library.System6(EpNet.IdfReader,EpNet.LEED.SystemProperties,System.String)
-  name: System6(IdfReader, SystemProperties, String)
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_System6_EpNet_IdfReader_EpNet_LEED_SystemProperties_System_String_
-  commentId: M:EpNet.Library.Library.Library.System6(EpNet.IdfReader,EpNet.LEED.SystemProperties,System.String)
-  fullName: EpNet.Library.Library.Library.System6(EpNet.IdfReader, EpNet.LEED.SystemProperties, System.String)
-  nameWithType: Library.System6(IdfReader, SystemProperties, String)
-- uid: EpNet.Library.Library.Library.System6*
-  name: System6
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_System6_
-  commentId: Overload:EpNet.Library.Library.Library.System6
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.System6
-  nameWithType: Library.System6
-- uid: EpNet.Library.Library.Library.VariableDOAS(EpNet.IdfReader,System.Double,System.String[])
-  name: VariableDOAS(IdfReader, Double, String[])
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_VariableDOAS_EpNet_IdfReader_System_Double_System_String___
-  commentId: M:EpNet.Library.Library.Library.VariableDOAS(EpNet.IdfReader,System.Double,System.String[])
-  name.vb: VariableDOAS(IdfReader, Double, String())
-  fullName: EpNet.Library.Library.Library.VariableDOAS(EpNet.IdfReader, System.Double, System.String[])
-  fullName.vb: EpNet.Library.Library.Library.VariableDOAS(EpNet.IdfReader, System.Double, System.String())
-  nameWithType: Library.VariableDOAS(IdfReader, Double, String[])
-  nameWithType.vb: Library.VariableDOAS(IdfReader, Double, String())
-- uid: EpNet.Library.Library.Library.VariableDOAS*
-  name: VariableDOAS
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_VariableDOAS_
-  commentId: Overload:EpNet.Library.Library.Library.VariableDOAS
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.VariableDOAS
-  nameWithType: Library.VariableDOAS
-- uid: EpNet.Library.Library.Library.VRFFanOnOffToFanSystemModel(EpNet.IdfReader)
-  name: VRFFanOnOffToFanSystemModel(IdfReader)
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_VRFFanOnOffToFanSystemModel_EpNet_IdfReader_
-  commentId: M:EpNet.Library.Library.Library.VRFFanOnOffToFanSystemModel(EpNet.IdfReader)
-  fullName: EpNet.Library.Library.Library.VRFFanOnOffToFanSystemModel(EpNet.IdfReader)
-  nameWithType: Library.VRFFanOnOffToFanSystemModel(IdfReader)
-- uid: EpNet.Library.Library.Library.VRFFanOnOffToFanSystemModel*
-  name: VRFFanOnOffToFanSystemModel
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_VRFFanOnOffToFanSystemModel_
-  commentId: Overload:EpNet.Library.Library.Library.VRFFanOnOffToFanSystemModel
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.VRFFanOnOffToFanSystemModel
-  nameWithType: Library.VRFFanOnOffToFanSystemModel
-- uid: EpNet.Library.Library.Library.VrfFans(EpNet.IdfReader)
-  name: VrfFans(IdfReader)
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_VrfFans_EpNet_IdfReader_
-  commentId: M:EpNet.Library.Library.Library.VrfFans(EpNet.IdfReader)
-  fullName: EpNet.Library.Library.Library.VrfFans(EpNet.IdfReader)
-  nameWithType: Library.VrfFans(IdfReader)
-- uid: EpNet.Library.Library.Library.VrfFans*
-  name: VrfFans
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_VrfFans_
-  commentId: Overload:EpNet.Library.Library.Library.VrfFans
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.VrfFans
-  nameWithType: Library.VrfFans
-- uid: EpNet.Library.Library.Library.ZoneArea(EpNet.IdfReader,System.String,System.Double)
-  name: ZoneArea(IdfReader, String, Double)
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_ZoneArea_EpNet_IdfReader_System_String_System_Double_
-  commentId: M:EpNet.Library.Library.Library.ZoneArea(EpNet.IdfReader,System.String,System.Double)
-  fullName: EpNet.Library.Library.Library.ZoneArea(EpNet.IdfReader, System.String, System.Double)
-  nameWithType: Library.ZoneArea(IdfReader, String, Double)
-- uid: EpNet.Library.Library.Library.ZoneArea*
-  name: ZoneArea
-  href: api/EpNet.Library.Library.Library.html#EpNet_Library_Library_Library_ZoneArea_
-  commentId: Overload:EpNet.Library.Library.Library.ZoneArea
-  isSpec: "True"
-  fullName: EpNet.Library.Library.Library.ZoneArea
-  nameWithType: Library.ZoneArea
 - uid: EpNet.Psychrometrics
   name: EpNet.Psychrometrics
   href: api/EpNet.Psychrometrics.html
@@ -2181,6 +2289,19 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.EsoReader.AddEsoFile
   nameWithType: EsoReader.AddEsoFile
+- uid: EpNet.Results.EsoReader.Environments
+  name: Environments
+  href: api/EpNet.Results.EsoReader.html#EpNet_Results_EsoReader_Environments
+  commentId: P:EpNet.Results.EsoReader.Environments
+  fullName: EpNet.Results.EsoReader.Environments
+  nameWithType: EsoReader.Environments
+- uid: EpNet.Results.EsoReader.Environments*
+  name: Environments
+  href: api/EpNet.Results.EsoReader.html#EpNet_Results_EsoReader_Environments_
+  commentId: Overload:EpNet.Results.EsoReader.Environments
+  isSpec: "True"
+  fullName: EpNet.Results.EsoReader.Environments
+  nameWithType: EsoReader.Environments
 - uid: EpNet.Results.EsoReader.Id
   name: Id
   href: api/EpNet.Results.EsoReader.html#EpNet_Results_EsoReader_Id
@@ -2252,6 +2373,19 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.EsoReader.Save
   nameWithType: EsoReader.Save
+- uid: EpNet.Results.EsoReader.SingleEnvironment
+  name: SingleEnvironment
+  href: api/EpNet.Results.EsoReader.html#EpNet_Results_EsoReader_SingleEnvironment
+  commentId: P:EpNet.Results.EsoReader.SingleEnvironment
+  fullName: EpNet.Results.EsoReader.SingleEnvironment
+  nameWithType: EsoReader.SingleEnvironment
+- uid: EpNet.Results.EsoReader.SingleEnvironment*
+  name: SingleEnvironment
+  href: api/EpNet.Results.EsoReader.html#EpNet_Results_EsoReader_SingleEnvironment_
+  commentId: Overload:EpNet.Results.EsoReader.SingleEnvironment
+  isSpec: "True"
+  fullName: EpNet.Results.EsoReader.SingleEnvironment
+  nameWithType: EsoReader.SingleEnvironment
 - uid: EpNet.Results.ExtensionMethods
   name: ExtensionMethods
   href: api/EpNet.Results.ExtensionMethods.html
@@ -2274,6 +2408,54 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ExtensionMethods.Average
   nameWithType: ExtensionMethods.Average
+- uid: EpNet.Results.ExtensionMethods.ContainsComponent(EpNet.Results.ResultSet,System.Collections.Generic.IEnumerable{System.String})
+  name: ContainsComponent(ResultSet, IEnumerable<String>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ContainsComponent_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:EpNet.Results.ExtensionMethods.ContainsComponent(EpNet.Results.ResultSet,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: ContainsComponent(ResultSet, IEnumerable(Of String))
+  fullName: EpNet.Results.ExtensionMethods.ContainsComponent(EpNet.Results.ResultSet, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: EpNet.Results.ExtensionMethods.ContainsComponent(EpNet.Results.ResultSet, System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: ExtensionMethods.ContainsComponent(ResultSet, IEnumerable<String>)
+  nameWithType.vb: ExtensionMethods.ContainsComponent(ResultSet, IEnumerable(Of String))
+- uid: EpNet.Results.ExtensionMethods.ContainsComponent*
+  name: ContainsComponent
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ContainsComponent_
+  commentId: Overload:EpNet.Results.ExtensionMethods.ContainsComponent
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.ContainsComponent
+  nameWithType: ExtensionMethods.ContainsComponent
+- uid: EpNet.Results.ExtensionMethods.ContainsReport(EpNet.Results.ResultSet,System.Collections.Generic.IEnumerable{System.String})
+  name: ContainsReport(ResultSet, IEnumerable<String>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ContainsReport_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:EpNet.Results.ExtensionMethods.ContainsReport(EpNet.Results.ResultSet,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: ContainsReport(ResultSet, IEnumerable(Of String))
+  fullName: EpNet.Results.ExtensionMethods.ContainsReport(EpNet.Results.ResultSet, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: EpNet.Results.ExtensionMethods.ContainsReport(EpNet.Results.ResultSet, System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: ExtensionMethods.ContainsReport(ResultSet, IEnumerable<String>)
+  nameWithType.vb: ExtensionMethods.ContainsReport(ResultSet, IEnumerable(Of String))
+- uid: EpNet.Results.ExtensionMethods.ContainsReport*
+  name: ContainsReport
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ContainsReport_
+  commentId: Overload:EpNet.Results.ExtensionMethods.ContainsReport
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.ContainsReport
+  nameWithType: ExtensionMethods.ContainsReport
+- uid: EpNet.Results.ExtensionMethods.Get(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.String,System.String,EpNet.Results.Frequencies)
+  name: Get(IEnumerable<ResultSet>, String, String, Frequencies)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Get_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_String_System_String_EpNet_Results_Frequencies_
+  commentId: M:EpNet.Results.ExtensionMethods.Get(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.String,System.String,EpNet.Results.Frequencies)
+  name.vb: Get(IEnumerable(Of ResultSet), String, String, Frequencies)
+  fullName: EpNet.Results.ExtensionMethods.Get(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.String, System.String, EpNet.Results.Frequencies)
+  fullName.vb: EpNet.Results.ExtensionMethods.Get(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.String, System.String, EpNet.Results.Frequencies)
+  nameWithType: ExtensionMethods.Get(IEnumerable<ResultSet>, String, String, Frequencies)
+  nameWithType.vb: ExtensionMethods.Get(IEnumerable(Of ResultSet), String, String, Frequencies)
+- uid: EpNet.Results.ExtensionMethods.Get*
+  name: Get
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Get_
+  commentId: Overload:EpNet.Results.ExtensionMethods.Get
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.Get
+  nameWithType: ExtensionMethods.Get
 - uid: EpNet.Results.ExtensionMethods.SetComponent(EpNet.Results.ResultSet,System.String)
   name: SetComponent(ResultSet, String)
   href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetComponent_EpNet_Results_ResultSet_System_String_
@@ -2458,6 +2640,19 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ResultDescriptor.Frequency
   nameWithType: ResultDescriptor.Frequency
+- uid: EpNet.Results.ResultDescriptor.Id
+  name: Id
+  href: api/EpNet.Results.ResultDescriptor.html#EpNet_Results_ResultDescriptor_Id
+  commentId: P:EpNet.Results.ResultDescriptor.Id
+  fullName: EpNet.Results.ResultDescriptor.Id
+  nameWithType: ResultDescriptor.Id
+- uid: EpNet.Results.ResultDescriptor.Id*
+  name: Id
+  href: api/EpNet.Results.ResultDescriptor.html#EpNet_Results_ResultDescriptor_Id_
+  commentId: Overload:EpNet.Results.ResultDescriptor.Id
+  isSpec: "True"
+  fullName: EpNet.Results.ResultDescriptor.Id
+  nameWithType: ResultDescriptor.Id
 - uid: EpNet.Results.ResultDescriptor.ReportType
   name: ReportType
   href: api/EpNet.Results.ResultDescriptor.html#EpNet_Results_ResultDescriptor_ReportType
@@ -2568,11 +2763,11 @@ references:
   fullName: EpNet.Results.ResultSet.Component
   nameWithType: ResultSet.Component
 - uid: EpNet.Results.ResultSet.Count
-  name: Count()
+  name: Count
   href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Count
-  commentId: M:EpNet.Results.ResultSet.Count
-  fullName: EpNet.Results.ResultSet.Count()
-  nameWithType: ResultSet.Count()
+  commentId: P:EpNet.Results.ResultSet.Count
+  fullName: EpNet.Results.ResultSet.Count
+  nameWithType: ResultSet.Count
 - uid: EpNet.Results.ResultSet.Count*
   name: Count
   href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Count_
@@ -2735,6 +2930,51 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ResultSet.Item
   nameWithType: ResultSet.Item
+- uid: EpNet.Results.ResultSet.Match(System.String,System.String)
+  name: Match(String, String)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Match_System_String_System_String_
+  commentId: M:EpNet.Results.ResultSet.Match(System.String,System.String)
+  fullName: EpNet.Results.ResultSet.Match(System.String, System.String)
+  nameWithType: ResultSet.Match(String, String)
+- uid: EpNet.Results.ResultSet.Match(System.String,System.String,EpNet.Results.Frequencies)
+  name: Match(String, String, Frequencies)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Match_System_String_System_String_EpNet_Results_Frequencies_
+  commentId: M:EpNet.Results.ResultSet.Match(System.String,System.String,EpNet.Results.Frequencies)
+  fullName: EpNet.Results.ResultSet.Match(System.String, System.String, EpNet.Results.Frequencies)
+  nameWithType: ResultSet.Match(String, String, Frequencies)
+- uid: EpNet.Results.ResultSet.Match*
+  name: Match
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Match_
+  commentId: Overload:EpNet.Results.ResultSet.Match
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.Match
+  nameWithType: ResultSet.Match
+- uid: EpNet.Results.ResultSet.MatchComponent(System.String)
+  name: MatchComponent(String)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_MatchComponent_System_String_
+  commentId: M:EpNet.Results.ResultSet.MatchComponent(System.String)
+  fullName: EpNet.Results.ResultSet.MatchComponent(System.String)
+  nameWithType: ResultSet.MatchComponent(String)
+- uid: EpNet.Results.ResultSet.MatchComponent*
+  name: MatchComponent
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_MatchComponent_
+  commentId: Overload:EpNet.Results.ResultSet.MatchComponent
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.MatchComponent
+  nameWithType: ResultSet.MatchComponent
+- uid: EpNet.Results.ResultSet.MatchReport(System.String)
+  name: MatchReport(String)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_MatchReport_System_String_
+  commentId: M:EpNet.Results.ResultSet.MatchReport(System.String)
+  fullName: EpNet.Results.ResultSet.MatchReport(System.String)
+  nameWithType: ResultSet.MatchReport(String)
+- uid: EpNet.Results.ResultSet.MatchReport*
+  name: MatchReport
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_MatchReport_
+  commentId: Overload:EpNet.Results.ResultSet.MatchReport
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.MatchReport
+  nameWithType: ResultSet.MatchReport
 - uid: EpNet.Results.ResultSet.op_Addition(EpNet.Results.ResultSet,EpNet.Results.ResultSet)
   name: Addition(ResultSet, ResultSet)
   href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_op_Addition_EpNet_Results_ResultSet_EpNet_Results_ResultSet_
@@ -2850,6 +3090,19 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ResultSet.ResultDescriptor
   nameWithType: ResultSet.ResultDescriptor
+- uid: EpNet.Results.ResultSet.SetValue(System.Double)
+  name: SetValue(Double)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_SetValue_System_Double_
+  commentId: M:EpNet.Results.ResultSet.SetValue(System.Double)
+  fullName: EpNet.Results.ResultSet.SetValue(System.Double)
+  nameWithType: ResultSet.SetValue(Double)
+- uid: EpNet.Results.ResultSet.SetValue*
+  name: SetValue
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_SetValue_
+  commentId: Overload:EpNet.Results.ResultSet.SetValue
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.SetValue
+  nameWithType: ResultSet.SetValue
 - uid: EpNet.Results.ResultSet.Sum(EpNet.Results.ResultSet[])
   name: Sum(ResultSet[])
   href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Sum_EpNet_Results_ResultSet___

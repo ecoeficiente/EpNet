@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ExtensionMethods
    ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -121,13 +121,13 @@
   
   
   <a id="EpNet_Helpers_ExtensionMethods_GenerateScheduleViews_" data-uid="EpNet.Helpers.ExtensionMethods.GenerateScheduleViews*"></a>
-  <h4 id="EpNet_Helpers_ExtensionMethods_GenerateScheduleViews_EpNet_IdfReader_System_Boolean_" data-uid="EpNet.Helpers.ExtensionMethods.GenerateScheduleViews(EpNet.IdfReader,System.Boolean)">GenerateScheduleViews(IdfReader, Boolean)</h4>
+  <h4 id="EpNet_Helpers_ExtensionMethods_GenerateScheduleViews_EpNet_IdfReader_System_Boolean_System_String___" data-uid="EpNet.Helpers.ExtensionMethods.GenerateScheduleViews(EpNet.IdfReader,System.Boolean,System.String[])">GenerateScheduleViews(IdfReader, Boolean, String[])</h4>
   <div class="markdown level1 summary"><p>Creates a special idf that generates schedule profiles as results once simulated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void GenerateScheduleViews(this IdfReader idf, bool designDays = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void GenerateScheduleViews(this IdfReader idf, bool designDays = false, params string[] schedules)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,6 +149,12 @@
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">designDays</span></td>
         <td><p>Generates profiles for design days if true.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">schedules</span></td>
+        <td><p>List of schedule names, optional.</p>
 </td>
       </tr>
     </tbody>
@@ -202,7 +208,7 @@
   
   <a id="EpNet_Helpers_ExtensionMethods_GetArea_" data-uid="EpNet.Helpers.ExtensionMethods.GetArea*"></a>
   <h4 id="EpNet_Helpers_ExtensionMethods_GetArea_EpNet_IdfObject_" data-uid="EpNet.Helpers.ExtensionMethods.GetArea(EpNet.IdfObject)">GetArea(IdfObject)</h4>
-  <div class="markdown level1 summary"><p>Get the area of any opaque, shading or window surface</p>
+  <div class="markdown level1 summary"><p>Get the area of a zone or any opaque, shading or window surface</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -327,6 +333,132 @@
         <td><span class="xref">System.Double</span></td>
         <td><p>Surface height (m).</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Helpers_ExtensionMethods_GetInsulationResistance_" data-uid="EpNet.Helpers.ExtensionMethods.GetInsulationResistance*"></a>
+  <h4 id="EpNet_Helpers_ExtensionMethods_GetInsulationResistance_EpNet_IdfObject_" data-uid="EpNet.Helpers.ExtensionMethods.GetInsulationResistance(EpNet.IdfObject)">GetInsulationResistance(IdfObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetInsulationResistance(this IdfObject idf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">idf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Helpers_ExtensionMethods_GetMaxZ_" data-uid="EpNet.Helpers.ExtensionMethods.GetMaxZ*"></a>
+  <h4 id="EpNet_Helpers_ExtensionMethods_GetMaxZ_EpNet_IdfObject_" data-uid="EpNet.Helpers.ExtensionMethods.GetMaxZ(EpNet.IdfObject)">GetMaxZ(IdfObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetMaxZ(this IdfObject idfObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">idfObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Helpers_ExtensionMethods_GetMinZ_" data-uid="EpNet.Helpers.ExtensionMethods.GetMinZ*"></a>
+  <h4 id="EpNet_Helpers_ExtensionMethods_GetMinZ_EpNet_IdfObject_" data-uid="EpNet.Helpers.ExtensionMethods.GetMinZ(EpNet.IdfObject)">GetMinZ(IdfObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetMinZ(this IdfObject idfObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">idfObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -466,6 +598,48 @@
   </table>
   
   
+  <a id="EpNet_Helpers_ExtensionMethods_GetOrientationCTE_" data-uid="EpNet.Helpers.ExtensionMethods.GetOrientationCTE*"></a>
+  <h4 id="EpNet_Helpers_ExtensionMethods_GetOrientationCTE_EpNet_IdfObject_" data-uid="EpNet.Helpers.ExtensionMethods.GetOrientationCTE(EpNet.IdfObject)">GetOrientationCTE(IdfObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OrientacionCTE GetOrientationCTE(this IdfObject idf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">idf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OrientacionCTE</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="EpNet_Helpers_ExtensionMethods_GetOutdoorAirFlow_" data-uid="EpNet.Helpers.ExtensionMethods.GetOutdoorAirFlow*"></a>
   <h4 id="EpNet_Helpers_ExtensionMethods_GetOutdoorAirFlow_EpNet_IdfObject_" data-uid="EpNet.Helpers.ExtensionMethods.GetOutdoorAirFlow(EpNet.IdfObject)">GetOutdoorAirFlow(IdfObject)</h4>
   <div class="markdown level1 summary"><p>Gets Zone Outdoor airflow rate (m³/s)</p>
@@ -506,6 +680,95 @@
         <td><span class="xref">System.Double</span></td>
         <td><p>Outdoor airflow (m³/s)</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Helpers_ExtensionMethods_GetPerimeter_" data-uid="EpNet.Helpers.ExtensionMethods.GetPerimeter*"></a>
+  <h4 id="EpNet_Helpers_ExtensionMethods_GetPerimeter_EpNet_IdfObject_" data-uid="EpNet.Helpers.ExtensionMethods.GetPerimeter(EpNet.IdfObject)">GetPerimeter(IdfObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetPerimeter(this IdfObject idfObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">idfObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Helpers_ExtensionMethods_GetPerimeterAt_" data-uid="EpNet.Helpers.ExtensionMethods.GetPerimeterAt*"></a>
+  <h4 id="EpNet_Helpers_ExtensionMethods_GetPerimeterAt_EpNet_IdfObject_System_Double_" data-uid="EpNet.Helpers.ExtensionMethods.GetPerimeterAt(EpNet.IdfObject,System.Double)">GetPerimeterAt(IdfObject, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetPerimeterAt(this IdfObject idfObject, double height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">idfObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -691,6 +954,38 @@
         <td><span class="xref">System.String</span></td>
         <td><p>Airloop name.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Helpers_ExtensionMethods_ScaleWindow_" data-uid="EpNet.Helpers.ExtensionMethods.ScaleWindow*"></a>
+  <h4 id="EpNet_Helpers_ExtensionMethods_ScaleWindow_EpNet_IdfObject_System_Double_" data-uid="EpNet.Helpers.ExtensionMethods.ScaleWindow(EpNet.IdfObject,System.Double)">ScaleWindow(IdfObject, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ScaleWindow(this IdfObject window, double scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">window</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ExtensionMethods
    ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -244,6 +244,57 @@
   </table>
   
   
+  <a id="EpNet_ExtensionMethods_ContainsIgnoreCase_" data-uid="EpNet.ExtensionMethods.ContainsIgnoreCase*"></a>
+  <h4 id="EpNet_ExtensionMethods_ContainsIgnoreCase_System_String_System_String___" data-uid="EpNet.ExtensionMethods.ContainsIgnoreCase(System.String,System.String[])">ContainsIgnoreCase(String, String[])</h4>
+  <div class="markdown level1 summary"><p>Determines whether any of the specified substrings occurs within this string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ContainsIgnoreCase(this string s, params string[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td><p>Current string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Search substrings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if current string contains search substring.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="EpNet_ExtensionMethods_EndsWithIgnoreCase_" data-uid="EpNet.ExtensionMethods.EndsWithIgnoreCase*"></a>
   <h4 id="EpNet_ExtensionMethods_EndsWithIgnoreCase_System_String_System_String_" data-uid="EpNet.ExtensionMethods.EndsWithIgnoreCase(System.String,System.String)">EndsWithIgnoreCase(String, String)</h4>
   <div class="markdown level1 summary"><p>Determines whether the end of this string instance matches the specified string. Ignores case.</p>
@@ -295,14 +346,14 @@
   </table>
   
   
-  <a id="EpNet_ExtensionMethods_GetData_" data-uid="EpNet.ExtensionMethods.GetData*"></a>
-  <h4 id="EpNet_ExtensionMethods_GetData_System_Collections_Generic_List_EpNet_IdfObject__System_Int32_System_Int32_" data-uid="EpNet.ExtensionMethods.GetData(System.Collections.Generic.List{EpNet.IdfObject},System.Int32,System.Int32)">GetData(List&lt;IdfObject&gt;, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary&lt;string,double&gt;&gt; with Keys as first field string values and Values as second field numeric values.</p>
+  <a id="EpNet_ExtensionMethods_EqualsIgnoreCase_" data-uid="EpNet.ExtensionMethods.EqualsIgnoreCase*"></a>
+  <h4 id="EpNet_ExtensionMethods_EqualsIgnoreCase_System_String_System_String_" data-uid="EpNet.ExtensionMethods.EqualsIgnoreCase(System.String,System.String)">EqualsIgnoreCase(String, String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether two strings are equal ignoring case</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, double&gt; GetData(this List&lt;IdfObject&gt; idf, int firstField, int secondField)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool EqualsIgnoreCase(this string s, string value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -315,9 +366,111 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td><p>First string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Second strings</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if both strings are equal ignoring case.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_GetByName_" data-uid="EpNet.ExtensionMethods.GetByName*"></a>
+  <h4 id="EpNet_ExtensionMethods_GetByName_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_" data-uid="EpNet.ExtensionMethods.GetByName(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.String)">GetByName(IEnumerable&lt;IdfObject&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Get the first element of a list of IdfObjects with a certain name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IdfObject GetByName(this IEnumerable&lt;IdfObject&gt; idf, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
         <td><span class="parametername">idf</span></td>
-        <td><p>Idf Object List</p>
+        <td><p>List of IdfObjects</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>name to find</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><p>IdfObject with Name as name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_GetData_" data-uid="EpNet.ExtensionMethods.GetData*"></a>
+  <h4 id="EpNet_ExtensionMethods_GetData_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Int32_System_Int32_" data-uid="EpNet.ExtensionMethods.GetData(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Int32,System.Int32)">GetData(IEnumerable&lt;IdfObject&gt;, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a Dictionary&lt;string,double&gt;&gt; with Keys as first field string values and Values as second field numeric values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, double&gt; GetData(this IEnumerable&lt;IdfObject&gt; idf, int firstField, int secondField)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
+        <td><span class="parametername">idf</span></td>
+        <td><p>Idf Object IEnumerable</p>
 </td>
       </tr>
       <tr>
@@ -353,13 +506,13 @@
   
   
   <a id="EpNet_ExtensionMethods_GetData_" data-uid="EpNet.ExtensionMethods.GetData*"></a>
-  <h4 id="EpNet_ExtensionMethods_GetData_System_Collections_Generic_List_EpNet_IdfObject__System_String_System_String_" data-uid="EpNet.ExtensionMethods.GetData(System.Collections.Generic.List{EpNet.IdfObject},System.String,System.String)">GetData(List&lt;IdfObject&gt;, String, String)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary&lt;string,double&gt;&gt; with Keys as first field string values and Values as second field numeric values.</p>
+  <h4 id="EpNet_ExtensionMethods_GetData_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_System_String_" data-uid="EpNet.ExtensionMethods.GetData(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.String,System.String)">GetData(IEnumerable&lt;IdfObject&gt;, String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a Dictionary&lt;string,double&gt; with Keys as first field string values and Values as second field numeric values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, double&gt; GetData(this List&lt;IdfObject&gt; idf, string firstField, string secondField)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, double&gt; GetData(this IEnumerable&lt;IdfObject&gt; idf, string firstField, string secondField)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -372,9 +525,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
         <td><span class="parametername">idf</span></td>
-        <td><p>Idf Object List</p>
+        <td><p>Idf Object IEnumerable</p>
 </td>
       </tr>
       <tr>
@@ -410,13 +563,13 @@
   
   
   <a id="EpNet_ExtensionMethods_GetData_" data-uid="EpNet.ExtensionMethods.GetData*"></a>
-  <h4 id="EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_List_EpNet_IdfObject__System_Int32_System_Int32_" data-uid="EpNet.ExtensionMethods.GetData``1(System.Collections.Generic.List{EpNet.IdfObject},System.Int32,System.Int32)">GetData&lt;T&gt;(List&lt;IdfObject&gt;, Int32, Int32)</h4>
+  <h4 id="EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Int32_System_Int32_" data-uid="EpNet.ExtensionMethods.GetData``1(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Int32,System.Int32)">GetData&lt;T&gt;(IEnumerable&lt;IdfObject&gt;, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a Dictionary&lt;string,T&gt;&gt; with Keys as first field string values and Values as second field T values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, T&gt; GetData&lt;T&gt;(this List&lt;IdfObject&gt; idf, int firstField, int secondField)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, T&gt; GetData&lt;T&gt;(this IEnumerable&lt;IdfObject&gt; idf, int firstField, int secondField)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -429,9 +582,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
         <td><span class="parametername">idf</span></td>
-        <td><p>Idf Object List</p>
+        <td><p>Idf Object IEnumerable</p>
 </td>
       </tr>
       <tr>
@@ -483,13 +636,13 @@
   
   
   <a id="EpNet_ExtensionMethods_GetData_" data-uid="EpNet.ExtensionMethods.GetData*"></a>
-  <h4 id="EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_List_EpNet_IdfObject__System_String_System_String_" data-uid="EpNet.ExtensionMethods.GetData``1(System.Collections.Generic.List{EpNet.IdfObject},System.String,System.String)">GetData&lt;T&gt;(List&lt;IdfObject&gt;, String, String)</h4>
+  <h4 id="EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_System_String_" data-uid="EpNet.ExtensionMethods.GetData``1(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.String,System.String)">GetData&lt;T&gt;(IEnumerable&lt;IdfObject&gt;, String, String)</h4>
   <div class="markdown level1 summary"><p>Gets a Dictionary&lt;string,T&gt;&gt; with Keys as first field string values and Values as second field T values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, T&gt; GetData&lt;T&gt;(this List&lt;IdfObject&gt; idf, string firstField, string secondField)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, T&gt; GetData&lt;T&gt;(this IEnumerable&lt;IdfObject&gt; idf, string firstField, string secondField)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -502,9 +655,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
         <td><span class="parametername">idf</span></td>
-        <td><p>Idf Object List</p>
+        <td><p>Idf Object IEnumerable</p>
 </td>
       </tr>
       <tr>
@@ -549,6 +702,102 @@
       <tr>
         <td><span class="parametername">T</span></td>
         <td><p>double or string depending on the type of the second field</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_OR_" data-uid="EpNet.ExtensionMethods.OR*"></a>
+  <h4 id="EpNet_ExtensionMethods_OR_System_Boolean_System_Boolean_" data-uid="EpNet.ExtensionMethods.OR(System.Boolean,System.Boolean)">OR(Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Alternative to || operator since DesignBuilder text parser does not allow | symbol</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool OR(this bool left, bool right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>left condition</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>right condition</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>left || right</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_OR_" data-uid="EpNet.ExtensionMethods.OR*"></a>
+  <h4 id="EpNet_ExtensionMethods_OR_System_Collections_Generic_IEnumerable_System_Boolean__" data-uid="EpNet.ExtensionMethods.OR(System.Collections.Generic.IEnumerable{System.Boolean})">OR(IEnumerable&lt;Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Alternative to || operator since DesignBuilder text parser does not allow | symbol</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool OR(this IEnumerable&lt;bool&gt; conditions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">conditions</span></td>
+        <td><p>List of conditions</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>OR of the conditions</p>
 </td>
       </tr>
     </tbody>
@@ -842,6 +1091,179 @@
         <td><span class="xref">System.String</span></td>
         <td><p>Trimmed string</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_Update_" data-uid="EpNet.ExtensionMethods.Update*"></a>
+  <h4 id="EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_Double__System_Int32_System_Int32_" data-uid="EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Collections.Generic.Dictionary{System.String,System.Double},System.Int32,System.Int32)">Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;String, Double&gt;, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Update(this IEnumerable&lt;IdfObject&gt; idf, Dictionary&lt;string, double&gt; dictionary, int firstField, int secondField)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
+        <td><span class="parametername">idf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">dictionary</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">firstField</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">secondField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_Update_" data-uid="EpNet.ExtensionMethods.Update*"></a>
+  <h4 id="EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_Double__System_String_System_String_" data-uid="EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Collections.Generic.Dictionary{System.String,System.Double},System.String,System.String)">Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;String, Double&gt;, String, String)</h4>
+  <div class="markdown level1 summary"><p>From a provided dictionary, updates a field in a list of idf objects with Value where another field matches the Key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Update(this IEnumerable&lt;IdfObject&gt; idf, Dictionary&lt;string, double&gt; dictionary, string firstField, string secondField)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
+        <td><span class="parametername">idf</span></td>
+        <td><p>idf objects enumerable</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">dictionary</span></td>
+        <td><p>Dictionary&lt;string,double&gt; where keys are strings that have to match the first field and values are the new values for the second field.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">firstField</span></td>
+        <td><p>field with text value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">secondField</span></td>
+        <td><p>field with numeric value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_Update_" data-uid="EpNet.ExtensionMethods.Update*"></a>
+  <h4 id="EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_String__System_Int32_System_Int32_" data-uid="EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,System.Int32)">Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;String, String&gt;, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Update(this IEnumerable&lt;IdfObject&gt; idf, Dictionary&lt;string, string&gt; dictionary, int firstField, int secondField)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
+        <td><span class="parametername">idf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">dictionary</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">firstField</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">secondField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_Update_" data-uid="EpNet.ExtensionMethods.Update*"></a>
+  <h4 id="EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_String__System_String_System_String_" data-uid="EpNet.ExtensionMethods.Update(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.String)">Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;String, String&gt;, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Update(this IEnumerable&lt;IdfObject&gt; idf, Dictionary&lt;string, string&gt; dictionary, string firstField, string secondField)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
+        <td><span class="parametername">idf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">dictionary</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">firstField</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">secondField</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

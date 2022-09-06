@@ -8,7 +8,7 @@
     <title>EpNet .Net library online help </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="EpNet .Net library online help ">
-    <meta name="generator" content="docfx 2.39.2.0">
+    <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -68,7 +68,7 @@
 <blockquote><p>EpNet library is developed and mantained by Germ&aacute;n Campos, <a href="https://www.ecoeficiente.es">www.ecoeficiente.es</a>.</p>
 </blockquote>
 <h2 id="latest-download-link">Latest download link:</h2>
-<p>04 Nov 2019 - Download latest <a href="https://github.com/ecoeficiente/EpNet/releases/download/v1.04/EpNet.dll" title="EpNet download">EpNet library</a>.</p>
+<p>05 Sep 2022 - Download latest <a href="https://github.com/ecoeficiente/EpNet/releases/download/v1.05/EpNet.dll" title="EpNet download">EpNet library</a>.</p>
 <p>And overwrite current <em>EpNet.dll</em> in <strong>c:\Program Files (x86)\DesignBuilder\Lib\</strong> folder</p>
 <h2 id="usage-examples">Usage examples:</h2>
 <p>The easiest way to understand how to use EpNet library is to look at the following examples and use the Api Reference.</p>
@@ -89,40 +89,40 @@
 <p>Let&#39;s pick the first zone:</p>
 <pre><code class="lang-cs">var zone = zones[0];
 </code></pre><p>And change its name to &quot;Zone1&quot;:</p>
-<div class="tabGroup" id="tabgroup_D+Ap1HJHja">
+<div class="tabGroup" id="tabgroup_pIdGyucMRO">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_D+Ap1HJHja_tabid-1" role="tab" aria-controls="tabpanel_D+Ap1HJHja_tabid-1" data-tab="tabid-1" tabindex="0" aria-selected="true">Accessing fields by <strong>index</strong></a>
+<a href="#tabpanel_pIdGyucMRO_tabid-1" role="tab" aria-controls="tabpanel_pIdGyucMRO_tabid-1" data-tab="tabid-1" tabindex="0" aria-selected="true">Accessing fields by <strong>index</strong></a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_D+Ap1HJHja_tabid-2" role="tab" aria-controls="tabpanel_D+Ap1HJHja_tabid-2" data-tab="tabid-2" tabindex="-1">Accessing fields by <strong>name</strong></a>
+<a href="#tabpanel_pIdGyucMRO_tabid-2" role="tab" aria-controls="tabpanel_pIdGyucMRO_tabid-2" data-tab="tabid-2" tabindex="-1">Accessing fields by <strong>name</strong></a>
 </li>
 </ul>
-<section id="tabpanel_D+Ap1HJHja_tabid-1" role="tabpanel" data-tab="tabid-1">
+<section id="tabpanel_pIdGyucMRO_tabid-1" role="tabpanel" data-tab="tabid-1">
 <pre><code class="lang-cs">zone[0].Value = &quot;Zone1&quot;;
 </code></pre></section>
-<section id="tabpanel_D+Ap1HJHja_tabid-2" role="tabpanel" data-tab="tabid-2" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_pIdGyucMRO_tabid-2" role="tabpanel" data-tab="tabid-2" aria-hidden="true" hidden="hidden">
 <pre><code class="lang-cs">zone[&quot;Name&quot;].Value = &quot;Zone1&quot;;
 </code></pre></section>
 </div>
-<p>Text values are accessed through <a class="xref" href="api/EpNet.Field.html#EpNet_Field_Value"><strong>Value</strong></a> property while numeric values are usually accessed through <a href="EpNet.Field.Number"><strong>Number</strong></a> property (unless you want to treat them as a string value).</p>
-<div class="tabGroup" id="tabgroup_D+Ap1HJHja-1">
+<p>Text values are accessed through <a class="xref" href="api/EpNet.Field.html#EpNet_Field_Value"><strong>Value</strong></a> property while numeric values are usually accessed through <a class="xref" href="api/EpNet.Field.html#EpNet_Field_Number"><strong>Number</strong></a> property (unless you want to treat them as a string value).</p>
+<div class="tabGroup" id="tabgroup_pIdGyucMRO-1">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_D+Ap1HJHja-1_tabid-5" role="tab" aria-controls="tabpanel_D+Ap1HJHja-1_tabid-5" data-tab="tabid-5" tabindex="0" aria-selected="true">Accessing fields by <strong>index</strong></a>
+<a href="#tabpanel_pIdGyucMRO-1_tabid-5" role="tab" aria-controls="tabpanel_pIdGyucMRO-1_tabid-5" data-tab="tabid-5" tabindex="0" aria-selected="true">Accessing fields by <strong>index</strong></a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_D+Ap1HJHja-1_tabid-6" role="tab" aria-controls="tabpanel_D+Ap1HJHja-1_tabid-6" data-tab="tabid-6" tabindex="-1">Accessing fields by <strong>name</strong></a>
+<a href="#tabpanel_pIdGyucMRO-1_tabid-6" role="tab" aria-controls="tabpanel_pIdGyucMRO-1_tabid-6" data-tab="tabid-6" tabindex="-1">Accessing fields by <strong>name</strong></a>
 </li>
 </ul>
-<section id="tabpanel_D+Ap1HJHja-1_tabid-5" role="tabpanel" data-tab="tabid-5">
+<section id="tabpanel_pIdGyucMRO-1_tabid-5" role="tabpanel" data-tab="tabid-5">
 <pre><code class="lang-cs">double zoneArea = zone[9].Number;
 string zoneAreaValue = zone[9].Value;
 
 zone[9].Number = zoneArea * 2; //Duplicate zone area.
 zone[0].Value = zoneAreaValue + &quot;sqm.Zone1&quot;; //Include zone area in its name. 
 </code></pre></section>
-<section id="tabpanel_D+Ap1HJHja-1_tabid-6" role="tabpanel" data-tab="tabid-6" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_pIdGyucMRO-1_tabid-6" role="tabpanel" data-tab="tabid-6" aria-hidden="true" hidden="hidden">
 <pre><code class="lang-cs">double zoneArea = zone[&quot;Floor Area&quot;].Number;
 string zoneAreaValue = zone[&quot;Floor Area&quot;].Value;
 
@@ -132,16 +132,16 @@ zone[&quot;Name&quot;].Value = zoneAreaValue + &quot;sqm.Zone1&quot;; //Include 
 </div>
 <h3 id="example-2">Example 2</h3>
 <p>The following code updates simple glazing parameters to include the impact of a frame fraction.</p>
-<div class="tabGroup" id="tabgroup_D+Ap1HJHja-2">
+<div class="tabGroup" id="tabgroup_pIdGyucMRO-2">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_D+Ap1HJHja-2_tabid-3" role="tab" aria-controls="tabpanel_D+Ap1HJHja-2_tabid-3" data-tab="tabid-3" tabindex="0" aria-selected="true">Accessing fields by <strong>index</strong></a>
+<a href="#tabpanel_pIdGyucMRO-2_tabid-3" role="tab" aria-controls="tabpanel_pIdGyucMRO-2_tabid-3" data-tab="tabid-3" tabindex="0" aria-selected="true">Accessing fields by <strong>index</strong></a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_D+Ap1HJHja-2_tabid-4" role="tab" aria-controls="tabpanel_D+Ap1HJHja-2_tabid-4" data-tab="tabid-4" tabindex="-1">Accessing fields by <strong>name</strong></a>
+<a href="#tabpanel_pIdGyucMRO-2_tabid-4" role="tab" aria-controls="tabpanel_pIdGyucMRO-2_tabid-4" data-tab="tabid-4" tabindex="-1">Accessing fields by <strong>name</strong></a>
 </li>
 </ul>
-<section id="tabpanel_D+Ap1HJHja-2_tabid-3" role="tabpanel" data-tab="tabid-3">
+<section id="tabpanel_pIdGyucMRO-2_tabid-3" role="tabpanel" data-tab="tabid-3">
 <pre><code class="lang-csharp" name="FrameFraction" title="Frame Fraction">var glass = Idf[&quot;WindowMaterial:SimpleGlazingSystem&quot;];
             var frameFrac= 0.15;
             var frameU = 2.8;
@@ -157,7 +157,7 @@ zone[&quot;Name&quot;].Value = zoneAreaValue + &quot;sqm.Zone1&quot;; //Include 
                 g[3].Number = t*(1-frameFrac);
             }
 </code></pre></section>
-<section id="tabpanel_D+Ap1HJHja-2_tabid-4" role="tabpanel" data-tab="tabid-4" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_pIdGyucMRO-2_tabid-4" role="tabpanel" data-tab="tabid-4" aria-hidden="true" hidden="hidden">
 <pre><code class="lang-csharp" name="RrameFraction">var glass = Idf[&quot;WindowMaterial:SimpleGlazingSystem&quot;];
             var frameFrac= 0.15;
             var frameU = 2.8;
