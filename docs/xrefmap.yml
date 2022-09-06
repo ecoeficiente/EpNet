@@ -350,6 +350,12 @@ references:
   commentId: M:EpNet.Field.Equals(System.Double)
   fullName: EpNet.Field.Equals(System.Double)
   nameWithType: Field.Equals(Double)
+- uid: EpNet.Field.Equals(System.Object)
+  name: Equals(Object)
+  href: api/EpNet.Field.html#EpNet_Field_Equals_System_Object_
+  commentId: M:EpNet.Field.Equals(System.Object)
+  fullName: EpNet.Field.Equals(System.Object)
+  nameWithType: Field.Equals(Object)
 - uid: EpNet.Field.Equals(System.String)
   name: Equals(String)
   href: api/EpNet.Field.html#EpNet_Field_Equals_System_String_
@@ -1814,12 +1820,12 @@ references:
   isSpec: "True"
   fullName: EpNet.Library.Library.Library
   nameWithType: Library.Library
-- uid: EpNet.Library.Library.AddDesignVariable(System.String,System.String,System.Int32,System.String)
-  name: AddDesignVariable(String, String, Int32, String)
-  href: api/EpNet.Library.Library.html#EpNet_Library_Library_AddDesignVariable_System_String_System_String_System_Int32_System_String_
-  commentId: M:EpNet.Library.Library.AddDesignVariable(System.String,System.String,System.Int32,System.String)
-  fullName: EpNet.Library.Library.AddDesignVariable(System.String, System.String, System.Int32, System.String)
-  nameWithType: Library.AddDesignVariable(String, String, Int32, String)
+- uid: EpNet.Library.Library.AddDesignVariable(System.String,System.String,System.Int32,System.String,System.Boolean)
+  name: AddDesignVariable(String, String, Int32, String, Boolean)
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_AddDesignVariable_System_String_System_String_System_Int32_System_String_System_Boolean_
+  commentId: M:EpNet.Library.Library.AddDesignVariable(System.String,System.String,System.Int32,System.String,System.Boolean)
+  fullName: EpNet.Library.Library.AddDesignVariable(System.String, System.String, System.Int32, System.String, System.Boolean)
+  nameWithType: Library.AddDesignVariable(String, String, Int32, String, Boolean)
 - uid: EpNet.Library.Library.AddDesignVariable*
   name: AddDesignVariable
   href: api/EpNet.Library.Library.html#EpNet_Library_Library_AddDesignVariable_
