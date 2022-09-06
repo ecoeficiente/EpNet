@@ -1783,6 +1783,225 @@ references:
   isSpec: "True"
   fullName: EpNet.LEED.SystemProperties.Type
   nameWithType: SystemProperties.Type
+- uid: EpNet.Library
+  name: EpNet.Library
+  href: api/EpNet.Library.html
+  commentId: N:EpNet.Library
+  fullName: EpNet.Library
+  nameWithType: EpNet.Library
+- uid: EpNet.Library.Library
+  name: Library
+  href: api/EpNet.Library.Library.html
+  commentId: T:EpNet.Library.Library
+  fullName: EpNet.Library.Library
+  nameWithType: Library
+- uid: EpNet.Library.Library.#ctor
+  name: Library()
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library__ctor
+  commentId: M:EpNet.Library.Library.#ctor
+  fullName: EpNet.Library.Library.Library()
+  nameWithType: Library.Library()
+- uid: EpNet.Library.Library.#ctor(EpNet.IdfReader)
+  name: Library(IdfReader)
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library__ctor_EpNet_IdfReader_
+  commentId: M:EpNet.Library.Library.#ctor(EpNet.IdfReader)
+  fullName: EpNet.Library.Library.Library(EpNet.IdfReader)
+  nameWithType: Library.Library(IdfReader)
+- uid: EpNet.Library.Library.#ctor*
+  name: Library
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library__ctor_
+  commentId: Overload:EpNet.Library.Library.#ctor
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Library
+  nameWithType: Library.Library
+- uid: EpNet.Library.Library.AddDesignVariable(System.String,System.String,System.Int32,System.String)
+  name: AddDesignVariable(String, String, Int32, String)
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_AddDesignVariable_System_String_System_String_System_Int32_System_String_
+  commentId: M:EpNet.Library.Library.AddDesignVariable(System.String,System.String,System.Int32,System.String)
+  fullName: EpNet.Library.Library.AddDesignVariable(System.String, System.String, System.Int32, System.String)
+  nameWithType: Library.AddDesignVariable(String, String, Int32, String)
+- uid: EpNet.Library.Library.AddDesignVariable*
+  name: AddDesignVariable
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_AddDesignVariable_
+  commentId: Overload:EpNet.Library.Library.AddDesignVariable
+  isSpec: "True"
+  fullName: EpNet.Library.Library.AddDesignVariable
+  nameWithType: Library.AddDesignVariable
+- uid: EpNet.Library.Library.AddKpi(DB.Api.Environment,System.String,System.Double)
+  name: AddKpi(Environment, String, Double)
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_AddKpi_DB_Api_Environment_System_String_System_Double_
+  commentId: M:EpNet.Library.Library.AddKpi(DB.Api.Environment,System.String,System.Double)
+  fullName: EpNet.Library.Library.AddKpi(DB.Api.Environment, System.String, System.Double)
+  nameWithType: Library.AddKpi(Environment, String, Double)
+- uid: EpNet.Library.Library.AddKpi*
+  name: AddKpi
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_AddKpi_
+  commentId: Overload:EpNet.Library.Library.AddKpi
+  isSpec: "True"
+  fullName: EpNet.Library.Library.AddKpi
+  nameWithType: Library.AddKpi
+- uid: EpNet.Library.Library.AddSensor(System.String,System.Double,System.Double,System.Double,System.Double)
+  name: AddSensor(String, Double, Double, Double, Double)
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_AddSensor_System_String_System_Double_System_Double_System_Double_System_Double_
+  commentId: M:EpNet.Library.Library.AddSensor(System.String,System.Double,System.Double,System.Double,System.Double)
+  fullName: EpNet.Library.Library.AddSensor(System.String, System.Double, System.Double, System.Double, System.Double)
+  nameWithType: Library.AddSensor(String, Double, Double, Double, Double)
+- uid: EpNet.Library.Library.AddSensor*
+  name: AddSensor
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_AddSensor_
+  commentId: Overload:EpNet.Library.Library.AddSensor
+  isSpec: "True"
+  fullName: EpNet.Library.Library.AddSensor
+  nameWithType: Library.AddSensor
+- uid: EpNet.Library.Library.Api
+  name: Api
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_Api
+  commentId: P:EpNet.Library.Library.Api
+  fullName: EpNet.Library.Library.Api
+  nameWithType: Library.Api
+- uid: EpNet.Library.Library.Api*
+  name: Api
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_Api_
+  commentId: Overload:EpNet.Library.Library.Api
+  isSpec: "True"
+  fullName: EpNet.Library.Library.Api
+  nameWithType: Library.Api
+- uid: EpNet.Library.Library.CO2WindowControl(System.Func{EpNet.IdfObject,System.Boolean},System.Double,System.Boolean)
+  name: CO2WindowControl(Func<IdfObject, Boolean>, Double, Boolean)
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_CO2WindowControl_System_Func_EpNet_IdfObject_System_Boolean__System_Double_System_Boolean_
+  commentId: M:EpNet.Library.Library.CO2WindowControl(System.Func{EpNet.IdfObject,System.Boolean},System.Double,System.Boolean)
+  name.vb: CO2WindowControl(Func(Of IdfObject, Boolean), Double, Boolean)
+  fullName: EpNet.Library.Library.CO2WindowControl(System.Func<EpNet.IdfObject, System.Boolean>, System.Double, System.Boolean)
+  fullName.vb: EpNet.Library.Library.CO2WindowControl(System.Func(Of EpNet.IdfObject, System.Boolean), System.Double, System.Boolean)
+  nameWithType: Library.CO2WindowControl(Func<IdfObject, Boolean>, Double, Boolean)
+  nameWithType.vb: Library.CO2WindowControl(Func(Of IdfObject, Boolean), Double, Boolean)
+- uid: EpNet.Library.Library.CO2WindowControl*
+  name: CO2WindowControl
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_CO2WindowControl_
+  commentId: Overload:EpNet.Library.Library.CO2WindowControl
+  isSpec: "True"
+  fullName: EpNet.Library.Library.CO2WindowControl
+  nameWithType: Library.CO2WindowControl
+- uid: EpNet.Library.Library.CoilSize(System.String,System.Double,System.Double)
+  name: CoilSize(String, Double, Double)
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_CoilSize_System_String_System_Double_System_Double_
+  commentId: M:EpNet.Library.Library.CoilSize(System.String,System.Double,System.Double)
+  fullName: EpNet.Library.Library.CoilSize(System.String, System.Double, System.Double)
+  nameWithType: Library.CoilSize(String, Double, Double)
+- uid: EpNet.Library.Library.CoilSize*
+  name: CoilSize
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_CoilSize_
+  commentId: Overload:EpNet.Library.Library.CoilSize
+  isSpec: "True"
+  fullName: EpNet.Library.Library.CoilSize
+  nameWithType: Library.CoilSize
+- uid: EpNet.Library.Library.ExportShading
+  name: ExportShading()
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_ExportShading
+  commentId: M:EpNet.Library.Library.ExportShading
+  fullName: EpNet.Library.Library.ExportShading()
+  nameWithType: Library.ExportShading()
+- uid: EpNet.Library.Library.ExportShading*
+  name: ExportShading
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_ExportShading_
+  commentId: Overload:EpNet.Library.Library.ExportShading
+  isSpec: "True"
+  fullName: EpNet.Library.Library.ExportShading
+  nameWithType: Library.ExportShading
+- uid: EpNet.Library.Library.ImportShading(System.String)
+  name: ImportShading(String)
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_ImportShading_System_String_
+  commentId: M:EpNet.Library.Library.ImportShading(System.String)
+  fullName: EpNet.Library.Library.ImportShading(System.String)
+  nameWithType: Library.ImportShading(String)
+- uid: EpNet.Library.Library.ImportShading*
+  name: ImportShading
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_ImportShading_
+  commentId: Overload:EpNet.Library.Library.ImportShading
+  isSpec: "True"
+  fullName: EpNet.Library.Library.ImportShading
+  nameWithType: Library.ImportShading
+- uid: EpNet.Library.Library.IsBaseline
+  name: IsBaseline()
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_IsBaseline
+  commentId: M:EpNet.Library.Library.IsBaseline
+  fullName: EpNet.Library.Library.IsBaseline()
+  nameWithType: Library.IsBaseline()
+- uid: EpNet.Library.Library.IsBaseline*
+  name: IsBaseline
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_IsBaseline_
+  commentId: Overload:EpNet.Library.Library.IsBaseline
+  isSpec: "True"
+  fullName: EpNet.Library.Library.IsBaseline
+  nameWithType: Library.IsBaseline
+- uid: EpNet.Library.Library.OutdoorAirFromZone(System.String,System.String[])
+  name: OutdoorAirFromZone(String, String[])
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_OutdoorAirFromZone_System_String_System_String___
+  commentId: M:EpNet.Library.Library.OutdoorAirFromZone(System.String,System.String[])
+  name.vb: OutdoorAirFromZone(String, String())
+  fullName: EpNet.Library.Library.OutdoorAirFromZone(System.String, System.String[])
+  fullName.vb: EpNet.Library.Library.OutdoorAirFromZone(System.String, System.String())
+  nameWithType: Library.OutdoorAirFromZone(String, String[])
+  nameWithType.vb: Library.OutdoorAirFromZone(String, String())
+- uid: EpNet.Library.Library.OutdoorAirFromZone*
+  name: OutdoorAirFromZone
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_OutdoorAirFromZone_
+  commentId: Overload:EpNet.Library.Library.OutdoorAirFromZone
+  isSpec: "True"
+  fullName: EpNet.Library.Library.OutdoorAirFromZone
+  nameWithType: Library.OutdoorAirFromZone
+- uid: EpNet.Library.Library.PlaceShell(System.Double,System.Double,System.Double,System.Double,System.String,System.String)
+  name: PlaceShell(Double, Double, Double, Double, String, String)
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_PlaceShell_System_Double_System_Double_System_Double_System_Double_System_String_System_String_
+  commentId: M:EpNet.Library.Library.PlaceShell(System.Double,System.Double,System.Double,System.Double,System.String,System.String)
+  fullName: EpNet.Library.Library.PlaceShell(System.Double, System.Double, System.Double, System.Double, System.String, System.String)
+  nameWithType: Library.PlaceShell(Double, Double, Double, Double, String, String)
+- uid: EpNet.Library.Library.PlaceShell*
+  name: PlaceShell
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_PlaceShell_
+  commentId: Overload:EpNet.Library.Library.PlaceShell
+  isSpec: "True"
+  fullName: EpNet.Library.Library.PlaceShell
+  nameWithType: Library.PlaceShell
+- uid: EpNet.Library.Library.PVWatts(System.Double,System.Double,System.Double,System.Double,System.Double,System.String,System.Int32)
+  name: PVWatts(Double, Double, Double, Double, Double, String, Int32)
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_PVWatts_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_System_Int32_
+  commentId: M:EpNet.Library.Library.PVWatts(System.Double,System.Double,System.Double,System.Double,System.Double,System.String,System.Int32)
+  fullName: EpNet.Library.Library.PVWatts(System.Double, System.Double, System.Double, System.Double, System.Double, System.String, System.Int32)
+  nameWithType: Library.PVWatts(Double, Double, Double, Double, Double, String, Int32)
+- uid: EpNet.Library.Library.PVWatts*
+  name: PVWatts
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_PVWatts_
+  commentId: Overload:EpNet.Library.Library.PVWatts
+  isSpec: "True"
+  fullName: EpNet.Library.Library.PVWatts
+  nameWithType: Library.PVWatts
+- uid: EpNet.Library.Library.ScaleZoneOutdoor(System.Double)
+  name: ScaleZoneOutdoor(Double)
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_ScaleZoneOutdoor_System_Double_
+  commentId: M:EpNet.Library.Library.ScaleZoneOutdoor(System.Double)
+  fullName: EpNet.Library.Library.ScaleZoneOutdoor(System.Double)
+  nameWithType: Library.ScaleZoneOutdoor(Double)
+- uid: EpNet.Library.Library.ScaleZoneOutdoor*
+  name: ScaleZoneOutdoor
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_ScaleZoneOutdoor_
+  commentId: Overload:EpNet.Library.Library.ScaleZoneOutdoor
+  isSpec: "True"
+  fullName: EpNet.Library.Library.ScaleZoneOutdoor
+  nameWithType: Library.ScaleZoneOutdoor
+- uid: EpNet.Library.Library.ZoneArea(System.String,System.Double)
+  name: ZoneArea(String, Double)
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_ZoneArea_System_String_System_Double_
+  commentId: M:EpNet.Library.Library.ZoneArea(System.String,System.Double)
+  fullName: EpNet.Library.Library.ZoneArea(System.String, System.Double)
+  nameWithType: Library.ZoneArea(String, Double)
+- uid: EpNet.Library.Library.ZoneArea*
+  name: ZoneArea
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_ZoneArea_
+  commentId: Overload:EpNet.Library.Library.ZoneArea
+  isSpec: "True"
+  fullName: EpNet.Library.Library.ZoneArea
+  nameWithType: Library.ZoneArea
 - uid: EpNet.Psychrometrics
   name: EpNet.Psychrometrics
   href: api/EpNet.Psychrometrics.html
