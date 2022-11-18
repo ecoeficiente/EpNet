@@ -24,7 +24,7 @@
           "hash": "oBEyuz+VE6UkFuy1CwQpHOoSBz4PUkyldLcynSSkdao="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -36,7 +36,7 @@
           "hash": "a02mUZZ6hR/D50YpckE7+L9onupwLsDY/81g+kxEJ4o="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -48,7 +48,7 @@
           "hash": "rC9WeL57q10/zEUhYqMMHaymCJ81x1SI4J5kDe5NCRo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EpNet.IdfReader.html",
-          "hash": "XJl2HyGyqKuDko1gniZau8d2hh6gYvQ7+/DViAe7dtI="
+          "hash": "yfmuTJ6aiClvShA422Ixt3A9lnBK5GxSSJgDrGMa5t4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -96,7 +96,7 @@
           "hash": "dLsb2JJV8iH0kO4s49mDsFuve16DutmwIgjqEUpkaG4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -132,7 +132,7 @@
           "hash": "I2npCe4QFZhY0iZclPKuEWusBkp9IrPC+RhC4aWVurU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EpNet.Library.Library.html",
-          "hash": "4023/2s9u9VpkdubrbJ4BieS9+jfCNb+n1M9gsfJ6/I="
+          "hash": "OEuzQJVwxyxa+k7nlo1/qqsXVWHw08Cfx5c/Qkipep4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -156,7 +156,7 @@
           "hash": "02/QwbH1WOZDp014Ks043pkAvmgJDPwtG6vh3JtLhxk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -388,12 +388,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "OE2VevB8hZT2vUXP1Ww99r4zc3v8JFPo2MM8GqDNJpU="
+          "hash": "Q20++JOoAglPKqvc3Q2cIbCIrxm0GERhD9UG1meR1Zk="
         }
       },
       "is_incremental": false,
@@ -425,13 +428,13 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 3
+          "skipped_file_count": 2
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 28,
-          "skipped_file_count": 27
+          "skipped_file_count": 26
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

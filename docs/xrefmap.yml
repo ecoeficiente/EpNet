@@ -1201,6 +1201,19 @@ references:
   isSpec: "True"
   fullName: EpNet.IdfReader.IdfReader
   nameWithType: IdfReader.IdfReader
+- uid: EpNet.IdfReader.Add(EpNet.IdfObject)
+  name: Add(IdfObject)
+  href: api/EpNet.IdfReader.html#EpNet_IdfReader_Add_EpNet_IdfObject_
+  commentId: M:EpNet.IdfReader.Add(EpNet.IdfObject)
+  fullName: EpNet.IdfReader.Add(EpNet.IdfObject)
+  nameWithType: IdfReader.Add(IdfObject)
+- uid: EpNet.IdfReader.Add*
+  name: Add
+  href: api/EpNet.IdfReader.html#EpNet_IdfReader_Add_
+  commentId: Overload:EpNet.IdfReader.Add
+  isSpec: "True"
+  fullName: EpNet.IdfReader.Add
+  nameWithType: IdfReader.Add
 - uid: EpNet.IdfReader.AddKPI(DB.Api.Site,System.String,System.String)
   name: AddKPI(Site, String, String)
   href: api/EpNet.IdfReader.html#EpNet_IdfReader_AddKPI_DB_Api_Site_System_String_System_String_
@@ -1914,6 +1927,22 @@ references:
   isSpec: "True"
   fullName: EpNet.Library.Library.ExportShading
   nameWithType: Library.ExportShading
+- uid: EpNet.Library.Library.FanOnOffToFanSystemModel(System.String,System.Boolean,System.Double[])
+  name: FanOnOffToFanSystemModel(String, Boolean, Double[])
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_FanOnOffToFanSystemModel_System_String_System_Boolean_System_Double___
+  commentId: M:EpNet.Library.Library.FanOnOffToFanSystemModel(System.String,System.Boolean,System.Double[])
+  name.vb: FanOnOffToFanSystemModel(String, Boolean, Double())
+  fullName: EpNet.Library.Library.FanOnOffToFanSystemModel(System.String, System.Boolean, System.Double[])
+  fullName.vb: EpNet.Library.Library.FanOnOffToFanSystemModel(System.String, System.Boolean, System.Double())
+  nameWithType: Library.FanOnOffToFanSystemModel(String, Boolean, Double[])
+  nameWithType.vb: Library.FanOnOffToFanSystemModel(String, Boolean, Double())
+- uid: EpNet.Library.Library.FanOnOffToFanSystemModel*
+  name: FanOnOffToFanSystemModel
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_FanOnOffToFanSystemModel_
+  commentId: Overload:EpNet.Library.Library.FanOnOffToFanSystemModel
+  isSpec: "True"
+  fullName: EpNet.Library.Library.FanOnOffToFanSystemModel
+  nameWithType: Library.FanOnOffToFanSystemModel
 - uid: EpNet.Library.Library.ImportShading(System.String)
   name: ImportShading(String)
   href: api/EpNet.Library.Library.html#EpNet_Library_Library_ImportShading_System_String_

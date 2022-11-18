@@ -398,6 +398,55 @@ AddDesignVariable(&quot;Material&quot;,&quot;Variable Insulation&quot;, 2, &quot
   </div>
   
   
+  <a id="EpNet_Library_Library_FanOnOffToFanSystemModel_" data-uid="EpNet.Library.Library.FanOnOffToFanSystemModel*"></a>
+  <h4 id="EpNet_Library_Library_FanOnOffToFanSystemModel_System_String_System_Boolean_System_Double___" data-uid="EpNet.Library.Library.FanOnOffToFanSystemModel(System.String,System.Boolean,System.Double[])">FanOnOffToFanSystemModel(String, Boolean, Double[])</h4>
+  <div class="markdown level1 summary"><p>Changes Fan:OnOff fans into Fan:SystemModel, allowing multispeed in VRF, fancoils, etc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FanOnOffToFanSystemModel(string endUseSubcategory, bool continuous = true, params double[] speedFraction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">endUseSubcategory</span></td>
+        <td><p>Only fans in which the End-Use Subcategory contains this text will be changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">continuous</span></td>
+        <td><p>true for continuous speed control. Discrete control if false.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">speedFraction</span></td>
+        <td><p>list of speed fractions in case of discrete control. Use 1 value to define the minimum flow rate fraction in continuous control.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="EpNet_Library_Library_FanOnOffToFanSystemModel_System_String_System_Boolean_System_Double____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The power fraction will be calculated from the Fan Power Ratio Function of Speed Ratio Curve Name in the Fan:OnOff</p>
+</div>
+  <h5 id="EpNet_Library_Library_FanOnOffToFanSystemModel_System_String_System_Boolean_System_Double____examples">Examples</h5>
+  <p>VRFFanOnOffToFanSystemModel(false,0.6,0.8,1) for a 3 speed fan(</p>
+
+  <p>VRFFanOnOffToFanSystemModel(true,0.1) for a continuous fan with a minimum flow rate of 10%</p>
+
+  
+  
   <a id="EpNet_Library_Library_ImportShading_" data-uid="EpNet.Library.Library.ImportShading*"></a>
   <h4 id="EpNet_Library_Library_ImportShading_System_String_" data-uid="EpNet.Library.Library.ImportShading(System.String)">ImportShading(String)</h4>
   <div class="markdown level1 summary"><p>Imports a previously generated shading</p>
