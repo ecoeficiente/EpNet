@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class IdfReader
    ">
-    <meta name="generator" content="docfx 2.59.3.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -545,14 +545,14 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
   </table>
   
   
-  <a id="EpNet_IdfReader_AddKPI_" data-uid="EpNet.IdfReader.AddKPI*"></a>
-  <h4 id="EpNet_IdfReader_AddKPI_DB_Api_Site_System_String_System_String_" data-uid="EpNet.IdfReader.AddKPI(DB.Api.Site,System.String,System.String)">AddKPI(Site, String, String)</h4>
-  <div class="markdown level1 summary"><p>Used only for parametric analysis. Adds a KPI.</p>
+  <a id="EpNet_IdfReader_AddDesignVariable_" data-uid="EpNet.IdfReader.AddDesignVariable*"></a>
+  <h4 id="EpNet_IdfReader_AddDesignVariable_System_String_System_String_System_Int32_System_String_" data-uid="EpNet.IdfReader.AddDesignVariable(System.String,System.String,System.Int32,System.String)">AddDesignVariable(String, String, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Adds a design variable for parametric/optimisation. Use in BeforeEnergySimulation hook.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddKPI(Site site, string name, string value)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddDesignVariable(string idfClass, string name, int field, string variableKey)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -565,22 +565,129 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DB.Api.Site</span></td>
-        <td><span class="parametername">site</span></td>
-        <td><p>ApiEnvironment.Site has to be passed as a parameter.</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idfClass</span></td>
+        <td><p>The idf class for the object to modify. e.g. &quot;Material&quot;</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td><p>Name of the KPI table, as in the Parametric/Optimisation settings</p>
+        <td><p>Name of the object to modify. e.g. Insulation (searches for a name starting by that)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">field</span></td>
+        <td><p>Number of the field to change. e.g. 2</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Value for the KPI</p>
+        <td><span class="parametername">variableKey</span></td>
+        <td><p>ame of the variable key given in DesignBuilder. e.g. &quot;insulationthickness&quot;</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="EpNet_IdfReader_AddDesignVariable_System_String_System_String_System_Int32_System_String__examples">Examples</h5>
+  <p>Test different thickness values for a insulation material:
+AddDesignVariable(&quot;Material&quot;,&quot;Variable Insulation&quot;, 2, &quot;insulationthickness&quot;);
+Idf.Save();</p>
+
+  
+  
+  <a id="EpNet_IdfReader_AddDesignVariable_" data-uid="EpNet.IdfReader.AddDesignVariable*"></a>
+  <h4 id="EpNet_IdfReader_AddDesignVariable_System_String_System_String_System_Int32_System_String_System_Func_System_Double_System_Double__" data-uid="EpNet.IdfReader.AddDesignVariable(System.String,System.String,System.Int32,System.String,System.Func{System.Double,System.Double})">AddDesignVariable(String, String, Int32, String, Func&lt;Double, Double&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a design variable for parametric/optimisation. Use in BeforeEnergySimulation hook.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDesignVariable(string idfClass, string name, int field, string variableKey, Func&lt;double, double&gt; variableKeyFunction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idfClass</span></td>
+        <td><p>The idf class for the object to modify. e.g. &quot;Material&quot;</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the object to modify. e.g. Insulation (searches for a name starting by that)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">field</span></td>
+        <td><p>Number of the field to change. e.g. 2</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">variableKey</span></td>
+        <td><p>ame of the variable key given in DesignBuilder. e.g. &quot;insulationthickness&quot;</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Double</span>, <span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">variableKeyFunction</span></td>
+        <td><p>Fuction to apply to the variableKey</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="EpNet_IdfReader_AddDesignVariable_System_String_System_String_System_Int32_System_String_System_Func_System_Double_System_Double___examples">Examples</h5>
+  <p>Test different thickness values for a insulation material:
+AddDesignVariable(&quot;Material&quot;,&quot;Variable Insulation&quot;, 2, &quot;insulationthickness&quot;, x=&gt;x/100);
+Idf.Save();</p>
+
+  
+  
+  <a id="EpNet_IdfReader_AddKpi_" data-uid="EpNet.IdfReader.AddKpi*"></a>
+  <h4 id="EpNet_IdfReader_AddKpi_DB_Api_Environment_System_String_System_Double_" data-uid="EpNet.IdfReader.AddKpi(DB.Api.Environment,System.String,System.Double)">AddKpi(Environment, String, Double)</h4>
+  <div class="markdown level1 summary"><p>Adds a Kpi result for parametric/optimisatin. Use in AfterEnergySimulation hook.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddKpi(Environment ApiEnvironment, string kpiName, double kpiValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DB.Api.Environment</span></td>
+        <td><span class="parametername">ApiEnvironment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">kpiName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">kpiValue</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -637,6 +744,50 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
         <td><span class="parametername">idfObject</span></td>
         <td><p>idf object to clone.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfReader_GetDataFromEso_" data-uid="EpNet.IdfReader.GetDataFromEso*"></a>
+  <h4 id="EpNet_IdfReader_GetDataFromEso_System_String_" data-uid="EpNet.IdfReader.GetDataFromEso(System.String)">GetDataFromEso(String)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a value from the eso file saved with the SaveDataInEso method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? GetDataFromEso(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Name of the key or variable to retrieve.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -740,6 +891,77 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
         <td><span class="parametername">fields</span></td>
         <td><p>idfclass, field1, field2 ...</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfReader_ReadData_" data-uid="EpNet.IdfReader.ReadData*"></a>
+  <h4 id="EpNet_IdfReader_ReadData_System_String_" data-uid="EpNet.IdfReader.ReadData(System.String)">ReadData(String)</h4>
+  <div class="markdown level1 summary"><p>Reads data from the precomments of the file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReadData(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_IdfReader_RemoveData_" data-uid="EpNet.IdfReader.RemoveData*"></a>
+  <h4 id="EpNet_IdfReader_RemoveData_System_String_" data-uid="EpNet.IdfReader.RemoveData(System.String)">RemoveData(String)</h4>
+  <div class="markdown level1 summary"><p>Removes data from the precomments of the file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveData(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -885,6 +1107,41 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
   </table>
   
   
+  <a id="EpNet_IdfReader_SaveDataInEso_" data-uid="EpNet.IdfReader.SaveDataInEso*"></a>
+  <h4 id="EpNet_IdfReader_SaveDataInEso_System_String_System_Double_" data-uid="EpNet.IdfReader.SaveDataInEso(System.String,System.Double)">SaveDataInEso(String, Double)</h4>
+  <div class="markdown level1 summary"><p>Creates a numeric value than can be retrieved after simulation from the Eso results file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveDataInEso(string key, double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Name of the key or variable to be used later for retrieval.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value of the variable</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="EpNet_IdfReader_ToString_" data-uid="EpNet.IdfReader.ToString*"></a>
   <h4 id="EpNet_IdfReader_ToString" data-uid="EpNet.IdfReader.ToString">ToString()</h4>
   <div class="markdown level1 summary"><p>Whole idf content as a text string.</p>
@@ -912,6 +1169,39 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.ToString()</span></div>
+  
+  
+  <a id="EpNet_IdfReader_WriteData_" data-uid="EpNet.IdfReader.WriteData*"></a>
+  <h4 id="EpNet_IdfReader_WriteData_System_String_System_String_" data-uid="EpNet.IdfReader.WriteData(System.String,System.String)">WriteData(String, String)</h4>
+  <div class="markdown level1 summary"><p>Writes data to the precomments of the file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteData(string key, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Int32_System_Int32_">ExtensionMethods.GetData&lt;T&gt;(IEnumerable&lt;IdfObject&gt;, Int32, Int32)</a>
@@ -939,6 +1229,21 @@ m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
   </div>
   <div>
       <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetByName_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_">ExtensionMethods.GetByName(IEnumerable&lt;IdfObject&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Serialize__1___0_">ExtensionMethods.Serialize&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Deserialize__1___0_System_String_">ExtensionMethods.Deserialize&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Find_System_Collections_Generic_List_EpNet_IdfObject__System_String_">ExtensionMethods.Find(List&lt;IdfObject&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_FindByField_System_Collections_Generic_List_EpNet_IdfObject__System_Int32_System_String_">ExtensionMethods.FindByField(List&lt;IdfObject&gt;, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_FindByField_System_Collections_Generic_List_EpNet_IdfObject__System_String_System_String_">ExtensionMethods.FindByField(List&lt;IdfObject&gt;, String, String)</a>
   </div>
   <div>
       <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetAirloopZones_EpNet_IdfReader_">ExtensionMethods.GetAirloopZones(IdfReader)</a>

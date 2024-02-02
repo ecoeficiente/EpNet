@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class EsoReader
    ">
-    <meta name="generator" content="docfx 2.59.3.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -214,33 +214,6 @@
   </table>
   
   
-  <a id="EpNet_Results_EsoReader_NewResults_" data-uid="EpNet.Results.EsoReader.NewResults*"></a>
-  <h4 id="EpNet_Results_EsoReader_NewResults" data-uid="EpNet.Results.EsoReader.NewResults">NewResults</h4>
-  <div class="markdown level1 summary"><p>Retrieves the new (just added) resultsets</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;ResultSet&gt; NewResults { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
-        <td><p>ResultSet list.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="EpNet_Results_EsoReader_OldResults_" data-uid="EpNet.Results.EsoReader.OldResults*"></a>
   <h4 id="EpNet_Results_EsoReader_OldResults" data-uid="EpNet.Results.EsoReader.OldResults">OldResults</h4>
   <div class="markdown level1 summary"><p>Retrieves the list of existent resultsets</p>
@@ -438,6 +411,193 @@
   </table>
   
   
+  <a id="EpNet_Results_EsoReader_First_" data-uid="EpNet.Results.EsoReader.First*"></a>
+  <h4 id="EpNet_Results_EsoReader_First_System_String_System_String_EpNet_Results_Frequencies_" data-uid="EpNet.Results.EsoReader.First(System.String,System.String,EpNet.Results.Frequencies)">First(String, String, Frequencies)</h4>
+  <div class="markdown level1 summary"><p>Returns the first ResultSet that meets the conditions. Null if not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResultSet First(string component, string reportType, Frequencies frequency)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reportType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></td>
+        <td><span class="parametername">frequency</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_EsoReader_Get_" data-uid="EpNet.Results.EsoReader.Get*"></a>
+  <h4 id="EpNet_Results_EsoReader_Get_System_Func_EpNet_Results_ResultSet_System_Boolean__" data-uid="EpNet.Results.EsoReader.Get(System.Func{EpNet.Results.ResultSet,System.Boolean})">Get(Func&lt;ResultSet, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Retrieves all the ResultSets that meet the conditions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet&gt; Get(Func&lt;ResultSet, bool&gt; conditions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">conditions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_EsoReader_Get_" data-uid="EpNet.Results.EsoReader.Get*"></a>
+  <h4 id="EpNet_Results_EsoReader_Get_System_String_" data-uid="EpNet.Results.EsoReader.Get(System.String)">Get(String)</h4>
+  <div class="markdown level1 summary"><p>Retrieves all the ResultSets that meet the conditions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet&gt; Get(string componentOrreportType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">componentOrreportType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_EsoReader_Get_" data-uid="EpNet.Results.EsoReader.Get*"></a>
+  <h4 id="EpNet_Results_EsoReader_Get_System_String_EpNet_Results_Frequencies_" data-uid="EpNet.Results.EsoReader.Get(System.String,EpNet.Results.Frequencies)">Get(String, Frequencies)</h4>
+  <div class="markdown level1 summary"><p>Retrieves all the ResultSets that meet the conditions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet&gt; Get(string componentOrreportType, Frequencies frequency)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">componentOrreportType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></td>
+        <td><span class="parametername">frequency</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="EpNet_Results_EsoReader_Save_" data-uid="EpNet.Results.EsoReader.Save*"></a>
   <h4 id="EpNet_Results_EsoReader_Save_System_Boolean_" data-uid="EpNet.Results.EsoReader.Save(System.Boolean)">Save(Boolean)</h4>
   <div class="markdown level1 summary"><p>Saves the eso file overwriting current eso file.</p>
@@ -468,13 +628,13 @@
   
   
   <a id="EpNet_Results_EsoReader_Save_" data-uid="EpNet.Results.EsoReader.Save*"></a>
-  <h4 id="EpNet_Results_EsoReader_Save_System_String_System_Boolean_" data-uid="EpNet.Results.EsoReader.Save(System.String,System.Boolean)">Save(String, Boolean)</h4>
+  <h4 id="EpNet_Results_EsoReader_Save_System_String_System_Boolean_System_Boolean_" data-uid="EpNet.Results.EsoReader.Save(System.String,System.Boolean,System.Boolean)">Save(String, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Saves the eso file in an new file.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Save(string esoFilePath, bool newResultsOnly = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Save(string esoFilePath, bool newResultsOnly = false, bool sortNew = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -498,8 +658,180 @@
         <td><p>Only save newly created results.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">sortNew</span></td>
+        <td><p>Adds a first blank character to new results so they appear first in Results Viewer </p>
+</td>
+      </tr>
     </tbody>
   </table>
+  
+  
+  <a id="EpNet_Results_EsoReader_TryGet_" data-uid="EpNet.Results.EsoReader.TryGet*"></a>
+  <h4 id="EpNet_Results_EsoReader_TryGet_System_Func_EpNet_Results_ResultSet_System_Boolean__EpNet_Results_ResultSet__" data-uid="EpNet.Results.EsoReader.TryGet(System.Func{EpNet.Results.ResultSet,System.Boolean},EpNet.Results.ResultSet@)">TryGet(Func&lt;ResultSet, Boolean&gt;, out ResultSet)</h4>
+  <div class="markdown level1 summary"><p>Finds the first ResultSet that meets the conditions. A return value indicates whether the result is found or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGet(Func&lt;ResultSet, bool&gt; conditions, out ResultSet result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">conditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_EsoReader_TryGet_" data-uid="EpNet.Results.EsoReader.TryGet*"></a>
+  <h4 id="EpNet_Results_EsoReader_TryGet_System_String_System_String_EpNet_Results_Frequencies_EpNet_Results_ResultSet__" data-uid="EpNet.Results.EsoReader.TryGet(System.String,System.String,EpNet.Results.Frequencies,EpNet.Results.ResultSet@)">TryGet(String, String, Frequencies, out ResultSet)</h4>
+  <div class="markdown level1 summary"><p>Finds the ResultSet that meets the conditions. A return value indicates whether the result is found or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGet(string component, string reportType, Frequencies frequency, out ResultSet result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reportType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></td>
+        <td><span class="parametername">frequency</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Results_EsoReader_TryGet_" data-uid="EpNet.Results.EsoReader.TryGet*"></a>
+  <h4 id="EpNet_Results_EsoReader_TryGet_System_String_System_String_EpNet_Results_ResultSet__" data-uid="EpNet.Results.EsoReader.TryGet(System.String,System.String,EpNet.Results.ResultSet@)">TryGet(String, String, out ResultSet)</h4>
+  <div class="markdown level1 summary"><p>Finds the first ResultSet that meets the conditions. A return value indicates whether the result is found or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGet(string component, string reportType, out ResultSet result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reportType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Serialize__1___0_">ExtensionMethods.Serialize&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Deserialize__1___0_System_String_">ExtensionMethods.Deserialize&lt;T&gt;(T, String)</a>
+  </div>
 </article>
           </div>
           

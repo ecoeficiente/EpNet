@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ExtensionMethods
    ">
-    <meta name="generator" content="docfx 2.59.3.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -295,6 +295,176 @@
   </table>
   
   
+  <a id="EpNet_ExtensionMethods_ContainsWord_" data-uid="EpNet.ExtensionMethods.ContainsWord*"></a>
+  <h4 id="EpNet_ExtensionMethods_ContainsWord_System_String_System_String_" data-uid="EpNet.ExtensionMethods.ContainsWord(System.String,System.String)">ContainsWord(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets if the field string contains the whole string word. Ignores case.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ContainsWord(this string field, string word)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">field</span></td>
+        <td><p>string where to look for</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">word</span></td>
+        <td><p>searched string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if found</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_Deserialize_" data-uid="EpNet.ExtensionMethods.Deserialize*"></a>
+  <h4 id="EpNet_ExtensionMethods_Deserialize_System_Type_System_String_" data-uid="EpNet.ExtensionMethods.Deserialize(System.Type,System.String)">Deserialize(Type, String)</h4>
+  <div class="markdown level1 summary"><p>Deserializes an object which is saved to an XML data string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object Deserialize(Type toDeserialize, string xmlData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">toDeserialize</span></td>
+        <td><p>A type of an object of which XML data to deserialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">xmlData</span></td>
+        <td><p>A string containing a serialized XML data do deserialize.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>An object which is deserialized from the XML data string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_Deserialize_" data-uid="EpNet.ExtensionMethods.Deserialize*"></a>
+  <h4 id="EpNet_ExtensionMethods_Deserialize__1___0_System_String_" data-uid="EpNet.ExtensionMethods.Deserialize``1(``0,System.String)">Deserialize&lt;T&gt;(T, String)</h4>
+  <div class="markdown level1 summary"><p>Deserializes an object which is saved to an XML data string. If the object has no instance a new object will be constructed if possible.
+<div class="NOTE"><h5>note</h5><p>An exception will occur if a null reference is called an no valid constructor of the class is available.</p></div></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Deserialize&lt;T&gt;(this T toDeserialize, string xmlData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">toDeserialize</span></td>
+        <td><p>An object of which XML data to deserialize. If the object is null a a default constructor is called.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">xmlData</span></td>
+        <td><p>A string containing a serialized XML data do deserialize.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>An object which is deserialized from the XML data string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>An object to deserialize from a XML data string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="EpNet_ExtensionMethods_EndsWithIgnoreCase_" data-uid="EpNet.ExtensionMethods.EndsWithIgnoreCase*"></a>
   <h4 id="EpNet_ExtensionMethods_EndsWithIgnoreCase_System_String_System_String_" data-uid="EpNet.ExtensionMethods.EndsWithIgnoreCase(System.String,System.String)">EndsWithIgnoreCase(String, String)</h4>
   <div class="markdown level1 summary"><p>Determines whether the end of this string instance matches the specified string. Ignores case.</p>
@@ -391,6 +561,171 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>true if both strings are equal ignoring case.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_Find_" data-uid="EpNet.ExtensionMethods.Find*"></a>
+  <h4 id="EpNet_ExtensionMethods_Find_System_Collections_Generic_List_EpNet_IdfObject__System_String_" data-uid="EpNet.ExtensionMethods.Find(System.Collections.Generic.List{EpNet.IdfObject},System.String)">Find(List&lt;IdfObject&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Returns the idfObject whose name matches the provided name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IdfObject Find(this List&lt;IdfObject&gt; idfObjects, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
+        <td><span class="parametername">idfObjects</span></td>
+        <td><p>idfObject List</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>name to find</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><p>Found idfObject</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_FindByField_" data-uid="EpNet.ExtensionMethods.FindByField*"></a>
+  <h4 id="EpNet_ExtensionMethods_FindByField_System_Collections_Generic_List_EpNet_IdfObject__System_Int32_System_String_" data-uid="EpNet.ExtensionMethods.FindByField(System.Collections.Generic.List{EpNet.IdfObject},System.Int32,System.String)">FindByField(List&lt;IdfObject&gt;, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Returns the first idfObject where the provided field matches the value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IdfObject FindByField(this List&lt;IdfObject&gt; idfObjects, int field, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
+        <td><span class="parametername">idfObjects</span></td>
+        <td><p>idfObject List</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">field</span></td>
+        <td><p>field number</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>value to find</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><p>First idfObjectFound</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_FindByField_" data-uid="EpNet.ExtensionMethods.FindByField*"></a>
+  <h4 id="EpNet_ExtensionMethods_FindByField_System_Collections_Generic_List_EpNet_IdfObject__System_String_System_String_" data-uid="EpNet.ExtensionMethods.FindByField(System.Collections.Generic.List{EpNet.IdfObject},System.String,System.String)">FindByField(List&lt;IdfObject&gt;, String, String)</h4>
+  <div class="markdown level1 summary"><p>Returns the first idfObject where the provided field matches the value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IdfObject FindByField(this List&lt;IdfObject&gt; idfObjects, string field, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
+        <td><span class="parametername">idfObjects</span></td>
+        <td><p>idfObject List</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">field</span></td>
+        <td><p>field name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>value to find</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><p>First idfObjectFound</p>
 </td>
       </tr>
     </tbody>
@@ -709,13 +1044,13 @@
   
   
   <a id="EpNet_ExtensionMethods_OR_" data-uid="EpNet.ExtensionMethods.OR*"></a>
-  <h4 id="EpNet_ExtensionMethods_OR_System_Boolean_System_Boolean_" data-uid="EpNet.ExtensionMethods.OR(System.Boolean,System.Boolean)">OR(Boolean, Boolean)</h4>
+  <h4 id="EpNet_ExtensionMethods_OR_System_Boolean_System_Boolean___" data-uid="EpNet.ExtensionMethods.OR(System.Boolean,System.Boolean[])">OR(Boolean, Boolean[])</h4>
   <div class="markdown level1 summary"><p>Alternative to || operator since DesignBuilder text parser does not allow | symbol</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool OR(this bool left, bool right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool OR(this bool left, params bool[] others)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -734,9 +1069,9 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">right</span></td>
-        <td><p>right condition</p>
+        <td><span class="xref">System.Boolean</span>[]</td>
+        <td><span class="parametername">others</span></td>
+        <td><p>right conditions</p>
 </td>
       </tr>
     </tbody>
@@ -752,7 +1087,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>left || right</p>
+        <td><p>the boolean OR between the conditions</p>
 </td>
       </tr>
     </tbody>
@@ -804,6 +1139,148 @@
   </table>
   
   
+  <a id="EpNet_ExtensionMethods_ReadData_" data-uid="EpNet.ExtensionMethods.ReadData*"></a>
+  <h4 id="EpNet_ExtensionMethods_ReadData_EpNet_IdfObject_System_String_" data-uid="EpNet.ExtensionMethods.ReadData(EpNet.IdfObject,System.String)">ReadData(IdfObject, String)</h4>
+  <div class="markdown level1 summary"><p>Reads data from the Precomments of an idfObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadData(this IdfObject idfObject, string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">idfObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_RemoveData_" data-uid="EpNet.ExtensionMethods.RemoveData*"></a>
+  <h4 id="EpNet_ExtensionMethods_RemoveData_EpNet_IdfObject_System_String_" data-uid="EpNet.ExtensionMethods.RemoveData(EpNet.IdfObject,System.String)">RemoveData(IdfObject, String)</h4>
+  <div class="markdown level1 summary"><p>Removes data from the precomments of an idfObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveData(this IdfObject idfObject, string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">idfObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_Serialize_" data-uid="EpNet.ExtensionMethods.Serialize*"></a>
+  <h4 id="EpNet_ExtensionMethods_Serialize__1___0_" data-uid="EpNet.ExtensionMethods.Serialize``1(``0)">Serialize&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>A helper to serialize an object to a string containing XML data of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Serialize&lt;T&gt;(this T toSerialize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">toSerialize</span></td>
+        <td><p>A helper method for any type of object to be serialized to a XML data string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string containing XML data of the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>An object to serialize to a XML data string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="EpNet_ExtensionMethods_StartsWithIgnoreCase_" data-uid="EpNet.ExtensionMethods.StartsWithIgnoreCase*"></a>
   <h4 id="EpNet_ExtensionMethods_StartsWithIgnoreCase_System_String_System_String_" data-uid="EpNet.ExtensionMethods.StartsWithIgnoreCase(System.String,System.String)">StartsWithIgnoreCase(String, String)</h4>
   <div class="markdown level1 summary"><p>Determines whether the beginning of this string instance matches the specified string. Ignores case.</p>
@@ -849,6 +1326,101 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>true if current string starts with substring.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_ToInt_" data-uid="EpNet.ExtensionMethods.ToInt*"></a>
+  <h4 id="EpNet_ExtensionMethods_ToInt_System_String_" data-uid="EpNet.ExtensionMethods.ToInt(System.String)">ToInt(String)</h4>
+  <div class="markdown level1 summary"><p>Converts from string to double using InvariantCulture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ToInt(this string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>string value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>double value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_ToInt_" data-uid="EpNet.ExtensionMethods.ToInt*"></a>
+  <h4 id="EpNet_ExtensionMethods_ToInt_System_String_System_Globalization_CultureInfo_" data-uid="EpNet.ExtensionMethods.ToInt(System.String,System.Globalization.CultureInfo)">ToInt(String, CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Converts from string to int using a specified Culture format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ToInt(this string value, CultureInfo culture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>string value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>int value.</p>
 </td>
       </tr>
     </tbody>
@@ -1016,6 +1588,101 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>numeric value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>string Value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_ToText_" data-uid="EpNet.ExtensionMethods.ToText*"></a>
+  <h4 id="EpNet_ExtensionMethods_ToText_System_Int32_" data-uid="EpNet.ExtensionMethods.ToText(System.Int32)">ToText(Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts from number to string in InvariantCulture format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToText(this int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>numeric value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>string value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_ToText_" data-uid="EpNet.ExtensionMethods.ToText*"></a>
+  <h4 id="EpNet_ExtensionMethods_ToText_System_Int32_System_Globalization_CultureInfo_" data-uid="EpNet.ExtensionMethods.ToText(System.Int32,System.Globalization.CultureInfo)">ToText(Int32, CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Converts from number to string in the specified Culture format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToText(this int value, CultureInfo culture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>numeric value</p>
 </td>
@@ -1263,6 +1930,44 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">secondField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_ExtensionMethods_WriteData_" data-uid="EpNet.ExtensionMethods.WriteData*"></a>
+  <h4 id="EpNet_ExtensionMethods_WriteData_EpNet_IdfObject_System_String_System_String_" data-uid="EpNet.ExtensionMethods.WriteData(EpNet.IdfObject,System.String,System.String)">WriteData(IdfObject, String, String)</h4>
+  <div class="markdown level1 summary"><p>Writes data to the precomments of an idfObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteData(this IdfObject idfObject, string key, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">idfObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ExtensionMethods
    ">
-    <meta name="generator" content="docfx 2.59.3.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -207,13 +207,13 @@
   
   
   <a id="EpNet_Helpers_ExtensionMethods_GetArea_" data-uid="EpNet.Helpers.ExtensionMethods.GetArea*"></a>
-  <h4 id="EpNet_Helpers_ExtensionMethods_GetArea_EpNet_IdfObject_" data-uid="EpNet.Helpers.ExtensionMethods.GetArea(EpNet.IdfObject)">GetArea(IdfObject)</h4>
-  <div class="markdown level1 summary"><p>Get the area of a zone or any opaque, shading or window surface</p>
+  <h4 id="EpNet_Helpers_ExtensionMethods_GetArea_EpNet_IdfObject_System_Boolean_" data-uid="EpNet.Helpers.ExtensionMethods.GetArea(EpNet.IdfObject,System.Boolean)">GetArea(IdfObject, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Get the area of a zone or any opaque, shading or window surface. If window, it includes the frame.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double GetArea(this IdfObject idfObject)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double GetArea(this IdfObject idfObject, bool includeMultiplier = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -228,6 +228,11 @@
       <tr>
         <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
         <td><span class="parametername">idfObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeMultiplier</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -288,6 +293,55 @@
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><p>Surface azimuth (deg).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Helpers_ExtensionMethods_GetGlassArea_" data-uid="EpNet.Helpers.ExtensionMethods.GetGlassArea*"></a>
+  <h4 id="EpNet_Helpers_ExtensionMethods_GetGlassArea_EpNet_IdfObject_System_Boolean_" data-uid="EpNet.Helpers.ExtensionMethods.GetGlassArea(EpNet.IdfObject,System.Boolean)">GetGlassArea(IdfObject, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Get the area of a window surface without the frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetGlassArea(this IdfObject idfObject, bool includeMultiplier = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">idfObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeMultiplier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>Surface area (m²).</p>
 </td>
       </tr>
     </tbody>
@@ -953,6 +1007,41 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><p>Airloop name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="EpNet_Helpers_ExtensionMethods_InvertSchedule_" data-uid="EpNet.Helpers.ExtensionMethods.InvertSchedule*"></a>
+  <h4 id="EpNet_Helpers_ExtensionMethods_InvertSchedule_EpNet_IdfObject_System_String_" data-uid="EpNet.Helpers.ExtensionMethods.InvertSchedule(EpNet.IdfObject,System.String)">InvertSchedule(IdfObject, String)</h4>
+  <div class="markdown level1 summary"><p>Adds a schedule appending &quot;_Inverted&quot; to the name where all values are inverted (if 0 then 1 and if different from 0 then 0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InvertSchedule(this IdfObject idfSchedule, string newName = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
+        <td><span class="parametername">idfSchedule</span></td>
+        <td><p>Idf schedule object to invert</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newName</span></td>
+        <td><p>Optional. Name is changed into this.</p>
 </td>
       </tr>
     </tbody>
