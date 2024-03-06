@@ -1,1021 +1,1146 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ExtensionMethods
-   </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ExtensionMethods
-   ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Class ExtensionMethods | EpNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ExtensionMethods | EpNet ">
+      
+      <meta name="description" content="Provides additional functionality in the form of extension methods.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="EpNet.Results.ExtensionMethods">
-  
-  
-  <h1 id="EpNet_Results_ExtensionMethods" data-uid="EpNet.Results.ExtensionMethods" class="text-break">Class ExtensionMethods
-  </h1>
-  <div class="markdown level0 summary"><p>Provides additional functionality in the form of extension methods.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ExtensionMethods</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="EpNet.Results.html">EpNet.Results</a></h6>
-  <h6><strong>Assembly</strong>: EpNet.dll</h6>
-  <h5 id="EpNet_Results_ExtensionMethods_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ExtensionMethods</code></pre>
-  </div>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_Average_" data-uid="EpNet.Results.ExtensionMethods.Average*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_Average_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__" data-uid="EpNet.Results.ExtensionMethods.Average(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})">Average(IEnumerable&lt;ResultSet&gt;)</h4>
-  <div class="markdown level1 summary"><p>Averages a list of result sets.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet Average(this IEnumerable&lt;ResultSet&gt; results)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
-        <td><span class="parametername">results</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><p>Resulting Result Set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_ContainsComponent_" data-uid="EpNet.Results.ExtensionMethods.ContainsComponent*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_ContainsComponent_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__" data-uid="EpNet.Results.ExtensionMethods.ContainsComponent(EpNet.Results.ResultSet,System.Collections.Generic.IEnumerable{System.String})">ContainsComponent(ResultSet, IEnumerable&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool ContainsComponent(this ResultSet result, IEnumerable&lt;string&gt; values)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">values</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_ContainsReport_" data-uid="EpNet.Results.ExtensionMethods.ContainsReport*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_ContainsReport_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__" data-uid="EpNet.Results.ExtensionMethods.ContainsReport(EpNet.Results.ResultSet,System.Collections.Generic.IEnumerable{System.String})">ContainsReport(ResultSet, IEnumerable&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool ContainsReport(this ResultSet result, IEnumerable&lt;string&gt; values)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">values</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_EqualsComponentReport_" data-uid="EpNet.Results.ExtensionMethods.EqualsComponentReport*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_EqualsComponentReport_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.EqualsComponentReport(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">EqualsComponentReport(ResultSet, ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Returns true if component and reporttype are equal in both resultsets.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool EqualsComponentReport(this ResultSet result, ResultSet other)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">other</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_EqualsDescriptor_" data-uid="EpNet.Results.ExtensionMethods.EqualsDescriptor*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_EqualsDescriptor_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.EqualsDescriptor(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">EqualsDescriptor(ResultSet, ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Returns true if component, reporttype, units and frequency are equal in both resultsets.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool EqualsDescriptor(this ResultSet result, ResultSet other)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">other</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_Get_" data-uid="EpNet.Results.ExtensionMethods.Get*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_Get_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_String_System_String_EpNet_Results_Frequencies_" data-uid="EpNet.Results.ExtensionMethods.Get(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.String,System.String,EpNet.Results.Frequencies)">Get(IEnumerable&lt;ResultSet&gt;, String, String, Frequencies)</h4>
-  <div class="markdown level1 summary"><p>Gets the result that matches the conditions.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet Get(this IEnumerable&lt;ResultSet&gt; results, string component, string resultType, Frequencies frequency)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
-        <td><span class="parametername">results</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">component</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">resultType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></td>
-        <td><span class="parametername">frequency</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_IsNotNull_" data-uid="EpNet.Results.ExtensionMethods.IsNotNull*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_IsNotNull_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.IsNotNull(EpNet.Results.ResultSet)">IsNotNull(ResultSet)</h4>
-  <div class="markdown level1 summary"><p>True if the Resultset is not null</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsNotNull(this ResultSet result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_IsNull_" data-uid="EpNet.Results.ExtensionMethods.IsNull*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_IsNull_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.IsNull(EpNet.Results.ResultSet)">IsNull(ResultSet)</h4>
-  <div class="markdown level1 summary"><p>True if the Resultset is null</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsNull(this ResultSet result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_Negative_" data-uid="EpNet.Results.ExtensionMethods.Negative*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_Negative_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.Negative(EpNet.Results.ResultSet)">Negative(ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Returns a new resultset with only the negative values</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet Negative(this ResultSet result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_Positive_" data-uid="EpNet.Results.ExtensionMethods.Positive*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_Positive_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.Positive(EpNet.Results.ResultSet)">Positive(ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Returns a new resultset with only the positive values</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet Positive(this ResultSet result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_SetComponent_" data-uid="EpNet.Results.ExtensionMethods.SetComponent*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_SetComponent_EpNet_Results_ResultSet_System_String_" data-uid="EpNet.Results.ExtensionMethods.SetComponent(EpNet.Results.ResultSet,System.String)">SetComponent(ResultSet, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet SetComponent(this ResultSet result, string component)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">component</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_SetReportType_" data-uid="EpNet.Results.ExtensionMethods.SetReportType*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_SetReportType_EpNet_Results_ResultSet_System_String_" data-uid="EpNet.Results.ExtensionMethods.SetReportType(EpNet.Results.ResultSet,System.String)">SetReportType(ResultSet, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet SetReportType(this ResultSet result, string reportType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">reportType</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_SetUnits_" data-uid="EpNet.Results.ExtensionMethods.SetUnits*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_SetUnits_EpNet_Results_ResultSet_System_String_" data-uid="EpNet.Results.ExtensionMethods.SetUnits(EpNet.Results.ResultSet,System.String)">SetUnits(ResultSet, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet SetUnits(this ResultSet result, string units)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">units</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_Sum_" data-uid="EpNet.Results.ExtensionMethods.Sum*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_Sum_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__" data-uid="EpNet.Results.ExtensionMethods.Sum(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})">Sum(IEnumerable&lt;ResultSet&gt;)</h4>
-  <div class="markdown level1 summary"><p>Sums a list of result sets.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet Sum(this IEnumerable&lt;ResultSet&gt; results)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
-        <td><span class="parametername">results</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><p>Resulting Result Set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_ToFrequency_" data-uid="EpNet.Results.ExtensionMethods.ToFrequency*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_ToFrequency_EpNet_Results_ResultSet_EpNet_Results_Frequencies_System_Boolean_" data-uid="EpNet.Results.ExtensionMethods.ToFrequency(EpNet.Results.ResultSet,EpNet.Results.Frequencies,System.Boolean)">ToFrequency(ResultSet, Frequencies, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Transforms a result set from a specified frequency to another. Results can be summed or averaged during the transformation.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet ToFrequency(this ResultSet result, Frequencies finalFrequency, bool average = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td><p>Result sets to process.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></td>
-        <td><span class="parametername">finalFrequency</span></td>
-        <td><p>Final Frequency.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">average</span></td>
-        <td><p>If true, results are averaged.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_ToFrequency_" data-uid="EpNet.Results.ExtensionMethods.ToFrequency*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_ToFrequency_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__EpNet_Results_Frequencies_System_Boolean_" data-uid="EpNet.Results.ExtensionMethods.ToFrequency(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},EpNet.Results.Frequencies,System.Boolean)">ToFrequency(IEnumerable&lt;ResultSet&gt;, Frequencies, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Transforms a list of result sets from a specified frequency to another. Results can be summed or averaged during the transformation.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; ToFrequency(this IEnumerable&lt;ResultSet&gt; results, Frequencies finalFrequency, bool average = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
-        <td><span class="parametername">results</span></td>
-        <td><p>List of result sets to process.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></td>
-        <td><span class="parametername">finalFrequency</span></td>
-        <td><p>Final Frequency.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">average</span></td>
-        <td><p>If true, results are averaged.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_ToKWh_" data-uid="EpNet.Results.ExtensionMethods.ToKWh*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_ToKWh_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.ToKWh(EpNet.Results.ResultSet)">ToKWh(ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Converts from J to kWh (divides between 3600000)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet ToKWh(this ResultSet result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td><p>ResultSet with values in J</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><p>ResultSet with values in kWh</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_ToKWh_" data-uid="EpNet.Results.ExtensionMethods.ToKWh*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_ToKWh_System_Double_" data-uid="EpNet.Results.ExtensionMethods.ToKWh(System.Double)">ToKWh(Double)</h4>
-  <div class="markdown level1 summary"><p>Converts from J to kWh (divides between 3600000)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double ToKWh(this double value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Value in J</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Value in kWh</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ExtensionMethods_Total_" data-uid="EpNet.Results.ExtensionMethods.Total*"></a>
-  <h4 id="EpNet_Results_ExtensionMethods_Total_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.Total(EpNet.Results.ResultSet)">Total(ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Sums the values from the Result dataset</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double Total(this ResultSet result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
-            </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+        <article data-uid="EpNet.Results.ExtensionMethods">
+
+
+
+  <h1 id="EpNet_Results_ExtensionMethods" data-uid="EpNet.Results.ExtensionMethods" class="text-break">
+Class ExtensionMethods  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="EpNet.html">EpNet</a>.<a class="xref" href="EpNet.Results.html">Results</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EpNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides additional functionality in the form of extension methods.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ExtensionMethods</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ExtensionMethods</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="EpNet_Results_ExtensionMethods_Average_" data-uid="EpNet.Results.ExtensionMethods.Average*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_Average_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__" data-uid="EpNet.Results.ExtensionMethods.Average(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})">
+  Average(IEnumerable&lt;ResultSet&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Averages a list of result sets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet Average(this IEnumerable&lt;ResultSet&gt; results)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Resulting Result Set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_ContainsComponent_" data-uid="EpNet.Results.ExtensionMethods.ContainsComponent*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_ContainsComponent_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__" data-uid="EpNet.Results.ExtensionMethods.ContainsComponent(EpNet.Results.ResultSet,System.Collections.Generic.IEnumerable{System.String})">
+  ContainsComponent(ResultSet, IEnumerable&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ContainsComponent(this ResultSet result, IEnumerable&lt;string&gt; values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_ContainsReport_" data-uid="EpNet.Results.ExtensionMethods.ContainsReport*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_ContainsReport_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__" data-uid="EpNet.Results.ExtensionMethods.ContainsReport(EpNet.Results.ResultSet,System.Collections.Generic.IEnumerable{System.String})">
+  ContainsReport(ResultSet, IEnumerable&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ContainsReport(this ResultSet result, IEnumerable&lt;string&gt; values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_EqualsComponentReport_" data-uid="EpNet.Results.ExtensionMethods.EqualsComponentReport*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_EqualsComponentReport_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.EqualsComponentReport(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">
+  EqualsComponentReport(ResultSet, ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if component and reporttype are equal in both resultsets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EqualsComponentReport(this ResultSet result, ResultSet other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+    <dt><code>other</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_EqualsDescriptor_" data-uid="EpNet.Results.ExtensionMethods.EqualsDescriptor*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_EqualsDescriptor_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.EqualsDescriptor(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">
+  EqualsDescriptor(ResultSet, ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if component, reporttype, units and frequency are equal in both resultsets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EqualsDescriptor(this ResultSet result, ResultSet other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+    <dt><code>other</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_FillData_" data-uid="EpNet.Results.ExtensionMethods.FillData*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_FillData_EpNet_Results_ResultSet_System_Func_System_Double_System_Boolean__" data-uid="EpNet.Results.ExtensionMethods.FillData(EpNet.Results.ResultSet,System.Func{System.Double,System.Boolean})">
+  FillData(ResultSet, Func&lt;double, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Zeroes all the values in the dataset except those which satisfy the supplied filter function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet FillData(this ResultSet result, Func&lt;double, bool&gt; filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>Filter function</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>New resultset</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_FilterData_" data-uid="EpNet.Results.ExtensionMethods.FilterData*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_FilterData_EpNet_Results_ResultSet_System_Func_System_Double_System_Boolean__System_Double_" data-uid="EpNet.Results.ExtensionMethods.FilterData(EpNet.Results.ResultSet,System.Func{System.Double,System.Boolean},System.Double)">
+  FilterData(ResultSet, Func&lt;double, bool&gt;, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets all the values in the dataset to supplied value except those which satisfy the filter function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet FilterData(this ResultSet result, Func&lt;double, bool&gt; filter, double valueFalse = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>Filter function</p>
+</dd>
+    <dt><code>valueFalse</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Value to be assigned to the elements that do not satisfy the filter criteria</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>New resultset</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_FilterData_" data-uid="EpNet.Results.ExtensionMethods.FilterData*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_FilterData_EpNet_Results_ResultSet_System_Func_System_Double_System_Boolean__System_Double_System_Double_" data-uid="EpNet.Results.ExtensionMethods.FilterData(EpNet.Results.ResultSet,System.Func{System.Double,System.Boolean},System.Double,System.Double)">
+  FilterData(ResultSet, Func&lt;double, bool&gt;, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Values in the dataset that satisfy the filter are set to trueValue, the rest to falseValue</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet FilterData(this ResultSet result, Func&lt;double, bool&gt; filter, double trueValue, double falseValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>Filter function</p>
+</dd>
+    <dt><code>trueValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Value to assign to the values that satisfy the filter function</p>
+</dd>
+    <dt><code>falseValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Value to assign to the values that do not satisfy the filter function</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>New resultset</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_Get_" data-uid="EpNet.Results.ExtensionMethods.Get*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_Get_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_String_System_String_EpNet_Results_Frequencies_" data-uid="EpNet.Results.ExtensionMethods.Get(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.String,System.String,EpNet.Results.Frequencies)">
+  Get(IEnumerable&lt;ResultSet&gt;, string, string, Frequencies)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the result that matches the conditions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet Get(this IEnumerable&lt;ResultSet&gt; results, string component, string resultType, Frequencies frequency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>resultType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>frequency</code> <a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GreaterOrEqual_" data-uid="EpNet.Results.ExtensionMethods.GreaterOrEqual*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GreaterOrEqual_EpNet_Results_ResultSet_System_Double_" data-uid="EpNet.Results.ExtensionMethods.GreaterOrEqual(EpNet.Results.ResultSet,System.Double)">
+  GreaterOrEqual(ResultSet, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Zeroes all the values in the resultset values greater or equal than an input value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet GreaterOrEqual(this ResultSet result, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>New resultset</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_IsNotNull_" data-uid="EpNet.Results.ExtensionMethods.IsNotNull*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_IsNotNull_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.IsNotNull(EpNet.Results.ResultSet)">
+  IsNotNull(ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if the Resultset is not null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNotNull(this ResultSet result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_IsNull_" data-uid="EpNet.Results.ExtensionMethods.IsNull*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_IsNull_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.IsNull(EpNet.Results.ResultSet)">
+  IsNull(ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if the Resultset is null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNull(this ResultSet result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_LowerOrEqual_" data-uid="EpNet.Results.ExtensionMethods.LowerOrEqual*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_LowerOrEqual_EpNet_Results_ResultSet_System_Double_" data-uid="EpNet.Results.ExtensionMethods.LowerOrEqual(EpNet.Results.ResultSet,System.Double)">
+  LowerOrEqual(ResultSet, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Zeroes all the values in the resultset values lower or equal than an input value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet LowerOrEqual(this ResultSet result, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>New resultset</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_Negative_" data-uid="EpNet.Results.ExtensionMethods.Negative*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_Negative_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.Negative(EpNet.Results.ResultSet)">
+  Negative(ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a new resultset with only the negative values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet Negative(this ResultSet result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_Positive_" data-uid="EpNet.Results.ExtensionMethods.Positive*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_Positive_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.Positive(EpNet.Results.ResultSet)">
+  Positive(ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a new resultset with only the positive values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet Positive(this ResultSet result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_SetComponent_" data-uid="EpNet.Results.ExtensionMethods.SetComponent*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_SetComponent_EpNet_Results_ResultSet_System_String_" data-uid="EpNet.Results.ExtensionMethods.SetComponent(EpNet.Results.ResultSet,System.String)">
+  SetComponent(ResultSet, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet SetComponent(this ResultSet result, string component)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+    <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_SetReportType_" data-uid="EpNet.Results.ExtensionMethods.SetReportType*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_SetReportType_EpNet_Results_ResultSet_System_String_" data-uid="EpNet.Results.ExtensionMethods.SetReportType(EpNet.Results.ResultSet,System.String)">
+  SetReportType(ResultSet, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet SetReportType(this ResultSet result, string reportType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+    <dt><code>reportType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_SetUnits_" data-uid="EpNet.Results.ExtensionMethods.SetUnits*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_SetUnits_EpNet_Results_ResultSet_System_String_" data-uid="EpNet.Results.ExtensionMethods.SetUnits(EpNet.Results.ResultSet,System.String)">
+  SetUnits(ResultSet, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet SetUnits(this ResultSet result, string units)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+    <dt><code>units</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_Sum_" data-uid="EpNet.Results.ExtensionMethods.Sum*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_Sum_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__" data-uid="EpNet.Results.ExtensionMethods.Sum(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})">
+  Sum(IEnumerable&lt;ResultSet&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sums a list of result sets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet Sum(this IEnumerable&lt;ResultSet&gt; results)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Resulting Result Set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_ToFrequency_" data-uid="EpNet.Results.ExtensionMethods.ToFrequency*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_ToFrequency_EpNet_Results_ResultSet_EpNet_Results_Frequencies_System_Boolean_" data-uid="EpNet.Results.ExtensionMethods.ToFrequency(EpNet.Results.ResultSet,EpNet.Results.Frequencies,System.Boolean)">
+  ToFrequency(ResultSet, Frequencies, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transforms a result set from a specified frequency to another. Results can be summed or averaged during the transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet ToFrequency(this ResultSet result, Frequencies finalFrequency, bool average = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Result sets to process.</p>
+</dd>
+    <dt><code>finalFrequency</code> <a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></dt>
+    <dd><p>Final Frequency.</p>
+</dd>
+    <dt><code>average</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, results are averaged.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_ToFrequency_" data-uid="EpNet.Results.ExtensionMethods.ToFrequency*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_ToFrequency_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__EpNet_Results_Frequencies_System_Boolean_" data-uid="EpNet.Results.ExtensionMethods.ToFrequency(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},EpNet.Results.Frequencies,System.Boolean)">
+  ToFrequency(IEnumerable&lt;ResultSet&gt;, Frequencies, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transforms a list of result sets from a specified frequency to another. Results can be summed or averaged during the transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; ToFrequency(this IEnumerable&lt;ResultSet&gt; results, Frequencies finalFrequency, bool average = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd><p>List of result sets to process.</p>
+</dd>
+    <dt><code>finalFrequency</code> <a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></dt>
+    <dd><p>Final Frequency.</p>
+</dd>
+    <dt><code>average</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, results are averaged.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_ToFrequencyAuto_" data-uid="EpNet.Results.ExtensionMethods.ToFrequencyAuto*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_ToFrequencyAuto_EpNet_Results_ResultSet_EpNet_Results_Frequencies_" data-uid="EpNet.Results.ExtensionMethods.ToFrequencyAuto(EpNet.Results.ResultSet,EpNet.Results.Frequencies)">
+  ToFrequencyAuto(ResultSet, Frequencies)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transforms a result set from a specified frequency to another. Averages if units are different from J, kg, m3 or hr.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet ToFrequencyAuto(this ResultSet result, Frequencies finalFrequency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Result sets to process.</p>
+</dd>
+    <dt><code>finalFrequency</code> <a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></dt>
+    <dd><p>Final Frequency.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_ToKWh_" data-uid="EpNet.Results.ExtensionMethods.ToKWh*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_ToKWh_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.ToKWh(EpNet.Results.ResultSet)">
+  ToKWh(ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts from J to kWh (divides between 3600000)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet ToKWh(this ResultSet result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>ResultSet with values in J</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>ResultSet with values in kWh</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_ToKWh_" data-uid="EpNet.Results.ExtensionMethods.ToKWh*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_ToKWh_System_Double_" data-uid="EpNet.Results.ExtensionMethods.ToKWh(System.Double)">
+  ToKWh(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts from J to kWh (divides between 3600000)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ToKWh(this double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Value in J</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Value in kWh</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_Total_" data-uid="EpNet.Results.ExtensionMethods.Total*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_Total_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ExtensionMethods.Total(EpNet.Results.ResultSet)">
+  Total(ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sums the values from the Result dataset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Total(this ResultSet result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

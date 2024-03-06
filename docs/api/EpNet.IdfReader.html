@@ -1,1307 +1,1441 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class IdfReader
-   </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class IdfReader
-   ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Class IdfReader | EpNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class IdfReader | EpNet ">
+      
+      <meta name="description" content="Provides methods to manipulate an idf model by accessing to the different idf classes and their fields.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="EpNet.IdfReader">
-  
-  
-  <h1 id="EpNet_IdfReader" data-uid="EpNet.IdfReader" class="text-break">Class IdfReader
+
+        <article data-uid="EpNet.IdfReader">
+
+
+
+  <h1 id="EpNet_IdfReader" data-uid="EpNet.IdfReader" class="text-break">
+Class IdfReader  
   </h1>
-  <div class="markdown level0 summary"><p>Provides methods to manipulate an idf model by accessing to the different idf classes and their fields.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</div>
-    <div class="level2"><span class="xref">IdfReader</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="EpNet.html">EpNet</a></h6>
-  <h6><strong>Assembly</strong>: EpNet.dll</h6>
-  <h5 id="EpNet_IdfReader_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class IdfReader : List&lt;IdfObject&gt;, IList&lt;IdfObject&gt;, ICollection&lt;IdfObject&gt;, IList, ICollection, IReadOnlyList&lt;IdfObject&gt;, IReadOnlyCollection&lt;IdfObject&gt;, IEnumerable&lt;IdfObject&gt;, IEnumerable</code></pre>
-  </div>
-  <h5 id="EpNet_IdfReader_examples"><strong>Examples</strong></h5>
-  <pre><code>var Idf = new IdfReader();
-foreach (var m in Idf[&quot;Material&quot;].Where(m=>m[&quot;Name&quot;].Contains(&quot;Insulation&quot;)))
-m[&quot;Conductivity&quot;].Number = 0.03;</code></pre>
 
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="EpNet_IdfReader__ctor_" data-uid="EpNet.IdfReader.#ctor*"></a>
-  <h4 id="EpNet_IdfReader__ctor" data-uid="EpNet.IdfReader.#ctor">IdfReader()</h4>
-  <div class="markdown level1 summary"><p>Creates an IdfReader object loading in.idf and Energy+.idd from the standard DesignBuilder installation path.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IdfReader()</code></pre>
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="EpNet.html">EpNet</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EpNet.dll</dd></dl>
   </div>
-  
-  
-  <a id="EpNet_IdfReader__ctor_" data-uid="EpNet.IdfReader.#ctor*"></a>
-  <h4 id="EpNet_IdfReader__ctor_System_String_" data-uid="EpNet.IdfReader.#ctor(System.String)">IdfReader(String)</h4>
-  <div class="markdown level1 summary"><p>Creates an IdfReader object loading Energy+.idd from the standard DesignBuilder installation path.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IdfReader(string idfFile)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">idfFile</span></td>
-        <td><p>Path to an idf file or a string with the contents of the file</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader__ctor_" data-uid="EpNet.IdfReader.#ctor*"></a>
-  <h4 id="EpNet_IdfReader__ctor_System_String_EpNet_Idd_" data-uid="EpNet.IdfReader.#ctor(System.String,EpNet.Idd)">IdfReader(String, Idd)</h4>
-  <div class="markdown level1 summary"><p>Creates an IdfReader object from an idf file path (or text content) and the Idd object from another IdfReader.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IdfReader(string idfFile, Idd idd)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">idfFile</span></td>
-        <td><p>Path to an idf file or a string with the contents of the file</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Idd.html">Idd</a></td>
-        <td><span class="parametername">idd</span></td>
-        <td><p>Reference to the Idd from another IdfReader</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader__ctor_" data-uid="EpNet.IdfReader.#ctor*"></a>
-  <h4 id="EpNet_IdfReader__ctor_System_String_System_String_" data-uid="EpNet.IdfReader.#ctor(System.String,System.String)">IdfReader(String, String)</h4>
-  <div class="markdown level1 summary"><p>Creates an IdfReader object from an idf file path (or text content) and the path to Energy+.idd file.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IdfReader(string idfFile, string iddFilePath)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">idfFile</span></td>
-        <td><p>Path to an idf file or a string with the contents of the file</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">iddFilePath</span></td>
-        <td><p>Path to the Energy+.idd file corresponding to the E+ version of the idf file.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="EpNet_IdfReader_DsbFileName_" data-uid="EpNet.IdfReader.DsbFileName*"></a>
-  <h4 id="EpNet_IdfReader_DsbFileName" data-uid="EpNet.IdfReader.DsbFileName">DsbFileName</h4>
-  <div class="markdown level1 summary"><p>Filename of the dsb file from which the idf has been generated.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string DsbFileName { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>dsb filename</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_DsbFolder_" data-uid="EpNet.IdfReader.DsbFolder*"></a>
-  <h4 id="EpNet_IdfReader_DsbFolder" data-uid="EpNet.IdfReader.DsbFolder">DsbFolder</h4>
-  <div class="markdown level1 summary"><p>Folder where the original dsb file is located.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string DsbFolder { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>dsb file folder</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_DsbPath_" data-uid="EpNet.IdfReader.DsbPath*"></a>
-  <h4 id="EpNet_IdfReader_DsbPath" data-uid="EpNet.IdfReader.DsbPath">DsbPath</h4>
-  <div class="markdown level1 summary"><p>Full path of the dsb file from which the idf has been generated.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string DsbPath { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Path of the dsb file.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_EnergyPlusPath_" data-uid="EpNet.IdfReader.EnergyPlusPath*"></a>
-  <h4 id="EpNet_IdfReader_EnergyPlusPath" data-uid="EpNet.IdfReader.EnergyPlusPath">EnergyPlusPath</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string EnergyPlusPath { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_Idd_" data-uid="EpNet.IdfReader.Idd*"></a>
-  <h4 id="EpNet_IdfReader_Idd" data-uid="EpNet.IdfReader.Idd">Idd</h4>
-  <div class="markdown level1 summary"><p>Reference to the Idd object that holds the variable names from the Energy+.idd</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Idd Idd { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Idd.html">Idd</a></td>
-        <td><p>Idd object</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_Idf_" data-uid="EpNet.IdfReader.Idf*"></a>
-  <h4 id="EpNet_IdfReader_Idf" data-uid="EpNet.IdfReader.Idf">Idf</h4>
-  <div class="markdown level1 summary"><p>Provides a single Idf instance to be shared between scripts.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IdfReader Idf { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_IdfEncoding_" data-uid="EpNet.IdfReader.IdfEncoding*"></a>
-  <h4 id="EpNet_IdfReader_IdfEncoding" data-uid="EpNet.IdfReader.IdfEncoding">IdfEncoding</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Encoding IdfEncoding { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Text.Encoding</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_IdfPath_" data-uid="EpNet.IdfReader.IdfPath*"></a>
-  <h4 id="EpNet_IdfReader_IdfPath" data-uid="EpNet.IdfReader.IdfPath">IdfPath</h4>
-  <div class="markdown level1 summary"><p>Path to the idf file</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string IdfPath { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Path to the loaded idf file</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_Item_" data-uid="EpNet.IdfReader.Item*"></a>
-  <h4 id="EpNet_IdfReader_Item_System_String_" data-uid="EpNet.IdfReader.Item(System.String)">Item[String]</h4>
-  <div class="markdown level1 summary"><p>List of all the idf objects from the specified idf class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;IdfObject&gt; this[string idfClass] { get; }</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">idfClass</span></td>
-        <td><p>idf class to use as a filter</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
-        <td><p>idf objects list from a class</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="EpNet_IdfReader_Item_System_String__examples">Examples</h5>
-  <pre><code>var allZones = Idf[&quot;Zone&quot;];</code></pre>
 
-  
-  
-  <a id="EpNet_IdfReader_Item_" data-uid="EpNet.IdfReader.Item*"></a>
-  <h4 id="EpNet_IdfReader_Item_System_String___" data-uid="EpNet.IdfReader.Item(System.String[])">Item[String[]]</h4>
-  <div class="markdown level1 summary"><p>List of all the idf objects from the specified idf classes.</p>
+  <div class="markdown summary"><p>Provides methods to manipulate an idf model by accessing to the different idf classes and their fields.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;IdfObject&gt; this[params string[] idfClasses] { get; }</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span>[]</td>
-        <td><span class="parametername">idfClasses</span></td>
-        <td><p>idf classes to use as a filter</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</td>
-        <td><p>idf objects list from a list of classes</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="EpNet_IdfReader_Item_System_String____examples">Examples</h5>
-  <pre><code>var zoneEquipment = Idf[&quot;ZoneHVAC:FourPipeFanCoil&quot;,&quot;ZoneHVAC:PackagedTerminalAirConditioner&quot;,&quot;ZoneHVAC:PackagedTerminalHeatPump&quot;];</code></pre>
+  <div class="markdown conceptual"></div>
 
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="EpNet_IdfReader_Add_" data-uid="EpNet.IdfReader.Add*"></a>
-  <h4 id="EpNet_IdfReader_Add_EpNet_IdfObject_" data-uid="EpNet.IdfReader.Add(EpNet.IdfObject)">Add(IdfObject)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Add(IdfObject value)</code></pre>
+    <pre><code class="lang-csharp hljs">public class IdfReader : List&lt;IdfObject&gt;</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
-        <td><span class="parametername">value</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_AddDesignVariable_" data-uid="EpNet.IdfReader.AddDesignVariable*"></a>
-  <h4 id="EpNet_IdfReader_AddDesignVariable_System_String_System_String_System_Int32_System_String_" data-uid="EpNet.IdfReader.AddDesignVariable(System.String,System.String,System.Int32,System.String)">AddDesignVariable(String, String, Int32, String)</h4>
-  <div class="markdown level1 summary"><p>Adds a design variable for parametric/optimisation. Use in BeforeEnergySimulation hook.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddDesignVariable(string idfClass, string name, int field, string variableKey)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">idfClass</span></td>
-        <td><p>The idf class for the object to modify. e.g. &quot;Material&quot;</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Name of the object to modify. e.g. Insulation (searches for a name starting by that)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">field</span></td>
-        <td><p>Number of the field to change. e.g. 2</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">variableKey</span></td>
-        <td><p>ame of the variable key given in DesignBuilder. e.g. &quot;insulationthickness&quot;</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="EpNet_IdfReader_AddDesignVariable_System_String_System_String_System_Int32_System_String__examples">Examples</h5>
-  <p>Test different thickness values for a insulation material:
-AddDesignVariable(&quot;Material&quot;,&quot;Variable Insulation&quot;, 2, &quot;insulationthickness&quot;);
-Idf.Save();</p>
 
-  
-  
-  <a id="EpNet_IdfReader_AddDesignVariable_" data-uid="EpNet.IdfReader.AddDesignVariable*"></a>
-  <h4 id="EpNet_IdfReader_AddDesignVariable_System_String_System_String_System_Int32_System_String_System_Func_System_Double_System_Double__" data-uid="EpNet.IdfReader.AddDesignVariable(System.String,System.String,System.Int32,System.String,System.Func{System.Double,System.Double})">AddDesignVariable(String, String, Int32, String, Func&lt;Double, Double&gt;)</h4>
-  <div class="markdown level1 summary"><p>Adds a design variable for parametric/optimisation. Use in BeforeEnergySimulation hook.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddDesignVariable(string idfClass, string name, int field, string variableKey, Func&lt;double, double&gt; variableKeyFunction)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">idfClass</span></td>
-        <td><p>The idf class for the object to modify. e.g. &quot;Material&quot;</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Name of the object to modify. e.g. Insulation (searches for a name starting by that)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">field</span></td>
-        <td><p>Number of the field to change. e.g. 2</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">variableKey</span></td>
-        <td><p>ame of the variable key given in DesignBuilder. e.g. &quot;insulationthickness&quot;</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Double</span>, <span class="xref">System.Double</span>&gt;</td>
-        <td><span class="parametername">variableKeyFunction</span></td>
-        <td><p>Fuction to apply to the variableKey</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="EpNet_IdfReader_AddDesignVariable_System_String_System_String_System_Int32_System_String_System_Func_System_Double_System_Double___examples">Examples</h5>
-  <p>Test different thickness values for a insulation material:
-AddDesignVariable(&quot;Material&quot;,&quot;Variable Insulation&quot;, 2, &quot;insulationthickness&quot;, x=&gt;x/100);
-Idf.Save();</p>
 
-  
-  
-  <a id="EpNet_IdfReader_AddKpi_" data-uid="EpNet.IdfReader.AddKpi*"></a>
-  <h4 id="EpNet_IdfReader_AddKpi_DB_Api_Environment_System_String_System_Double_" data-uid="EpNet.IdfReader.AddKpi(DB.Api.Environment,System.String,System.Double)">AddKpi(Environment, String, Double)</h4>
-  <div class="markdown level1 summary"><p>Adds a Kpi result for parametric/optimisatin. Use in AfterEnergySimulation hook.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddKpi(Environment ApiEnvironment, string kpiName, double kpiValue)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DB.Api.Environment</span></td>
-        <td><span class="parametername">ApiEnvironment</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">kpiName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">kpiValue</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_Clone_" data-uid="EpNet.IdfReader.Clone*"></a>
-  <h4 id="EpNet_IdfReader_Clone" data-uid="EpNet.IdfReader.Clone">Clone()</h4>
-  <div class="markdown level1 summary"><p>Returns a new cloned instance of the IdfReader</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IdfReader Clone()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
-        <td><p>Cloned IdfReader instance</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_Clone_" data-uid="EpNet.IdfReader.Clone*"></a>
-  <h4 id="EpNet_IdfReader_Clone_EpNet_IdfObject_" data-uid="EpNet.IdfReader.Clone(EpNet.IdfObject)">Clone(IdfObject)</h4>
-  <div class="markdown level1 summary"><p>Makes a copy of a specified idf object and add it to the idf model.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Clone(IdfObject idfObject)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
-        <td><span class="parametername">idfObject</span></td>
-        <td><p>idf object to clone.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_GetDataFromEso_" data-uid="EpNet.IdfReader.GetDataFromEso*"></a>
-  <h4 id="EpNet_IdfReader_GetDataFromEso_System_String_" data-uid="EpNet.IdfReader.GetDataFromEso(System.String)">GetDataFromEso(String)</h4>
-  <div class="markdown level1 summary"><p>Retrieves a value from the eso file saved with the SaveDataInEso method.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double? GetDataFromEso(string key)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">key</span></td>
-        <td><p>Name of the key or variable to retrieve.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_GetVariable_" data-uid="EpNet.IdfReader.GetVariable*"></a>
-  <h4 id="EpNet_IdfReader_GetVariable_System_String_" data-uid="EpNet.IdfReader.GetVariable(System.String)">GetVariable(String)</h4>
-  <div class="markdown level1 summary"><p>Gets the value of the parametric variable defined in DesignBuilder optimization module as a Custom Idf variable.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetVariable(string name)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>Variable key used in DesignBuilder</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>String holding the value of the variable.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_Load_" data-uid="EpNet.IdfReader.Load*"></a>
-  <h4 id="EpNet_IdfReader_Load_System_String_" data-uid="EpNet.IdfReader.Load(System.String)">Load(String)</h4>
-  <div class="markdown level1 summary"><p>Loads a portion of idf to an existing idf model. Do not include comments.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Load(string idf)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">idf</span></td>
-        <td><p>Text containing the idf to load.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_Load_" data-uid="EpNet.IdfReader.Load*"></a>
-  <h4 id="EpNet_IdfReader_Load_System_String___" data-uid="EpNet.IdfReader.Load(System.String[])">Load(String[])</h4>
-  <div class="markdown level1 summary"><p>Loads a single IdfObject its sequence of elements</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Load(string[] fields)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span>[]</td>
-        <td><span class="parametername">fields</span></td>
-        <td><p>idfclass, field1, field2 ...</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_ReadData_" data-uid="EpNet.IdfReader.ReadData*"></a>
-  <h4 id="EpNet_IdfReader_ReadData_System_String_" data-uid="EpNet.IdfReader.ReadData(System.String)">ReadData(String)</h4>
-  <div class="markdown level1 summary"><p>Reads data from the precomments of the file</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ReadData(string key)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">key</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_RemoveData_" data-uid="EpNet.IdfReader.RemoveData*"></a>
-  <h4 id="EpNet_IdfReader_RemoveData_System_String_" data-uid="EpNet.IdfReader.RemoveData(System.String)">RemoveData(String)</h4>
-  <div class="markdown level1 summary"><p>Removes data from the precomments of the file</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RemoveData(string key)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">key</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_Save_" data-uid="EpNet.IdfReader.Save*"></a>
-  <h4 id="EpNet_IdfReader_Save_System_Boolean_" data-uid="EpNet.IdfReader.Save(System.Boolean)">Save(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Saves the idf file overwriting the original.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Save(bool comments = true)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">comments</span></td>
-        <td><p>Include idf comments in the file.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_Save_" data-uid="EpNet.IdfReader.Save*"></a>
-  <h4 id="EpNet_IdfReader_Save_System_String_System_Boolean_System_Boolean_" data-uid="EpNet.IdfReader.Save(System.String,System.Boolean,System.Boolean)">Save(String, Boolean, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Saves the idf file.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Save(string idfFilePath, bool comments = true, bool ordered = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">idfFilePath</span></td>
-        <td><p>Path for the idf file. Use filename only to save in original idf folder. </p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">comments</span></td>
-        <td><p>Include idf comments in the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">ordered</span></td>
-        <td><p>Order idf clases by name.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_SaveASCII_" data-uid="EpNet.IdfReader.SaveASCII*"></a>
-  <h4 id="EpNet_IdfReader_SaveASCII_System_Boolean_" data-uid="EpNet.IdfReader.SaveASCII(System.Boolean)">SaveASCII(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Saves the idf file overwriting the original.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SaveASCII(bool comments = true)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">comments</span></td>
-        <td><p>Include idf comments in the file.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_SaveASCII_" data-uid="EpNet.IdfReader.SaveASCII*"></a>
-  <h4 id="EpNet_IdfReader_SaveASCII_System_String_System_Boolean_System_Boolean_" data-uid="EpNet.IdfReader.SaveASCII(System.String,System.Boolean,System.Boolean)">SaveASCII(String, Boolean, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Saves the idf file removing diacritics (á,é,ü...) and Spanish ñ</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SaveASCII(string idfFilePath, bool comments = true, bool ordered = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">idfFilePath</span></td>
-        <td><p>Path for the idf file. Use filename only to save in original idf folder. </p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">comments</span></td>
-        <td><p>Include idf comments in the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">ordered</span></td>
-        <td><p>Order idf clases by name.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_SaveDataInEso_" data-uid="EpNet.IdfReader.SaveDataInEso*"></a>
-  <h4 id="EpNet_IdfReader_SaveDataInEso_System_String_System_Double_" data-uid="EpNet.IdfReader.SaveDataInEso(System.String,System.Double)">SaveDataInEso(String, Double)</h4>
-  <div class="markdown level1 summary"><p>Creates a numeric value than can be retrieved after simulation from the Eso results file.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SaveDataInEso(string key, double value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">key</span></td>
-        <td><p>Name of the key or variable to be used later for retrieval.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Value of the variable</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_IdfReader_ToString_" data-uid="EpNet.IdfReader.ToString*"></a>
-  <h4 id="EpNet_IdfReader_ToString" data-uid="EpNet.IdfReader.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Whole idf content as a text string.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>idf content.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
-  
-  
-  <a id="EpNet_IdfReader_WriteData_" data-uid="EpNet.IdfReader.WriteData*"></a>
-  <h4 id="EpNet_IdfReader_WriteData_System_String_System_String_" data-uid="EpNet.IdfReader.WriteData(System.String,System.String)">WriteData(String, String)</h4>
-  <div class="markdown level1 summary"><p>Writes data to the precomments of the file</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteData(string key, string value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">key</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">value</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="extensionmethods">Extension Methods</h3>
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</div>
+      <div><span class="xref">IdfReader</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
   <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Int32_System_Int32_">ExtensionMethods.GetData&lt;T&gt;(IEnumerable&lt;IdfObject&gt;, Int32, Int32)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Int32_System_Int32_">ExtensionMethods.GetData(IEnumerable&lt;IdfObject&gt;, Int32, Int32)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_System_String_">ExtensionMethods.GetData&lt;T&gt;(IEnumerable&lt;IdfObject&gt;, String, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_System_String_">ExtensionMethods.GetData(IEnumerable&lt;IdfObject&gt;, String, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_Double__System_String_System_String_">ExtensionMethods.Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;String, Double&gt;, String, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_String__System_String_System_String_">ExtensionMethods.Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;String, String&gt;, String, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_Double__System_Int32_System_Int32_">ExtensionMethods.Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;String, Double&gt;, Int32, Int32)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_String__System_Int32_System_Int32_">ExtensionMethods.Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;String, String&gt;, Int32, Int32)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetByName_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_">ExtensionMethods.GetByName(IEnumerable&lt;IdfObject&gt;, String)</a>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Deserialize__1___0_System_String_">ExtensionMethods.Deserialize&lt;T&gt;(T, string)</a>
   </div>
   <div>
       <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Serialize__1___0_">ExtensionMethods.Serialize&lt;T&gt;(T)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Deserialize__1___0_System_String_">ExtensionMethods.Deserialize&lt;T&gt;(T, String)</a>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_CleanSchedules_EpNet_IdfReader_">ExtensionMethods.CleanSchedules(IdfReader)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Find_System_Collections_Generic_List_EpNet_IdfObject__System_String_">ExtensionMethods.Find(List&lt;IdfObject&gt;, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_FindByField_System_Collections_Generic_List_EpNet_IdfObject__System_Int32_System_String_">ExtensionMethods.FindByField(List&lt;IdfObject&gt;, Int32, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_FindByField_System_Collections_Generic_List_EpNet_IdfObject__System_String_System_String_">ExtensionMethods.FindByField(List&lt;IdfObject&gt;, String, String)</a>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GenerateScheduleViews_EpNet_IdfReader_System_Boolean_System_String___">ExtensionMethods.GenerateScheduleViews(IdfReader, bool, params string[])</a>
   </div>
   <div>
       <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetAirloopZones_EpNet_IdfReader_">ExtensionMethods.GetAirloopZones(IdfReader)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetZoneAirLoop_EpNet_IdfReader_System_String_">ExtensionMethods.GetZoneAirLoop(IdfReader, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_CleanSchedules_EpNet_IdfReader_">ExtensionMethods.CleanSchedules(IdfReader)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GenerateScheduleViews_EpNet_IdfReader_System_Boolean_System_String___">ExtensionMethods.GenerateScheduleViews(IdfReader, Boolean, String[])</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.LEED.LEED.html#EpNet_LEED_LEED_SetFanPressures_EpNet_IdfReader_System_String_EpNet_LEED_SystemProperties___">LEED.SetFanPressures(IdfReader, String, SystemProperties[])</a>
+      <a class="xref" href="EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetZoneAirLoop_EpNet_IdfReader_System_String_">ExtensionMethods.GetZoneAirLoop(IdfReader, string)</a>
   </div>
   <div>
       <a class="xref" href="EpNet.LEED.LEED.html#EpNet_LEED_LEED_InfiltrationRateAshrae_EpNet_IdfReader_">LEED.InfiltrationRateAshrae(IdfReader)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.LEED.LEED.html#EpNet_LEED_LEED_InfiltrationRateAshrae_EpNet_IdfReader_System_String_">LEED.InfiltrationRateAshrae(IdfReader, String)</a>
+      <a class="xref" href="EpNet.LEED.LEED.html#EpNet_LEED_LEED_InfiltrationRateAshrae_EpNet_IdfReader_System_Collections_Generic_IEnumerable_System_String__">LEED.InfiltrationRateAshrae(IdfReader, IEnumerable&lt;string&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.LEED.LEED.html#EpNet_LEED_LEED_InfiltrationRateAshrae_EpNet_IdfReader_System_Collections_Generic_IEnumerable_System_String__">LEED.InfiltrationRateAshrae(IdfReader, IEnumerable&lt;String&gt;)</a>
+      <a class="xref" href="EpNet.LEED.LEED.html#EpNet_LEED_LEED_InfiltrationRateAshrae_EpNet_IdfReader_System_String_">LEED.InfiltrationRateAshrae(IdfReader, string)</a>
   </div>
+  <div>
+      <a class="xref" href="EpNet.LEED.LEED.html#EpNet_LEED_LEED_SetFanPressures_EpNet_IdfReader_System_String_EpNet_LEED_SystemProperties___">LEED.SetFanPressures(IdfReader, string, params SystemProperties[])</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetByName_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_">ExtensionMethods.GetByName(IEnumerable&lt;IdfObject&gt;, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Int32_System_Int32_">ExtensionMethods.GetData(IEnumerable&lt;IdfObject&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_System_String_">ExtensionMethods.GetData(IEnumerable&lt;IdfObject&gt;, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Int32_System_Int32_">ExtensionMethods.GetData&lt;T&gt;(IEnumerable&lt;IdfObject&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_GetData__1_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_System_String_">ExtensionMethods.GetData&lt;T&gt;(IEnumerable&lt;IdfObject&gt;, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_Double__System_Int32_System_Int32_">ExtensionMethods.Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;string, double&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_Double__System_String_System_String_">ExtensionMethods.Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;string, double&gt;, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_String__System_Int32_System_Int32_">ExtensionMethods.Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;string, string&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Update_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_Collections_Generic_Dictionary_System_String_System_String__System_String_System_String_">ExtensionMethods.Update(IEnumerable&lt;IdfObject&gt;, Dictionary&lt;string, string&gt;, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Find_System_Collections_Generic_List_EpNet_IdfObject__System_String_">ExtensionMethods.Find(List&lt;IdfObject&gt;, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_FindByField_System_Collections_Generic_List_EpNet_IdfObject__System_Int32_System_String_">ExtensionMethods.FindByField(List&lt;IdfObject&gt;, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_FindByField_System_Collections_Generic_List_EpNet_IdfObject__System_String_System_String_">ExtensionMethods.FindByField(List&lt;IdfObject&gt;, string, string)</a>
+  </div>
+  </dd></dl>
+
+
+  <h2 id="EpNet_IdfReader_examples">Examples</h2>
+  <pre><code class="lang-csharp">var Idf = new IdfReader();
+foreach (var m in Idf["Material"].Where(m=&gt;m["Name"].Contains("Insulation")))
+m["Conductivity"].Number = 0.03;</code></pre>
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="EpNet_IdfReader__ctor_" data-uid="EpNet.IdfReader.#ctor*"></a>
+
+  <h3 id="EpNet_IdfReader__ctor" data-uid="EpNet.IdfReader.#ctor">
+  IdfReader()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an IdfReader object loading in.idf and Energy+.idd from the standard DesignBuilder installation path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IdfReader()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader__ctor_" data-uid="EpNet.IdfReader.#ctor*"></a>
+
+  <h3 id="EpNet_IdfReader__ctor_System_String_" data-uid="EpNet.IdfReader.#ctor(System.String)">
+  IdfReader(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an IdfReader object loading Energy+.idd from the standard DesignBuilder installation path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IdfReader(string idfFile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to an idf file or a string with the contents of the file</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader__ctor_" data-uid="EpNet.IdfReader.#ctor*"></a>
+
+  <h3 id="EpNet_IdfReader__ctor_System_String_EpNet_Idd_" data-uid="EpNet.IdfReader.#ctor(System.String,EpNet.Idd)">
+  IdfReader(string, Idd)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an IdfReader object from an idf file path (or text content) and the Idd object from another IdfReader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IdfReader(string idfFile, Idd idd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to an idf file or a string with the contents of the file</p>
+</dd>
+    <dt><code>idd</code> <a class="xref" href="EpNet.Idd.html">Idd</a></dt>
+    <dd><p>Reference to the Idd from another IdfReader</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader__ctor_" data-uid="EpNet.IdfReader.#ctor*"></a>
+
+  <h3 id="EpNet_IdfReader__ctor_System_String_System_String_" data-uid="EpNet.IdfReader.#ctor(System.String,System.String)">
+  IdfReader(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an IdfReader object from an idf file path (or text content) and the path to Energy+.idd file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IdfReader(string idfFile, string iddFilePath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to an idf file or a string with the contents of the file</p>
+</dd>
+    <dt><code>iddFilePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to the Energy+.idd file corresponding to the E+ version of the idf file.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="EpNet_IdfReader_DsbFileName_" data-uid="EpNet.IdfReader.DsbFileName*"></a>
+
+  <h3 id="EpNet_IdfReader_DsbFileName" data-uid="EpNet.IdfReader.DsbFileName">
+  DsbFileName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Filename of the dsb file from which the idf has been generated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DsbFileName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>dsb filename</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_DsbFolder_" data-uid="EpNet.IdfReader.DsbFolder*"></a>
+
+  <h3 id="EpNet_IdfReader_DsbFolder" data-uid="EpNet.IdfReader.DsbFolder">
+  DsbFolder
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Folder where the original dsb file is located.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DsbFolder { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>dsb file folder</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_DsbPath_" data-uid="EpNet.IdfReader.DsbPath*"></a>
+
+  <h3 id="EpNet_IdfReader_DsbPath" data-uid="EpNet.IdfReader.DsbPath">
+  DsbPath
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Full path of the dsb file from which the idf has been generated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DsbPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path of the dsb file.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_EnergyPlusPath_" data-uid="EpNet.IdfReader.EnergyPlusPath*"></a>
+
+  <h3 id="EpNet_IdfReader_EnergyPlusPath" data-uid="EpNet.IdfReader.EnergyPlusPath">
+  EnergyPlusPath
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EnergyPlusPath { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_Idd_" data-uid="EpNet.IdfReader.Idd*"></a>
+
+  <h3 id="EpNet_IdfReader_Idd" data-uid="EpNet.IdfReader.Idd">
+  Idd
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reference to the Idd object that holds the variable names from the Energy+.idd</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Idd Idd { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Idd.html">Idd</a></dt>
+    <dd><p>Idd object</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_Idf_" data-uid="EpNet.IdfReader.Idf*"></a>
+
+  <h3 id="EpNet_IdfReader_Idf" data-uid="EpNet.IdfReader.Idf">
+  Idf
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Provides a single Idf instance to be shared between scripts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IdfReader Idf { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_IdfEncoding_" data-uid="EpNet.IdfReader.IdfEncoding*"></a>
+
+  <h3 id="EpNet_IdfReader_IdfEncoding" data-uid="EpNet.IdfReader.IdfEncoding">
+  IdfEncoding
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Encoding IdfEncoding { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_IdfPath_" data-uid="EpNet.IdfReader.IdfPath*"></a>
+
+  <h3 id="EpNet_IdfReader_IdfPath" data-uid="EpNet.IdfReader.IdfPath">
+  IdfPath
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Path to the idf file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IdfPath { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to the loaded idf file</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_Item_" data-uid="EpNet.IdfReader.Item*"></a>
+
+  <h3 id="EpNet_IdfReader_Item_System_String_" data-uid="EpNet.IdfReader.Item(System.String)">
+  this[string]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>List of all the idf objects from the specified idf class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IdfObject&gt; this[string idfClass] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>idf class to use as a filter</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</dt>
+    <dd><p>idf objects list from a class</p>
+</dd>
+  </dl>
+
+
+
+  <h4 class="section" id="EpNet_IdfReader_Item_System_String__examples">Examples</h4>
+  <pre><code class="lang-csharp">var allZones = Idf["Zone"];</code></pre>
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_Item_" data-uid="EpNet.IdfReader.Item*"></a>
+
+  <h3 id="EpNet_IdfReader_Item_System_String___" data-uid="EpNet.IdfReader.Item(System.String[])">
+  this[string[]]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>List of all the idf objects from the specified idf classes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IdfObject&gt; this[params string[] idfClasses] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfClasses</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>idf classes to use as a filter</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</dt>
+    <dd><p>idf objects list from a list of classes</p>
+</dd>
+  </dl>
+
+
+
+  <h4 class="section" id="EpNet_IdfReader_Item_System_String____examples">Examples</h4>
+  <pre><code class="lang-csharp">var zoneEquipment = Idf["ZoneHVAC:FourPipeFanCoil","ZoneHVAC:PackagedTerminalAirConditioner","ZoneHVAC:PackagedTerminalHeatPump"];</code></pre>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="EpNet_IdfReader_Add_" data-uid="EpNet.IdfReader.Add*"></a>
+
+  <h3 id="EpNet_IdfReader_Add_EpNet_IdfObject_" data-uid="EpNet.IdfReader.Add(EpNet.IdfObject)">
+  Add(IdfObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(IdfObject value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="EpNet.IdfObject.html">IdfObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_AddDesignVariable_" data-uid="EpNet.IdfReader.AddDesignVariable*"></a>
+
+  <h3 id="EpNet_IdfReader_AddDesignVariable_System_String_System_String_System_Int32_System_String_" data-uid="EpNet.IdfReader.AddDesignVariable(System.String,System.String,System.Int32,System.String)">
+  AddDesignVariable(string, string, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a design variable for parametric/optimisation. Use in BeforeEnergySimulation hook.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDesignVariable(string idfClass, string name, int field, string variableKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The idf class for the object to modify. e.g. &quot;Material&quot;</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the object to modify. e.g. Insulation (searches for a name starting by that)</p>
+</dd>
+    <dt><code>field</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of the field to change. e.g. 2</p>
+</dd>
+    <dt><code>variableKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>ame of the variable key given in DesignBuilder. e.g. &quot;insulationthickness&quot;</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="EpNet_IdfReader_AddDesignVariable_System_String_System_String_System_Int32_System_String__examples">Examples</h4>
+  <p>Test different thickness values for a insulation material:
+AddDesignVariable(&quot;Material&quot;,&quot;Variable Insulation&quot;, 2, &quot;insulationthickness&quot;);
+Idf.Save();</p>
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_AddDesignVariable_" data-uid="EpNet.IdfReader.AddDesignVariable*"></a>
+
+  <h3 id="EpNet_IdfReader_AddDesignVariable_System_String_System_String_System_Int32_System_String_System_Func_System_Double_System_Double__" data-uid="EpNet.IdfReader.AddDesignVariable(System.String,System.String,System.Int32,System.String,System.Func{System.Double,System.Double})">
+  AddDesignVariable(string, string, int, string, Func&lt;double, double&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a design variable for parametric/optimisation. Use in BeforeEnergySimulation hook.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDesignVariable(string idfClass, string name, int field, string variableKey, Func&lt;double, double&gt; variableKeyFunction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The idf class for the object to modify. e.g. &quot;Material&quot;</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the object to modify. e.g. Insulation (searches for a name starting by that)</p>
+</dd>
+    <dt><code>field</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of the field to change. e.g. 2</p>
+</dd>
+    <dt><code>variableKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>ame of the variable key given in DesignBuilder. e.g. &quot;insulationthickness&quot;</p>
+</dd>
+    <dt><code>variableKeyFunction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>Fuction to apply to the variableKey</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="EpNet_IdfReader_AddDesignVariable_System_String_System_String_System_Int32_System_String_System_Func_System_Double_System_Double___examples">Examples</h4>
+  <p>Test different thickness values for a insulation material:
+AddDesignVariable(&quot;Material&quot;,&quot;Variable Insulation&quot;, 2, &quot;insulationthickness&quot;, x=&gt;x/100);
+Idf.Save();</p>
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_AddKpi_" data-uid="EpNet.IdfReader.AddKpi*"></a>
+
+  <h3 id="EpNet_IdfReader_AddKpi_DB_Api_Environment_System_String_System_Double_" data-uid="EpNet.IdfReader.AddKpi(DB.Api.Environment,System.String,System.Double)">
+  AddKpi(Environment, string, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a Kpi result for parametric/optimisatin. Use in AfterEnergySimulation hook.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddKpi(Environment ApiEnvironment, string kpiName, double kpiValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ApiEnvironment</code> <span class="xref">Environment</span></dt>
+    <dd></dd>
+    <dt><code>kpiName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>kpiValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_Clone_" data-uid="EpNet.IdfReader.Clone*"></a>
+
+  <h3 id="EpNet_IdfReader_Clone" data-uid="EpNet.IdfReader.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a new cloned instance of the IdfReader</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IdfReader Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></dt>
+    <dd><p>Cloned IdfReader instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_Clone_" data-uid="EpNet.IdfReader.Clone*"></a>
+
+  <h3 id="EpNet_IdfReader_Clone_EpNet_IdfObject_" data-uid="EpNet.IdfReader.Clone(EpNet.IdfObject)">
+  Clone(IdfObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Makes a copy of a specified idf object and add it to the idf model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clone(IdfObject idfObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfObject</code> <a class="xref" href="EpNet.IdfObject.html">IdfObject</a></dt>
+    <dd><p>idf object to clone.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_GetByIdfClasses_" data-uid="EpNet.IdfReader.GetByIdfClasses*"></a>
+
+  <h3 id="EpNet_IdfReader_GetByIdfClasses_System_Collections_Generic_IEnumerable_System_String__" data-uid="EpNet.IdfReader.GetByIdfClasses(System.Collections.Generic.IEnumerable{System.String})">
+  GetByIdfClasses(IEnumerable&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>List of all the idf objects from the specified idf classes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IdfObject&gt; GetByIdfClasses(IEnumerable&lt;string&gt; idfClasses)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfClasses</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>idf classes to use as a filter</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_GetDataFromEso_" data-uid="EpNet.IdfReader.GetDataFromEso*"></a>
+
+  <h3 id="EpNet_IdfReader_GetDataFromEso_System_String_" data-uid="EpNet.IdfReader.GetDataFromEso(System.String)">
+  GetDataFromEso(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a value from the eso file saved with the SaveDataInEso method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? GetDataFromEso(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the key or variable to retrieve.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_GetVariable_" data-uid="EpNet.IdfReader.GetVariable*"></a>
+
+  <h3 id="EpNet_IdfReader_GetVariable_System_String_" data-uid="EpNet.IdfReader.GetVariable(System.String)">
+  GetVariable(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the value of the parametric variable defined in DesignBuilder optimization module as a Custom Idf variable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetVariable(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Variable key used in DesignBuilder</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>String holding the value of the variable.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_Load_" data-uid="EpNet.IdfReader.Load*"></a>
+
+  <h3 id="EpNet_IdfReader_Load_System_String_" data-uid="EpNet.IdfReader.Load(System.String)">
+  Load(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads a portion of idf to an existing idf model. Do not include comments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(string idf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Text containing the idf to load.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_Load_" data-uid="EpNet.IdfReader.Load*"></a>
+
+  <h3 id="EpNet_IdfReader_Load_System_String___" data-uid="EpNet.IdfReader.Load(System.String[])">
+  Load(string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads a single IdfObject its sequence of elements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(string[] fields)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fields</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>idfclass, field1, field2 ...</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_ReadData_" data-uid="EpNet.IdfReader.ReadData*"></a>
+
+  <h3 id="EpNet_IdfReader_ReadData_System_String_" data-uid="EpNet.IdfReader.ReadData(System.String)">
+  ReadData(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads data from the precomments of the file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReadData(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_RemoveData_" data-uid="EpNet.IdfReader.RemoveData*"></a>
+
+  <h3 id="EpNet_IdfReader_RemoveData_System_String_" data-uid="EpNet.IdfReader.RemoveData(System.String)">
+  RemoveData(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes data from the precomments of the file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveData(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_Save_" data-uid="EpNet.IdfReader.Save*"></a>
+
+  <h3 id="EpNet_IdfReader_Save_System_Boolean_" data-uid="EpNet.IdfReader.Save(System.Boolean)">
+  Save(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the idf file overwriting the original.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(bool comments = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>comments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Include idf comments in the file.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_Save_" data-uid="EpNet.IdfReader.Save*"></a>
+
+  <h3 id="EpNet_IdfReader_Save_System_String_System_Boolean_System_Boolean_" data-uid="EpNet.IdfReader.Save(System.String,System.Boolean,System.Boolean)">
+  Save(string, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the idf file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(string idfFilePath, bool comments = true, bool ordered = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfFilePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path for the idf file. Use filename only to save in original idf folder.</p>
+</dd>
+    <dt><code>comments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Include idf comments in the file.</p>
+</dd>
+    <dt><code>ordered</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Order idf clases by name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_SaveASCII_" data-uid="EpNet.IdfReader.SaveASCII*"></a>
+
+  <h3 id="EpNet_IdfReader_SaveASCII_System_Boolean_" data-uid="EpNet.IdfReader.SaveASCII(System.Boolean)">
+  SaveASCII(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the idf file overwriting the original.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveASCII(bool comments = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>comments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Include idf comments in the file.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_SaveASCII_" data-uid="EpNet.IdfReader.SaveASCII*"></a>
+
+  <h3 id="EpNet_IdfReader_SaveASCII_System_String_System_Boolean_System_Boolean_" data-uid="EpNet.IdfReader.SaveASCII(System.String,System.Boolean,System.Boolean)">
+  SaveASCII(string, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the idf file removing diacritics (á,é,ü...) and Spanish ñ</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveASCII(string idfFilePath, bool comments = true, bool ordered = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfFilePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path for the idf file. Use filename only to save in original idf folder.</p>
+</dd>
+    <dt><code>comments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Include idf comments in the file.</p>
+</dd>
+    <dt><code>ordered</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Order idf clases by name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_SaveDataInEso_" data-uid="EpNet.IdfReader.SaveDataInEso*"></a>
+
+  <h3 id="EpNet_IdfReader_SaveDataInEso_System_String_System_Double_" data-uid="EpNet.IdfReader.SaveDataInEso(System.String,System.Double)">
+  SaveDataInEso(string, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a numeric value than can be retrieved after simulation from the Eso results file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveDataInEso(string key, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the key or variable to be used later for retrieval.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Value of the variable</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_ToString_" data-uid="EpNet.IdfReader.ToString*"></a>
+
+  <h3 id="EpNet_IdfReader_ToString" data-uid="EpNet.IdfReader.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whole idf content as a text string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>idf content.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfReader_WriteData_" data-uid="EpNet.IdfReader.WriteData*"></a>
+
+  <h3 id="EpNet_IdfReader_WriteData_System_String_System_String_" data-uid="EpNet.IdfReader.WriteData(System.String,System.String)">
+  WriteData(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes data to the precomments of the file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteData(string key, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
-            </div>
-          </div>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>

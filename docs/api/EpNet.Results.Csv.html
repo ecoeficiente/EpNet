@@ -1,1151 +1,1001 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Csv
-   </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Csv
-   ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Class Csv | EpNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Csv | EpNet ">
+      
+      <meta name="description" content="Provides methods for reading or saving data in csv format.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="EpNet.Results.Csv">
-  
-  
-  <h1 id="EpNet_Results_Csv" data-uid="EpNet.Results.Csv" class="text-break">Class Csv
-  </h1>
-  <div class="markdown level0 summary"><p>Provides methods for reading or saving data in csv format.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Csv</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="EpNet.Results.html">EpNet.Results</a></h6>
-  <h6><strong>Assembly</strong>: EpNet.dll</h6>
-  <h5 id="EpNet_Results_Csv_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class Csv</code></pre>
-  </div>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="EpNet_Results_Csv_GetColumns_" data-uid="EpNet.Results.Csv.GetColumns*"></a>
-  <h4 id="EpNet_Results_Csv_GetColumns_System_String_" data-uid="EpNet.Results.Csv.GetColumns(System.String)">GetColumns(String)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv with Keys as column headers and Values as List of column numeric values. List separator (,) and decimal point (.) are those from Invariant Culture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;double&gt;&gt; GetColumns(string file)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Double</span>&gt;&gt;</td>
-        <td><p>A Dictionary with Keys from the first column and Values as a list of values from the rest of the columns </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_GetColumns_" data-uid="EpNet.Results.Csv.GetColumns*"></a>
-  <h4 id="EpNet_Results_Csv_GetColumns_System_String_System_Globalization_CultureInfo_" data-uid="EpNet.Results.Csv.GetColumns(System.String,System.Globalization.CultureInfo)">GetColumns(String, CultureInfo)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv with Keys as column headers and Values as List of column numeric values.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;double&gt;&gt; GetColumns(string file, CultureInfo culture)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">culture</span></td>
-        <td><p>Speficied culture info.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Double</span>&gt;&gt;</td>
-        <td><p>A Dictionary with Keys from the first column and Values as a list of values from the rest of the columns </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_GetColumns_" data-uid="EpNet.Results.Csv.GetColumns*"></a>
-  <h4 id="EpNet_Results_Csv_GetColumns__1_System_String_" data-uid="EpNet.Results.Csv.GetColumns``1(System.String)">GetColumns&lt;T&gt;(String)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv with Keys as column headers and Values as List of T with column values.List separator (,) and decimal point (.) are those from Invariant Culture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;T&gt;&gt; GetColumns&lt;T&gt;(string file)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.List</span>&lt;T&gt;&gt;</td>
-        <td><p>A Dictionary with Keys from the first column and Values as a list of values from the rest of the columns </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>string or double</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_GetColumns_" data-uid="EpNet.Results.Csv.GetColumns*"></a>
-  <h4 id="EpNet_Results_Csv_GetColumns__1_System_String_System_Globalization_CultureInfo_" data-uid="EpNet.Results.Csv.GetColumns``1(System.String,System.Globalization.CultureInfo)">GetColumns&lt;T&gt;(String, CultureInfo)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv with Keys as column headers and Values as List of T with column values.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;T&gt;&gt; GetColumns&lt;T&gt;(string file, CultureInfo culture)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">culture</span></td>
-        <td><p>Speficied culture info.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.List</span>&lt;T&gt;&gt;</td>
-        <td><p>A Dictionary with Keys from the first column and Values as a list of values from the rest of the columns </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>string or double</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_GetData_" data-uid="EpNet.Results.Csv.GetData*"></a>
-  <h4 id="EpNet_Results_Csv_GetData_System_String_System_Globalization_CultureInfo_System_Int32_System_Int32_" data-uid="EpNet.Results.Csv.GetData(System.String,System.Globalization.CultureInfo,System.Int32,System.Int32)">GetData(String, CultureInfo, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with a specified column as string Keys and a specified column as numeric Values. List separator and decimal point are those from a specified Culture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, double&gt; GetData(string file, CultureInfo culture, int col1 = 0, int col2 = 1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">culture</span></td>
-        <td><p>Speficied culture info.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">col1</span></td>
-        <td><p>Column for generating the Keys</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">col2</span></td>
-        <td><p>Column for generating the Values</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Double</span>&gt;</td>
-        <td><p>A Dictionary with Keys from column 1 and Values from column 2 </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_GetData_" data-uid="EpNet.Results.Csv.GetData*"></a>
-  <h4 id="EpNet_Results_Csv_GetData_System_String_System_Int32_System_Int32_" data-uid="EpNet.Results.Csv.GetData(System.String,System.Int32,System.Int32)">GetData(String, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with a specified column as string Keys and a specified column as numeric Values. List separator (,) and decimal point (.) are those from Invariant Culture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, double&gt; GetData(string file, int col1 = 0, int col2 = 1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">col1</span></td>
-        <td><p>Column for generating the Keys</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">col2</span></td>
-        <td><p>Column for generating the Values</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Double</span>&gt;</td>
-        <td><p>A Dictionary with Keys from column 1 and Values from column 2 </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_GetData_" data-uid="EpNet.Results.Csv.GetData*"></a>
-  <h4 id="EpNet_Results_Csv_GetData__1_System_String_System_Globalization_CultureInfo_System_Int32_System_Int32_" data-uid="EpNet.Results.Csv.GetData``1(System.String,System.Globalization.CultureInfo,System.Int32,System.Int32)">GetData&lt;T&gt;(String, CultureInfo, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with a specified column as string Keys and a specified column as T Values. List separator and decimal point are those from a specified Culture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, T&gt; GetData&lt;T&gt;(string file, CultureInfo culture, int col1 = 0, int col2 = 1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">culture</span></td>
-        <td><p>Speficied culture info.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">col1</span></td>
-        <td><p>Column for generating the Keys</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">col2</span></td>
-        <td><p>Column for generating the Values</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, T&gt;</td>
-        <td><p>A Dictionary with Keys from column 1 and Values from column 2 </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>double or string</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_GetData_" data-uid="EpNet.Results.Csv.GetData*"></a>
-  <h4 id="EpNet_Results_Csv_GetData__1_System_String_System_Int32_System_Int32_" data-uid="EpNet.Results.Csv.GetData``1(System.String,System.Int32,System.Int32)">GetData&lt;T&gt;(String, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with a specified column as string Keys and a specified column as T Values. List separator (,) and decimal point (.) are those from Invariant Culture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, T&gt; GetData&lt;T&gt;(string file, int col1 = 0, int col2 = 1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">col1</span></td>
-        <td><p>Column for generating the Keys</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">col2</span></td>
-        <td><p>Column for generating the Values</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, T&gt;</td>
-        <td><p>A Dictionary with Keys from column 1 and Values from column 2 </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>double or string</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_GetRows_" data-uid="EpNet.Results.Csv.GetRows*"></a>
-  <h4 id="EpNet_Results_Csv_GetRows_System_String_" data-uid="EpNet.Results.Csv.GetRows(System.String)">GetRows(String)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with the first column as string Keys and the Values with rest of columns as lists of numbers. List separator (,) and decimal point (.) are those from Invariant Culture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;double&gt;&gt; GetRows(string file)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Double</span>&gt;&gt;</td>
-        <td><p>A Dictionary with Keys from the first column and Values as a list of numbers from the rest of the columns </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_GetRows_" data-uid="EpNet.Results.Csv.GetRows*"></a>
-  <h4 id="EpNet_Results_Csv_GetRows_System_String_System_Globalization_CultureInfo_" data-uid="EpNet.Results.Csv.GetRows(System.String,System.Globalization.CultureInfo)">GetRows(String, CultureInfo)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with the first column as string Keys and the Values with rest of columns as lists of numbers. List separator and decimal point are those from a specified Culture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;double&gt;&gt; GetRows(string file, CultureInfo culture)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">culture</span></td>
-        <td><p>Speficied culture info.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Double</span>&gt;&gt;</td>
-        <td><p>A Dictionary with Keys from the first column and Values as a list of numbers from the rest of the columns </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_GetRows_" data-uid="EpNet.Results.Csv.GetRows*"></a>
-  <h4 id="EpNet_Results_Csv_GetRows__1_System_String_" data-uid="EpNet.Results.Csv.GetRows``1(System.String)">GetRows&lt;T&gt;(String)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with the first column as string Keys and the Values with rest of columns as lists of T. List separator (,) and decimal point (.) are those from Invariant Culture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;T&gt;&gt; GetRows&lt;T&gt;(string file)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.List</span>&lt;T&gt;&gt;</td>
-        <td><p>A Dictionary with Keys from the first column and Values as a list of values from the rest of the columns </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>string or double</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_GetRows_" data-uid="EpNet.Results.Csv.GetRows*"></a>
-  <h4 id="EpNet_Results_Csv_GetRows__1_System_String_System_Globalization_CultureInfo_" data-uid="EpNet.Results.Csv.GetRows``1(System.String,System.Globalization.CultureInfo)">GetRows&lt;T&gt;(String, CultureInfo)</h4>
-  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with the first column as string Keys and the Values with rest of columns as lists of T. List separator and decimal point are those from a specified Culture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;T&gt;&gt; GetRows&lt;T&gt;(string file, CultureInfo culture)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Globalization.CultureInfo</span></td>
-        <td><span class="parametername">culture</span></td>
-        <td><p>Speficied culture info.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.List</span>&lt;T&gt;&gt;</td>
-        <td><p>A Dictionary with Keys from the first column and Values as a list of values from the rest of the columns. </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>string or double</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
-  <h4 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IDictionary_System_String_System_Double__System_Boolean_" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IDictionary{System.String,System.Double},System.Boolean)">Save(String, IDictionary&lt;String, Double&gt;, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a dictionary as a string column (Key) and a numeric column (Value).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Save(string file, IDictionary&lt;string, double&gt; data, bool append = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Double</span>&gt;</td>
-        <td><span class="parametername">data</span></td>
-        <td><p>Dictionary of string and numeric data.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">append</span></td>
-        <td><p>true for appending to an existing file.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
-  <h4 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Boolean_" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Boolean)">Save(String, IDictionary&lt;String, String&gt;, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a dictionary as two a string columns (Key and Value).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Save(string file, IDictionary&lt;string, string&gt; data, bool append = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">data</span></td>
-        <td><p>Dictionary of string Keys and Values.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">append</span></td>
-        <td><p>true for appending to an existing file.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
-  <h4 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_IEnumerable_System_Double___" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{System.Double}})">Save(String, IEnumerable&lt;IEnumerable&lt;Double&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a list of list data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Save(string file, IEnumerable&lt;IEnumerable&lt;double&gt;&gt; data)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Double</span>&gt;&gt;</td>
-        <td><span class="parametername">data</span></td>
-        <td><p>Data list of numeric lists</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
-  <h4 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_IEnumerable_System_String___" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{System.String}})">Save(String, IEnumerable&lt;IEnumerable&lt;String&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a list of list data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Save(string file, IEnumerable&lt;IEnumerable&lt;string&gt;&gt; data)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
-        <td><span class="parametername">data</span></td>
-        <td><p>Data list of string lists</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
-  <h4 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IEnumerable_System_Double__System_Boolean_" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IEnumerable{System.Double},System.Boolean)">Save(String, IEnumerable&lt;Double&gt;, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a list of numeric data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Save(string file, IEnumerable&lt;double&gt; data, bool append = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
-        <td><span class="parametername">data</span></td>
-        <td><p>List of numeric data.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">append</span></td>
-        <td><p>true for appending to an existing file.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
-  <h4 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IEnumerable_System_Double____" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IEnumerable{System.Double}[])">Save(String, IEnumerable&lt;Double&gt;[])</h4>
-  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a list of numeric data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Save(string file, params IEnumerable&lt;double&gt;[] data)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Double</span>&gt;[]</td>
-        <td><span class="parametername">data</span></td>
-        <td><p>Data array</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
-  <h4 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IEnumerable_System_String__System_Boolean_" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean)">Save(String, IEnumerable&lt;String&gt;, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a list of string data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Save(string file, IEnumerable&lt;string&gt; data, bool append = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">data</span></td>
-        <td><p>List of string data.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">append</span></td>
-        <td><p>true for appending to an existing file.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
-  <h4 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IEnumerable_System_String____" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IEnumerable{System.String}[])">Save(String, IEnumerable&lt;String&gt;[])</h4>
-  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a list of text strings.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Save(string file, params IEnumerable&lt;string&gt;[] data)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>Absolute path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;[]</td>
-        <td><span class="parametername">data</span></td>
-        <td><p>Data array</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
-            </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+        <article data-uid="EpNet.Results.Csv">
+
+
+
+  <h1 id="EpNet_Results_Csv" data-uid="EpNet.Results.Csv" class="text-break">
+Class Csv  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="EpNet.html">EpNet</a>.<a class="xref" href="EpNet.Results.html">Results</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EpNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides methods for reading or saving data in csv format.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Csv</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Csv</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="EpNet_Results_Csv_GetColumns_" data-uid="EpNet.Results.Csv.GetColumns*"></a>
+
+  <h3 id="EpNet_Results_Csv_GetColumns_System_String_" data-uid="EpNet.Results.Csv.GetColumns(System.String)">
+  GetColumns(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv with Keys as column headers and Values as List of column numeric values. List separator (,) and decimal point (.) are those from Invariant Culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;double&gt;&gt; GetColumns(string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;&gt;</dt>
+    <dd><p>A Dictionary with Keys from the first column and Values as a list of values from the rest of the columns</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_GetColumns_" data-uid="EpNet.Results.Csv.GetColumns*"></a>
+
+  <h3 id="EpNet_Results_Csv_GetColumns_System_String_System_Globalization_CultureInfo_" data-uid="EpNet.Results.Csv.GetColumns(System.String,System.Globalization.CultureInfo)">
+  GetColumns(string, CultureInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv with Keys as column headers and Values as List of column numeric values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;double&gt;&gt; GetColumns(string file, CultureInfo culture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd><p>Speficied culture info.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;&gt;</dt>
+    <dd><p>A Dictionary with Keys from the first column and Values as a list of values from the rest of the columns</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_GetColumns_" data-uid="EpNet.Results.Csv.GetColumns*"></a>
+
+  <h3 id="EpNet_Results_Csv_GetColumns__1_System_String_" data-uid="EpNet.Results.Csv.GetColumns``1(System.String)">
+  GetColumns&lt;T&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv with Keys as column headers and Values as List of T with column values.List separator (,) and decimal point (.) are those from Invariant Culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;T&gt;&gt; GetColumns&lt;T&gt;(string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;&gt;</dt>
+    <dd><p>A Dictionary with Keys from the first column and Values as a list of values from the rest of the columns</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>string or double</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_GetColumns_" data-uid="EpNet.Results.Csv.GetColumns*"></a>
+
+  <h3 id="EpNet_Results_Csv_GetColumns__1_System_String_System_Globalization_CultureInfo_" data-uid="EpNet.Results.Csv.GetColumns``1(System.String,System.Globalization.CultureInfo)">
+  GetColumns&lt;T&gt;(string, CultureInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv with Keys as column headers and Values as List of T with column values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;T&gt;&gt; GetColumns&lt;T&gt;(string file, CultureInfo culture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd><p>Speficied culture info.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;&gt;</dt>
+    <dd><p>A Dictionary with Keys from the first column and Values as a list of values from the rest of the columns</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>string or double</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_GetData_" data-uid="EpNet.Results.Csv.GetData*"></a>
+
+  <h3 id="EpNet_Results_Csv_GetData_System_String_System_Globalization_CultureInfo_System_Int32_System_Int32_" data-uid="EpNet.Results.Csv.GetData(System.String,System.Globalization.CultureInfo,System.Int32,System.Int32)">
+  GetData(string, CultureInfo, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with a specified column as string Keys and a specified column as numeric Values. List separator and decimal point are those from a specified Culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, double&gt; GetData(string file, CultureInfo culture, int col1 = 0, int col2 = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd><p>Speficied culture info.</p>
+</dd>
+    <dt><code>col1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Column for generating the Keys</p>
+</dd>
+    <dt><code>col2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Column for generating the Values</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>A Dictionary with Keys from column 1 and Values from column 2</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_GetData_" data-uid="EpNet.Results.Csv.GetData*"></a>
+
+  <h3 id="EpNet_Results_Csv_GetData_System_String_System_Int32_System_Int32_" data-uid="EpNet.Results.Csv.GetData(System.String,System.Int32,System.Int32)">
+  GetData(string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with a specified column as string Keys and a specified column as numeric Values. List separator (,) and decimal point (.) are those from Invariant Culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, double&gt; GetData(string file, int col1 = 0, int col2 = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>col1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Column for generating the Keys</p>
+</dd>
+    <dt><code>col2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Column for generating the Values</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>A Dictionary with Keys from column 1 and Values from column 2</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_GetData_" data-uid="EpNet.Results.Csv.GetData*"></a>
+
+  <h3 id="EpNet_Results_Csv_GetData__1_System_String_System_Globalization_CultureInfo_System_Int32_System_Int32_" data-uid="EpNet.Results.Csv.GetData``1(System.String,System.Globalization.CultureInfo,System.Int32,System.Int32)">
+  GetData&lt;T&gt;(string, CultureInfo, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with a specified column as string Keys and a specified column as T Values. List separator and decimal point are those from a specified Culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, T&gt; GetData&lt;T&gt;(string file, CultureInfo culture, int col1 = 0, int col2 = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd><p>Speficied culture info.</p>
+</dd>
+    <dt><code>col1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Column for generating the Keys</p>
+</dd>
+    <dt><code>col2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Column for generating the Values</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, T&gt;</dt>
+    <dd><p>A Dictionary with Keys from column 1 and Values from column 2</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>double or string</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_GetData_" data-uid="EpNet.Results.Csv.GetData*"></a>
+
+  <h3 id="EpNet_Results_Csv_GetData__1_System_String_System_Int32_System_Int32_" data-uid="EpNet.Results.Csv.GetData``1(System.String,System.Int32,System.Int32)">
+  GetData&lt;T&gt;(string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with a specified column as string Keys and a specified column as T Values. List separator (,) and decimal point (.) are those from Invariant Culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, T&gt; GetData&lt;T&gt;(string file, int col1 = 0, int col2 = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>col1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Column for generating the Keys</p>
+</dd>
+    <dt><code>col2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Column for generating the Values</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, T&gt;</dt>
+    <dd><p>A Dictionary with Keys from column 1 and Values from column 2</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>double or string</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_GetRows_" data-uid="EpNet.Results.Csv.GetRows*"></a>
+
+  <h3 id="EpNet_Results_Csv_GetRows_System_String_" data-uid="EpNet.Results.Csv.GetRows(System.String)">
+  GetRows(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with the first column as string Keys and the Values with rest of columns as lists of numbers. List separator (,) and decimal point (.) are those from Invariant Culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;double&gt;&gt; GetRows(string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;&gt;</dt>
+    <dd><p>A Dictionary with Keys from the first column and Values as a list of numbers from the rest of the columns</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_GetRows_" data-uid="EpNet.Results.Csv.GetRows*"></a>
+
+  <h3 id="EpNet_Results_Csv_GetRows_System_String_System_Globalization_CultureInfo_" data-uid="EpNet.Results.Csv.GetRows(System.String,System.Globalization.CultureInfo)">
+  GetRows(string, CultureInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with the first column as string Keys and the Values with rest of columns as lists of numbers. List separator and decimal point are those from a specified Culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;double&gt;&gt; GetRows(string file, CultureInfo culture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd><p>Speficied culture info.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;&gt;</dt>
+    <dd><p>A Dictionary with Keys from the first column and Values as a list of numbers from the rest of the columns</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_GetRows_" data-uid="EpNet.Results.Csv.GetRows*"></a>
+
+  <h3 id="EpNet_Results_Csv_GetRows__1_System_String_" data-uid="EpNet.Results.Csv.GetRows``1(System.String)">
+  GetRows&lt;T&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with the first column as string Keys and the Values with rest of columns as lists of T. List separator (,) and decimal point (.) are those from Invariant Culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;T&gt;&gt; GetRows&lt;T&gt;(string file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;&gt;</dt>
+    <dd><p>A Dictionary with Keys from the first column and Values as a list of values from the rest of the columns</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>string or double</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_GetRows_" data-uid="EpNet.Results.Csv.GetRows*"></a>
+
+  <h3 id="EpNet_Results_Csv_GetRows__1_System_String_System_Globalization_CultureInfo_" data-uid="EpNet.Results.Csv.GetRows``1(System.String,System.Globalization.CultureInfo)">
+  GetRows&lt;T&gt;(string, CultureInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a Dictionary from a csv file with the first column as string Keys and the Values with rest of columns as lists of T. List separator and decimal point are those from a specified Culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, List&lt;T&gt;&gt; GetRows&lt;T&gt;(string file, CultureInfo culture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd><p>Speficied culture info.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;&gt;</dt>
+    <dd><p>A Dictionary with Keys from the first column and Values as a list of values from the rest of the columns.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>string or double</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
+
+  <h3 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IDictionary_System_String_System_Double__System_Boolean_" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IDictionary{System.String,System.Double},System.Boolean)">
+  Save(string, IDictionary&lt;string, double&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a dictionary as a string column (Key) and a numeric column (Value).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Save(string file, IDictionary&lt;string, double&gt; data, bool append = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>Dictionary of string and numeric data.</p>
+</dd>
+    <dt><code>append</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true for appending to an existing file.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
+
+  <h3 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Boolean_" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Boolean)">
+  Save(string, IDictionary&lt;string, string&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a dictionary as two a string columns (Key and Value).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Save(string file, IDictionary&lt;string, string&gt; data, bool append = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Dictionary of string Keys and Values.</p>
+</dd>
+    <dt><code>append</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true for appending to an existing file.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
+
+  <h3 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_IEnumerable_System_Double___" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{System.Double}})">
+  Save(string, IEnumerable&lt;IEnumerable&lt;double&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a list of list data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Save(string file, IEnumerable&lt;IEnumerable&lt;double&gt;&gt; data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;&gt;</dt>
+    <dd><p>Data list of numeric lists</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
+
+  <h3 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_IEnumerable_System_String___" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{System.String}})">
+  Save(string, IEnumerable&lt;IEnumerable&lt;string&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a list of list data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Save(string file, IEnumerable&lt;IEnumerable&lt;string&gt;&gt; data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
+    <dd><p>Data list of string lists</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
+
+  <h3 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IEnumerable_System_Double__System_Boolean_" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IEnumerable{System.Double},System.Boolean)">
+  Save(string, IEnumerable&lt;double&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a list of numeric data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Save(string file, IEnumerable&lt;double&gt; data, bool append = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>List of numeric data.</p>
+</dd>
+    <dt><code>append</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true for appending to an existing file.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
+
+  <h3 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IEnumerable_System_Double____" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IEnumerable{System.Double}[])">
+  Save(string, params IEnumerable&lt;double&gt;[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a list of numeric data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Save(string file, params IEnumerable&lt;double&gt;[] data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;[]</dt>
+    <dd><p>Data array</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
+
+  <h3 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IEnumerable_System_String__System_Boolean_" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IEnumerable{System.String},System.Boolean)">
+  Save(string, IEnumerable&lt;string&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a list of string data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Save(string file, IEnumerable&lt;string&gt; data, bool append = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>List of string data.</p>
+</dd>
+    <dt><code>append</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true for appending to an existing file.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_Csv_Save_" data-uid="EpNet.Results.Csv.Save*"></a>
+
+  <h3 id="EpNet_Results_Csv_Save_System_String_System_Collections_Generic_IEnumerable_System_String____" data-uid="EpNet.Results.Csv.Save(System.String,System.Collections.Generic.IEnumerable{System.String}[])">
+  Save(string, params IEnumerable&lt;string&gt;[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a text file and writes sequentially a list of text strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Save(string file, params IEnumerable&lt;string&gt;[] data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path to the file.</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;[]</dt>
+    <dd><p>Data array</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

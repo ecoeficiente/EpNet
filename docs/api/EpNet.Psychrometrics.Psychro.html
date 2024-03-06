@@ -1,855 +1,748 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Psychro
-   </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Psychro
-   ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Class Psychro | EpNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Psychro | EpNet ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="EpNet.Psychrometrics.Psychro">
-  
-  
-  <h1 id="EpNet_Psychrometrics_Psychro" data-uid="EpNet.Psychrometrics.Psychro" class="text-break">Class Psychro
-  </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Psychro</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="EpNet.Psychrometrics.html">EpNet.Psychrometrics</a></h6>
-  <h6><strong>Assembly</strong>: EpNet.dll</h6>
-  <h5 id="EpNet_Psychrometrics_Psychro_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class Psychro</code></pre>
-  </div>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="EpNet_Psychrometrics_Psychro_CpAirFnWTdb_" data-uid="EpNet.Psychrometrics.Psychro.CpAirFnWTdb*"></a>
-  <h4 id="EpNet_Psychrometrics_Psychro_CpAirFnWTdb_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.CpAirFnWTdb(System.Double,System.Double)">CpAirFnWTdb(Double, Double)</h4>
-  <div class="markdown level1 summary"><p>This function provides the heat capacity of air (J/kg-C) as function of humidity ratio and temperature.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double CpAirFnWTdb(double w, double T)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">w</span></td>
-        <td><p>Humidity Ratio (kgWater/kgDryAir)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">T</span></td>
-        <td><p>Temperature (Celsius)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Heat Capacity of air (J/kg-C)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Psychrometrics_Psychro_HfgAirFnWTdb_" data-uid="EpNet.Psychrometrics.Psychro.HfgAirFnWTdb*"></a>
-  <h4 id="EpNet_Psychrometrics_Psychro_HfgAirFnWTdb_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.HfgAirFnWTdb(System.Double)">HfgAirFnWTdb(Double)</h4>
-  <div class="markdown level1 summary"><p>This function provides latent energy of air as function of temperature.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double HfgAirFnWTdb(double T)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">T</span></td>
-        <td><p>input temperature (Celsius)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Heat of vaporization for moist air (J/kg)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Psychrometrics_Psychro_HFnTdbW_" data-uid="EpNet.Psychrometrics.Psychro.HFnTdbW*"></a>
-  <h4 id="EpNet_Psychrometrics_Psychro_HFnTdbW_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.HFnTdbW(System.Double,System.Double)">HFnTdbW(Double, Double)</h4>
-  <div class="markdown level1 summary"><p>This function calculates air enthalpy (J/kg) from dry-bulb temperature and humidity ratio.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double HFnTdbW(double T, double w)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">T</span></td>
-        <td><p>Temperature (Celsius)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">w</span></td>
-        <td><p>Humidity Ratio (kgWater/kgDryAir)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Air Enthalpy (J/kg)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Psychrometrics_Psychro_HgAirFnWTdb_" data-uid="EpNet.Psychrometrics.Psychro.HgAirFnWTdb*"></a>
-  <h4 id="EpNet_Psychrometrics_Psychro_HgAirFnWTdb_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.HgAirFnWTdb(System.Double)">HgAirFnWTdb(Double)</h4>
-  <div class="markdown level1 summary"><p>This function provides latent energy of the moisture as a gas in the air as function of humidity ratio and temperature.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double HgAirFnWTdb(double T)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">T</span></td>
-        <td><p>Input temperature (Celsius)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>// enthalpy of the gas (J/kg)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Psychrometrics_Psychro_PsatFnTemp_" data-uid="EpNet.Psychrometrics.Psychro.PsatFnTemp*"></a>
-  <h4 id="EpNet_Psychrometrics_Psychro_PsatFnTemp_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.PsatFnTemp(System.Double)">PsatFnTemp(Double)</h4>
-  <div class="markdown level1 summary"><p>This function provides the saturation pressure as a function of temperature.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double PsatFnTemp(double T)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">T</span></td>
-        <td><p>Dry-bulb temperature (C)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Saturation Pressure (Pascals)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Psychrometrics_Psychro_RhFnTdbRhovLBnd0C_" data-uid="EpNet.Psychrometrics.Psychro.RhFnTdbRhovLBnd0C*"></a>
-  <h4 id="EpNet_Psychrometrics_Psychro_RhFnTdbRhovLBnd0C_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.RhFnTdbRhovLBnd0C(System.Double,System.Double)">RhFnTdbRhovLBnd0C(Double, Double)</h4>
-  <div class="markdown level1 summary"><p>This function provides the Relative Humidity in air as a function of dry bulb temperature and Vapor Density.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double RhFnTdbRhovLBnd0C(double Tdb, double Rhovapor)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">Tdb</span></td>
-        <td><p>Dry-bulb temperature (C)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">Rhovapor</span></td>
-        <td><p>vapor density in air (kg/m3)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Psychrometrics_Psychro_RhoAirFnPbTdbW_" data-uid="EpNet.Psychrometrics.Psychro.RhoAirFnPbTdbW*"></a>
-  <h4 id="EpNet_Psychrometrics_Psychro_RhoAirFnPbTdbW_System_Double_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.RhoAirFnPbTdbW(System.Double,System.Double,System.Double)">RhoAirFnPbTdbW(Double, Double, Double)</h4>
-  <div class="markdown level1 summary"><p>This function provides density of air as a function of barometric pressure, dry bulb temperature, and humidity ratio.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double RhoAirFnPbTdbW(double pb, double tdb, double dw)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">pb</span></td>
-        <td><p>Barometric pressure (Pascals)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">tdb</span></td>
-        <td><p>Dry bulb temperature (Celsius)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">dw</span></td>
-        <td><p>Humidity ratio (kgWater/kgDryAir)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Density of air (kg/m3)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Psychrometrics_Psychro_RhovFnTdbRhLBnd0C_" data-uid="EpNet.Psychrometrics.Psychro.RhovFnTdbRhLBnd0C*"></a>
-  <h4 id="EpNet_Psychrometrics_Psychro_RhovFnTdbRhLBnd0C_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.RhovFnTdbRhLBnd0C(System.Double,System.Double)">RhovFnTdbRhLBnd0C(Double, Double)</h4>
-  <div class="markdown level1 summary"><p>This function provides the Vapor Density in air as a function of dry bulb temperature, and Relative Humidity.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double RhovFnTdbRhLBnd0C(double Tdb, double RH)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">Tdb</span></td>
-        <td><p>Dry-bulb temperature (C)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">RH</span></td>
-        <td><p>Relative humidity value (0.0-1.0)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Vapor density in air</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Psychrometrics_Psychro_RhovFnTdbWPb_" data-uid="EpNet.Psychrometrics.Psychro.RhovFnTdbWPb*"></a>
-  <h4 id="EpNet_Psychrometrics_Psychro_RhovFnTdbWPb_System_Double_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.RhovFnTdbWPb(System.Double,System.Double,System.Double)">RhovFnTdbWPb(Double, Double, Double)</h4>
-  <div class="markdown level1 summary"><p>This function provides the Vapor Density in air as a function of Dry-bulb temperature, Humidity Ratio, and Barometric Pressure.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double RhovFnTdbWPb(double Tdb, double W, double P)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">Tdb</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">W</span></td>
-        <td><p>Humidity Ratio</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">P</span></td>
-        <td><p>Barometric Pressure (Pa)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Vapor Density (kg/m3)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Psychrometrics_Psychro_TdbFnHW_" data-uid="EpNet.Psychrometrics.Psychro.TdbFnHW*"></a>
-  <h4 id="EpNet_Psychrometrics_Psychro_TdbFnHW_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.TdbFnHW(System.Double,System.Double)">TdbFnHW(Double, Double)</h4>
-  <div class="markdown level1 summary"><p>This function provides air temperature from enthalpy and humidity ratio.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double TdbFnHW(double H, double W)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">H</span></td>
-        <td><p>Entalphy (J/kg)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">W</span></td>
-        <td><p>Humidity ratio</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Dry-bulb temperature (C)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Psychrometrics_Psychro_TwbFnTdbWPb_" data-uid="EpNet.Psychrometrics.Psychro.TwbFnTdbWPb*"></a>
-  <h4 id="EpNet_Psychrometrics_Psychro_TwbFnTdbWPb_System_Double_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.TwbFnTdbWPb(System.Double,System.Double,System.Double)">TwbFnTdbWPb(Double, Double, Double)</h4>
-  <div class="markdown level1 summary"><p>This function provides the wet-bulb temperature from dry-bulb temperature, humidity ratio and barometric pressure.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double TwbFnTdbWPb(double TDB, double dW, double Patm)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">TDB</span></td>
-        <td><p>Dry-bulb temperature</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">dW</span></td>
-        <td><p>Humidity Ratio</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">Patm</span></td>
-        <td><p>Barometric Pressure (Pa)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Wet-Bulb temperature (C)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Psychrometrics_Psychro_VFnTdbWPb_" data-uid="EpNet.Psychrometrics.Psychro.VFnTdbWPb*"></a>
-  <h4 id="EpNet_Psychrometrics_Psychro_VFnTdbWPb_System_Double_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.VFnTdbWPb(System.Double,System.Double,System.Double)">VFnTdbWPb(Double, Double, Double)</h4>
-  <div class="markdown level1 summary"><p>This function provides the specific volume from dry-bulb temperature, humidity ratio and barometric pressure.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double VFnTdbWPb(double TDB, double dW, double PB)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">TDB</span></td>
-        <td><p>Dry-bulb temperature (C)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">dW</span></td>
-        <td><p>Humidity ratio</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">PB</span></td>
-        <td><p>Barometric pressure (Pascals)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Specific volume (m3/kg)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Psychrometrics_Psychro_WFnTdbRhPb_" data-uid="EpNet.Psychrometrics.Psychro.WFnTdbRhPb*"></a>
-  <h4 id="EpNet_Psychrometrics_Psychro_WFnTdbRhPb_System_Double_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.WFnTdbRhPb(System.Double,System.Double,System.Double)">WFnTdbRhPb(Double, Double, Double)</h4>
-  <div class="markdown level1 summary"><p>This function provides the humidity ratio from dry-bulb temperature,relative humidity (value) and barometric pressure.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double WFnTdbRhPb(double T, double RH, double P)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">T</span></td>
-        <td><p>Dry-bulb Temperature (C)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">RH</span></td>
-        <td><p>Relative Humidity value (0.0-1.0)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">P</span></td>
-        <td><p>Barometric Pressure (Pascals)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Psychrometrics_Psychro_WFnTdbTwbPb_" data-uid="EpNet.Psychrometrics.Psychro.WFnTdbTwbPb*"></a>
-  <h4 id="EpNet_Psychrometrics_Psychro_WFnTdbTwbPb_System_Double_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.WFnTdbTwbPb(System.Double,System.Double,System.Double)">WFnTdbTwbPb(Double, Double, Double)</h4>
-  <div class="markdown level1 summary"><p>This function provides the humidity ratio from dry-bulb temperature, wet-bulb temperature and barometric pressure.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double WFnTdbTwbPb(double TDB, double TWB, double PB)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">TDB</span></td>
-        <td><p>Dry-bulb temperature (C)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">TWB</span></td>
-        <td><p>Wet-bulb temperature (C)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">PB</span></td>
-        <td><p>Barometric pressure (Pascals)</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Humidity Ratio</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
-            </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+        <article data-uid="EpNet.Psychrometrics.Psychro">
+
+
+
+  <h1 id="EpNet_Psychrometrics_Psychro" data-uid="EpNet.Psychrometrics.Psychro" class="text-break">
+Class Psychro  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="EpNet.html">EpNet</a>.<a class="xref" href="EpNet.Psychrometrics.html">Psychrometrics</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EpNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Psychro</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Psychro</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="EpNet_Psychrometrics_Psychro_CpAirFnWTdb_" data-uid="EpNet.Psychrometrics.Psychro.CpAirFnWTdb*"></a>
+
+  <h3 id="EpNet_Psychrometrics_Psychro_CpAirFnWTdb_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.CpAirFnWTdb(System.Double,System.Double)">
+  CpAirFnWTdb(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This function provides the heat capacity of air (J/kg-C) as function of humidity ratio and temperature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CpAirFnWTdb(double w, double T)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>w</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Humidity Ratio (kgWater/kgDryAir)</p>
+</dd>
+    <dt><code>T</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Temperature (Celsius)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Heat Capacity of air (J/kg-C)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Psychrometrics_Psychro_HFnTdbW_" data-uid="EpNet.Psychrometrics.Psychro.HFnTdbW*"></a>
+
+  <h3 id="EpNet_Psychrometrics_Psychro_HFnTdbW_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.HFnTdbW(System.Double,System.Double)">
+  HFnTdbW(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This function calculates air enthalpy (J/kg) from dry-bulb temperature and humidity ratio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double HFnTdbW(double T, double w)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Temperature (Celsius)</p>
+</dd>
+    <dt><code>w</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Humidity Ratio (kgWater/kgDryAir)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Air Enthalpy (J/kg)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Psychrometrics_Psychro_HfgAirFnWTdb_" data-uid="EpNet.Psychrometrics.Psychro.HfgAirFnWTdb*"></a>
+
+  <h3 id="EpNet_Psychrometrics_Psychro_HfgAirFnWTdb_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.HfgAirFnWTdb(System.Double)">
+  HfgAirFnWTdb(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This function provides latent energy of air as function of temperature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double HfgAirFnWTdb(double T)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>input temperature (Celsius)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Heat of vaporization for moist air (J/kg)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Psychrometrics_Psychro_HgAirFnWTdb_" data-uid="EpNet.Psychrometrics.Psychro.HgAirFnWTdb*"></a>
+
+  <h3 id="EpNet_Psychrometrics_Psychro_HgAirFnWTdb_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.HgAirFnWTdb(System.Double)">
+  HgAirFnWTdb(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This function provides latent energy of the moisture as a gas in the air as function of humidity ratio and temperature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double HgAirFnWTdb(double T)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Input temperature (Celsius)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>// enthalpy of the gas (J/kg)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Psychrometrics_Psychro_PsatFnTemp_" data-uid="EpNet.Psychrometrics.Psychro.PsatFnTemp*"></a>
+
+  <h3 id="EpNet_Psychrometrics_Psychro_PsatFnTemp_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.PsatFnTemp(System.Double)">
+  PsatFnTemp(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This function provides the saturation pressure as a function of temperature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double PsatFnTemp(double T)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Dry-bulb temperature (C)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Saturation Pressure (Pascals)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Psychrometrics_Psychro_RhFnTdbRhovLBnd0C_" data-uid="EpNet.Psychrometrics.Psychro.RhFnTdbRhovLBnd0C*"></a>
+
+  <h3 id="EpNet_Psychrometrics_Psychro_RhFnTdbRhovLBnd0C_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.RhFnTdbRhovLBnd0C(System.Double,System.Double)">
+  RhFnTdbRhovLBnd0C(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This function provides the Relative Humidity in air as a function of dry bulb temperature and Vapor Density.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RhFnTdbRhovLBnd0C(double Tdb, double Rhovapor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Tdb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Dry-bulb temperature (C)</p>
+</dd>
+    <dt><code>Rhovapor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>vapor density in air (kg/m3)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Psychrometrics_Psychro_RhoAirFnPbTdbW_" data-uid="EpNet.Psychrometrics.Psychro.RhoAirFnPbTdbW*"></a>
+
+  <h3 id="EpNet_Psychrometrics_Psychro_RhoAirFnPbTdbW_System_Double_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.RhoAirFnPbTdbW(System.Double,System.Double,System.Double)">
+  RhoAirFnPbTdbW(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This function provides density of air as a function of barometric pressure, dry bulb temperature, and humidity ratio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RhoAirFnPbTdbW(double pb, double tdb, double dw)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Barometric pressure (Pascals)</p>
+</dd>
+    <dt><code>tdb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Dry bulb temperature (Celsius)</p>
+</dd>
+    <dt><code>dw</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Humidity ratio (kgWater/kgDryAir)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Density of air (kg/m3)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Psychrometrics_Psychro_RhovFnTdbRhLBnd0C_" data-uid="EpNet.Psychrometrics.Psychro.RhovFnTdbRhLBnd0C*"></a>
+
+  <h3 id="EpNet_Psychrometrics_Psychro_RhovFnTdbRhLBnd0C_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.RhovFnTdbRhLBnd0C(System.Double,System.Double)">
+  RhovFnTdbRhLBnd0C(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This function provides the Vapor Density in air as a function of dry bulb temperature, and Relative Humidity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RhovFnTdbRhLBnd0C(double Tdb, double RH)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Tdb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Dry-bulb temperature (C)</p>
+</dd>
+    <dt><code>RH</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Relative humidity value (0.0-1.0)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Vapor density in air</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Psychrometrics_Psychro_RhovFnTdbWPb_" data-uid="EpNet.Psychrometrics.Psychro.RhovFnTdbWPb*"></a>
+
+  <h3 id="EpNet_Psychrometrics_Psychro_RhovFnTdbWPb_System_Double_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.RhovFnTdbWPb(System.Double,System.Double,System.Double)">
+  RhovFnTdbWPb(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This function provides the Vapor Density in air as a function of Dry-bulb temperature, Humidity Ratio, and Barometric Pressure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double RhovFnTdbWPb(double Tdb, double W, double P)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Tdb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>W</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Humidity Ratio</p>
+</dd>
+    <dt><code>P</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Barometric Pressure (Pa)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Vapor Density (kg/m3)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Psychrometrics_Psychro_TdbFnHW_" data-uid="EpNet.Psychrometrics.Psychro.TdbFnHW*"></a>
+
+  <h3 id="EpNet_Psychrometrics_Psychro_TdbFnHW_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.TdbFnHW(System.Double,System.Double)">
+  TdbFnHW(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This function provides air temperature from enthalpy and humidity ratio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double TdbFnHW(double H, double W)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>H</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Entalphy (J/kg)</p>
+</dd>
+    <dt><code>W</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Humidity ratio</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Dry-bulb temperature (C)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Psychrometrics_Psychro_TwbFnTdbWPb_" data-uid="EpNet.Psychrometrics.Psychro.TwbFnTdbWPb*"></a>
+
+  <h3 id="EpNet_Psychrometrics_Psychro_TwbFnTdbWPb_System_Double_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.TwbFnTdbWPb(System.Double,System.Double,System.Double)">
+  TwbFnTdbWPb(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This function provides the wet-bulb temperature from dry-bulb temperature, humidity ratio and barometric pressure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double TwbFnTdbWPb(double TDB, double dW, double Patm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TDB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Dry-bulb temperature</p>
+</dd>
+    <dt><code>dW</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Humidity Ratio</p>
+</dd>
+    <dt><code>Patm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Barometric Pressure (Pa)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Wet-Bulb temperature (C)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Psychrometrics_Psychro_VFnTdbWPb_" data-uid="EpNet.Psychrometrics.Psychro.VFnTdbWPb*"></a>
+
+  <h3 id="EpNet_Psychrometrics_Psychro_VFnTdbWPb_System_Double_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.VFnTdbWPb(System.Double,System.Double,System.Double)">
+  VFnTdbWPb(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This function provides the specific volume from dry-bulb temperature, humidity ratio and barometric pressure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double VFnTdbWPb(double TDB, double dW, double PB)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TDB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Dry-bulb temperature (C)</p>
+</dd>
+    <dt><code>dW</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Humidity ratio</p>
+</dd>
+    <dt><code>PB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Barometric pressure (Pascals)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Specific volume (m3/kg)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Psychrometrics_Psychro_WFnTdbRhPb_" data-uid="EpNet.Psychrometrics.Psychro.WFnTdbRhPb*"></a>
+
+  <h3 id="EpNet_Psychrometrics_Psychro_WFnTdbRhPb_System_Double_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.WFnTdbRhPb(System.Double,System.Double,System.Double)">
+  WFnTdbRhPb(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This function provides the humidity ratio from dry-bulb temperature,relative humidity (value) and barometric pressure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double WFnTdbRhPb(double T, double RH, double P)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Dry-bulb Temperature (C)</p>
+</dd>
+    <dt><code>RH</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Relative Humidity value (0.0-1.0)</p>
+</dd>
+    <dt><code>P</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Barometric Pressure (Pascals)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Psychrometrics_Psychro_WFnTdbTwbPb_" data-uid="EpNet.Psychrometrics.Psychro.WFnTdbTwbPb*"></a>
+
+  <h3 id="EpNet_Psychrometrics_Psychro_WFnTdbTwbPb_System_Double_System_Double_System_Double_" data-uid="EpNet.Psychrometrics.Psychro.WFnTdbTwbPb(System.Double,System.Double,System.Double)">
+  WFnTdbTwbPb(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This function provides the humidity ratio from dry-bulb temperature, wet-bulb temperature and barometric pressure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double WFnTdbTwbPb(double TDB, double TWB, double PB)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TDB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Dry-bulb temperature (C)</p>
+</dd>
+    <dt><code>TWB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Wet-bulb temperature (C)</p>
+</dd>
+    <dt><code>PB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Barometric pressure (Pascals)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Humidity Ratio</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

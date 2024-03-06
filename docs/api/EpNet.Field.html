@@ -1,1063 +1,1112 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Field
-   </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Field
-   ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Class Field | EpNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Field | EpNet ">
+      
+      <meta name="description" content="Field class represent a field in an idf object. It implements methods for getting/setting numeric or string values. Value property refers to the string representation of the field but if the field is numeric it can also be retrieved as a double variable using the Number property.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="EpNet.Field">
-  
-  
-  <h1 id="EpNet_Field" data-uid="EpNet.Field" class="text-break">Class Field
-  </h1>
-  <div class="markdown level0 summary"><p>Field class represent a field in an idf object. It implements methods for getting/setting numeric or string values.
-<p>Value property refers to the string representation of the field but if the field is numeric it can also be retrieved as a double variable using the Number property.</p></p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Field</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="EpNet.html">EpNet</a></h6>
-  <h6><strong>Assembly</strong>: EpNet.dll</h6>
-  <h5 id="EpNet_Field_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Field</code></pre>
-  </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="EpNet_Field__ctor_" data-uid="EpNet.Field.#ctor*"></a>
-  <h4 id="EpNet_Field__ctor_EpNet_IdfObject_System_Int32_" data-uid="EpNet.Field.#ctor(EpNet.IdfObject,System.Int32)">Field(IdfObject, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Field(IdfObject idfObject, int index)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
-        <td><span class="parametername">idfObject</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">index</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="EpNet_Field_Comment_" data-uid="EpNet.Field.Comment*"></a>
-  <h4 id="EpNet_Field_Comment" data-uid="EpNet.Field.Comment">Comment</h4>
-  <div class="markdown level1 summary"><p>The comment associated to the field (represented as !- comment at the right of the value)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Comment { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Comment text</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_Number_" data-uid="EpNet.Field.Number*"></a>
-  <h4 id="EpNet_Field_Number" data-uid="EpNet.Field.Number">Number</h4>
-  <div class="markdown level1 summary"><p>When the field is numeric, gets/sets its value as a double variable.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double Number { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Numeric (double) value of the field.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_UpperCase_" data-uid="EpNet.Field.UpperCase*"></a>
-  <h4 id="EpNet_Field_UpperCase" data-uid="EpNet.Field.UpperCase">UpperCase</h4>
-  <div class="markdown level1 summary"><p>Returns field string value in uppercase.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string UpperCase { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Field in uppercase</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_Value_" data-uid="EpNet.Field.Value*"></a>
-  <h4 id="EpNet_Field_Value" data-uid="EpNet.Field.Value">Value</h4>
-  <div class="markdown level1 summary"><p>Get/sets field string value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Value { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Field string value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="EpNet_Field_Contains_" data-uid="EpNet.Field.Contains*"></a>
-  <h4 id="EpNet_Field_Contains_System_String_" data-uid="EpNet.Field.Contains(System.String)">Contains(String)</h4>
-  <div class="markdown level1 summary"><p>Returns a value indicating whether a specified substring occurs within the string value of the field.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Contains(string value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Substring to be searched within the field.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if field contains substring. False otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_ContainsIgnoreCase_" data-uid="EpNet.Field.ContainsIgnoreCase*"></a>
-  <h4 id="EpNet_Field_ContainsIgnoreCase_System_String_" data-uid="EpNet.Field.ContainsIgnoreCase(System.String)">ContainsIgnoreCase(String)</h4>
-  <div class="markdown level1 summary"><p>Returns a value indicating whether a specified substring occurs within the string value of the field. Case is ignored.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ContainsIgnoreCase(string value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Substring to be searched within the field.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if field contains substring. False otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_ContainsIgnoreCase_" data-uid="EpNet.Field.ContainsIgnoreCase*"></a>
-  <h4 id="EpNet_Field_ContainsIgnoreCase_System_String___" data-uid="EpNet.Field.ContainsIgnoreCase(System.String[])">ContainsIgnoreCase(String[])</h4>
-  <div class="markdown level1 summary"><p>Determines whether any of the specified substrings occurs within this string.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ContainsIgnoreCase(params string[] values)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span>[]</td>
-        <td><span class="parametername">values</span></td>
-        <td><p>Search substrings.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if current string contains search substring.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_EndsWith_" data-uid="EpNet.Field.EndsWith*"></a>
-  <h4 id="EpNet_Field_EndsWith_System_String_" data-uid="EpNet.Field.EndsWith(System.String)">EndsWith(String)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the end of the string value of the field matches the specified substring.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool EndsWith(string value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Substring to be searched at the end of the field.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if field ends in the substring. False otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_Equals_" data-uid="EpNet.Field.Equals*"></a>
-  <h4 id="EpNet_Field_Equals_EpNet_Field_" data-uid="EpNet.Field.Equals(EpNet.Field)">Equals(Field)</h4>
-  <div class="markdown level1 summary"><p>Determines whether this instance string value and a specified string, have the same value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Equals(Field field)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Field.html">Field</a></td>
-        <td><span class="parametername">field</span></td>
-        <td><p>The field to compare.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if the string value of this instance is the same as field string value; otherwise, false.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_Equals_" data-uid="EpNet.Field.Equals*"></a>
-  <h4 id="EpNet_Field_Equals_System_Double_" data-uid="EpNet.Field.Equals(System.Double)">Equals(Double)</h4>
-  <div class="markdown level1 summary"><p>Determines whether this instance numeric value and a specified number, have the same value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Equals(double num)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">num</span></td>
-        <td><p>The number to compare.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if the numeric value of this instance is the same as num; otherwise, false.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_Equals_" data-uid="EpNet.Field.Equals*"></a>
-  <h4 id="EpNet_Field_Equals_System_Object_" data-uid="EpNet.Field.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">obj</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
-  
-  
-  <a id="EpNet_Field_Equals_" data-uid="EpNet.Field.Equals*"></a>
-  <h4 id="EpNet_Field_Equals_System_String_" data-uid="EpNet.Field.Equals(System.String)">Equals(String)</h4>
-  <div class="markdown level1 summary"><p>Determines whether this instance string value and a specified string, have the same value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Equals(string str)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">str</span></td>
-        <td><p>The string to compare.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if the string value of this instance is the same as str; otherwise, false.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_IsNumber_" data-uid="EpNet.Field.IsNumber*"></a>
-  <h4 id="EpNet_Field_IsNumber" data-uid="EpNet.Field.IsNumber">IsNumber()</h4>
-  <div class="markdown level1 summary"><p>Determines whether the field is numeric or not.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsNumber()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if the field is numeric; otherwise, false.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_Match_" data-uid="EpNet.Field.Match*"></a>
-  <h4 id="EpNet_Field_Match_System_String_" data-uid="EpNet.Field.Match(System.String)">Match(String)</h4>
-  <div class="markdown level1 summary"><p>Returns the first IdfObject from the supplied class whose first field matches this field</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IdfObject Match(string idfClass)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">idfClass</span></td>
-        <td><p>IdfClass to search for</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></td>
-        <td><p>Matching idfobject</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_StartsWith_" data-uid="EpNet.Field.StartsWith*"></a>
-  <h4 id="EpNet_Field_StartsWith_System_String_" data-uid="EpNet.Field.StartsWith(System.String)">StartsWith(String)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the beginning of the string value of the field matches the specified substring.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool StartsWith(string value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Substring to be searched at the start of the field.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if field begins with the substring. False otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="operators">Operators
-  </h3>
-  
-  
-  <a id="EpNet_Field_op_Equality_" data-uid="EpNet.Field.op_Equality*"></a>
-  <h4 id="EpNet_Field_op_Equality_EpNet_Field_EpNet_Field_" data-uid="EpNet.Field.op_Equality(EpNet.Field,EpNet.Field)">Equality(Field, Field)</h4>
-  <div class="markdown level1 summary"><p>Determines whether a field string value and a specified field string value, are equal (case-insensitive).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator ==(Field a, Field b)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Field.html">Field</a></td>
-        <td><span class="parametername">a</span></td>
-        <td><p>The first field to compare</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Field.html">Field</a></td>
-        <td><span class="parametername">b</span></td>
-        <td><p>The second field to compare.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if the string value of field a is the same as the string value of b field; otherwise, false.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_op_Equality_" data-uid="EpNet.Field.op_Equality*"></a>
-  <h4 id="EpNet_Field_op_Equality_EpNet_Field_System_Double_" data-uid="EpNet.Field.op_Equality(EpNet.Field,System.Double)">Equality(Field, Double)</h4>
-  <div class="markdown level1 summary"><p>Determines whether a field numeric value equals a specified number.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator ==(Field a, double b)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Field.html">Field</a></td>
-        <td><span class="parametername">a</span></td>
-        <td><p>The field to compare</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">b</span></td>
-        <td><p>The double to compare.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if the numeric value of field a is the same as b; otherwise, false.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_op_Equality_" data-uid="EpNet.Field.op_Equality*"></a>
-  <h4 id="EpNet_Field_op_Equality_EpNet_Field_System_String_" data-uid="EpNet.Field.op_Equality(EpNet.Field,System.String)">Equality(Field, String)</h4>
-  <div class="markdown level1 summary"><p>Determines whether a field string value and a specified string, have the same value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator ==(Field a, string b)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Field.html">Field</a></td>
-        <td><span class="parametername">a</span></td>
-        <td><p>The field to compare</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">b</span></td>
-        <td><p>The string to compare.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if the string value of field a is the same as b string; otherwise, false.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_op_Inequality_" data-uid="EpNet.Field.op_Inequality*"></a>
-  <h4 id="EpNet_Field_op_Inequality_EpNet_Field_EpNet_Field_" data-uid="EpNet.Field.op_Inequality(EpNet.Field,EpNet.Field)">Inequality(Field, Field)</h4>
-  <div class="markdown level1 summary"><p>Determines whether a field string value and a specified field string value, are different (case-insensitive).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator !=(Field a, Field b)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Field.html">Field</a></td>
-        <td><span class="parametername">a</span></td>
-        <td><p>The first field to compare</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Field.html">Field</a></td>
-        <td><span class="parametername">b</span></td>
-        <td><p>The second field to compare.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if the string value of field a is different than the string value of b field; otherwise, false.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_op_Inequality_" data-uid="EpNet.Field.op_Inequality*"></a>
-  <h4 id="EpNet_Field_op_Inequality_EpNet_Field_System_Double_" data-uid="EpNet.Field.op_Inequality(EpNet.Field,System.Double)">Inequality(Field, Double)</h4>
-  <div class="markdown level1 summary"><p>Determines whether a field numeric value equals a specified number..</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator !=(Field a, double b)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Field.html">Field</a></td>
-        <td><span class="parametername">a</span></td>
-        <td><p>The field to compare</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">b</span></td>
-        <td><p>The double to compare.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if the numeric value of field a is different than b; otherwise, false.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Field_op_Inequality_" data-uid="EpNet.Field.op_Inequality*"></a>
-  <h4 id="EpNet_Field_op_Inequality_EpNet_Field_System_String_" data-uid="EpNet.Field.op_Inequality(EpNet.Field,System.String)">Inequality(Field, String)</h4>
-  <div class="markdown level1 summary"><p>Determines whether a field string value and a specified string, are different.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator !=(Field a, string b)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Field.html">Field</a></td>
-        <td><span class="parametername">a</span></td>
-        <td><p>The field to compare</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">b</span></td>
-        <td><p>The string to compare.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if the string value of field a is different than b string; otherwise, false.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Serialize__1___0_">ExtensionMethods.Serialize&lt;T&gt;(T)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Deserialize__1___0_System_String_">ExtensionMethods.Deserialize&lt;T&gt;(T, String)</a>
-  </div>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
-            </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+        <article data-uid="EpNet.Field">
+
+
+
+  <h1 id="EpNet_Field" data-uid="EpNet.Field" class="text-break">
+Class Field  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="EpNet.html">EpNet</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EpNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Field class represent a field in an idf object. It implements methods for getting/setting numeric or string values.</p>
+<p>Value property refers to the string representation of the field but if the field is numeric it can also be retrieved as a double variable using the Number property.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Field</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Field</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Deserialize__1___0_System_String_">ExtensionMethods.Deserialize&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Serialize__1___0_">ExtensionMethods.Serialize&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="EpNet_Field__ctor_" data-uid="EpNet.Field.#ctor*"></a>
+
+  <h3 id="EpNet_Field__ctor_EpNet_IdfObject_System_Int32_" data-uid="EpNet.Field.#ctor(EpNet.IdfObject,System.Int32)">
+  Field(IdfObject, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Field(IdfObject idfObject, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfObject</code> <a class="xref" href="EpNet.IdfObject.html">IdfObject</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="EpNet_Field_Comment_" data-uid="EpNet.Field.Comment*"></a>
+
+  <h3 id="EpNet_Field_Comment" data-uid="EpNet.Field.Comment">
+  Comment
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The comment associated to the field (represented as !- comment at the right of the value)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Comment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Comment text</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_Name_" data-uid="EpNet.Field.Name*"></a>
+
+  <h3 id="EpNet_Field_Name" data-uid="EpNet.Field.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Official field name (from E+ IDD)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_Number_" data-uid="EpNet.Field.Number*"></a>
+
+  <h3 id="EpNet_Field_Number" data-uid="EpNet.Field.Number">
+  Number
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When the field is numeric, gets/sets its value as a double variable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Number { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Numeric (double) value of the field.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_UpperCase_" data-uid="EpNet.Field.UpperCase*"></a>
+
+  <h3 id="EpNet_Field_UpperCase" data-uid="EpNet.Field.UpperCase">
+  UpperCase
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns field string value in uppercase.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string UpperCase { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Field in uppercase</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_Value_" data-uid="EpNet.Field.Value*"></a>
+
+  <h3 id="EpNet_Field_Value" data-uid="EpNet.Field.Value">
+  Value
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get/sets field string value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Value { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Field string value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="EpNet_Field_Contains_" data-uid="EpNet.Field.Contains*"></a>
+
+  <h3 id="EpNet_Field_Contains_System_String_" data-uid="EpNet.Field.Contains(System.String)">
+  Contains(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a value indicating whether a specified substring occurs within the string value of the field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Substring to be searched within the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if field contains substring. False otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_ContainsIgnoreCase_" data-uid="EpNet.Field.ContainsIgnoreCase*"></a>
+
+  <h3 id="EpNet_Field_ContainsIgnoreCase_System_String_" data-uid="EpNet.Field.ContainsIgnoreCase(System.String)">
+  ContainsIgnoreCase(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a value indicating whether a specified substring occurs within the string value of the field. Case is ignored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsIgnoreCase(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Substring to be searched within the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if field contains substring. False otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_ContainsIgnoreCase_" data-uid="EpNet.Field.ContainsIgnoreCase*"></a>
+
+  <h3 id="EpNet_Field_ContainsIgnoreCase_System_String___" data-uid="EpNet.Field.ContainsIgnoreCase(System.String[])">
+  ContainsIgnoreCase(params string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether any of the specified substrings occurs within this string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsIgnoreCase(params string[] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Search substrings.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if current string contains search substring.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_EndsWith_" data-uid="EpNet.Field.EndsWith*"></a>
+
+  <h3 id="EpNet_Field_EndsWith_System_String_" data-uid="EpNet.Field.EndsWith(System.String)">
+  EndsWith(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the end of the string value of the field matches the specified substring.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EndsWith(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Substring to be searched at the end of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if field ends in the substring. False otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_Equals_" data-uid="EpNet.Field.Equals*"></a>
+
+  <h3 id="EpNet_Field_Equals_EpNet_Field_" data-uid="EpNet.Field.Equals(EpNet.Field)">
+  Equals(Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether this instance string value and a specified string, have the same value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Field field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="EpNet.Field.html">Field</a></dt>
+    <dd><p>The field to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the string value of this instance is the same as field string value; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_Equals_" data-uid="EpNet.Field.Equals*"></a>
+
+  <h3 id="EpNet_Field_Equals_System_Double_" data-uid="EpNet.Field.Equals(System.Double)">
+  Equals(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether this instance numeric value and a specified number, have the same value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(double num)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>num</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The number to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the numeric value of this instance is the same as num; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_Equals_" data-uid="EpNet.Field.Equals*"></a>
+
+  <h3 id="EpNet_Field_Equals_System_Object_" data-uid="EpNet.Field.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_Equals_" data-uid="EpNet.Field.Equals*"></a>
+
+  <h3 id="EpNet_Field_Equals_System_String_" data-uid="EpNet.Field.Equals(System.String)">
+  Equals(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether this instance string value and a specified string, have the same value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(string str)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the string value of this instance is the same as str; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_IsNumber_" data-uid="EpNet.Field.IsNumber*"></a>
+
+  <h3 id="EpNet_Field_IsNumber" data-uid="EpNet.Field.IsNumber">
+  IsNumber()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the field is numeric or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNumber()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the field is numeric; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_Match_" data-uid="EpNet.Field.Match*"></a>
+
+  <h3 id="EpNet_Field_Match_System_String_" data-uid="EpNet.Field.Match(System.String)">
+  Match(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the first IdfObject from the supplied class whose first field matches this field</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IdfObject Match(string idfClass)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>IdfClass to search for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></dt>
+    <dd><p>Matching idfobject</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_Set_" data-uid="EpNet.Field.Set*"></a>
+
+  <h3 id="EpNet_Field_Set_System_Double_" data-uid="EpNet.Field.Set(System.Double)">
+  Set(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of the parameter as a double</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(double number)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Numeric (double) value of the field.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_Set_" data-uid="EpNet.Field.Set*"></a>
+
+  <h3 id="EpNet_Field_Set_System_String_" data-uid="EpNet.Field.Set(System.String)">
+  Set(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of the parameter as a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_StartsWith_" data-uid="EpNet.Field.StartsWith*"></a>
+
+  <h3 id="EpNet_Field_StartsWith_System_String_" data-uid="EpNet.Field.StartsWith(System.String)">
+  StartsWith(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the beginning of the string value of the field matches the specified substring.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartsWith(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Substring to be searched at the start of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if field begins with the substring. False otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="EpNet_Field_op_Equality_" data-uid="EpNet.Field.op_Equality*"></a>
+
+  <h3 id="EpNet_Field_op_Equality_EpNet_Field_EpNet_Field_" data-uid="EpNet.Field.op_Equality(EpNet.Field,EpNet.Field)">
+  operator ==(Field, Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether a field string value and a specified field string value, are equal (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Field a, Field b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="EpNet.Field.html">Field</a></dt>
+    <dd><p>The first field to compare</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="EpNet.Field.html">Field</a></dt>
+    <dd><p>The second field to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the string value of field a is the same as the string value of b field; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_op_Equality_" data-uid="EpNet.Field.op_Equality*"></a>
+
+  <h3 id="EpNet_Field_op_Equality_EpNet_Field_System_Double_" data-uid="EpNet.Field.op_Equality(EpNet.Field,System.Double)">
+  operator ==(Field, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether a field numeric value equals a specified number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Field a, double b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="EpNet.Field.html">Field</a></dt>
+    <dd><p>The field to compare</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The double to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the numeric value of field a is the same as b; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_op_Equality_" data-uid="EpNet.Field.op_Equality*"></a>
+
+  <h3 id="EpNet_Field_op_Equality_EpNet_Field_System_String_" data-uid="EpNet.Field.op_Equality(EpNet.Field,System.String)">
+  operator ==(Field, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether a field string value and a specified string, have the same value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Field a, string b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="EpNet.Field.html">Field</a></dt>
+    <dd><p>The field to compare</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the string value of field a is the same as b string; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_op_Inequality_" data-uid="EpNet.Field.op_Inequality*"></a>
+
+  <h3 id="EpNet_Field_op_Inequality_EpNet_Field_EpNet_Field_" data-uid="EpNet.Field.op_Inequality(EpNet.Field,EpNet.Field)">
+  operator !=(Field, Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether a field string value and a specified field string value, are different (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Field a, Field b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="EpNet.Field.html">Field</a></dt>
+    <dd><p>The first field to compare</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="EpNet.Field.html">Field</a></dt>
+    <dd><p>The second field to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the string value of field a is different than the string value of b field; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_op_Inequality_" data-uid="EpNet.Field.op_Inequality*"></a>
+
+  <h3 id="EpNet_Field_op_Inequality_EpNet_Field_System_Double_" data-uid="EpNet.Field.op_Inequality(EpNet.Field,System.Double)">
+  operator !=(Field, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether a field numeric value equals a specified number..</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Field a, double b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="EpNet.Field.html">Field</a></dt>
+    <dd><p>The field to compare</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The double to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the numeric value of field a is different than b; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Field_op_Inequality_" data-uid="EpNet.Field.op_Inequality*"></a>
+
+  <h3 id="EpNet_Field_op_Inequality_EpNet_Field_System_String_" data-uid="EpNet.Field.op_Inequality(EpNet.Field,System.String)">
+  operator !=(Field, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether a field string value and a specified string, are different.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Field a, string b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="EpNet.Field.html">Field</a></dt>
+    <dd><p>The field to compare</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the string value of field a is different than b string; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

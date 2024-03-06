@@ -1,1685 +1,138 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ResultSet
-   </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ResultSet
-   ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Class ResultSet | EpNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ResultSet | EpNet ">
+      
+      <meta name="description" content="Stores an eso result and provides methods to operate with different result sets.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="EpNet.Results.ResultSet">
-  
-  
-  <h1 id="EpNet_Results_ResultSet" data-uid="EpNet.Results.ResultSet" class="text-break">Class ResultSet
+
+        <article data-uid="EpNet.Results.ResultSet">
+
+
+
+  <h1 id="EpNet_Results_ResultSet" data-uid="EpNet.Results.ResultSet" class="text-break">
+Class ResultSet  
   </h1>
-  <div class="markdown level0 summary"><p>Stores an eso result and provides methods to operate with different result sets.</p>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="EpNet.html">EpNet</a>.<a class="xref" href="EpNet.Results.html">Results</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EpNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Stores an eso result and provides methods to operate with different result sets.</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ResultSet</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="EpNet.Results.html">EpNet.Results</a></h6>
-  <h6><strong>Assembly</strong>: EpNet.dll</h6>
-  <h5 id="EpNet_Results_ResultSet_syntax">Syntax</h5>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ResultSet : IEnumerable&lt;double&gt;, IEnumerable</code></pre>
+    <pre><code class="lang-csharp hljs">public class ResultSet</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="EpNet_Results_ResultSet__ctor_" data-uid="EpNet.Results.ResultSet.#ctor*"></a>
-  <h4 id="EpNet_Results_ResultSet__ctor" data-uid="EpNet.Results.ResultSet.#ctor">ResultSet()</h4>
-  <div class="markdown level1 summary"><p>Creates an empty result set.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ResultSet()</code></pre>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ResultSet</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Deserialize__1___0_System_String_">ExtensionMethods.Deserialize&lt;T&gt;(T, string)</a>
   </div>
-  
-  
-  <a id="EpNet_Results_ResultSet__ctor_" data-uid="EpNet.Results.ResultSet.#ctor*"></a>
-  <h4 id="EpNet_Results_ResultSet__ctor_EpNet_Results_ResultDescriptor_" data-uid="EpNet.Results.ResultSet.#ctor(EpNet.Results.ResultDescriptor)">ResultSet(ResultDescriptor)</h4>
-  <div class="markdown level1 summary"><p>Creates an empty result set and assign a Result Descriptor.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ResultSet(ResultDescriptor resultDescriptor)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultDescriptor.html">ResultDescriptor</a></td>
-        <td><span class="parametername">resultDescriptor</span></td>
-        <td><p>Result Descriptor to assign.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet__ctor_" data-uid="EpNet.Results.ResultSet.#ctor*"></a>
-  <h4 id="EpNet_Results_ResultSet__ctor_EpNet_Results_ResultSet_System_Double_" data-uid="EpNet.Results.ResultSet.#ctor(EpNet.Results.ResultSet,System.Double)">ResultSet(ResultSet, Double)</h4>
-  <div class="markdown level1 summary"><p>Creates a new result set from an existing, optionally scaling the values.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ResultSet(ResultSet resultset, double multiplier = 1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">resultset</span></td>
-        <td><p>Existing result set.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">multiplier</span></td>
-        <td><p>Quantity to multiply each value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="EpNet_Results_ResultSet_Component_" data-uid="EpNet.Results.ResultSet.Component*"></a>
-  <h4 id="EpNet_Results_ResultSet_Component" data-uid="EpNet.Results.ResultSet.Component">Component</h4>
-  <div class="markdown level1 summary"><p>Gets/Sets the component name of current ResultSet Result Descriptor.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Component { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Compponent Name.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_Count_" data-uid="EpNet.Results.ResultSet.Count*"></a>
-  <h4 id="EpNet_Results_ResultSet_Count" data-uid="EpNet.Results.ResultSet.Count">Count</h4>
-  <div class="markdown level1 summary"><p>Returns the number of result values in the result set.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>Number of values.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_DataSet_" data-uid="EpNet.Results.ResultSet.DataSet*"></a>
-  <h4 id="EpNet_Results_ResultSet_DataSet" data-uid="EpNet.Results.ResultSet.DataSet">DataSet</h4>
-  <div class="markdown level1 summary"><p>Sequencial numeric result values.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;double&gt; DataSet { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Double</span>&gt;</td>
-        <td><p>Numeric Result List.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_Frequency_" data-uid="EpNet.Results.ResultSet.Frequency*"></a>
-  <h4 id="EpNet_Results_ResultSet_Frequency" data-uid="EpNet.Results.ResultSet.Frequency">Frequency</h4>
-  <div class="markdown level1 summary"><p>Gets/Sets the frequency of current ResultSet Result Descriptor.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Frequencies Frequency { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></td>
-        <td><p>Frequency.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_Item_" data-uid="EpNet.Results.ResultSet.Item*"></a>
-  <h4 id="EpNet_Results_ResultSet_Item_System_DateTime_" data-uid="EpNet.Results.ResultSet.Item(System.DateTime)">Item[DateTime]</h4>
-  <div class="markdown level1 summary"><p>Gets the value at a specified datetime.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double this[DateTime time] { get; set; }</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">time</span></td>
-        <td><p>DateTime to look for.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Value at the datetime.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_Item_" data-uid="EpNet.Results.ResultSet.Item*"></a>
-  <h4 id="EpNet_Results_ResultSet_Item_System_Int32_" data-uid="EpNet.Results.ResultSet.Item(System.Int32)">Item[Int32]</h4>
-  <div class="markdown level1 summary"><p>Returns the value at a specified index.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double this[int index] { get; set; }</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">index</span></td>
-        <td><p>zero-based index.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Result value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_ReportType_" data-uid="EpNet.Results.ResultSet.ReportType*"></a>
-  <h4 id="EpNet_Results_ResultSet_ReportType" data-uid="EpNet.Results.ResultSet.ReportType">ReportType</h4>
-  <div class="markdown level1 summary"><p>Gets/Sets the report type of current ResultSet Result Descriptor.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ReportType { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Report Type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_ResultDescriptor_" data-uid="EpNet.Results.ResultSet.ResultDescriptor*"></a>
-  <h4 id="EpNet_Results_ResultSet_ResultDescriptor" data-uid="EpNet.Results.ResultSet.ResultDescriptor">ResultDescriptor</h4>
-  <div class="markdown level1 summary"><p>Gets/Sets the Result Descriptor associated to this result.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ResultDescriptor ResultDescriptor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultDescriptor.html">ResultDescriptor</a></td>
-        <td><p>Result Descriptor.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_Units_" data-uid="EpNet.Results.ResultSet.Units*"></a>
-  <h4 id="EpNet_Results_ResultSet_Units" data-uid="EpNet.Results.ResultSet.Units">Units</h4>
-  <div class="markdown level1 summary"><p>Gets/Sets the units of current ResultSet Result Descriptor.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Units { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Units.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="EpNet_Results_ResultSet_Add_" data-uid="EpNet.Results.ResultSet.Add*"></a>
-  <h4 id="EpNet_Results_ResultSet_Add_System_Double_" data-uid="EpNet.Results.ResultSet.Add(System.Double)">Add(Double)</h4>
-  <div class="markdown level1 summary"><p>Add a new data point (numeric result) to the result list.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Add(double value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Numeric value to add.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_GetDate_" data-uid="EpNet.Results.ResultSet.GetDate*"></a>
-  <h4 id="EpNet_Results_ResultSet_GetDate_System_Int32_" data-uid="EpNet.Results.ResultSet.GetDate(System.Int32)">GetDate(Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets the datetime from a specified index.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime GetDate(int index)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">index</span></td>
-        <td><p>Index position.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><p>Datetime</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_GetIndex_" data-uid="EpNet.Results.ResultSet.GetIndex*"></a>
-  <h4 id="EpNet_Results_ResultSet_GetIndex_System_DateTime_" data-uid="EpNet.Results.ResultSet.GetIndex(System.DateTime)">GetIndex(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Gets the index from a specified datetime.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GetIndex(DateTime dateTime)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">dateTime</span></td>
-        <td><p>date time to search</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>Index position.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_GetMaxDate_" data-uid="EpNet.Results.ResultSet.GetMaxDate*"></a>
-  <h4 id="EpNet_Results_ResultSet_GetMaxDate" data-uid="EpNet.Results.ResultSet.GetMaxDate">GetMaxDate()</h4>
-  <div class="markdown level1 summary"><p>Gets the datetime for the maximum value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime GetMaxDate()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><p>Max value Datetime.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_GetMaxIndex_" data-uid="EpNet.Results.ResultSet.GetMaxIndex*"></a>
-  <h4 id="EpNet_Results_ResultSet_GetMaxIndex" data-uid="EpNet.Results.ResultSet.GetMaxIndex">GetMaxIndex()</h4>
-  <div class="markdown level1 summary"><p>Gets the index for the maximum value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GetMaxIndex()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>Max value index.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_GetMaxValue_" data-uid="EpNet.Results.ResultSet.GetMaxValue*"></a>
-  <h4 id="EpNet_Results_ResultSet_GetMaxValue" data-uid="EpNet.Results.ResultSet.GetMaxValue">GetMaxValue()</h4>
-  <div class="markdown level1 summary"><p>Gets maximum value in the result set.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double GetMaxValue()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Max value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_GetMinDate_" data-uid="EpNet.Results.ResultSet.GetMinDate*"></a>
-  <h4 id="EpNet_Results_ResultSet_GetMinDate" data-uid="EpNet.Results.ResultSet.GetMinDate">GetMinDate()</h4>
-  <div class="markdown level1 summary"><p>Gets the datetime for the minimum value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime GetMinDate()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><p>Min Value Datetime.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_GetMinIndex_" data-uid="EpNet.Results.ResultSet.GetMinIndex*"></a>
-  <h4 id="EpNet_Results_ResultSet_GetMinIndex" data-uid="EpNet.Results.ResultSet.GetMinIndex">GetMinIndex()</h4>
-  <div class="markdown level1 summary"><p>Gets the index for the minimum value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GetMinIndex()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>Min Value Index.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_GetMinValue_" data-uid="EpNet.Results.ResultSet.GetMinValue*"></a>
-  <h4 id="EpNet_Results_ResultSet_GetMinValue" data-uid="EpNet.Results.ResultSet.GetMinValue">GetMinValue()</h4>
-  <div class="markdown level1 summary"><p>Gets minimum value in the result set.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double GetMinValue()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>Min value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_Match_" data-uid="EpNet.Results.ResultSet.Match*"></a>
-  <h4 id="EpNet_Results_ResultSet_Match_System_String_System_String_" data-uid="EpNet.Results.ResultSet.Match(System.String,System.String)">Match(String, String)</h4>
-  <div class="markdown level1 summary"><p>Returns true if component and report match the provided values.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Match(string component, string reportType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">component</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">reportType</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_Match_" data-uid="EpNet.Results.ResultSet.Match*"></a>
-  <h4 id="EpNet_Results_ResultSet_Match_System_String_System_String_EpNet_Results_Frequencies_" data-uid="EpNet.Results.ResultSet.Match(System.String,System.String,EpNet.Results.Frequencies)">Match(String, String, Frequencies)</h4>
-  <div class="markdown level1 summary"><p>Returns true if component and report match the provided values.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Match(string component, string reportType, Frequencies frequency)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">component</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">reportType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></td>
-        <td><span class="parametername">frequency</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_MatchComponent_" data-uid="EpNet.Results.ResultSet.MatchComponent*"></a>
-  <h4 id="EpNet_Results_ResultSet_MatchComponent_System_String_" data-uid="EpNet.Results.ResultSet.MatchComponent(System.String)">MatchComponent(String)</h4>
-  <div class="markdown level1 summary"><p>Returns true if component matches the provided value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool MatchComponent(string component)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">component</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_MatchReport_" data-uid="EpNet.Results.ResultSet.MatchReport*"></a>
-  <h4 id="EpNet_Results_ResultSet_MatchReport_System_String_" data-uid="EpNet.Results.ResultSet.MatchReport(System.String)">MatchReport(String)</h4>
-  <div class="markdown level1 summary"><p>Returns true if report matches the provided value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool MatchReport(string reportType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">reportType</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_SetValue_" data-uid="EpNet.Results.ResultSet.SetValue*"></a>
-  <h4 id="EpNet_Results_ResultSet_SetValue_System_Double_" data-uid="EpNet.Results.ResultSet.SetValue(System.Double)">SetValue(Double)</h4>
-  <div class="markdown level1 summary"><p>Sets a single value for all the data values in the ResultSet</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetValue(double value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">value</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_Sum_" data-uid="EpNet.Results.ResultSet.Sum*"></a>
-  <h4 id="EpNet_Results_ResultSet_Sum_EpNet_Results_ResultSet___" data-uid="EpNet.Results.ResultSet.Sum(EpNet.Results.ResultSet[])">Sum(ResultSet[])</h4>
-  <div class="markdown level1 summary"><p>Sums an array of result sets.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ResultSet Sum(params ResultSet[] results)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>[]</td>
-        <td><span class="parametername">results</span></td>
-        <td><p>array of result sets.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><p>Summed Result Set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_TimeSeries_" data-uid="EpNet.Results.ResultSet.TimeSeries*"></a>
-  <h4 id="EpNet_Results_ResultSet_TimeSeries" data-uid="EpNet.Results.ResultSet.TimeSeries">TimeSeries()</h4>
-  <div class="markdown level1 summary"><p>Gets the Result Set as a Time Series.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet.TimeSeriesData&gt; TimeSeries()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.TimeSeriesData.html">ResultSet.TimeSeriesData</a>&gt;</td>
-        <td><p>Time Series.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="operators">Operators
-  </h3>
-  
-  
-  <a id="EpNet_Results_ResultSet_op_Addition_" data-uid="EpNet.Results.ResultSet.op_Addition*"></a>
-  <h4 id="EpNet_Results_ResultSet_op_Addition_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_Addition(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">Addition(ResultSet, ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Adds two result sets</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet operator +(ResultSet r1, ResultSet r2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r1</span></td>
-        <td><p>First result set.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r2</span></td>
-        <td><p>Second result set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><p>Resulting Result Set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_op_Addition_" data-uid="EpNet.Results.ResultSet.op_Addition*"></a>
-  <h4 id="EpNet_Results_ResultSet_op_Addition_EpNet_Results_ResultSet_System_Double_" data-uid="EpNet.Results.ResultSet.op_Addition(EpNet.Results.ResultSet,System.Double)">Addition(ResultSet, Double)</h4>
-  <div class="markdown level1 summary"><p>Adds a quantity to every value in a result set.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet operator +(ResultSet r1, double value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r1</span></td>
-        <td><p>Result Set</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Value to add.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><p>Resulting Result Set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_op_Division_" data-uid="EpNet.Results.ResultSet.op_Division*"></a>
-  <h4 id="EpNet_Results_ResultSet_op_Division_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_Division(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">Division(ResultSet, ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Divides one result set by another. If division by cero inserts 0 value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet operator /(ResultSet r1, ResultSet r2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r1</span></td>
-        <td><p>First Result Set.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r2</span></td>
-        <td><p>Second Result Set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><p>Resulting Result Set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_op_Division_" data-uid="EpNet.Results.ResultSet.op_Division*"></a>
-  <h4 id="EpNet_Results_ResultSet_op_Division_EpNet_Results_ResultSet_System_Double_" data-uid="EpNet.Results.ResultSet.op_Division(EpNet.Results.ResultSet,System.Double)">Division(ResultSet, Double)</h4>
-  <div class="markdown level1 summary"><p>Divides by a quantity every value in a result set.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet operator /(ResultSet r1, double value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r1</span></td>
-        <td><p>Result Set</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Value to divide by.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><p>Resulting Result Set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_op_Equality_" data-uid="EpNet.Results.ResultSet.op_Equality*"></a>
-  <h4 id="EpNet_Results_ResultSet_op_Equality_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_Equality(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">Equality(ResultSet, ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Get if all the results in the first resultset are equal in the second result set</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator ==(ResultSet r1, ResultSet r2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r1</span></td>
-        <td><p>First result set.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r2</span></td>
-        <td><p>Second result set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if equal</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_op_GreaterThan_" data-uid="EpNet.Results.ResultSet.op_GreaterThan*"></a>
-  <h4 id="EpNet_Results_ResultSet_op_GreaterThan_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_GreaterThan(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">GreaterThan(ResultSet, ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Get if firstResultset is greater than second result sets</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator&gt;(ResultSet r1, ResultSet r2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r1</span></td>
-        <td><p>First result set.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r2</span></td>
-        <td><p>Second result set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if greater</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_op_Inequality_" data-uid="EpNet.Results.ResultSet.op_Inequality*"></a>
-  <h4 id="EpNet_Results_ResultSet_op_Inequality_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_Inequality(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">Inequality(ResultSet, ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Get if any of the results in the first resultset is different in the second result set</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator !=(ResultSet r1, ResultSet r2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r1</span></td>
-        <td><p>First result set.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r2</span></td>
-        <td><p>Second result set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if different</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_op_LessThan_" data-uid="EpNet.Results.ResultSet.op_LessThan*"></a>
-  <h4 id="EpNet_Results_ResultSet_op_LessThan_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_LessThan(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">LessThan(ResultSet, ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Get if firstResultset is lower than second result sets</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator &lt;(ResultSet r1, ResultSet r2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r1</span></td>
-        <td><p>First result set.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r2</span></td>
-        <td><p>Second result set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if lower</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_op_Multiply_" data-uid="EpNet.Results.ResultSet.op_Multiply*"></a>
-  <h4 id="EpNet_Results_ResultSet_op_Multiply_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_Multiply(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">Multiply(ResultSet, ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Multiplies two result sets.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet operator *(ResultSet r1, ResultSet r2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r1</span></td>
-        <td><p>First Result Set.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r2</span></td>
-        <td><p>Second Result Set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><p>Resulting Result Set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_op_Multiply_" data-uid="EpNet.Results.ResultSet.op_Multiply*"></a>
-  <h4 id="EpNet_Results_ResultSet_op_Multiply_EpNet_Results_ResultSet_System_Double_" data-uid="EpNet.Results.ResultSet.op_Multiply(EpNet.Results.ResultSet,System.Double)">Multiply(ResultSet, Double)</h4>
-  <div class="markdown level1 summary"><p>Multiplies by a quantity every value in a result set.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet operator *(ResultSet r1, double value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r1</span></td>
-        <td><p>Result Set</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Value to multiply.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><p>Resulting Result Set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_op_Subtraction_" data-uid="EpNet.Results.ResultSet.op_Subtraction*"></a>
-  <h4 id="EpNet_Results_ResultSet_op_Subtraction_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_Subtraction(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">Subtraction(ResultSet, ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Substract one resultset from another.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet operator -(ResultSet r1, ResultSet r2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r1</span></td>
-        <td><p>First result set.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r2</span></td>
-        <td><p>Result set to substract.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><p>Resulting Result Set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_op_Subtraction_" data-uid="EpNet.Results.ResultSet.op_Subtraction*"></a>
-  <h4 id="EpNet_Results_ResultSet_op_Subtraction_EpNet_Results_ResultSet_System_Double_" data-uid="EpNet.Results.ResultSet.op_Subtraction(EpNet.Results.ResultSet,System.Double)">Subtraction(ResultSet, Double)</h4>
-  <div class="markdown level1 summary"><p>Substracts a quantity to every value in a result set.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet operator -(ResultSet r1, double value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r1</span></td>
-        <td><p>Result Set</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>Value to substract.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><p>Resulting Result Set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_ResultSet_op_UnaryNegation_" data-uid="EpNet.Results.ResultSet.op_UnaryNegation*"></a>
-  <h4 id="EpNet_Results_ResultSet_op_UnaryNegation_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_UnaryNegation(EpNet.Results.ResultSet)">UnaryNegation(ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Negate a result set (multiply by -1 every value).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResultSet operator -(ResultSet r1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">r1</span></td>
-        <td><p>Result Set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><p>Negated Result Set.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Serialize__1___0_">ExtensionMethods.Serialize&lt;T&gt;(T)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Deserialize__1___0_System_String_">ExtensionMethods.Deserialize&lt;T&gt;(T, String)</a>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ContainsComponent_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__">ExtensionMethods.ContainsComponent(ResultSet, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ContainsReport_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__">ExtensionMethods.ContainsReport(ResultSet, IEnumerable&lt;string&gt;)</a>
   </div>
   <div>
       <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_EqualsComponentReport_EpNet_Results_ResultSet_EpNet_Results_ResultSet_">ExtensionMethods.EqualsComponentReport(ResultSet, ResultSet)</a>
@@ -1688,74 +141,1645 @@
       <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_EqualsDescriptor_EpNet_Results_ResultSet_EpNet_Results_ResultSet_">ExtensionMethods.EqualsDescriptor(ResultSet, ResultSet)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Total_EpNet_Results_ResultSet_">ExtensionMethods.Total(ResultSet)</a>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FillData_EpNet_Results_ResultSet_System_Func_System_Double_System_Boolean__">ExtensionMethods.FillData(ResultSet, Func&lt;double, bool&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToFrequency_EpNet_Results_ResultSet_EpNet_Results_Frequencies_System_Boolean_">ExtensionMethods.ToFrequency(ResultSet, Frequencies, Boolean)</a>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FilterData_EpNet_Results_ResultSet_System_Func_System_Double_System_Boolean__System_Double_">ExtensionMethods.FilterData(ResultSet, Func&lt;double, bool&gt;, double)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetReportType_EpNet_Results_ResultSet_System_String_">ExtensionMethods.SetReportType(ResultSet, String)</a>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FilterData_EpNet_Results_ResultSet_System_Func_System_Double_System_Boolean__System_Double_System_Double_">ExtensionMethods.FilterData(ResultSet, Func&lt;double, bool&gt;, double, double)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetComponent_EpNet_Results_ResultSet_System_String_">ExtensionMethods.SetComponent(ResultSet, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetUnits_EpNet_Results_ResultSet_System_String_">ExtensionMethods.SetUnits(ResultSet, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ContainsComponent_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__">ExtensionMethods.ContainsComponent(ResultSet, IEnumerable&lt;String&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ContainsReport_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__">ExtensionMethods.ContainsReport(ResultSet, IEnumerable&lt;String&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_IsNull_EpNet_Results_ResultSet_">ExtensionMethods.IsNull(ResultSet)</a>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GreaterOrEqual_EpNet_Results_ResultSet_System_Double_">ExtensionMethods.GreaterOrEqual(ResultSet, double)</a>
   </div>
   <div>
       <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_IsNotNull_EpNet_Results_ResultSet_">ExtensionMethods.IsNotNull(ResultSet)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToKWh_EpNet_Results_ResultSet_">ExtensionMethods.ToKWh(ResultSet)</a>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_IsNull_EpNet_Results_ResultSet_">ExtensionMethods.IsNull(ResultSet)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_LowerOrEqual_EpNet_Results_ResultSet_System_Double_">ExtensionMethods.LowerOrEqual(ResultSet, double)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Negative_EpNet_Results_ResultSet_">ExtensionMethods.Negative(ResultSet)</a>
   </div>
   <div>
       <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Positive_EpNet_Results_ResultSet_">ExtensionMethods.Positive(ResultSet)</a>
   </div>
   <div>
-      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Negative_EpNet_Results_ResultSet_">ExtensionMethods.Negative(ResultSet)</a>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetComponent_EpNet_Results_ResultSet_System_String_">ExtensionMethods.SetComponent(ResultSet, string)</a>
   </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetReportType_EpNet_Results_ResultSet_System_String_">ExtensionMethods.SetReportType(ResultSet, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetUnits_EpNet_Results_ResultSet_System_String_">ExtensionMethods.SetUnits(ResultSet, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToFrequency_EpNet_Results_ResultSet_EpNet_Results_Frequencies_System_Boolean_">ExtensionMethods.ToFrequency(ResultSet, Frequencies, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToFrequencyAuto_EpNet_Results_ResultSet_EpNet_Results_Frequencies_">ExtensionMethods.ToFrequencyAuto(ResultSet, Frequencies)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToKWh_EpNet_Results_ResultSet_">ExtensionMethods.ToKWh(ResultSet)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Total_EpNet_Results_ResultSet_">ExtensionMethods.Total(ResultSet)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="EpNet_Results_ResultSet__ctor_" data-uid="EpNet.Results.ResultSet.#ctor*"></a>
+
+  <h3 id="EpNet_Results_ResultSet__ctor" data-uid="EpNet.Results.ResultSet.#ctor">
+  ResultSet()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an empty result set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResultSet()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet__ctor_" data-uid="EpNet.Results.ResultSet.#ctor*"></a>
+
+  <h3 id="EpNet_Results_ResultSet__ctor_EpNet_Results_ResultDescriptor_" data-uid="EpNet.Results.ResultSet.#ctor(EpNet.Results.ResultDescriptor)">
+  ResultSet(ResultDescriptor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an empty result set and assign a Result Descriptor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResultSet(ResultDescriptor resultDescriptor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultDescriptor</code> <a class="xref" href="EpNet.Results.ResultDescriptor.html">ResultDescriptor</a></dt>
+    <dd><p>Result Descriptor to assign.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet__ctor_" data-uid="EpNet.Results.ResultSet.#ctor*"></a>
+
+  <h3 id="EpNet_Results_ResultSet__ctor_EpNet_Results_ResultSet_System_Double_" data-uid="EpNet.Results.ResultSet.#ctor(EpNet.Results.ResultSet,System.Double)">
+  ResultSet(ResultSet, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new result set from an existing, optionally scaling the values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResultSet(ResultSet resultset, double multiplier = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>resultset</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Existing result set.</p>
+</dd>
+    <dt><code>multiplier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Quantity to multiply each value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="EpNet_Results_ResultSet_Component_" data-uid="EpNet.Results.ResultSet.Component*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_Component" data-uid="EpNet.Results.ResultSet.Component">
+  Component
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets/Sets the component name of current ResultSet Result Descriptor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Component { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Compponent Name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_Count_" data-uid="EpNet.Results.ResultSet.Count*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_Count" data-uid="EpNet.Results.ResultSet.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the number of result values in the result set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of values.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_DataSet_" data-uid="EpNet.Results.ResultSet.DataSet*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_DataSet" data-uid="EpNet.Results.ResultSet.DataSet">
+  DataSet
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sequencial numeric result values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;double&gt; DataSet { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>Numeric Result List.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_Frequency_" data-uid="EpNet.Results.ResultSet.Frequency*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_Frequency" data-uid="EpNet.Results.ResultSet.Frequency">
+  Frequency
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets/Sets the frequency of current ResultSet Result Descriptor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Frequencies Frequency { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></dt>
+    <dd><p>Frequency.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_Item_" data-uid="EpNet.Results.ResultSet.Item*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_Item_System_DateTime_" data-uid="EpNet.Results.ResultSet.Item(System.DateTime)">
+  this[DateTime]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the value at a specified datetime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double this[DateTime time] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>DateTime to look for.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Value at the datetime.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_Item_" data-uid="EpNet.Results.ResultSet.Item*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_Item_System_Int32_" data-uid="EpNet.Results.ResultSet.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the value at a specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double this[int index] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>zero-based index.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Result value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_ReportType_" data-uid="EpNet.Results.ResultSet.ReportType*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_ReportType" data-uid="EpNet.Results.ResultSet.ReportType">
+  ReportType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets/Sets the report type of current ResultSet Result Descriptor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReportType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Report Type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_ResultDescriptor_" data-uid="EpNet.Results.ResultSet.ResultDescriptor*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_ResultDescriptor" data-uid="EpNet.Results.ResultSet.ResultDescriptor">
+  ResultDescriptor
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets/Sets the Result Descriptor associated to this result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResultDescriptor ResultDescriptor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultDescriptor.html">ResultDescriptor</a></dt>
+    <dd><p>Result Descriptor.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_Units_" data-uid="EpNet.Results.ResultSet.Units*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_Units" data-uid="EpNet.Results.ResultSet.Units">
+  Units
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets/Sets the units of current ResultSet Result Descriptor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Units { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Units.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="EpNet_Results_ResultSet_Add_" data-uid="EpNet.Results.ResultSet.Add*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_Add_System_Double_" data-uid="EpNet.Results.ResultSet.Add(System.Double)">
+  Add(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a new data point (numeric result) to the result list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Numeric value to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_Clone_" data-uid="EpNet.Results.ResultSet.Clone*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_Clone" data-uid="EpNet.Results.ResultSet.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a Clone of the resultset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResultSet Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Cloned instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_GetDate_" data-uid="EpNet.Results.ResultSet.GetDate*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_GetDate_System_Int32_" data-uid="EpNet.Results.ResultSet.GetDate(System.Int32)">
+  GetDate(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the datetime from a specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime GetDate(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Index position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Datetime</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_GetIndex_" data-uid="EpNet.Results.ResultSet.GetIndex*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_GetIndex_System_DateTime_" data-uid="EpNet.Results.ResultSet.GetIndex(System.DateTime)">
+  GetIndex(DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the index from a specified datetime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetIndex(DateTime dateTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>date time to search</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Index position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_GetMaxDate_" data-uid="EpNet.Results.ResultSet.GetMaxDate*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_GetMaxDate" data-uid="EpNet.Results.ResultSet.GetMaxDate">
+  GetMaxDate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the datetime for the maximum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime GetMaxDate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Max value Datetime.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_GetMaxIndex_" data-uid="EpNet.Results.ResultSet.GetMaxIndex*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_GetMaxIndex" data-uid="EpNet.Results.ResultSet.GetMaxIndex">
+  GetMaxIndex()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the index for the maximum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMaxIndex()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Max value index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_GetMaxValue_" data-uid="EpNet.Results.ResultSet.GetMaxValue*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_GetMaxValue" data-uid="EpNet.Results.ResultSet.GetMaxValue">
+  GetMaxValue()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets maximum value in the result set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetMaxValue()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Max value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_GetMinDate_" data-uid="EpNet.Results.ResultSet.GetMinDate*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_GetMinDate" data-uid="EpNet.Results.ResultSet.GetMinDate">
+  GetMinDate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the datetime for the minimum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime GetMinDate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>Min Value Datetime.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_GetMinIndex_" data-uid="EpNet.Results.ResultSet.GetMinIndex*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_GetMinIndex" data-uid="EpNet.Results.ResultSet.GetMinIndex">
+  GetMinIndex()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the index for the minimum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMinIndex()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Min Value Index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_GetMinValue_" data-uid="EpNet.Results.ResultSet.GetMinValue*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_GetMinValue" data-uid="EpNet.Results.ResultSet.GetMinValue">
+  GetMinValue()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets minimum value in the result set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetMinValue()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Min value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_Match_" data-uid="EpNet.Results.ResultSet.Match*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_Match_System_String_System_String_" data-uid="EpNet.Results.ResultSet.Match(System.String,System.String)">
+  Match(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if component and report match the provided values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Match(string component, string reportType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>reportType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_Match_" data-uid="EpNet.Results.ResultSet.Match*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_Match_System_String_System_String_EpNet_Results_Frequencies_" data-uid="EpNet.Results.ResultSet.Match(System.String,System.String,EpNet.Results.Frequencies)">
+  Match(string, string, Frequencies)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if component and report match the provided values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Match(string component, string reportType, Frequencies frequency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>reportType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>frequency</code> <a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_MatchComponent_" data-uid="EpNet.Results.ResultSet.MatchComponent*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_MatchComponent_System_String_" data-uid="EpNet.Results.ResultSet.MatchComponent(System.String)">
+  MatchComponent(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if component matches the provided value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MatchComponent(string component)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_MatchReport_" data-uid="EpNet.Results.ResultSet.MatchReport*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_MatchReport_System_String_" data-uid="EpNet.Results.ResultSet.MatchReport(System.String)">
+  MatchReport(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if report matches the provided value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MatchReport(string reportType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reportType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_SetValue_" data-uid="EpNet.Results.ResultSet.SetValue*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_SetValue_System_Double_" data-uid="EpNet.Results.ResultSet.SetValue(System.Double)">
+  SetValue(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a single value for all the data values in the ResultSet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_Sum_" data-uid="EpNet.Results.ResultSet.Sum*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_Sum_EpNet_Results_ResultSet___" data-uid="EpNet.Results.ResultSet.Sum(EpNet.Results.ResultSet[])">
+  Sum(params ResultSet[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sums an array of result sets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResultSet Sum(params ResultSet[] results)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>[]</dt>
+    <dd><p>array of result sets.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Summed Result Set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_TimeSeries_" data-uid="EpNet.Results.ResultSet.TimeSeries*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_TimeSeries" data-uid="EpNet.Results.ResultSet.TimeSeries">
+  TimeSeries()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Result Set as a Time Series.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet.TimeSeriesData&gt; TimeSeries()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>.<a class="xref" href="EpNet.Results.ResultSet.TimeSeriesData.html">TimeSeriesData</a>&gt;</dt>
+    <dd><p>Time Series.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="EpNet_Results_ResultSet_op_Addition_" data-uid="EpNet.Results.ResultSet.op_Addition*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_op_Addition_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_Addition(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">
+  operator +(ResultSet, ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds two result sets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet operator +(ResultSet r1, ResultSet r2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r1</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>First result set.</p>
+</dd>
+    <dt><code>r2</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Second result set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Resulting Result Set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_op_Addition_" data-uid="EpNet.Results.ResultSet.op_Addition*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_op_Addition_EpNet_Results_ResultSet_System_Double_" data-uid="EpNet.Results.ResultSet.op_Addition(EpNet.Results.ResultSet,System.Double)">
+  operator +(ResultSet, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a quantity to every value in a result set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet operator +(ResultSet r1, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r1</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Result Set</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Value to add.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Resulting Result Set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_op_Division_" data-uid="EpNet.Results.ResultSet.op_Division*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_op_Division_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_Division(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">
+  operator /(ResultSet, ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Divides one result set by another. If division by cero inserts 0 value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet operator /(ResultSet r1, ResultSet r2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r1</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>First Result Set.</p>
+</dd>
+    <dt><code>r2</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Second Result Set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Resulting Result Set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_op_Division_" data-uid="EpNet.Results.ResultSet.op_Division*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_op_Division_EpNet_Results_ResultSet_System_Double_" data-uid="EpNet.Results.ResultSet.op_Division(EpNet.Results.ResultSet,System.Double)">
+  operator /(ResultSet, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Divides by a quantity every value in a result set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet operator /(ResultSet r1, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r1</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Result Set</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Value to divide by.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Resulting Result Set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_op_Equality_" data-uid="EpNet.Results.ResultSet.op_Equality*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_op_Equality_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_Equality(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">
+  operator ==(ResultSet, ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get if all the results in the first resultset are equal in the second result set</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(ResultSet r1, ResultSet r2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r1</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>First result set.</p>
+</dd>
+    <dt><code>r2</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Second result set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if equal</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_op_GreaterThan_" data-uid="EpNet.Results.ResultSet.op_GreaterThan*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_op_GreaterThan_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_GreaterThan(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">
+  operator &gt;(ResultSet, ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get if firstResultset is greater than second result sets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(ResultSet r1, ResultSet r2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r1</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>First result set.</p>
+</dd>
+    <dt><code>r2</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Second result set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if greater</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_op_Inequality_" data-uid="EpNet.Results.ResultSet.op_Inequality*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_op_Inequality_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_Inequality(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">
+  operator !=(ResultSet, ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get if any of the results in the first resultset is different in the second result set</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(ResultSet r1, ResultSet r2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r1</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>First result set.</p>
+</dd>
+    <dt><code>r2</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Second result set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if different</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_op_LessThan_" data-uid="EpNet.Results.ResultSet.op_LessThan*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_op_LessThan_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_LessThan(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">
+  operator &lt;(ResultSet, ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get if firstResultset is lower than second result sets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(ResultSet r1, ResultSet r2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r1</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>First result set.</p>
+</dd>
+    <dt><code>r2</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Second result set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if lower</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_op_Multiply_" data-uid="EpNet.Results.ResultSet.op_Multiply*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_op_Multiply_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_Multiply(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">
+  operator *(ResultSet, ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Multiplies two result sets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet operator *(ResultSet r1, ResultSet r2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r1</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>First Result Set.</p>
+</dd>
+    <dt><code>r2</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Second Result Set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Resulting Result Set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_op_Multiply_" data-uid="EpNet.Results.ResultSet.op_Multiply*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_op_Multiply_EpNet_Results_ResultSet_System_Double_" data-uid="EpNet.Results.ResultSet.op_Multiply(EpNet.Results.ResultSet,System.Double)">
+  operator *(ResultSet, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Multiplies by a quantity every value in a result set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet operator *(ResultSet r1, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r1</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Result Set</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Value to multiply.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Resulting Result Set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_op_Subtraction_" data-uid="EpNet.Results.ResultSet.op_Subtraction*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_op_Subtraction_EpNet_Results_ResultSet_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_Subtraction(EpNet.Results.ResultSet,EpNet.Results.ResultSet)">
+  operator -(ResultSet, ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Substract one resultset from another.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet operator -(ResultSet r1, ResultSet r2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r1</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>First result set.</p>
+</dd>
+    <dt><code>r2</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Result set to substract.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Resulting Result Set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_op_Subtraction_" data-uid="EpNet.Results.ResultSet.op_Subtraction*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_op_Subtraction_EpNet_Results_ResultSet_System_Double_" data-uid="EpNet.Results.ResultSet.op_Subtraction(EpNet.Results.ResultSet,System.Double)">
+  operator -(ResultSet, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Substracts a quantity to every value in a result set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet operator -(ResultSet r1, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r1</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Result Set</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Value to substract.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Resulting Result Set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ResultSet_op_UnaryNegation_" data-uid="EpNet.Results.ResultSet.op_UnaryNegation*"></a>
+
+  <h3 id="EpNet_Results_ResultSet_op_UnaryNegation_EpNet_Results_ResultSet_" data-uid="EpNet.Results.ResultSet.op_UnaryNegation(EpNet.Results.ResultSet)">
+  operator -(ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Negate a result set (multiply by -1 every value).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet operator -(ResultSet r1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>r1</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Result Set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>Negated Result Set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
-            </div>
-          </div>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>

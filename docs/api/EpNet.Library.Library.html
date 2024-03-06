@@ -1,675 +1,729 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Library
-   </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Library
-   ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Class Library | EpNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Library | EpNet ">
+      
+      <meta name="description" content="Library of additional features and utilities to work with EpNet and DesignBuilder">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="EpNet.Library.Library">
-  
-  
-  <h1 id="EpNet_Library_Library" data-uid="EpNet.Library.Library" class="text-break">Class Library
+
+        <article data-uid="EpNet.Library.Library">
+
+
+
+  <h1 id="EpNet_Library_Library" data-uid="EpNet.Library.Library" class="text-break">
+Class Library  
   </h1>
-  <div class="markdown level0 summary"><p>Library of additional features and utilities to work with EpNet and DesignBuilder</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Library</span></div>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="EpNet.html">EpNet</a>.<a class="xref" href="EpNet.Library.html">Library</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EpNet.dll</dd></dl>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="EpNet.Library.html">EpNet.Library</a></h6>
-  <h6><strong>Assembly</strong>: EpNet.dll</h6>
-  <h5 id="EpNet_Library_Library_syntax">Syntax</h5>
+
+  <div class="markdown summary"><p>Library of additional features and utilities to work with EpNet and DesignBuilder</p>
+</div>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class Library</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Library</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Deserialize__1___0_System_String_">ExtensionMethods.Deserialize&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Serialize__1___0_">ExtensionMethods.Serialize&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
   <a id="EpNet_Library_Library__ctor_" data-uid="EpNet.Library.Library.#ctor*"></a>
-  <h4 id="EpNet_Library_Library__ctor" data-uid="EpNet.Library.Library.#ctor">Library()</h4>
+
+  <h3 id="EpNet_Library_Library__ctor" data-uid="EpNet.Library.Library.#ctor">
+  Library()
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Library()</code></pre>
   </div>
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="EpNet_Library_Library__ctor_" data-uid="EpNet.Library.Library.#ctor*"></a>
-  <h4 id="EpNet_Library_Library__ctor_EpNet_IdfReader_" data-uid="EpNet.Library.Library.#ctor(EpNet.IdfReader)">Library(IdfReader)</h4>
+
+  <h3 id="EpNet_Library_Library__ctor_EpNet_IdfReader_" data-uid="EpNet.Library.Library.#ctor(EpNet.IdfReader)">
+  Library(IdfReader)
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Library(IdfReader idf)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></td>
-        <td><span class="parametername">idf</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idf</code> <a class="xref" href="EpNet.IdfReader.html">IdfReader</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
   <a id="EpNet_Library_Library_Api_" data-uid="EpNet.Library.Library.Api*"></a>
-  <h4 id="EpNet_Library_Library_Api" data-uid="EpNet.Library.Library.Api">Api</h4>
+
+  <h3 id="EpNet_Library_Library_Api" data-uid="EpNet.Library.Library.Api">
+  Api
+  
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Environment Api { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DB.Api.Environment</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Environment</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="EpNet_Library_Library_AddSensor_" data-uid="EpNet.Library.Library.AddSensor*"></a>
-  <h4 id="EpNet_Library_Library_AddSensor_System_String_System_Double_System_Double_System_Double_System_Double_" data-uid="EpNet.Library.Library.AddSensor(System.String,System.Double,System.Double,System.Double,System.Double)">AddSensor(String, Double, Double, Double, Double)</h4>
+
+  <h3 id="EpNet_Library_Library_AddSensor_System_String_System_Double_System_Double_System_Double_System_Double_" data-uid="EpNet.Library.Library.AddSensor(System.String,System.Double,System.Double,System.Double,System.Double)">
+  AddSensor(string, double, double, double, double)
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Adds a new daylight sensor at a deltaX, deltaY distance from the previous one.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void AddSensor(string zone, double deltaX, double deltaY, double fractionControlled, double illuminance)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">zone</span></td>
-        <td><p>Zone to add the sensor</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">deltaX</span></td>
-        <td><p>X distance to previous existing sensor</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">deltaY</span></td>
-        <td><p>Y distance to previous existing sensor</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">fractionControlled</span></td>
-        <td><p>Light power fraction controlled by the sensor</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">illuminance</span></td>
-        <td><p>Illuminance setpoint for the sensor</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>zone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Zone to add the sensor</p>
+</dd>
+    <dt><code>deltaX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>X distance to previous existing sensor</p>
+</dd>
+    <dt><code>deltaY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Y distance to previous existing sensor</p>
+</dd>
+    <dt><code>fractionControlled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Light power fraction controlled by the sensor</p>
+</dd>
+    <dt><code>illuminance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Illuminance setpoint for the sensor</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="EpNet_Library_Library_CO2WindowControl_" data-uid="EpNet.Library.Library.CO2WindowControl*"></a>
-  <h4 id="EpNet_Library_Library_CO2WindowControl_System_Func_EpNet_IdfObject_System_Boolean__System_Double_System_Boolean_" data-uid="EpNet.Library.Library.CO2WindowControl(System.Func{EpNet.IdfObject,System.Boolean},System.Double,System.Boolean)">CO2WindowControl(Func&lt;IdfObject, Boolean&gt;, Double, Boolean)</h4>
+
+  <h3 id="EpNet_Library_Library_CO2WindowControl_System_Func_EpNet_IdfObject_System_Boolean__System_Double_System_Boolean_" data-uid="EpNet.Library.Library.CO2WindowControl(System.Func{EpNet.IdfObject,System.Boolean},System.Double,System.Boolean)">
+  CO2WindowControl(Func&lt;IdfObject, bool&gt;, double, bool)
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Applies a CO₂ setpoint to openings with schedule set as On. An aditional filter can be used e.g.  openingFilter = (o)=&gt; o[0].Contains(&quot;Roof&quot;)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void CO2WindowControl(Func&lt;IdfObject, bool&gt; openingFilter = null, double co2Setpoint = 450, bool reporting = true)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>, <span class="xref">System.Boolean</span>&gt;</td>
-        <td><span class="parametername">openingFilter</span></td>
-        <td><p>A function to filter the openings.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">co2Setpoint</span></td>
-        <td><p>CO₂ ppm setpoint to open</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">reporting</span></td>
-        <td><p>Generate additional reports for the CO₂ window control</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>openingFilter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>A function to filter the openings.</p>
+</dd>
+    <dt><code>co2Setpoint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>CO₂ ppm setpoint to open</p>
+</dd>
+    <dt><code>reporting</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Generate additional reports for the CO₂ window control</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="EpNet_Library_Library_CoilSize_" data-uid="EpNet.Library.Library.CoilSize*"></a>
-  <h4 id="EpNet_Library_Library_CoilSize_System_String_System_Double_System_Double_" data-uid="EpNet.Library.Library.CoilSize(System.String,System.Double,System.Double)">CoilSize(String, Double, Double)</h4>
+
+  <h3 id="EpNet_Library_Library_CoilSize_System_String_System_Double_System_Double_" data-uid="EpNet.Library.Library.CoilSize(System.String,System.Double,System.Double)">
+  CoilSize(string, double, double)
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Sets the heating or cooling capacity for an airloop so that coils are sized accordingly</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void CoilSize(string airloop, double heatingCapacity = -1, double coolingCapacity = -1)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">airloop</span></td>
-        <td><p>airloop name</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">heatingCapacity</span></td>
-        <td><p>Heating capacity in W. Not used if negative.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">coolingCapacity</span></td>
-        <td><p>Cooling capacity in W. Not used if negative.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>airloop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>airloop name</p>
+</dd>
+    <dt><code>heatingCapacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Heating capacity in W. Not used if negative.</p>
+</dd>
+    <dt><code>coolingCapacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Cooling capacity in W. Not used if negative.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="EpNet_Library_Library_ExportShading_" data-uid="EpNet.Library.Library.ExportShading*"></a>
-  <h4 id="EpNet_Library_Library_ExportShading" data-uid="EpNet.Library.Library.ExportShading">ExportShading()</h4>
+
+  <h3 id="EpNet_Library_Library_ExportShading" data-uid="EpNet.Library.Library.ExportShading">
+  ExportShading()
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Activates the export of the shading to be used later in a ImportShading</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ExportShading()</code></pre>
   </div>
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="EpNet_Library_Library_FanOnOffToFanSystemModel_" data-uid="EpNet.Library.Library.FanOnOffToFanSystemModel*"></a>
-  <h4 id="EpNet_Library_Library_FanOnOffToFanSystemModel_System_String_System_Boolean_System_Double___" data-uid="EpNet.Library.Library.FanOnOffToFanSystemModel(System.String,System.Boolean,System.Double[])">FanOnOffToFanSystemModel(String, Boolean, Double[])</h4>
+
+  <h3 id="EpNet_Library_Library_FanOnOffToFanSystemModel_System_String_System_Boolean_System_Double___" data-uid="EpNet.Library.Library.FanOnOffToFanSystemModel(System.String,System.Boolean,System.Double[])">
+  FanOnOffToFanSystemModel(string, bool, params double[])
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Changes Fan:OnOff fans into Fan:SystemModel, allowing multispeed in VRF, fancoils, etc.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void FanOnOffToFanSystemModel(string endUseSubcategory, bool continuous = true, params double[] speedFraction)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">endUseSubcategory</span></td>
-        <td><p>Only fans in which the End-Use Subcategory contains this text will be changed.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">continuous</span></td>
-        <td><p>true for continuous speed control. Discrete control if false.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span>[]</td>
-        <td><span class="parametername">speedFraction</span></td>
-        <td><p>list of speed fractions in case of discrete control. Use 1 value to define the minimum flow rate fraction in continuous control.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="EpNet_Library_Library_FanOnOffToFanSystemModel_System_String_System_Boolean_System_Double____remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The power fraction will be calculated from the Fan Power Ratio Function of Speed Ratio Curve Name in the Fan:OnOff</p>
-</div>
-  <h5 id="EpNet_Library_Library_FanOnOffToFanSystemModel_System_String_System_Boolean_System_Double____examples">Examples</h5>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>endUseSubcategory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Only fans in which the End-Use Subcategory contains this text will be changed.</p>
+</dd>
+    <dt><code>continuous</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true for continuous speed control. Discrete control if false.</p>
+</dd>
+    <dt><code>speedFraction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>list of speed fractions in case of discrete control. Use 1 value to define the minimum flow rate fraction in continuous control.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="EpNet_Library_Library_FanOnOffToFanSystemModel_System_String_System_Boolean_System_Double____examples">Examples</h4>
   <p>VRFFanOnOffToFanSystemModel(false,0.6,0.8,1) for a 3 speed fan(</p>
 
   <p>VRFFanOnOffToFanSystemModel(true,0.1) for a continuous fan with a minimum flow rate of 10%</p>
 
-  
-  
+
+  <h4 class="section" id="EpNet_Library_Library_FanOnOffToFanSystemModel_System_String_System_Boolean_System_Double____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The power fraction will be calculated from the Fan Power Ratio Function of Speed Ratio Curve Name in the Fan:OnOff</p>
+</div>
+
+
+
+
   <a id="EpNet_Library_Library_ImportShading_" data-uid="EpNet.Library.Library.ImportShading*"></a>
-  <h4 id="EpNet_Library_Library_ImportShading_System_String_" data-uid="EpNet.Library.Library.ImportShading(System.String)">ImportShading(String)</h4>
+
+  <h3 id="EpNet_Library_Library_ImportShading_System_String_" data-uid="EpNet.Library.Library.ImportShading(System.String)">
+  ImportShading(string)
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Imports a previously generated shading</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ImportShading(string path = &quot;&quot;)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">path</span></td>
-        <td><p>Optional if the file is different from eplusshading.csv in DesignBuilder&apos;s EnergyPlus folder</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional if the file is different from eplusshading.csv in DesignBuilder's EnergyPlus folder</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="EpNet_Library_Library_IsBaseline_" data-uid="EpNet.Library.Library.IsBaseline*"></a>
-  <h4 id="EpNet_Library_Library_IsBaseline" data-uid="EpNet.Library.Library.IsBaseline">IsBaseline()</h4>
+
+  <h3 id="EpNet_Library_Library_IsBaseline" data-uid="EpNet.Library.Library.IsBaseline">
+  IsBaseline()
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Returns true if self shading is deactivated, which happens in baseline building in DesignBuilder.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsBaseline()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if baseline building</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if baseline building</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="EpNet_Library_Library_OutdoorAirFromZone_" data-uid="EpNet.Library.Library.OutdoorAirFromZone*"></a>
-  <h4 id="EpNet_Library_Library_OutdoorAirFromZone_System_String_System_String___" data-uid="EpNet.Library.Library.OutdoorAirFromZone(System.String,System.String[])">OutdoorAirFromZone(String, String[])</h4>
-  <div class="markdown level1 summary"><p>Overwrites outdoor air conditions (temperature and humidity) for an airloop with those from a thermal zone. </p>
+
+  <h3 id="EpNet_Library_Library_OutdoorAirFromZone_System_String_System_String___" data-uid="EpNet.Library.Library.OutdoorAirFromZone(System.String,System.String[])">
+  OutdoorAirFromZone(string, params string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Overwrites outdoor air conditions (temperature and humidity) for an airloop with those from a thermal zone.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void OutdoorAirFromZone(string bufferZone, params string[] airloops)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">bufferZone</span></td>
-        <td><p>Thermal zone where conditions are taken.
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferZone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Thermal zone where conditions are taken.
 Equivalent airflow should be renewed (e.g. infiltration) to replace the one that is supposedly taken from the airloop.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span>[]</td>
-        <td><span class="parametername">airloops</span></td>
-        <td><p>list of airloops that take bufferZone&apos;s conditions</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Library_Library_PlaceShell_" data-uid="EpNet.Library.Library.PlaceShell*"></a>
-  <h4 id="EpNet_Library_Library_PlaceShell_System_Double_System_Double_System_Double_System_Double_System_String_System_String_" data-uid="EpNet.Library.Library.PlaceShell(System.Double,System.Double,System.Double,System.Double,System.String,System.String)">PlaceShell(Double, Double, Double, Double, String, String)</h4>
-  <div class="markdown level1 summary"><p>Lets you put blocks (with zones) inside a bigger zone. You draw them separately in DesignBuilder.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void PlaceShell(double north, double xOffset, double yOffset, double zOffset, string exteriorZoneNameStartsWith, string otherZonesToMoveStartWith = &quot;&quot;)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">north</span></td>
-        <td><p>North angle (Site orientation in DesignBuilder)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">xOffset</span></td>
-        <td><p>X distance to move the exterior shell zone (DesignBuilder coordinates)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">yOffset</span></td>
-        <td><p>Y distance to move the exterior shell zone (DesignBuilder coordinates)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">zOffset</span></td>
-        <td><p>Z distance to move the exterior shell zone (DesignBuilder coordinates)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">exteriorZoneNameStartsWith</span></td>
-        <td><p>First distintive characters of the name of the exterior zone (e.g the whole name)</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">otherZonesToMoveStartWith</span></td>
-        <td><p>First distintive characters of the name of the zones to move inside (e.g. the name of the block) </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
+</dd>
+    <dt><code>airloops</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>list of airloops that take bufferZone's conditions</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="EpNet_Library_Library_PVWatts_" data-uid="EpNet.Library.Library.PVWatts*"></a>
-  <h4 id="EpNet_Library_Library_PVWatts_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_System_Int32_" data-uid="EpNet.Library.Library.PVWatts(System.Double,System.Double,System.Double,System.Double,System.Double,System.String,System.Int32)">PVWatts(Double, Double, Double, Double, Double, String, Int32)</h4>
+
+  <h3 id="EpNet_Library_Library_PVWatts_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_System_Int32_" data-uid="EpNet.Library.Library.PVWatts(System.Double,System.Double,System.Double,System.Double,System.Double,System.String,System.Int32)">
+  PVWatts(double, double, double, double, double, string, int)
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Introduces PV generation through Energyplus PVWatts feature</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void PVWatts(double pvPower, double tilt, double azimuth, double inverterEfficiency = 0.96, double systemLosses = 0.14, string moduleType = &quot;Standard&quot;, int number = 1)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">pvPower</span></td>
-        <td><p>PV Power in W</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">tilt</span></td>
-        <td><p>Tilt of the modules</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">azimuth</span></td>
-        <td><p>Azimuth of the modules</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">inverterEfficiency</span></td>
-        <td><p>Inverter efficiency. Default: 0.96</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">systemLosses</span></td>
-        <td><p>System Losses. Default: 0.14</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">moduleType</span></td>
-        <td><p>Type of module. Default: Standard</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">number</span></td>
-        <td><p>Number of the system in case you define more than one. 1, 2, 3...</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pvPower</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>PV Power in W</p>
+</dd>
+    <dt><code>tilt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Tilt of the modules</p>
+</dd>
+    <dt><code>azimuth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Azimuth of the modules</p>
+</dd>
+    <dt><code>inverterEfficiency</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Inverter efficiency. Default: 0.96</p>
+</dd>
+    <dt><code>systemLosses</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>System Losses. Default: 0.14</p>
+</dd>
+    <dt><code>moduleType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Type of module. Default: Standard</p>
+</dd>
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of the system in case you define more than one. 1, 2, 3...</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Library_Library_PlaceShell_" data-uid="EpNet.Library.Library.PlaceShell*"></a>
+
+  <h3 id="EpNet_Library_Library_PlaceShell_System_Double_System_Double_System_Double_System_Double_System_String_System_String_" data-uid="EpNet.Library.Library.PlaceShell(System.Double,System.Double,System.Double,System.Double,System.String,System.String)">
+  PlaceShell(double, double, double, double, string, string)
   
-  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lets you put blocks (with zones) inside a bigger zone. You draw them separately in DesignBuilder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaceShell(double north, double xOffset, double yOffset, double zOffset, string exteriorZoneNameStartsWith, string otherZonesToMoveStartWith = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>north</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>North angle (Site orientation in DesignBuilder)</p>
+</dd>
+    <dt><code>xOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>X distance to move the exterior shell zone (DesignBuilder coordinates)</p>
+</dd>
+    <dt><code>yOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Y distance to move the exterior shell zone (DesignBuilder coordinates)</p>
+</dd>
+    <dt><code>zOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Z distance to move the exterior shell zone (DesignBuilder coordinates)</p>
+</dd>
+    <dt><code>exteriorZoneNameStartsWith</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>First distintive characters of the name of the exterior zone (e.g the whole name)</p>
+</dd>
+    <dt><code>otherZonesToMoveStartWith</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>First distintive characters of the name of the zones to move inside (e.g. the name of the block)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="EpNet_Library_Library_ScaleZoneOutdoor_" data-uid="EpNet.Library.Library.ScaleZoneOutdoor*"></a>
-  <h4 id="EpNet_Library_Library_ScaleZoneOutdoor_System_Double_" data-uid="EpNet.Library.Library.ScaleZoneOutdoor(System.Double)">ScaleZoneOutdoor(Double)</h4>
+
+  <h3 id="EpNet_Library_Library_ScaleZoneOutdoor_System_Double_" data-uid="EpNet.Library.Library.ScaleZoneOutdoor(System.Double)">
+  ScaleZoneOutdoor(double)
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Scales the zone outdoor airflow (DesignSpecification:OutdoorAir)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ScaleZoneOutdoor(double scaleFactor)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">scaleFactor</span></td>
-        <td><p>multiplier to the current airflow</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scaleFactor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>multiplier to the current airflow</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="EpNet_Library_Library_ZoneArea_" data-uid="EpNet.Library.Library.ZoneArea*"></a>
-  <h4 id="EpNet_Library_Library_ZoneArea_System_String_System_Double_" data-uid="EpNet.Library.Library.ZoneArea(System.String,System.Double)">ZoneArea(String, Double)</h4>
+
+  <h3 id="EpNet_Library_Library_ZoneArea_System_String_System_Double_" data-uid="EpNet.Library.Library.ZoneArea(System.String,System.Double)">
+  ZoneArea(string, double)
+  
+  </h3>
+
   <div class="markdown level1 summary"><p>Overwrites the area of a zone</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ZoneArea(string zone, double area)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">zone</span></td>
-        <td><p>Name of the zone</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">area</span></td>
-        <td><p>Area</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Serialize__1___0_">ExtensionMethods.Serialize&lt;T&gt;(T)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Deserialize__1___0_System_String_">ExtensionMethods.Deserialize&lt;T&gt;(T, String)</a>
-  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>zone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the zone</p>
+</dd>
+    <dt><code>area</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Area</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
-            </div>
-          </div>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>

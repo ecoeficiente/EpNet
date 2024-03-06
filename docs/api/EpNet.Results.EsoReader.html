@@ -1,870 +1,908 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class EsoReader
-   </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class EsoReader
-   ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Class EsoReader | EpNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EsoReader | EpNet ">
+      
+      <meta name="description" content="Reads and writes result files in eso format.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="EpNet.Results.EsoReader">
-  
-  
-  <h1 id="EpNet_Results_EsoReader" data-uid="EpNet.Results.EsoReader" class="text-break">Class EsoReader
-  </h1>
-  <div class="markdown level0 summary"><p>Reads and writes result files in eso format.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">EsoReader</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="EpNet.Results.html">EpNet.Results</a></h6>
-  <h6><strong>Assembly</strong>: EpNet.dll</h6>
-  <h5 id="EpNet_Results_EsoReader_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EsoReader</code></pre>
-  </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="EpNet_Results_EsoReader__ctor_" data-uid="EpNet.Results.EsoReader.#ctor*"></a>
-  <h4 id="EpNet_Results_EsoReader__ctor" data-uid="EpNet.Results.EsoReader.#ctor">EsoReader()</h4>
-  <div class="markdown level1 summary"><p>Reads eplusout.eso from default DesignBuilder EnergyPlus folder.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EsoReader()</code></pre>
-  </div>
-  
-  
-  <a id="EpNet_Results_EsoReader__ctor_" data-uid="EpNet.Results.EsoReader.#ctor*"></a>
-  <h4 id="EpNet_Results_EsoReader__ctor_System_String_" data-uid="EpNet.Results.EsoReader.#ctor(System.String)">EsoReader(String)</h4>
-  <div class="markdown level1 summary"><p>Reads an Eso file.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EsoReader(string esoFilePath)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">esoFilePath</span></td>
-        <td><p>Eso file absolute path.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader__ctor_" data-uid="EpNet.Results.EsoReader.#ctor*"></a>
-  <h4 id="EpNet_Results_EsoReader__ctor_System_String___" data-uid="EpNet.Results.EsoReader.#ctor(System.String[])">EsoReader(String[])</h4>
-  <div class="markdown level1 summary"><p>Reads more than one eso file as a joined set of results.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EsoReader(params string[] esoFilePaths)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span>[]</td>
-        <td><span class="parametername">esoFilePaths</span></td>
-        <td><p>List of absolute paths.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="EpNet_Results_EsoReader_Environments_" data-uid="EpNet.Results.EsoReader.Environments*"></a>
-  <h4 id="EpNet_Results_EsoReader_Environments" data-uid="EpNet.Results.EsoReader.Environments">Environments</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;string&gt; Environments { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_Id_" data-uid="EpNet.Results.EsoReader.Id*"></a>
-  <h4 id="EpNet_Results_EsoReader_Id" data-uid="EpNet.Results.EsoReader.Id">Id</h4>
-  <div class="markdown level1 summary"><p>Returns a unique Id for a resultset.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int Id { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>Id integer number.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_OldResults_" data-uid="EpNet.Results.EsoReader.OldResults*"></a>
-  <h4 id="EpNet_Results_EsoReader_OldResults" data-uid="EpNet.Results.EsoReader.OldResults">OldResults</h4>
-  <div class="markdown level1 summary"><p>Retrieves the list of existent resultsets</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;ResultSet&gt; OldResults { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
-        <td><p>ResultSet list.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_Results_" data-uid="EpNet.Results.EsoReader.Results*"></a>
-  <h4 id="EpNet_Results_EsoReader_Results" data-uid="EpNet.Results.EsoReader.Results">Results</h4>
-  <div class="markdown level1 summary"><p>Retrieves the list of existent + newly created resultsets</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet&gt; Results { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
-        <td><p>ResultSet list.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_SingleEnvironment_" data-uid="EpNet.Results.EsoReader.SingleEnvironment*"></a>
-  <h4 id="EpNet_Results_EsoReader_SingleEnvironment" data-uid="EpNet.Results.EsoReader.SingleEnvironment">SingleEnvironment</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool SingleEnvironment { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="EpNet_Results_EsoReader_Add_" data-uid="EpNet.Results.EsoReader.Add*"></a>
-  <h4 id="EpNet_Results_EsoReader_Add_EpNet_Results_ResultSet_" data-uid="EpNet.Results.EsoReader.Add(EpNet.Results.ResultSet)">Add(ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Add a resultset.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Add(ResultSet result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td><p>ResultSet.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_Add_" data-uid="EpNet.Results.EsoReader.Add*"></a>
-  <h4 id="EpNet_Results_EsoReader_Add_EpNet_Results_ResultSet___" data-uid="EpNet.Results.EsoReader.Add(EpNet.Results.ResultSet[])">Add(ResultSet[])</h4>
-  <div class="markdown level1 summary"><p>Add a param array of resultset.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Add(params ResultSet[] results)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>[]</td>
-        <td><span class="parametername">results</span></td>
-        <td><p>Param array of ResultSets.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_Add_" data-uid="EpNet.Results.EsoReader.Add*"></a>
-  <h4 id="EpNet_Results_EsoReader_Add_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__" data-uid="EpNet.Results.EsoReader.Add(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})">Add(IEnumerable&lt;ResultSet&gt;)</h4>
-  <div class="markdown level1 summary"><p>Adds a list of resultsets.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Add(IEnumerable&lt;ResultSet&gt; results)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
-        <td><span class="parametername">results</span></td>
-        <td><p>List of resultsets.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_AddEsoFile_" data-uid="EpNet.Results.EsoReader.AddEsoFile*"></a>
-  <h4 id="EpNet_Results_EsoReader_AddEsoFile_System_String_" data-uid="EpNet.Results.EsoReader.AddEsoFile(System.String)">AddEsoFile(String)</h4>
-  <div class="markdown level1 summary"><p>Reads another eso file and combines it with current results.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddEsoFile(string esoFilePath)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">esoFilePath</span></td>
-        <td><p>Absolute eso file path.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_First_" data-uid="EpNet.Results.EsoReader.First*"></a>
-  <h4 id="EpNet_Results_EsoReader_First_System_String_System_String_EpNet_Results_Frequencies_" data-uid="EpNet.Results.EsoReader.First(System.String,System.String,EpNet.Results.Frequencies)">First(String, String, Frequencies)</h4>
-  <div class="markdown level1 summary"><p>Returns the first ResultSet that meets the conditions. Null if not found.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ResultSet First(string component, string reportType, Frequencies frequency)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">component</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">reportType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></td>
-        <td><span class="parametername">frequency</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_Get_" data-uid="EpNet.Results.EsoReader.Get*"></a>
-  <h4 id="EpNet_Results_EsoReader_Get_System_Func_EpNet_Results_ResultSet_System_Boolean__" data-uid="EpNet.Results.EsoReader.Get(System.Func{EpNet.Results.ResultSet,System.Boolean})">Get(Func&lt;ResultSet, Boolean&gt;)</h4>
-  <div class="markdown level1 summary"><p>Retrieves all the ResultSets that meet the conditions.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet&gt; Get(Func&lt;ResultSet, bool&gt; conditions)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>, <span class="xref">System.Boolean</span>&gt;</td>
-        <td><span class="parametername">conditions</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_Get_" data-uid="EpNet.Results.EsoReader.Get*"></a>
-  <h4 id="EpNet_Results_EsoReader_Get_System_String_" data-uid="EpNet.Results.EsoReader.Get(System.String)">Get(String)</h4>
-  <div class="markdown level1 summary"><p>Retrieves all the ResultSets that meet the conditions.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet&gt; Get(string componentOrreportType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">componentOrreportType</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_Get_" data-uid="EpNet.Results.EsoReader.Get*"></a>
-  <h4 id="EpNet_Results_EsoReader_Get_System_String_EpNet_Results_Frequencies_" data-uid="EpNet.Results.EsoReader.Get(System.String,EpNet.Results.Frequencies)">Get(String, Frequencies)</h4>
-  <div class="markdown level1 summary"><p>Retrieves all the ResultSets that meet the conditions.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet&gt; Get(string componentOrreportType, Frequencies frequency)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">componentOrreportType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></td>
-        <td><span class="parametername">frequency</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_Save_" data-uid="EpNet.Results.EsoReader.Save*"></a>
-  <h4 id="EpNet_Results_EsoReader_Save_System_Boolean_" data-uid="EpNet.Results.EsoReader.Save(System.Boolean)">Save(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Saves the eso file overwriting current eso file.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Save(bool newResultsOnly = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">newResultsOnly</span></td>
-        <td><p>Only save newly created results.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_Save_" data-uid="EpNet.Results.EsoReader.Save*"></a>
-  <h4 id="EpNet_Results_EsoReader_Save_System_String_System_Boolean_System_Boolean_" data-uid="EpNet.Results.EsoReader.Save(System.String,System.Boolean,System.Boolean)">Save(String, Boolean, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Saves the eso file in an new file.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Save(string esoFilePath, bool newResultsOnly = false, bool sortNew = true)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">esoFilePath</span></td>
-        <td><p>Absolute path for the new eso file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">newResultsOnly</span></td>
-        <td><p>Only save newly created results.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">sortNew</span></td>
-        <td><p>Adds a first blank character to new results so they appear first in Results Viewer </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_TryGet_" data-uid="EpNet.Results.EsoReader.TryGet*"></a>
-  <h4 id="EpNet_Results_EsoReader_TryGet_System_Func_EpNet_Results_ResultSet_System_Boolean__EpNet_Results_ResultSet__" data-uid="EpNet.Results.EsoReader.TryGet(System.Func{EpNet.Results.ResultSet,System.Boolean},EpNet.Results.ResultSet@)">TryGet(Func&lt;ResultSet, Boolean&gt;, out ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Finds the first ResultSet that meets the conditions. A return value indicates whether the result is found or not.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TryGet(Func&lt;ResultSet, bool&gt; conditions, out ResultSet result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>, <span class="xref">System.Boolean</span>&gt;</td>
-        <td><span class="parametername">conditions</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_TryGet_" data-uid="EpNet.Results.EsoReader.TryGet*"></a>
-  <h4 id="EpNet_Results_EsoReader_TryGet_System_String_System_String_EpNet_Results_Frequencies_EpNet_Results_ResultSet__" data-uid="EpNet.Results.EsoReader.TryGet(System.String,System.String,EpNet.Results.Frequencies,EpNet.Results.ResultSet@)">TryGet(String, String, Frequencies, out ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Finds the ResultSet that meets the conditions. A return value indicates whether the result is found or not.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TryGet(string component, string reportType, Frequencies frequency, out ResultSet result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">component</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">reportType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></td>
-        <td><span class="parametername">frequency</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="EpNet_Results_EsoReader_TryGet_" data-uid="EpNet.Results.EsoReader.TryGet*"></a>
-  <h4 id="EpNet_Results_EsoReader_TryGet_System_String_System_String_EpNet_Results_ResultSet__" data-uid="EpNet.Results.EsoReader.TryGet(System.String,System.String,EpNet.Results.ResultSet@)">TryGet(String, String, out ResultSet)</h4>
-  <div class="markdown level1 summary"><p>Finds the first ResultSet that meets the conditions. A return value indicates whether the result is found or not.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TryGet(string component, string reportType, out ResultSet result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">component</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">reportType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Serialize__1___0_">ExtensionMethods.Serialize&lt;T&gt;(T)</a>
-  </div>
-  <div>
-      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Deserialize__1___0_System_String_">ExtensionMethods.Deserialize&lt;T&gt;(T, String)</a>
-  </div>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
-            </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+        <article data-uid="EpNet.Results.EsoReader">
+
+
+
+  <h1 id="EpNet_Results_EsoReader" data-uid="EpNet.Results.EsoReader" class="text-break">
+Class EsoReader  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="EpNet.html">EpNet</a>.<a class="xref" href="EpNet.Results.html">Results</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EpNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Reads and writes result files in eso format.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EsoReader</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">EsoReader</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Deserialize__1___0_System_String_">ExtensionMethods.Deserialize&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Serialize__1___0_">ExtensionMethods.Serialize&lt;T&gt;(T)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="EpNet_Results_EsoReader__ctor_" data-uid="EpNet.Results.EsoReader.#ctor*"></a>
+
+  <h3 id="EpNet_Results_EsoReader__ctor" data-uid="EpNet.Results.EsoReader.#ctor">
+  EsoReader()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads eplusout.eso from default DesignBuilder EnergyPlus folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EsoReader()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader__ctor_" data-uid="EpNet.Results.EsoReader.#ctor*"></a>
+
+  <h3 id="EpNet_Results_EsoReader__ctor_System_String_" data-uid="EpNet.Results.EsoReader.#ctor(System.String)">
+  EsoReader(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads an Eso file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EsoReader(string esoFilePath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esoFilePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Eso file absolute path.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader__ctor_" data-uid="EpNet.Results.EsoReader.#ctor*"></a>
+
+  <h3 id="EpNet_Results_EsoReader__ctor_System_String___" data-uid="EpNet.Results.EsoReader.#ctor(System.String[])">
+  EsoReader(params string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads more than one eso file as a joined set of results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EsoReader(params string[] esoFilePaths)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esoFilePaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>List of absolute paths.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="EpNet_Results_EsoReader_Environments_" data-uid="EpNet.Results.EsoReader.Environments*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_Environments" data-uid="EpNet.Results.EsoReader.Environments">
+  Environments
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; Environments { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_Id_" data-uid="EpNet.Results.EsoReader.Id*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_Id" data-uid="EpNet.Results.EsoReader.Id">
+  Id
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a unique Id for a resultset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Id { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Id integer number.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_OldResults_" data-uid="EpNet.Results.EsoReader.OldResults*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_OldResults" data-uid="EpNet.Results.EsoReader.OldResults">
+  OldResults
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the list of existent resultsets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ResultSet&gt; OldResults { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd><p>ResultSet list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_Results_" data-uid="EpNet.Results.EsoReader.Results*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_Results" data-uid="EpNet.Results.EsoReader.Results">
+  Results
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the list of existent + newly created resultsets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet&gt; Results { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd><p>ResultSet list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_SingleEnvironment_" data-uid="EpNet.Results.EsoReader.SingleEnvironment*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_SingleEnvironment" data-uid="EpNet.Results.EsoReader.SingleEnvironment">
+  SingleEnvironment
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SingleEnvironment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="EpNet_Results_EsoReader_Add_" data-uid="EpNet.Results.EsoReader.Add*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_Add_EpNet_Results_ResultSet_" data-uid="EpNet.Results.EsoReader.Add(EpNet.Results.ResultSet)">
+  Add(ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a resultset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(ResultSet result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd><p>ResultSet.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_Add_" data-uid="EpNet.Results.EsoReader.Add*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_Add_EpNet_Results_ResultSet___" data-uid="EpNet.Results.EsoReader.Add(EpNet.Results.ResultSet[])">
+  Add(params ResultSet[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a param array of resultset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(params ResultSet[] results)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>[]</dt>
+    <dd><p>Param array of ResultSets.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_Add_" data-uid="EpNet.Results.EsoReader.Add*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_Add_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__" data-uid="EpNet.Results.EsoReader.Add(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})">
+  Add(IEnumerable&lt;ResultSet&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a list of resultsets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(IEnumerable&lt;ResultSet&gt; results)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd><p>List of resultsets.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_AddEsoFile_" data-uid="EpNet.Results.EsoReader.AddEsoFile*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_AddEsoFile_System_String_" data-uid="EpNet.Results.EsoReader.AddEsoFile(System.String)">
+  AddEsoFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads another eso file and combines it with current results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEsoFile(string esoFilePath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esoFilePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute eso file path.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_First_" data-uid="EpNet.Results.EsoReader.First*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_First_System_String_System_String_EpNet_Results_Frequencies_" data-uid="EpNet.Results.EsoReader.First(System.String,System.String,EpNet.Results.Frequencies)">
+  First(string, string, Frequencies)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the first ResultSet that meets the conditions. Null if not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResultSet First(string component, string reportType, Frequencies frequency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>reportType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>frequency</code> <a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_Get_" data-uid="EpNet.Results.EsoReader.Get*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_Get_System_Func_EpNet_Results_ResultSet_System_Boolean__" data-uid="EpNet.Results.EsoReader.Get(System.Func{EpNet.Results.ResultSet,System.Boolean})">
+  Get(Func&lt;ResultSet, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves all the ResultSets that meet the conditions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet&gt; Get(Func&lt;ResultSet, bool&gt; conditions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conditions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_Get_" data-uid="EpNet.Results.EsoReader.Get*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_Get_System_String_" data-uid="EpNet.Results.EsoReader.Get(System.String)">
+  Get(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves all the ResultSets that meet the conditions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet&gt; Get(string componentOrreportType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>componentOrreportType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_Get_" data-uid="EpNet.Results.EsoReader.Get*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_Get_System_String_EpNet_Results_Frequencies_" data-uid="EpNet.Results.EsoReader.Get(System.String,EpNet.Results.Frequencies)">
+  Get(string, Frequencies)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves all the ResultSets that meet the conditions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet&gt; Get(string componentOrreportType, Frequencies frequency)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>componentOrreportType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>frequency</code> <a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_Save_" data-uid="EpNet.Results.EsoReader.Save*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_Save_System_Boolean_" data-uid="EpNet.Results.EsoReader.Save(System.Boolean)">
+  Save(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the eso file overwriting current eso file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(bool newResultsOnly = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newResultsOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Only save newly created results.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_Save_" data-uid="EpNet.Results.EsoReader.Save*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_Save_System_String_System_Boolean_System_Boolean_" data-uid="EpNet.Results.EsoReader.Save(System.String,System.Boolean,System.Boolean)">
+  Save(string, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the eso file in an new file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(string esoFilePath, bool newResultsOnly = false, bool sortNew = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esoFilePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Absolute path for the new eso file.</p>
+</dd>
+    <dt><code>newResultsOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Only save newly created results.</p>
+</dd>
+    <dt><code>sortNew</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Adds a first blank character to new results so they appear first in Results Viewer</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_TryGet_" data-uid="EpNet.Results.EsoReader.TryGet*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_TryGet_System_Func_EpNet_Results_ResultSet_System_Boolean__EpNet_Results_ResultSet__" data-uid="EpNet.Results.EsoReader.TryGet(System.Func{EpNet.Results.ResultSet,System.Boolean},EpNet.Results.ResultSet@)">
+  TryGet(Func&lt;ResultSet, bool&gt;, out ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the first ResultSet that meets the conditions. A return value indicates whether the result is found or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGet(Func&lt;ResultSet, bool&gt; conditions, out ResultSet result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conditions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_TryGet_" data-uid="EpNet.Results.EsoReader.TryGet*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_TryGet_System_String_System_String_EpNet_Results_Frequencies_EpNet_Results_ResultSet__" data-uid="EpNet.Results.EsoReader.TryGet(System.String,System.String,EpNet.Results.Frequencies,EpNet.Results.ResultSet@)">
+  TryGet(string, string, Frequencies, out ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the ResultSet that meets the conditions. A return value indicates whether the result is found or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGet(string component, string reportType, Frequencies frequency, out ResultSet result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>reportType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>frequency</code> <a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_TryGet_" data-uid="EpNet.Results.EsoReader.TryGet*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_TryGet_System_String_System_String_EpNet_Results_ResultSet__" data-uid="EpNet.Results.EsoReader.TryGet(System.String,System.String,EpNet.Results.ResultSet@)">
+  TryGet(string, string, out ResultSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the first ResultSet that meets the conditions. A return value indicates whether the result is found or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGet(string component, string reportType, out ResultSet result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>reportType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
