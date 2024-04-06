@@ -145,15 +145,15 @@ references:
   isSpec: "True"
   fullName: EpNet.ExtensionMethods.EqualsIgnoreCase
   nameWithType: ExtensionMethods.EqualsIgnoreCase
-- uid: EpNet.ExtensionMethods.Find(System.Collections.Generic.List{EpNet.IdfObject},System.String)
-  name: Find(List<IdfObject>, string)
-  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Find_System_Collections_Generic_List_EpNet_IdfObject__System_String_
-  commentId: M:EpNet.ExtensionMethods.Find(System.Collections.Generic.List{EpNet.IdfObject},System.String)
-  name.vb: Find(List(Of IdfObject), String)
-  fullName: EpNet.ExtensionMethods.Find(System.Collections.Generic.List<EpNet.IdfObject>, string)
-  fullName.vb: EpNet.ExtensionMethods.Find(System.Collections.Generic.List(Of EpNet.IdfObject), String)
-  nameWithType: ExtensionMethods.Find(List<IdfObject>, string)
-  nameWithType.vb: ExtensionMethods.Find(List(Of IdfObject), String)
+- uid: EpNet.ExtensionMethods.Find(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.String)
+  name: Find(IEnumerable<IdfObject>, string)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Find_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_
+  commentId: M:EpNet.ExtensionMethods.Find(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.String)
+  name.vb: Find(IEnumerable(Of IdfObject), String)
+  fullName: EpNet.ExtensionMethods.Find(System.Collections.Generic.IEnumerable<EpNet.IdfObject>, string)
+  fullName.vb: EpNet.ExtensionMethods.Find(System.Collections.Generic.IEnumerable(Of EpNet.IdfObject), String)
+  nameWithType: ExtensionMethods.Find(IEnumerable<IdfObject>, string)
+  nameWithType.vb: ExtensionMethods.Find(IEnumerable(Of IdfObject), String)
 - uid: EpNet.ExtensionMethods.Find*
   name: Find
   href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Find_
@@ -318,6 +318,22 @@ references:
   fullName.vb: EpNet.ExtensionMethods.Serialize(Of T)(T)
   nameWithType: ExtensionMethods.Serialize<T>(T)
   nameWithType.vb: ExtensionMethods.Serialize(Of T)(T)
+- uid: EpNet.ExtensionMethods.StartsWithAny(System.String,System.Collections.Generic.IEnumerable{System.String})
+  name: StartsWithAny(string, IEnumerable<string>)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_StartsWithAny_System_String_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:EpNet.ExtensionMethods.StartsWithAny(System.String,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: StartsWithAny(String, IEnumerable(Of String))
+  fullName: EpNet.ExtensionMethods.StartsWithAny(string, System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: EpNet.ExtensionMethods.StartsWithAny(String, System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: ExtensionMethods.StartsWithAny(string, IEnumerable<string>)
+  nameWithType.vb: ExtensionMethods.StartsWithAny(String, IEnumerable(Of String))
+- uid: EpNet.ExtensionMethods.StartsWithAny*
+  name: StartsWithAny
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_StartsWithAny_
+  commentId: Overload:EpNet.ExtensionMethods.StartsWithAny
+  isSpec: "True"
+  fullName: EpNet.ExtensionMethods.StartsWithAny
+  nameWithType: ExtensionMethods.StartsWithAny
 - uid: EpNet.ExtensionMethods.StartsWithIgnoreCase(System.String,System.String)
   name: StartsWithIgnoreCase(string, string)
   href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_StartsWithIgnoreCase_System_String_System_String_
@@ -932,6 +948,38 @@ references:
   isSpec: "True"
   fullName: EpNet.Helpers.ExtensionMethods.GetAzimuth
   nameWithType: ExtensionMethods.GetAzimuth
+- uid: EpNet.Helpers.ExtensionMethods.GetDividerArea(EpNet.IdfObject,System.Boolean)
+  name: GetDividerArea(IdfObject, bool)
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetDividerArea_EpNet_IdfObject_System_Boolean_
+  commentId: M:EpNet.Helpers.ExtensionMethods.GetDividerArea(EpNet.IdfObject,System.Boolean)
+  name.vb: GetDividerArea(IdfObject, Boolean)
+  fullName: EpNet.Helpers.ExtensionMethods.GetDividerArea(EpNet.IdfObject, bool)
+  fullName.vb: EpNet.Helpers.ExtensionMethods.GetDividerArea(EpNet.IdfObject, Boolean)
+  nameWithType: ExtensionMethods.GetDividerArea(IdfObject, bool)
+  nameWithType.vb: ExtensionMethods.GetDividerArea(IdfObject, Boolean)
+- uid: EpNet.Helpers.ExtensionMethods.GetDividerArea*
+  name: GetDividerArea
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetDividerArea_
+  commentId: Overload:EpNet.Helpers.ExtensionMethods.GetDividerArea
+  isSpec: "True"
+  fullName: EpNet.Helpers.ExtensionMethods.GetDividerArea
+  nameWithType: ExtensionMethods.GetDividerArea
+- uid: EpNet.Helpers.ExtensionMethods.GetFrameArea(EpNet.IdfObject,System.Boolean)
+  name: GetFrameArea(IdfObject, bool)
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetFrameArea_EpNet_IdfObject_System_Boolean_
+  commentId: M:EpNet.Helpers.ExtensionMethods.GetFrameArea(EpNet.IdfObject,System.Boolean)
+  name.vb: GetFrameArea(IdfObject, Boolean)
+  fullName: EpNet.Helpers.ExtensionMethods.GetFrameArea(EpNet.IdfObject, bool)
+  fullName.vb: EpNet.Helpers.ExtensionMethods.GetFrameArea(EpNet.IdfObject, Boolean)
+  nameWithType: ExtensionMethods.GetFrameArea(IdfObject, bool)
+  nameWithType.vb: ExtensionMethods.GetFrameArea(IdfObject, Boolean)
+- uid: EpNet.Helpers.ExtensionMethods.GetFrameArea*
+  name: GetFrameArea
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetFrameArea_
+  commentId: Overload:EpNet.Helpers.ExtensionMethods.GetFrameArea
+  isSpec: "True"
+  fullName: EpNet.Helpers.ExtensionMethods.GetFrameArea
+  nameWithType: ExtensionMethods.GetFrameArea
 - uid: EpNet.Helpers.ExtensionMethods.GetGlassArea(EpNet.IdfObject,System.Boolean)
   name: GetGlassArea(IdfObject, bool)
   href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetGlassArea_EpNet_IdfObject_System_Boolean_
@@ -1013,6 +1061,22 @@ references:
   isSpec: "True"
   fullName: EpNet.Helpers.ExtensionMethods.GetNetArea
   nameWithType: ExtensionMethods.GetNetArea
+- uid: EpNet.Helpers.ExtensionMethods.GetNetGlassArea(EpNet.IdfObject,System.Boolean)
+  name: GetNetGlassArea(IdfObject, bool)
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetNetGlassArea_EpNet_IdfObject_System_Boolean_
+  commentId: M:EpNet.Helpers.ExtensionMethods.GetNetGlassArea(EpNet.IdfObject,System.Boolean)
+  name.vb: GetNetGlassArea(IdfObject, Boolean)
+  fullName: EpNet.Helpers.ExtensionMethods.GetNetGlassArea(EpNet.IdfObject, bool)
+  fullName.vb: EpNet.Helpers.ExtensionMethods.GetNetGlassArea(EpNet.IdfObject, Boolean)
+  nameWithType: ExtensionMethods.GetNetGlassArea(IdfObject, bool)
+  nameWithType.vb: ExtensionMethods.GetNetGlassArea(IdfObject, Boolean)
+- uid: EpNet.Helpers.ExtensionMethods.GetNetGlassArea*
+  name: GetNetGlassArea
+  href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetNetGlassArea_
+  commentId: Overload:EpNet.Helpers.ExtensionMethods.GetNetGlassArea
+  isSpec: "True"
+  fullName: EpNet.Helpers.ExtensionMethods.GetNetGlassArea
+  nameWithType: ExtensionMethods.GetNetGlassArea
 - uid: EpNet.Helpers.ExtensionMethods.GetOpeningArea(EpNet.IdfObject)
   name: GetOpeningArea(IdfObject)
   href: api/EpNet.Helpers.ExtensionMethods.html#EpNet_Helpers_ExtensionMethods_GetOpeningArea_EpNet_IdfObject_
@@ -2505,6 +2569,22 @@ references:
   isSpec: "True"
   fullName: EpNet.Library.Library.Api
   nameWithType: Library.Api
+- uid: EpNet.Library.Library.BaselineSystem(System.Int32,System.Func{System.String,System.Boolean},System.Double,System.Boolean,System.String)
+  name: BaselineSystem(int, Func<string, bool>, double, bool, string)
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_BaselineSystem_System_Int32_System_Func_System_String_System_Boolean__System_Double_System_Boolean_System_String_
+  commentId: M:EpNet.Library.Library.BaselineSystem(System.Int32,System.Func{System.String,System.Boolean},System.Double,System.Boolean,System.String)
+  name.vb: BaselineSystem(Integer, Func(Of String, Boolean), Double, Boolean, String)
+  fullName: EpNet.Library.Library.BaselineSystem(int, System.Func<string, bool>, double, bool, string)
+  fullName.vb: EpNet.Library.Library.BaselineSystem(Integer, System.Func(Of String, Boolean), Double, Boolean, String)
+  nameWithType: Library.BaselineSystem(int, Func<string, bool>, double, bool, string)
+  nameWithType.vb: Library.BaselineSystem(Integer, Func(Of String, Boolean), Double, Boolean, String)
+- uid: EpNet.Library.Library.BaselineSystem*
+  name: BaselineSystem
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_BaselineSystem_
+  commentId: Overload:EpNet.Library.Library.BaselineSystem
+  isSpec: "True"
+  fullName: EpNet.Library.Library.BaselineSystem
+  nameWithType: Library.BaselineSystem
 - uid: EpNet.Library.Library.CO2WindowControl(System.Func{EpNet.IdfObject,System.Boolean},System.Double,System.Boolean)
   name: CO2WindowControl(Func<IdfObject, bool>, double, bool)
   href: api/EpNet.Library.Library.html#EpNet_Library_Library_CO2WindowControl_System_Func_EpNet_IdfObject_System_Boolean__System_Double_System_Boolean_

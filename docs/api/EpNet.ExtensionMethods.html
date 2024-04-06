@@ -553,33 +553,33 @@ Class ExtensionMethods
 
   <a id="EpNet_ExtensionMethods_Find_" data-uid="EpNet.ExtensionMethods.Find*"></a>
 
-  <h3 id="EpNet_ExtensionMethods_Find_System_Collections_Generic_List_EpNet_IdfObject__System_String_" data-uid="EpNet.ExtensionMethods.Find(System.Collections.Generic.List{EpNet.IdfObject},System.String)">
-  Find(List&lt;IdfObject&gt;, string)
+  <h3 id="EpNet_ExtensionMethods_Find_System_Collections_Generic_IEnumerable_EpNet_IdfObject__System_String_" data-uid="EpNet.ExtensionMethods.Find(System.Collections.Generic.IEnumerable{EpNet.IdfObject},System.String)">
+  Find(IEnumerable&lt;IdfObject&gt;, string)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Returns the idfObject whose name matches the provided name.</p>
+  <div class="markdown level1 summary"><p>Searches for an IdfObject within the given collection that matches the specified name. Raises an exception if not found.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IdfObject Find(this List&lt;IdfObject&gt; idfObjects, string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IdfObject Find(this IEnumerable&lt;IdfObject&gt; idfObjects, string name)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>idfObjects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</dt>
-    <dd><p>idfObject List</p>
+    <dt><code>idfObjects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</dt>
+    <dd><p>An IEnumerable collection of IdfObject instances to search.</p>
 </dd>
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>name to find</p>
+    <dd><p>The name of the IdfObject to find. The search is case-sensitive.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></dt>
-    <dd><p>Found idfObject</p>
+    <dd><p>The first IdfObject in the collection that matches the specified name.</p>
 </dd>
   </dl>
 
@@ -1106,6 +1106,48 @@ Class ExtensionMethods
     <dd><p>An object to serialize to a XML data string.</p>
 </dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_ExtensionMethods_StartsWithAny_" data-uid="EpNet.ExtensionMethods.StartsWithAny*"></a>
+
+  <h3 id="EpNet_ExtensionMethods_StartsWithAny_System_String_System_Collections_Generic_IEnumerable_System_String__" data-uid="EpNet.ExtensionMethods.StartsWithAny(System.String,System.Collections.Generic.IEnumerable{System.String})">
+  StartsWithAny(string, IEnumerable&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the source string starts with any of the provided prefixes. Ignores case.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool StartsWithAny(this string source, IEnumerable&lt;string&gt; prefixes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The source string to check.</p>
+</dd>
+    <dt><code>prefixes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>An enumerable collection of prefixes to compare against the source string.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the source string starts with any of the given prefixes; otherwise, false.</p>
+</dd>
+  </dl>
+
 
 
 

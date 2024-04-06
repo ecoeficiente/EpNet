@@ -317,6 +317,88 @@ Class ExtensionMethods
 
 
 
+  <a id="EpNet_Helpers_ExtensionMethods_GetDividerArea_" data-uid="EpNet.Helpers.ExtensionMethods.GetDividerArea*"></a>
+
+  <h3 id="EpNet_Helpers_ExtensionMethods_GetDividerArea_EpNet_IdfObject_System_Boolean_" data-uid="EpNet.Helpers.ExtensionMethods.GetDividerArea(EpNet.IdfObject,System.Boolean)">
+  GetDividerArea(IdfObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the area of the dividers of a window (FenestrationSurface:Detailed)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetDividerArea(this IdfObject idfObject, bool includeMultiplier = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfObject</code> <a class="xref" href="EpNet.IdfObject.html">IdfObject</a></dt>
+    <dd><p>IdfObject of type FenestrationSurface:Detailed</p>
+</dd>
+    <dt><code>includeMultiplier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Include the window multiplers to calculate the total area</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Helpers_ExtensionMethods_GetFrameArea_" data-uid="EpNet.Helpers.ExtensionMethods.GetFrameArea*"></a>
+
+  <h3 id="EpNet_Helpers_ExtensionMethods_GetFrameArea_EpNet_IdfObject_System_Boolean_" data-uid="EpNet.Helpers.ExtensionMethods.GetFrameArea(EpNet.IdfObject,System.Boolean)">
+  GetFrameArea(IdfObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the area of the frame of a window (FenestrationSurface:Detailed)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetFrameArea(this IdfObject idfObject, bool includeMultiplier = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfObject</code> <a class="xref" href="EpNet.IdfObject.html">IdfObject</a></dt>
+    <dd><p>IdfObject of type FenestrationSurface:Detailed</p>
+</dd>
+    <dt><code>includeMultiplier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Include the window multiplers to calculate the total area</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="EpNet_Helpers_ExtensionMethods_GetGlassArea_" data-uid="EpNet.Helpers.ExtensionMethods.GetGlassArea*"></a>
 
   <h3 id="EpNet_Helpers_ExtensionMethods_GetGlassArea_EpNet_IdfObject_System_Boolean_" data-uid="EpNet.Helpers.ExtensionMethods.GetGlassArea(EpNet.IdfObject,System.Boolean)">
@@ -324,7 +406,7 @@ Class ExtensionMethods
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Get the area of a window surface without the frame.</p>
+  <div class="markdown level1 summary"><p>Get the area of a window surface without the frame (but with dividers)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -402,7 +484,8 @@ Class ExtensionMethods
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the thermal resistance of the most insulating layer</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -535,6 +618,46 @@ Class ExtensionMethods
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
     <dd><p>Net area (m²).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Helpers_ExtensionMethods_GetNetGlassArea_" data-uid="EpNet.Helpers.ExtensionMethods.GetNetGlassArea*"></a>
+
+  <h3 id="EpNet_Helpers_ExtensionMethods_GetNetGlassArea_EpNet_IdfObject_System_Boolean_" data-uid="EpNet.Helpers.ExtensionMethods.GetNetGlassArea(EpNet.IdfObject,System.Boolean)">
+  GetNetGlassArea(IdfObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the glass area of a window surface without the frame and dividers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetNetGlassArea(this IdfObject idfObject, bool includeMultiplier = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfObject</code> <a class="xref" href="EpNet.IdfObject.html">IdfObject</a></dt>
+    <dd></dd>
+    <dt><code>includeMultiplier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Surface area (m²).</p>
 </dd>
   </dl>
 
