@@ -13,6 +13,22 @@ references:
   commentId: T:EpNet.ExtensionMethods
   fullName: EpNet.ExtensionMethods
   nameWithType: ExtensionMethods
+- uid: EpNet.ExtensionMethods.AddKpi(DB.Api.Environment,System.String,System.Double)
+  name: AddKpi(Environment, string, double)
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_AddKpi_DB_Api_Environment_System_String_System_Double_
+  commentId: M:EpNet.ExtensionMethods.AddKpi(DB.Api.Environment,System.String,System.Double)
+  name.vb: AddKpi(Environment, String, Double)
+  fullName: EpNet.ExtensionMethods.AddKpi(DB.Api.Environment, string, double)
+  fullName.vb: EpNet.ExtensionMethods.AddKpi(DB.Api.Environment, String, Double)
+  nameWithType: ExtensionMethods.AddKpi(Environment, string, double)
+  nameWithType.vb: ExtensionMethods.AddKpi(Environment, String, Double)
+- uid: EpNet.ExtensionMethods.AddKpi*
+  name: AddKpi
+  href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_AddKpi_
+  commentId: Overload:EpNet.ExtensionMethods.AddKpi
+  isSpec: "True"
+  fullName: EpNet.ExtensionMethods.AddKpi
+  nameWithType: ExtensionMethods.AddKpi
 - uid: EpNet.ExtensionMethods.CommonEnding(System.Collections.Generic.IEnumerable{System.String})
   name: CommonEnding(IEnumerable<string>)
   href: api/EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_CommonEnding_System_Collections_Generic_IEnumerable_System_String__
