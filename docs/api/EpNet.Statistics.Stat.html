@@ -1,0 +1,461 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Stat | EpNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Stat | EpNet ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="EpNet.Statistics.Stat">
+
+
+
+  <h1 id="EpNet_Statistics_Stat" data-uid="EpNet.Statistics.Stat" class="text-break">
+Class Stat  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="EpNet.html">EpNet</a>.<a class="xref" href="EpNet.Statistics.html">Statistics</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>EpNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Stat</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Stat</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="EpNet_Statistics_Stat_CVRMSE_" data-uid="EpNet.Statistics.Stat.CVRMSE*"></a>
+
+  <h3 id="EpNet_Statistics_Stat_CVRMSE_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__" data-uid="EpNet.Statistics.Stat.CVRMSE(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})">
+  CVRMSE(IEnumerable&lt;double&gt;, IEnumerable&lt;double&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the Coefficient of Variation of the Root Mean Square Error (CVRMSE) between predicted and observed values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CVRMSE(IEnumerable&lt;double&gt; predicted, IEnumerable&lt;double&gt; observed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>predicted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>An IEnumerable of double representing the predicted values.</p>
+</dd>
+    <dt><code>observed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>An IEnumerable of double representing the observed values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The CVRMSE as a percentage, which provides a normalized measure of the RMSE relative to the mean of the observed data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if either the predicted or observed sequence is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown if the number of elements in predicted and observed sequences are not the same, or if the observed values contain all zeros which would result in a division by zero in mean calculation.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="EpNet_Statistics_Stat_MAE_" data-uid="EpNet.Statistics.Stat.MAE*"></a>
+
+  <h3 id="EpNet_Statistics_Stat_MAE_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__" data-uid="EpNet.Statistics.Stat.MAE(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})">
+  MAE(IEnumerable&lt;double&gt;, IEnumerable&lt;double&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the Mean Absolute Error (MAE) between a list of predicted values and an enumerable of observed values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double MAE(IEnumerable&lt;double&gt; predicted, IEnumerable&lt;double&gt; observed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>predicted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>An enumerable of predicted double values.</p>
+</dd>
+    <dt><code>observed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>An enumerable of observed double values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The Mean Absolute Error as a double value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if either the predicted list or the observed enumerable is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown if the predicted list and the observed enumerable do not have the same number of elements.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="EpNet_Statistics_Stat_MBE_" data-uid="EpNet.Statistics.Stat.MBE*"></a>
+
+  <h3 id="EpNet_Statistics_Stat_MBE_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__" data-uid="EpNet.Statistics.Stat.MBE(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})">
+  MBE(IEnumerable&lt;double&gt;, IEnumerable&lt;double&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the Mean Bias Error (MBE) between predicted and observed values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double MBE(IEnumerable&lt;double&gt; predicted, IEnumerable&lt;double&gt; observed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>predicted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>An IEnumerable of double representing the predicted values.</p>
+</dd>
+    <dt><code>observed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>An IEnumerable of double representing the observed values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The MBE value, representing the average bias in the predicted values relative to the observed values.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if either the predicted or observed sequence is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown if the number of elements in predicted and observed sequences are not the same.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="EpNet_Statistics_Stat_NMAE_" data-uid="EpNet.Statistics.Stat.NMAE*"></a>
+
+  <h3 id="EpNet_Statistics_Stat_NMAE_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__" data-uid="EpNet.Statistics.Stat.NMAE(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})">
+  NMAE(IEnumerable&lt;double&gt;, IEnumerable&lt;double&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the Normalized Mean Absolute Error (NMAE) expressed as a percentage between predicted and observed values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double NMAE(IEnumerable&lt;double&gt; predicted, IEnumerable&lt;double&gt; observed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>predicted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>An enumerable collection of doubles representing the predicted values.</p>
+</dd>
+    <dt><code>observed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>An enumerable collection of doubles representing the actual observed values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>A double value representing the NMAE as a percentage. This percentage indicates the average error
+relative to the mean observed value, providing a clear measure of prediction accuracy across different scales of data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if either the predicted or observed sequence is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown if the predicted and observed sequences do not have the same number of elements.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="EpNet_Statistics_Stat_NMBE_" data-uid="EpNet.Statistics.Stat.NMBE*"></a>
+
+  <h3 id="EpNet_Statistics_Stat_NMBE_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__" data-uid="EpNet.Statistics.Stat.NMBE(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})">
+  NMBE(IEnumerable&lt;double&gt;, IEnumerable&lt;double&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the Normalized Mean Bias Error (NMBE) between predicted and observed values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double NMBE(IEnumerable&lt;double&gt; predicted, IEnumerable&lt;double&gt; observed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>predicted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>An IEnumerable of double representing the predicted values.</p>
+</dd>
+    <dt><code>observed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>An IEnumerable of double representing the observed values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The NMBE as a percentage, indicating the average bias as a fraction of the mean observed values.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if either the predicted or observed sequence is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown if the number of elements in predicted and observed sequences are not the same, or if the observed values are all zeros which would result in division by zero.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="EpNet_Statistics_Stat_R2_" data-uid="EpNet.Statistics.Stat.R2*"></a>
+
+  <h3 id="EpNet_Statistics_Stat_R2_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__" data-uid="EpNet.Statistics.Stat.R2(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})">
+  R2(IEnumerable&lt;double&gt;, IEnumerable&lt;double&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the Coefficient of Determination (R-squared) between predicted and observed values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double R2(IEnumerable&lt;double&gt; predicted, IEnumerable&lt;double&gt; observed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>predicted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>An IEnumerable of double representing the predicted values.</p>
+</dd>
+    <dt><code>observed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>An IEnumerable of double representing the observed values.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The R-squared value, representing the proportion of variance in the observed data that is predictable from the predicted data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if either the predicted or observed sequence is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown if the number of elements in predicted and observed sequences are not the same, or if observed data has no variance.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

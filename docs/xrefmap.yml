@@ -3554,105 +3554,6 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ExtensionMethods.Average
   nameWithType: ExtensionMethods.Average
-- uid: EpNet.Results.ExtensionMethods.ContainsComponent(EpNet.Results.ResultSet,System.Collections.Generic.IEnumerable{System.String})
-  name: ContainsComponent(ResultSet, IEnumerable<string>)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ContainsComponent_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__
-  commentId: M:EpNet.Results.ExtensionMethods.ContainsComponent(EpNet.Results.ResultSet,System.Collections.Generic.IEnumerable{System.String})
-  name.vb: ContainsComponent(ResultSet, IEnumerable(Of String))
-  fullName: EpNet.Results.ExtensionMethods.ContainsComponent(EpNet.Results.ResultSet, System.Collections.Generic.IEnumerable<string>)
-  fullName.vb: EpNet.Results.ExtensionMethods.ContainsComponent(EpNet.Results.ResultSet, System.Collections.Generic.IEnumerable(Of String))
-  nameWithType: ExtensionMethods.ContainsComponent(ResultSet, IEnumerable<string>)
-  nameWithType.vb: ExtensionMethods.ContainsComponent(ResultSet, IEnumerable(Of String))
-- uid: EpNet.Results.ExtensionMethods.ContainsComponent*
-  name: ContainsComponent
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ContainsComponent_
-  commentId: Overload:EpNet.Results.ExtensionMethods.ContainsComponent
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.ContainsComponent
-  nameWithType: ExtensionMethods.ContainsComponent
-- uid: EpNet.Results.ExtensionMethods.ContainsReport(EpNet.Results.ResultSet,System.Collections.Generic.IEnumerable{System.String})
-  name: ContainsReport(ResultSet, IEnumerable<string>)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ContainsReport_EpNet_Results_ResultSet_System_Collections_Generic_IEnumerable_System_String__
-  commentId: M:EpNet.Results.ExtensionMethods.ContainsReport(EpNet.Results.ResultSet,System.Collections.Generic.IEnumerable{System.String})
-  name.vb: ContainsReport(ResultSet, IEnumerable(Of String))
-  fullName: EpNet.Results.ExtensionMethods.ContainsReport(EpNet.Results.ResultSet, System.Collections.Generic.IEnumerable<string>)
-  fullName.vb: EpNet.Results.ExtensionMethods.ContainsReport(EpNet.Results.ResultSet, System.Collections.Generic.IEnumerable(Of String))
-  nameWithType: ExtensionMethods.ContainsReport(ResultSet, IEnumerable<string>)
-  nameWithType.vb: ExtensionMethods.ContainsReport(ResultSet, IEnumerable(Of String))
-- uid: EpNet.Results.ExtensionMethods.ContainsReport*
-  name: ContainsReport
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ContainsReport_
-  commentId: Overload:EpNet.Results.ExtensionMethods.ContainsReport
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.ContainsReport
-  nameWithType: ExtensionMethods.ContainsReport
-- uid: EpNet.Results.ExtensionMethods.EqualsComponentReport(EpNet.Results.ResultSet,EpNet.Results.ResultSet)
-  name: EqualsComponentReport(ResultSet, ResultSet)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_EqualsComponentReport_EpNet_Results_ResultSet_EpNet_Results_ResultSet_
-  commentId: M:EpNet.Results.ExtensionMethods.EqualsComponentReport(EpNet.Results.ResultSet,EpNet.Results.ResultSet)
-  fullName: EpNet.Results.ExtensionMethods.EqualsComponentReport(EpNet.Results.ResultSet, EpNet.Results.ResultSet)
-  nameWithType: ExtensionMethods.EqualsComponentReport(ResultSet, ResultSet)
-- uid: EpNet.Results.ExtensionMethods.EqualsComponentReport*
-  name: EqualsComponentReport
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_EqualsComponentReport_
-  commentId: Overload:EpNet.Results.ExtensionMethods.EqualsComponentReport
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.EqualsComponentReport
-  nameWithType: ExtensionMethods.EqualsComponentReport
-- uid: EpNet.Results.ExtensionMethods.EqualsDescriptor(EpNet.Results.ResultSet,EpNet.Results.ResultSet)
-  name: EqualsDescriptor(ResultSet, ResultSet)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_EqualsDescriptor_EpNet_Results_ResultSet_EpNet_Results_ResultSet_
-  commentId: M:EpNet.Results.ExtensionMethods.EqualsDescriptor(EpNet.Results.ResultSet,EpNet.Results.ResultSet)
-  fullName: EpNet.Results.ExtensionMethods.EqualsDescriptor(EpNet.Results.ResultSet, EpNet.Results.ResultSet)
-  nameWithType: ExtensionMethods.EqualsDescriptor(ResultSet, ResultSet)
-- uid: EpNet.Results.ExtensionMethods.EqualsDescriptor*
-  name: EqualsDescriptor
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_EqualsDescriptor_
-  commentId: Overload:EpNet.Results.ExtensionMethods.EqualsDescriptor
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.EqualsDescriptor
-  nameWithType: ExtensionMethods.EqualsDescriptor
-- uid: EpNet.Results.ExtensionMethods.FillData(EpNet.Results.ResultSet,System.Func{System.Double,System.Boolean})
-  name: FillData(ResultSet, Func<double, bool>)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FillData_EpNet_Results_ResultSet_System_Func_System_Double_System_Boolean__
-  commentId: M:EpNet.Results.ExtensionMethods.FillData(EpNet.Results.ResultSet,System.Func{System.Double,System.Boolean})
-  name.vb: FillData(ResultSet, Func(Of Double, Boolean))
-  fullName: EpNet.Results.ExtensionMethods.FillData(EpNet.Results.ResultSet, System.Func<double, bool>)
-  fullName.vb: EpNet.Results.ExtensionMethods.FillData(EpNet.Results.ResultSet, System.Func(Of Double, Boolean))
-  nameWithType: ExtensionMethods.FillData(ResultSet, Func<double, bool>)
-  nameWithType.vb: ExtensionMethods.FillData(ResultSet, Func(Of Double, Boolean))
-- uid: EpNet.Results.ExtensionMethods.FillData*
-  name: FillData
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FillData_
-  commentId: Overload:EpNet.Results.ExtensionMethods.FillData
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.FillData
-  nameWithType: ExtensionMethods.FillData
-- uid: EpNet.Results.ExtensionMethods.FilterData(EpNet.Results.ResultSet,System.Func{System.Double,System.Boolean},System.Double)
-  name: FilterData(ResultSet, Func<double, bool>, double)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FilterData_EpNet_Results_ResultSet_System_Func_System_Double_System_Boolean__System_Double_
-  commentId: M:EpNet.Results.ExtensionMethods.FilterData(EpNet.Results.ResultSet,System.Func{System.Double,System.Boolean},System.Double)
-  name.vb: FilterData(ResultSet, Func(Of Double, Boolean), Double)
-  fullName: EpNet.Results.ExtensionMethods.FilterData(EpNet.Results.ResultSet, System.Func<double, bool>, double)
-  fullName.vb: EpNet.Results.ExtensionMethods.FilterData(EpNet.Results.ResultSet, System.Func(Of Double, Boolean), Double)
-  nameWithType: ExtensionMethods.FilterData(ResultSet, Func<double, bool>, double)
-  nameWithType.vb: ExtensionMethods.FilterData(ResultSet, Func(Of Double, Boolean), Double)
-- uid: EpNet.Results.ExtensionMethods.FilterData(EpNet.Results.ResultSet,System.Func{System.Double,System.Boolean},System.Double,System.Double)
-  name: FilterData(ResultSet, Func<double, bool>, double, double)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FilterData_EpNet_Results_ResultSet_System_Func_System_Double_System_Boolean__System_Double_System_Double_
-  commentId: M:EpNet.Results.ExtensionMethods.FilterData(EpNet.Results.ResultSet,System.Func{System.Double,System.Boolean},System.Double,System.Double)
-  name.vb: FilterData(ResultSet, Func(Of Double, Boolean), Double, Double)
-  fullName: EpNet.Results.ExtensionMethods.FilterData(EpNet.Results.ResultSet, System.Func<double, bool>, double, double)
-  fullName.vb: EpNet.Results.ExtensionMethods.FilterData(EpNet.Results.ResultSet, System.Func(Of Double, Boolean), Double, Double)
-  nameWithType: ExtensionMethods.FilterData(ResultSet, Func<double, bool>, double, double)
-  nameWithType.vb: ExtensionMethods.FilterData(ResultSet, Func(Of Double, Boolean), Double, Double)
-- uid: EpNet.Results.ExtensionMethods.FilterData*
-  name: FilterData
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FilterData_
-  commentId: Overload:EpNet.Results.ExtensionMethods.FilterData
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.FilterData
-  nameWithType: ExtensionMethods.FilterData
 - uid: EpNet.Results.ExtensionMethods.Get(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.String,System.String,EpNet.Results.Frequencies)
   name: Get(IEnumerable<ResultSet>, string, string, Frequencies)
   href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Get_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_String_System_String_EpNet_Results_Frequencies_
@@ -3669,138 +3570,6 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ExtensionMethods.Get
   nameWithType: ExtensionMethods.Get
-- uid: EpNet.Results.ExtensionMethods.GreaterOrEqual(EpNet.Results.ResultSet,System.Double)
-  name: GreaterOrEqual(ResultSet, double)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GreaterOrEqual_EpNet_Results_ResultSet_System_Double_
-  commentId: M:EpNet.Results.ExtensionMethods.GreaterOrEqual(EpNet.Results.ResultSet,System.Double)
-  name.vb: GreaterOrEqual(ResultSet, Double)
-  fullName: EpNet.Results.ExtensionMethods.GreaterOrEqual(EpNet.Results.ResultSet, double)
-  fullName.vb: EpNet.Results.ExtensionMethods.GreaterOrEqual(EpNet.Results.ResultSet, Double)
-  nameWithType: ExtensionMethods.GreaterOrEqual(ResultSet, double)
-  nameWithType.vb: ExtensionMethods.GreaterOrEqual(ResultSet, Double)
-- uid: EpNet.Results.ExtensionMethods.GreaterOrEqual*
-  name: GreaterOrEqual
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GreaterOrEqual_
-  commentId: Overload:EpNet.Results.ExtensionMethods.GreaterOrEqual
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.GreaterOrEqual
-  nameWithType: ExtensionMethods.GreaterOrEqual
-- uid: EpNet.Results.ExtensionMethods.IsNotNull(EpNet.Results.ResultSet)
-  name: IsNotNull(ResultSet)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_IsNotNull_EpNet_Results_ResultSet_
-  commentId: M:EpNet.Results.ExtensionMethods.IsNotNull(EpNet.Results.ResultSet)
-  fullName: EpNet.Results.ExtensionMethods.IsNotNull(EpNet.Results.ResultSet)
-  nameWithType: ExtensionMethods.IsNotNull(ResultSet)
-- uid: EpNet.Results.ExtensionMethods.IsNotNull*
-  name: IsNotNull
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_IsNotNull_
-  commentId: Overload:EpNet.Results.ExtensionMethods.IsNotNull
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.IsNotNull
-  nameWithType: ExtensionMethods.IsNotNull
-- uid: EpNet.Results.ExtensionMethods.IsNull(EpNet.Results.ResultSet)
-  name: IsNull(ResultSet)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_IsNull_EpNet_Results_ResultSet_
-  commentId: M:EpNet.Results.ExtensionMethods.IsNull(EpNet.Results.ResultSet)
-  fullName: EpNet.Results.ExtensionMethods.IsNull(EpNet.Results.ResultSet)
-  nameWithType: ExtensionMethods.IsNull(ResultSet)
-- uid: EpNet.Results.ExtensionMethods.IsNull*
-  name: IsNull
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_IsNull_
-  commentId: Overload:EpNet.Results.ExtensionMethods.IsNull
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.IsNull
-  nameWithType: ExtensionMethods.IsNull
-- uid: EpNet.Results.ExtensionMethods.LowerOrEqual(EpNet.Results.ResultSet,System.Double)
-  name: LowerOrEqual(ResultSet, double)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_LowerOrEqual_EpNet_Results_ResultSet_System_Double_
-  commentId: M:EpNet.Results.ExtensionMethods.LowerOrEqual(EpNet.Results.ResultSet,System.Double)
-  name.vb: LowerOrEqual(ResultSet, Double)
-  fullName: EpNet.Results.ExtensionMethods.LowerOrEqual(EpNet.Results.ResultSet, double)
-  fullName.vb: EpNet.Results.ExtensionMethods.LowerOrEqual(EpNet.Results.ResultSet, Double)
-  nameWithType: ExtensionMethods.LowerOrEqual(ResultSet, double)
-  nameWithType.vb: ExtensionMethods.LowerOrEqual(ResultSet, Double)
-- uid: EpNet.Results.ExtensionMethods.LowerOrEqual*
-  name: LowerOrEqual
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_LowerOrEqual_
-  commentId: Overload:EpNet.Results.ExtensionMethods.LowerOrEqual
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.LowerOrEqual
-  nameWithType: ExtensionMethods.LowerOrEqual
-- uid: EpNet.Results.ExtensionMethods.Negative(EpNet.Results.ResultSet)
-  name: Negative(ResultSet)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Negative_EpNet_Results_ResultSet_
-  commentId: M:EpNet.Results.ExtensionMethods.Negative(EpNet.Results.ResultSet)
-  fullName: EpNet.Results.ExtensionMethods.Negative(EpNet.Results.ResultSet)
-  nameWithType: ExtensionMethods.Negative(ResultSet)
-- uid: EpNet.Results.ExtensionMethods.Negative*
-  name: Negative
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Negative_
-  commentId: Overload:EpNet.Results.ExtensionMethods.Negative
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.Negative
-  nameWithType: ExtensionMethods.Negative
-- uid: EpNet.Results.ExtensionMethods.Positive(EpNet.Results.ResultSet)
-  name: Positive(ResultSet)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Positive_EpNet_Results_ResultSet_
-  commentId: M:EpNet.Results.ExtensionMethods.Positive(EpNet.Results.ResultSet)
-  fullName: EpNet.Results.ExtensionMethods.Positive(EpNet.Results.ResultSet)
-  nameWithType: ExtensionMethods.Positive(ResultSet)
-- uid: EpNet.Results.ExtensionMethods.Positive*
-  name: Positive
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Positive_
-  commentId: Overload:EpNet.Results.ExtensionMethods.Positive
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.Positive
-  nameWithType: ExtensionMethods.Positive
-- uid: EpNet.Results.ExtensionMethods.SetComponent(EpNet.Results.ResultSet,System.String)
-  name: SetComponent(ResultSet, string)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetComponent_EpNet_Results_ResultSet_System_String_
-  commentId: M:EpNet.Results.ExtensionMethods.SetComponent(EpNet.Results.ResultSet,System.String)
-  name.vb: SetComponent(ResultSet, String)
-  fullName: EpNet.Results.ExtensionMethods.SetComponent(EpNet.Results.ResultSet, string)
-  fullName.vb: EpNet.Results.ExtensionMethods.SetComponent(EpNet.Results.ResultSet, String)
-  nameWithType: ExtensionMethods.SetComponent(ResultSet, string)
-  nameWithType.vb: ExtensionMethods.SetComponent(ResultSet, String)
-- uid: EpNet.Results.ExtensionMethods.SetComponent*
-  name: SetComponent
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetComponent_
-  commentId: Overload:EpNet.Results.ExtensionMethods.SetComponent
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.SetComponent
-  nameWithType: ExtensionMethods.SetComponent
-- uid: EpNet.Results.ExtensionMethods.SetReportType(EpNet.Results.ResultSet,System.String)
-  name: SetReportType(ResultSet, string)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetReportType_EpNet_Results_ResultSet_System_String_
-  commentId: M:EpNet.Results.ExtensionMethods.SetReportType(EpNet.Results.ResultSet,System.String)
-  name.vb: SetReportType(ResultSet, String)
-  fullName: EpNet.Results.ExtensionMethods.SetReportType(EpNet.Results.ResultSet, string)
-  fullName.vb: EpNet.Results.ExtensionMethods.SetReportType(EpNet.Results.ResultSet, String)
-  nameWithType: ExtensionMethods.SetReportType(ResultSet, string)
-  nameWithType.vb: ExtensionMethods.SetReportType(ResultSet, String)
-- uid: EpNet.Results.ExtensionMethods.SetReportType*
-  name: SetReportType
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetReportType_
-  commentId: Overload:EpNet.Results.ExtensionMethods.SetReportType
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.SetReportType
-  nameWithType: ExtensionMethods.SetReportType
-- uid: EpNet.Results.ExtensionMethods.SetUnits(EpNet.Results.ResultSet,System.String)
-  name: SetUnits(ResultSet, string)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetUnits_EpNet_Results_ResultSet_System_String_
-  commentId: M:EpNet.Results.ExtensionMethods.SetUnits(EpNet.Results.ResultSet,System.String)
-  name.vb: SetUnits(ResultSet, String)
-  fullName: EpNet.Results.ExtensionMethods.SetUnits(EpNet.Results.ResultSet, string)
-  fullName.vb: EpNet.Results.ExtensionMethods.SetUnits(EpNet.Results.ResultSet, String)
-  nameWithType: ExtensionMethods.SetUnits(ResultSet, string)
-  nameWithType.vb: ExtensionMethods.SetUnits(ResultSet, String)
-- uid: EpNet.Results.ExtensionMethods.SetUnits*
-  name: SetUnits
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetUnits_
-  commentId: Overload:EpNet.Results.ExtensionMethods.SetUnits
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.SetUnits
-  nameWithType: ExtensionMethods.SetUnits
 - uid: EpNet.Results.ExtensionMethods.Sum(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
   name: Sum(IEnumerable<ResultSet>)
   href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Sum_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__
@@ -3817,15 +3586,6 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ExtensionMethods.Sum
   nameWithType: ExtensionMethods.Sum
-- uid: EpNet.Results.ExtensionMethods.ToFrequency(EpNet.Results.ResultSet,EpNet.Results.Frequencies,System.Boolean)
-  name: ToFrequency(ResultSet, Frequencies, bool)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToFrequency_EpNet_Results_ResultSet_EpNet_Results_Frequencies_System_Boolean_
-  commentId: M:EpNet.Results.ExtensionMethods.ToFrequency(EpNet.Results.ResultSet,EpNet.Results.Frequencies,System.Boolean)
-  name.vb: ToFrequency(ResultSet, Frequencies, Boolean)
-  fullName: EpNet.Results.ExtensionMethods.ToFrequency(EpNet.Results.ResultSet, EpNet.Results.Frequencies, bool)
-  fullName.vb: EpNet.Results.ExtensionMethods.ToFrequency(EpNet.Results.ResultSet, EpNet.Results.Frequencies, Boolean)
-  nameWithType: ExtensionMethods.ToFrequency(ResultSet, Frequencies, bool)
-  nameWithType.vb: ExtensionMethods.ToFrequency(ResultSet, Frequencies, Boolean)
 - uid: EpNet.Results.ExtensionMethods.ToFrequency(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},EpNet.Results.Frequencies,System.Boolean)
   name: ToFrequency(IEnumerable<ResultSet>, Frequencies, bool)
   href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToFrequency_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__EpNet_Results_Frequencies_System_Boolean_
@@ -3842,25 +3602,6 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ExtensionMethods.ToFrequency
   nameWithType: ExtensionMethods.ToFrequency
-- uid: EpNet.Results.ExtensionMethods.ToFrequencyAuto(EpNet.Results.ResultSet,EpNet.Results.Frequencies)
-  name: ToFrequencyAuto(ResultSet, Frequencies)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToFrequencyAuto_EpNet_Results_ResultSet_EpNet_Results_Frequencies_
-  commentId: M:EpNet.Results.ExtensionMethods.ToFrequencyAuto(EpNet.Results.ResultSet,EpNet.Results.Frequencies)
-  fullName: EpNet.Results.ExtensionMethods.ToFrequencyAuto(EpNet.Results.ResultSet, EpNet.Results.Frequencies)
-  nameWithType: ExtensionMethods.ToFrequencyAuto(ResultSet, Frequencies)
-- uid: EpNet.Results.ExtensionMethods.ToFrequencyAuto*
-  name: ToFrequencyAuto
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToFrequencyAuto_
-  commentId: Overload:EpNet.Results.ExtensionMethods.ToFrequencyAuto
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.ToFrequencyAuto
-  nameWithType: ExtensionMethods.ToFrequencyAuto
-- uid: EpNet.Results.ExtensionMethods.ToKWh(EpNet.Results.ResultSet)
-  name: ToKWh(ResultSet)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToKWh_EpNet_Results_ResultSet_
-  commentId: M:EpNet.Results.ExtensionMethods.ToKWh(EpNet.Results.ResultSet)
-  fullName: EpNet.Results.ExtensionMethods.ToKWh(EpNet.Results.ResultSet)
-  nameWithType: ExtensionMethods.ToKWh(ResultSet)
 - uid: EpNet.Results.ExtensionMethods.ToKWh(System.Double)
   name: ToKWh(double)
   href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToKWh_System_Double_
@@ -3877,19 +3618,6 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ExtensionMethods.ToKWh
   nameWithType: ExtensionMethods.ToKWh
-- uid: EpNet.Results.ExtensionMethods.Total(EpNet.Results.ResultSet)
-  name: Total(ResultSet)
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Total_EpNet_Results_ResultSet_
-  commentId: M:EpNet.Results.ExtensionMethods.Total(EpNet.Results.ResultSet)
-  fullName: EpNet.Results.ExtensionMethods.Total(EpNet.Results.ResultSet)
-  nameWithType: ExtensionMethods.Total(ResultSet)
-- uid: EpNet.Results.ExtensionMethods.Total*
-  name: Total
-  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Total_
-  commentId: Overload:EpNet.Results.ExtensionMethods.Total
-  isSpec: "True"
-  fullName: EpNet.Results.ExtensionMethods.Total
-  nameWithType: ExtensionMethods.Total
 - uid: EpNet.Results.Frequencies
   name: Frequencies
   href: api/EpNet.Results.Frequencies.html
@@ -4130,6 +3858,22 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ResultSet.Add
   nameWithType: ResultSet.Add
+- uid: EpNet.Results.ResultSet.CVRMSE(System.Collections.Generic.IEnumerable{System.Double})
+  name: CVRMSE(IEnumerable<double>)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_CVRMSE_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:EpNet.Results.ResultSet.CVRMSE(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: CVRMSE(IEnumerable(Of Double))
+  fullName: EpNet.Results.ResultSet.CVRMSE(System.Collections.Generic.IEnumerable<double>)
+  fullName.vb: EpNet.Results.ResultSet.CVRMSE(System.Collections.Generic.IEnumerable(Of Double))
+  nameWithType: ResultSet.CVRMSE(IEnumerable<double>)
+  nameWithType.vb: ResultSet.CVRMSE(IEnumerable(Of Double))
+- uid: EpNet.Results.ResultSet.CVRMSE*
+  name: CVRMSE
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_CVRMSE_
+  commentId: Overload:EpNet.Results.ResultSet.CVRMSE
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.CVRMSE
+  nameWithType: ResultSet.CVRMSE
 - uid: EpNet.Results.ResultSet.Clone
   name: Clone()
   href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Clone
@@ -4156,6 +3900,38 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ResultSet.Component
   nameWithType: ResultSet.Component
+- uid: EpNet.Results.ResultSet.ContainsComponent(System.Collections.Generic.IEnumerable{System.String})
+  name: ContainsComponent(IEnumerable<string>)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_ContainsComponent_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:EpNet.Results.ResultSet.ContainsComponent(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: ContainsComponent(IEnumerable(Of String))
+  fullName: EpNet.Results.ResultSet.ContainsComponent(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: EpNet.Results.ResultSet.ContainsComponent(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: ResultSet.ContainsComponent(IEnumerable<string>)
+  nameWithType.vb: ResultSet.ContainsComponent(IEnumerable(Of String))
+- uid: EpNet.Results.ResultSet.ContainsComponent*
+  name: ContainsComponent
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_ContainsComponent_
+  commentId: Overload:EpNet.Results.ResultSet.ContainsComponent
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.ContainsComponent
+  nameWithType: ResultSet.ContainsComponent
+- uid: EpNet.Results.ResultSet.ContainsReport(System.Collections.Generic.IEnumerable{System.String})
+  name: ContainsReport(IEnumerable<string>)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_ContainsReport_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:EpNet.Results.ResultSet.ContainsReport(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: ContainsReport(IEnumerable(Of String))
+  fullName: EpNet.Results.ResultSet.ContainsReport(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: EpNet.Results.ResultSet.ContainsReport(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: ResultSet.ContainsReport(IEnumerable<string>)
+  nameWithType.vb: ResultSet.ContainsReport(IEnumerable(Of String))
+- uid: EpNet.Results.ResultSet.ContainsReport*
+  name: ContainsReport
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_ContainsReport_
+  commentId: Overload:EpNet.Results.ResultSet.ContainsReport
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.ContainsReport
+  nameWithType: ResultSet.ContainsReport
 - uid: EpNet.Results.ResultSet.Count
   name: Count
   href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Count
@@ -4182,6 +3958,73 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ResultSet.DataSet
   nameWithType: ResultSet.DataSet
+- uid: EpNet.Results.ResultSet.EqualsComponentReport(EpNet.Results.ResultSet)
+  name: EqualsComponentReport(ResultSet)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_EqualsComponentReport_EpNet_Results_ResultSet_
+  commentId: M:EpNet.Results.ResultSet.EqualsComponentReport(EpNet.Results.ResultSet)
+  fullName: EpNet.Results.ResultSet.EqualsComponentReport(EpNet.Results.ResultSet)
+  nameWithType: ResultSet.EqualsComponentReport(ResultSet)
+- uid: EpNet.Results.ResultSet.EqualsComponentReport*
+  name: EqualsComponentReport
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_EqualsComponentReport_
+  commentId: Overload:EpNet.Results.ResultSet.EqualsComponentReport
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.EqualsComponentReport
+  nameWithType: ResultSet.EqualsComponentReport
+- uid: EpNet.Results.ResultSet.EqualsDescriptor(EpNet.Results.ResultSet)
+  name: EqualsDescriptor(ResultSet)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_EqualsDescriptor_EpNet_Results_ResultSet_
+  commentId: M:EpNet.Results.ResultSet.EqualsDescriptor(EpNet.Results.ResultSet)
+  fullName: EpNet.Results.ResultSet.EqualsDescriptor(EpNet.Results.ResultSet)
+  nameWithType: ResultSet.EqualsDescriptor(ResultSet)
+- uid: EpNet.Results.ResultSet.EqualsDescriptor*
+  name: EqualsDescriptor
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_EqualsDescriptor_
+  commentId: Overload:EpNet.Results.ResultSet.EqualsDescriptor
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.EqualsDescriptor
+  nameWithType: ResultSet.EqualsDescriptor
+- uid: EpNet.Results.ResultSet.FillData(System.Func{System.Double,System.Boolean})
+  name: FillData(Func<double, bool>)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_FillData_System_Func_System_Double_System_Boolean__
+  commentId: M:EpNet.Results.ResultSet.FillData(System.Func{System.Double,System.Boolean})
+  name.vb: FillData(Func(Of Double, Boolean))
+  fullName: EpNet.Results.ResultSet.FillData(System.Func<double, bool>)
+  fullName.vb: EpNet.Results.ResultSet.FillData(System.Func(Of Double, Boolean))
+  nameWithType: ResultSet.FillData(Func<double, bool>)
+  nameWithType.vb: ResultSet.FillData(Func(Of Double, Boolean))
+- uid: EpNet.Results.ResultSet.FillData*
+  name: FillData
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_FillData_
+  commentId: Overload:EpNet.Results.ResultSet.FillData
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.FillData
+  nameWithType: ResultSet.FillData
+- uid: EpNet.Results.ResultSet.FilterData(System.Func{System.Double,System.Boolean},System.Double)
+  name: FilterData(Func<double, bool>, double)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_FilterData_System_Func_System_Double_System_Boolean__System_Double_
+  commentId: M:EpNet.Results.ResultSet.FilterData(System.Func{System.Double,System.Boolean},System.Double)
+  name.vb: FilterData(Func(Of Double, Boolean), Double)
+  fullName: EpNet.Results.ResultSet.FilterData(System.Func<double, bool>, double)
+  fullName.vb: EpNet.Results.ResultSet.FilterData(System.Func(Of Double, Boolean), Double)
+  nameWithType: ResultSet.FilterData(Func<double, bool>, double)
+  nameWithType.vb: ResultSet.FilterData(Func(Of Double, Boolean), Double)
+- uid: EpNet.Results.ResultSet.FilterData(System.Func{System.Double,System.Boolean},System.Double,System.Double)
+  name: FilterData(Func<double, bool>, double, double)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_FilterData_System_Func_System_Double_System_Boolean__System_Double_System_Double_
+  commentId: M:EpNet.Results.ResultSet.FilterData(System.Func{System.Double,System.Boolean},System.Double,System.Double)
+  name.vb: FilterData(Func(Of Double, Boolean), Double, Double)
+  fullName: EpNet.Results.ResultSet.FilterData(System.Func<double, bool>, double, double)
+  fullName.vb: EpNet.Results.ResultSet.FilterData(System.Func(Of Double, Boolean), Double, Double)
+  nameWithType: ResultSet.FilterData(Func<double, bool>, double, double)
+  nameWithType.vb: ResultSet.FilterData(Func(Of Double, Boolean), Double, Double)
+- uid: EpNet.Results.ResultSet.FilterData*
+  name: FilterData
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_FilterData_
+  commentId: Overload:EpNet.Results.ResultSet.FilterData
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.FilterData
+  nameWithType: ResultSet.FilterData
 - uid: EpNet.Results.ResultSet.Frequency
   name: Frequency
   href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Frequency
@@ -4305,6 +4148,48 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ResultSet.GetMinValue
   nameWithType: ResultSet.GetMinValue
+- uid: EpNet.Results.ResultSet.GreaterOrEqual(System.Double)
+  name: GreaterOrEqual(double)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_GreaterOrEqual_System_Double_
+  commentId: M:EpNet.Results.ResultSet.GreaterOrEqual(System.Double)
+  name.vb: GreaterOrEqual(Double)
+  fullName: EpNet.Results.ResultSet.GreaterOrEqual(double)
+  fullName.vb: EpNet.Results.ResultSet.GreaterOrEqual(Double)
+  nameWithType: ResultSet.GreaterOrEqual(double)
+  nameWithType.vb: ResultSet.GreaterOrEqual(Double)
+- uid: EpNet.Results.ResultSet.GreaterOrEqual*
+  name: GreaterOrEqual
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_GreaterOrEqual_
+  commentId: Overload:EpNet.Results.ResultSet.GreaterOrEqual
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.GreaterOrEqual
+  nameWithType: ResultSet.GreaterOrEqual
+- uid: EpNet.Results.ResultSet.IsNotNull
+  name: IsNotNull()
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_IsNotNull
+  commentId: M:EpNet.Results.ResultSet.IsNotNull
+  fullName: EpNet.Results.ResultSet.IsNotNull()
+  nameWithType: ResultSet.IsNotNull()
+- uid: EpNet.Results.ResultSet.IsNotNull*
+  name: IsNotNull
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_IsNotNull_
+  commentId: Overload:EpNet.Results.ResultSet.IsNotNull
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.IsNotNull
+  nameWithType: ResultSet.IsNotNull
+- uid: EpNet.Results.ResultSet.IsNull
+  name: IsNull()
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_IsNull
+  commentId: M:EpNet.Results.ResultSet.IsNull
+  fullName: EpNet.Results.ResultSet.IsNull()
+  nameWithType: ResultSet.IsNull()
+- uid: EpNet.Results.ResultSet.IsNull*
+  name: IsNull
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_IsNull_
+  commentId: Overload:EpNet.Results.ResultSet.IsNull
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.IsNull
+  nameWithType: ResultSet.IsNull
 - uid: EpNet.Results.ResultSet.Item(System.DateTime)
   name: this[DateTime]
   href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Item_System_DateTime_
@@ -4333,6 +4218,54 @@ references:
   fullName.vb: EpNet.Results.ResultSet.this[]
   nameWithType: ResultSet.this
   nameWithType.vb: ResultSet.this[]
+- uid: EpNet.Results.ResultSet.LowerOrEqual(System.Double)
+  name: LowerOrEqual(double)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_LowerOrEqual_System_Double_
+  commentId: M:EpNet.Results.ResultSet.LowerOrEqual(System.Double)
+  name.vb: LowerOrEqual(Double)
+  fullName: EpNet.Results.ResultSet.LowerOrEqual(double)
+  fullName.vb: EpNet.Results.ResultSet.LowerOrEqual(Double)
+  nameWithType: ResultSet.LowerOrEqual(double)
+  nameWithType.vb: ResultSet.LowerOrEqual(Double)
+- uid: EpNet.Results.ResultSet.LowerOrEqual*
+  name: LowerOrEqual
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_LowerOrEqual_
+  commentId: Overload:EpNet.Results.ResultSet.LowerOrEqual
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.LowerOrEqual
+  nameWithType: ResultSet.LowerOrEqual
+- uid: EpNet.Results.ResultSet.MAE(System.Collections.Generic.IEnumerable{System.Double})
+  name: MAE(IEnumerable<double>)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_MAE_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:EpNet.Results.ResultSet.MAE(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: MAE(IEnumerable(Of Double))
+  fullName: EpNet.Results.ResultSet.MAE(System.Collections.Generic.IEnumerable<double>)
+  fullName.vb: EpNet.Results.ResultSet.MAE(System.Collections.Generic.IEnumerable(Of Double))
+  nameWithType: ResultSet.MAE(IEnumerable<double>)
+  nameWithType.vb: ResultSet.MAE(IEnumerable(Of Double))
+- uid: EpNet.Results.ResultSet.MAE*
+  name: MAE
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_MAE_
+  commentId: Overload:EpNet.Results.ResultSet.MAE
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.MAE
+  nameWithType: ResultSet.MAE
+- uid: EpNet.Results.ResultSet.MBE(System.Collections.Generic.IEnumerable{System.Double})
+  name: MBE(IEnumerable<double>)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_MBE_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:EpNet.Results.ResultSet.MBE(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: MBE(IEnumerable(Of Double))
+  fullName: EpNet.Results.ResultSet.MBE(System.Collections.Generic.IEnumerable<double>)
+  fullName.vb: EpNet.Results.ResultSet.MBE(System.Collections.Generic.IEnumerable(Of Double))
+  nameWithType: ResultSet.MBE(IEnumerable<double>)
+  nameWithType.vb: ResultSet.MBE(IEnumerable(Of Double))
+- uid: EpNet.Results.ResultSet.MBE*
+  name: MBE
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_MBE_
+  commentId: Overload:EpNet.Results.ResultSet.MBE
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.MBE
+  nameWithType: ResultSet.MBE
 - uid: EpNet.Results.ResultSet.Match(System.String,System.String)
   name: Match(string, string)
   href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Match_System_String_System_String_
@@ -4390,6 +4323,80 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ResultSet.MatchReport
   nameWithType: ResultSet.MatchReport
+- uid: EpNet.Results.ResultSet.NMAE(System.Collections.Generic.IEnumerable{System.Double})
+  name: NMAE(IEnumerable<double>)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_NMAE_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:EpNet.Results.ResultSet.NMAE(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: NMAE(IEnumerable(Of Double))
+  fullName: EpNet.Results.ResultSet.NMAE(System.Collections.Generic.IEnumerable<double>)
+  fullName.vb: EpNet.Results.ResultSet.NMAE(System.Collections.Generic.IEnumerable(Of Double))
+  nameWithType: ResultSet.NMAE(IEnumerable<double>)
+  nameWithType.vb: ResultSet.NMAE(IEnumerable(Of Double))
+- uid: EpNet.Results.ResultSet.NMAE*
+  name: NMAE
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_NMAE_
+  commentId: Overload:EpNet.Results.ResultSet.NMAE
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.NMAE
+  nameWithType: ResultSet.NMAE
+- uid: EpNet.Results.ResultSet.NMBE(System.Collections.Generic.IEnumerable{System.Double})
+  name: NMBE(IEnumerable<double>)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_NMBE_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:EpNet.Results.ResultSet.NMBE(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: NMBE(IEnumerable(Of Double))
+  fullName: EpNet.Results.ResultSet.NMBE(System.Collections.Generic.IEnumerable<double>)
+  fullName.vb: EpNet.Results.ResultSet.NMBE(System.Collections.Generic.IEnumerable(Of Double))
+  nameWithType: ResultSet.NMBE(IEnumerable<double>)
+  nameWithType.vb: ResultSet.NMBE(IEnumerable(Of Double))
+- uid: EpNet.Results.ResultSet.NMBE*
+  name: NMBE
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_NMBE_
+  commentId: Overload:EpNet.Results.ResultSet.NMBE
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.NMBE
+  nameWithType: ResultSet.NMBE
+- uid: EpNet.Results.ResultSet.Negative
+  name: Negative()
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Negative
+  commentId: M:EpNet.Results.ResultSet.Negative
+  fullName: EpNet.Results.ResultSet.Negative()
+  nameWithType: ResultSet.Negative()
+- uid: EpNet.Results.ResultSet.Negative*
+  name: Negative
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Negative_
+  commentId: Overload:EpNet.Results.ResultSet.Negative
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.Negative
+  nameWithType: ResultSet.Negative
+- uid: EpNet.Results.ResultSet.Positive
+  name: Positive()
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Positive
+  commentId: M:EpNet.Results.ResultSet.Positive
+  fullName: EpNet.Results.ResultSet.Positive()
+  nameWithType: ResultSet.Positive()
+- uid: EpNet.Results.ResultSet.Positive*
+  name: Positive
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Positive_
+  commentId: Overload:EpNet.Results.ResultSet.Positive
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.Positive
+  nameWithType: ResultSet.Positive
+- uid: EpNet.Results.ResultSet.R2(System.Collections.Generic.IEnumerable{System.Double})
+  name: R2(IEnumerable<double>)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_R2_System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:EpNet.Results.ResultSet.R2(System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: R2(IEnumerable(Of Double))
+  fullName: EpNet.Results.ResultSet.R2(System.Collections.Generic.IEnumerable<double>)
+  fullName.vb: EpNet.Results.ResultSet.R2(System.Collections.Generic.IEnumerable(Of Double))
+  nameWithType: ResultSet.R2(IEnumerable<double>)
+  nameWithType.vb: ResultSet.R2(IEnumerable(Of Double))
+- uid: EpNet.Results.ResultSet.R2*
+  name: R2
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_R2_
+  commentId: Overload:EpNet.Results.ResultSet.R2
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.R2
+  nameWithType: ResultSet.R2
 - uid: EpNet.Results.ResultSet.ReportType
   name: ReportType
   href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_ReportType
@@ -4416,6 +4423,54 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ResultSet.ResultDescriptor
   nameWithType: ResultSet.ResultDescriptor
+- uid: EpNet.Results.ResultSet.SetComponent(System.String)
+  name: SetComponent(string)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_SetComponent_System_String_
+  commentId: M:EpNet.Results.ResultSet.SetComponent(System.String)
+  name.vb: SetComponent(String)
+  fullName: EpNet.Results.ResultSet.SetComponent(string)
+  fullName.vb: EpNet.Results.ResultSet.SetComponent(String)
+  nameWithType: ResultSet.SetComponent(string)
+  nameWithType.vb: ResultSet.SetComponent(String)
+- uid: EpNet.Results.ResultSet.SetComponent*
+  name: SetComponent
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_SetComponent_
+  commentId: Overload:EpNet.Results.ResultSet.SetComponent
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.SetComponent
+  nameWithType: ResultSet.SetComponent
+- uid: EpNet.Results.ResultSet.SetReportType(System.String)
+  name: SetReportType(string)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_SetReportType_System_String_
+  commentId: M:EpNet.Results.ResultSet.SetReportType(System.String)
+  name.vb: SetReportType(String)
+  fullName: EpNet.Results.ResultSet.SetReportType(string)
+  fullName.vb: EpNet.Results.ResultSet.SetReportType(String)
+  nameWithType: ResultSet.SetReportType(string)
+  nameWithType.vb: ResultSet.SetReportType(String)
+- uid: EpNet.Results.ResultSet.SetReportType*
+  name: SetReportType
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_SetReportType_
+  commentId: Overload:EpNet.Results.ResultSet.SetReportType
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.SetReportType
+  nameWithType: ResultSet.SetReportType
+- uid: EpNet.Results.ResultSet.SetUnits(System.String)
+  name: SetUnits(string)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_SetUnits_System_String_
+  commentId: M:EpNet.Results.ResultSet.SetUnits(System.String)
+  name.vb: SetUnits(String)
+  fullName: EpNet.Results.ResultSet.SetUnits(string)
+  fullName.vb: EpNet.Results.ResultSet.SetUnits(String)
+  nameWithType: ResultSet.SetUnits(string)
+  nameWithType.vb: ResultSet.SetUnits(String)
+- uid: EpNet.Results.ResultSet.SetUnits*
+  name: SetUnits
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_SetUnits_
+  commentId: Overload:EpNet.Results.ResultSet.SetUnits
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.SetUnits
+  nameWithType: ResultSet.SetUnits
 - uid: EpNet.Results.ResultSet.SetValue(System.Double)
   name: SetValue(double)
   href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_SetValue_System_Double_
@@ -4493,6 +4548,61 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ResultSet.TimeSeriesData.Value
   nameWithType: ResultSet.TimeSeriesData.Value
+- uid: EpNet.Results.ResultSet.ToFrequency(EpNet.Results.Frequencies,System.Boolean)
+  name: ToFrequency(Frequencies, bool)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_ToFrequency_EpNet_Results_Frequencies_System_Boolean_
+  commentId: M:EpNet.Results.ResultSet.ToFrequency(EpNet.Results.Frequencies,System.Boolean)
+  name.vb: ToFrequency(Frequencies, Boolean)
+  fullName: EpNet.Results.ResultSet.ToFrequency(EpNet.Results.Frequencies, bool)
+  fullName.vb: EpNet.Results.ResultSet.ToFrequency(EpNet.Results.Frequencies, Boolean)
+  nameWithType: ResultSet.ToFrequency(Frequencies, bool)
+  nameWithType.vb: ResultSet.ToFrequency(Frequencies, Boolean)
+- uid: EpNet.Results.ResultSet.ToFrequency*
+  name: ToFrequency
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_ToFrequency_
+  commentId: Overload:EpNet.Results.ResultSet.ToFrequency
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.ToFrequency
+  nameWithType: ResultSet.ToFrequency
+- uid: EpNet.Results.ResultSet.ToFrequencyAuto(EpNet.Results.Frequencies)
+  name: ToFrequencyAuto(Frequencies)
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_ToFrequencyAuto_EpNet_Results_Frequencies_
+  commentId: M:EpNet.Results.ResultSet.ToFrequencyAuto(EpNet.Results.Frequencies)
+  fullName: EpNet.Results.ResultSet.ToFrequencyAuto(EpNet.Results.Frequencies)
+  nameWithType: ResultSet.ToFrequencyAuto(Frequencies)
+- uid: EpNet.Results.ResultSet.ToFrequencyAuto*
+  name: ToFrequencyAuto
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_ToFrequencyAuto_
+  commentId: Overload:EpNet.Results.ResultSet.ToFrequencyAuto
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.ToFrequencyAuto
+  nameWithType: ResultSet.ToFrequencyAuto
+- uid: EpNet.Results.ResultSet.ToKWh
+  name: ToKWh()
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_ToKWh
+  commentId: M:EpNet.Results.ResultSet.ToKWh
+  fullName: EpNet.Results.ResultSet.ToKWh()
+  nameWithType: ResultSet.ToKWh()
+- uid: EpNet.Results.ResultSet.ToKWh*
+  name: ToKWh
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_ToKWh_
+  commentId: Overload:EpNet.Results.ResultSet.ToKWh
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.ToKWh
+  nameWithType: ResultSet.ToKWh
+- uid: EpNet.Results.ResultSet.Total
+  name: Total()
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Total
+  commentId: M:EpNet.Results.ResultSet.Total
+  fullName: EpNet.Results.ResultSet.Total()
+  nameWithType: ResultSet.Total()
+- uid: EpNet.Results.ResultSet.Total*
+  name: Total
+  href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Total_
+  commentId: Overload:EpNet.Results.ResultSet.Total
+  isSpec: "True"
+  fullName: EpNet.Results.ResultSet.Total
+  nameWithType: ResultSet.Total
 - uid: EpNet.Results.ResultSet.Units
   name: Units
   href: api/EpNet.Results.ResultSet.html#EpNet_Results_ResultSet_Units
@@ -5134,3 +5244,111 @@ references:
   fullName.vb: EpNet.Results.TableReader.this[]
   nameWithType: TableReader.this
   nameWithType.vb: TableReader.this[]
+- uid: EpNet.Statistics
+  name: EpNet.Statistics
+  href: api/EpNet.Statistics.html
+  commentId: N:EpNet.Statistics
+  fullName: EpNet.Statistics
+  nameWithType: EpNet.Statistics
+- uid: EpNet.Statistics.Stat
+  name: Stat
+  href: api/EpNet.Statistics.Stat.html
+  commentId: T:EpNet.Statistics.Stat
+  fullName: EpNet.Statistics.Stat
+  nameWithType: Stat
+- uid: EpNet.Statistics.Stat.CVRMSE(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})
+  name: CVRMSE(IEnumerable<double>, IEnumerable<double>)
+  href: api/EpNet.Statistics.Stat.html#EpNet_Statistics_Stat_CVRMSE_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:EpNet.Statistics.Stat.CVRMSE(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: CVRMSE(IEnumerable(Of Double), IEnumerable(Of Double))
+  fullName: EpNet.Statistics.Stat.CVRMSE(System.Collections.Generic.IEnumerable<double>, System.Collections.Generic.IEnumerable<double>)
+  fullName.vb: EpNet.Statistics.Stat.CVRMSE(System.Collections.Generic.IEnumerable(Of Double), System.Collections.Generic.IEnumerable(Of Double))
+  nameWithType: Stat.CVRMSE(IEnumerable<double>, IEnumerable<double>)
+  nameWithType.vb: Stat.CVRMSE(IEnumerable(Of Double), IEnumerable(Of Double))
+- uid: EpNet.Statistics.Stat.CVRMSE*
+  name: CVRMSE
+  href: api/EpNet.Statistics.Stat.html#EpNet_Statistics_Stat_CVRMSE_
+  commentId: Overload:EpNet.Statistics.Stat.CVRMSE
+  isSpec: "True"
+  fullName: EpNet.Statistics.Stat.CVRMSE
+  nameWithType: Stat.CVRMSE
+- uid: EpNet.Statistics.Stat.MAE(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})
+  name: MAE(IEnumerable<double>, IEnumerable<double>)
+  href: api/EpNet.Statistics.Stat.html#EpNet_Statistics_Stat_MAE_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:EpNet.Statistics.Stat.MAE(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: MAE(IEnumerable(Of Double), IEnumerable(Of Double))
+  fullName: EpNet.Statistics.Stat.MAE(System.Collections.Generic.IEnumerable<double>, System.Collections.Generic.IEnumerable<double>)
+  fullName.vb: EpNet.Statistics.Stat.MAE(System.Collections.Generic.IEnumerable(Of Double), System.Collections.Generic.IEnumerable(Of Double))
+  nameWithType: Stat.MAE(IEnumerable<double>, IEnumerable<double>)
+  nameWithType.vb: Stat.MAE(IEnumerable(Of Double), IEnumerable(Of Double))
+- uid: EpNet.Statistics.Stat.MAE*
+  name: MAE
+  href: api/EpNet.Statistics.Stat.html#EpNet_Statistics_Stat_MAE_
+  commentId: Overload:EpNet.Statistics.Stat.MAE
+  isSpec: "True"
+  fullName: EpNet.Statistics.Stat.MAE
+  nameWithType: Stat.MAE
+- uid: EpNet.Statistics.Stat.MBE(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})
+  name: MBE(IEnumerable<double>, IEnumerable<double>)
+  href: api/EpNet.Statistics.Stat.html#EpNet_Statistics_Stat_MBE_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:EpNet.Statistics.Stat.MBE(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: MBE(IEnumerable(Of Double), IEnumerable(Of Double))
+  fullName: EpNet.Statistics.Stat.MBE(System.Collections.Generic.IEnumerable<double>, System.Collections.Generic.IEnumerable<double>)
+  fullName.vb: EpNet.Statistics.Stat.MBE(System.Collections.Generic.IEnumerable(Of Double), System.Collections.Generic.IEnumerable(Of Double))
+  nameWithType: Stat.MBE(IEnumerable<double>, IEnumerable<double>)
+  nameWithType.vb: Stat.MBE(IEnumerable(Of Double), IEnumerable(Of Double))
+- uid: EpNet.Statistics.Stat.MBE*
+  name: MBE
+  href: api/EpNet.Statistics.Stat.html#EpNet_Statistics_Stat_MBE_
+  commentId: Overload:EpNet.Statistics.Stat.MBE
+  isSpec: "True"
+  fullName: EpNet.Statistics.Stat.MBE
+  nameWithType: Stat.MBE
+- uid: EpNet.Statistics.Stat.NMAE(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})
+  name: NMAE(IEnumerable<double>, IEnumerable<double>)
+  href: api/EpNet.Statistics.Stat.html#EpNet_Statistics_Stat_NMAE_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:EpNet.Statistics.Stat.NMAE(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: NMAE(IEnumerable(Of Double), IEnumerable(Of Double))
+  fullName: EpNet.Statistics.Stat.NMAE(System.Collections.Generic.IEnumerable<double>, System.Collections.Generic.IEnumerable<double>)
+  fullName.vb: EpNet.Statistics.Stat.NMAE(System.Collections.Generic.IEnumerable(Of Double), System.Collections.Generic.IEnumerable(Of Double))
+  nameWithType: Stat.NMAE(IEnumerable<double>, IEnumerable<double>)
+  nameWithType.vb: Stat.NMAE(IEnumerable(Of Double), IEnumerable(Of Double))
+- uid: EpNet.Statistics.Stat.NMAE*
+  name: NMAE
+  href: api/EpNet.Statistics.Stat.html#EpNet_Statistics_Stat_NMAE_
+  commentId: Overload:EpNet.Statistics.Stat.NMAE
+  isSpec: "True"
+  fullName: EpNet.Statistics.Stat.NMAE
+  nameWithType: Stat.NMAE
+- uid: EpNet.Statistics.Stat.NMBE(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})
+  name: NMBE(IEnumerable<double>, IEnumerable<double>)
+  href: api/EpNet.Statistics.Stat.html#EpNet_Statistics_Stat_NMBE_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:EpNet.Statistics.Stat.NMBE(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: NMBE(IEnumerable(Of Double), IEnumerable(Of Double))
+  fullName: EpNet.Statistics.Stat.NMBE(System.Collections.Generic.IEnumerable<double>, System.Collections.Generic.IEnumerable<double>)
+  fullName.vb: EpNet.Statistics.Stat.NMBE(System.Collections.Generic.IEnumerable(Of Double), System.Collections.Generic.IEnumerable(Of Double))
+  nameWithType: Stat.NMBE(IEnumerable<double>, IEnumerable<double>)
+  nameWithType.vb: Stat.NMBE(IEnumerable(Of Double), IEnumerable(Of Double))
+- uid: EpNet.Statistics.Stat.NMBE*
+  name: NMBE
+  href: api/EpNet.Statistics.Stat.html#EpNet_Statistics_Stat_NMBE_
+  commentId: Overload:EpNet.Statistics.Stat.NMBE
+  isSpec: "True"
+  fullName: EpNet.Statistics.Stat.NMBE
+  nameWithType: Stat.NMBE
+- uid: EpNet.Statistics.Stat.R2(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})
+  name: R2(IEnumerable<double>, IEnumerable<double>)
+  href: api/EpNet.Statistics.Stat.html#EpNet_Statistics_Stat_R2_System_Collections_Generic_IEnumerable_System_Double__System_Collections_Generic_IEnumerable_System_Double__
+  commentId: M:EpNet.Statistics.Stat.R2(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})
+  name.vb: R2(IEnumerable(Of Double), IEnumerable(Of Double))
+  fullName: EpNet.Statistics.Stat.R2(System.Collections.Generic.IEnumerable<double>, System.Collections.Generic.IEnumerable<double>)
+  fullName.vb: EpNet.Statistics.Stat.R2(System.Collections.Generic.IEnumerable(Of Double), System.Collections.Generic.IEnumerable(Of Double))
+  nameWithType: Stat.R2(IEnumerable<double>, IEnumerable<double>)
+  nameWithType.vb: Stat.R2(IEnumerable(Of Double), IEnumerable(Of Double))
+- uid: EpNet.Statistics.Stat.R2*
+  name: R2
+  href: api/EpNet.Statistics.Stat.html#EpNet_Statistics_Stat_R2_
+  commentId: Overload:EpNet.Statistics.Stat.R2
+  isSpec: "True"
+  fullName: EpNet.Statistics.Stat.R2
+  nameWithType: Stat.R2
