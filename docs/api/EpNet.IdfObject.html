@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -77,7 +77,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -111,7 +111,7 @@ Class IdfObject
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">IdfObject</span></div>
     </dd>
   </dl>
@@ -266,8 +266,8 @@ Class IdfObject
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>fields</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>List of fields</p>
+    <dt><code>fields</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>List of fields (IdfClass + fields)</p>
 </dd>
   </dl>
 
@@ -300,7 +300,7 @@ Class IdfObject
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>fields</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p>List of fields</p>
+    <dd><p>List of fields (IdfClass + fields)</p>
 </dd>
   </dl>
 
@@ -326,8 +326,7 @@ Class IdfObject
   
   </h3>
 
-  <div class="markdown level1 summary"><p>List of idf comments in the object.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -340,9 +339,8 @@ Class IdfObject
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>Idf comments.</p>
-</dd>
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
   </dl>
 
 
@@ -405,7 +403,7 @@ Class IdfObject
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EpNet.Field.html">Field</a>&gt;</dt>
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="EpNet.Field.html">Field</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -614,7 +612,7 @@ Class IdfObject
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd><p>Comments preceding the idf object.</p>
 </dd>
   </dl>
@@ -706,7 +704,7 @@ Class IdfObject
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Returns a copy of the specified idf object.</p>
+  <div class="markdown level1 summary"><p>Returns a copy of the specified idf object for the same IdfReader.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -714,6 +712,45 @@ Class IdfObject
     <pre><code class="lang-csharp hljs">public IdfObject Clone()</code></pre>
   </div>
 
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></dt>
+    <dd><p>Cloned idf object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfObject_Clone_" data-uid="EpNet.IdfObject.Clone*"></a>
+
+  <h3 id="EpNet_IdfObject_Clone_EpNet_IdfReader_" data-uid="EpNet.IdfObject.Clone(EpNet.IdfReader)">
+  Clone(IdfReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a clone of the specified idf object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IdfObject Clone(IdfReader idfReader)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idfReader</code> <a class="xref" href="EpNet.IdfReader.html">IdfReader</a></dt>
+    <dd><p>IdfReader this clone will be linked to</p>
+</dd>
+  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -760,6 +797,33 @@ Class IdfObject
     <dd><p>true if contains the value. false otherwise.</p>
 </dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfObject_DefaultComments_" data-uid="EpNet.IdfObject.DefaultComments*"></a>
+
+  <h3 id="EpNet_IdfObject_DefaultComments" data-uid="EpNet.IdfObject.DefaultComments">
+  DefaultComments()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the default comments for all fields in the object based on their names in the Idd.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DefaultComments()</code></pre>
+  </div>
+
+
 
 
 
@@ -835,6 +899,242 @@ Class IdfObject
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>true if equal but name</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfObject_GetComment_" data-uid="EpNet.IdfObject.GetComment*"></a>
+
+  <h3 id="EpNet_IdfObject_GetComment_System_Int32_" data-uid="EpNet.IdfObject.GetComment(System.Int32)">
+  GetComment(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the comment associated with a field at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetComment(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The comment as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfObject_GetName_" data-uid="EpNet.IdfObject.GetName*"></a>
+
+  <h3 id="EpNet_IdfObject_GetName_System_Int32_" data-uid="EpNet.IdfObject.GetName(System.Int32)">
+  GetName(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the name of the field at the specified index, as defined in the Idd.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetName(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The field name as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfObject_GetNumber_" data-uid="EpNet.IdfObject.GetNumber*"></a>
+
+  <h3 id="EpNet_IdfObject_GetNumber_System_Int32_" data-uid="EpNet.IdfObject.GetNumber(System.Int32)">
+  GetNumber(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the numeric value of a field at the specified index.
+Returns 0 if it is not a numeric field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetNumber(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The field value as a double.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfObject_GetNumber_" data-uid="EpNet.IdfObject.GetNumber*"></a>
+
+  <h3 id="EpNet_IdfObject_GetNumber_System_String_" data-uid="EpNet.IdfObject.GetNumber(System.String)">
+  GetNumber(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the numeric value of a field by its name.
+Returns 0 if it is not a numeric field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetNumber(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The field value as a double.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfObject_GetValue_" data-uid="EpNet.IdfObject.GetValue*"></a>
+
+  <h3 id="EpNet_IdfObject_GetValue_System_Int32_" data-uid="EpNet.IdfObject.GetValue(System.Int32)">
+  GetValue(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the value of a field at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetValue(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The field value as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfObject_GetValue_" data-uid="EpNet.IdfObject.GetValue*"></a>
+
+  <h3 id="EpNet_IdfObject_GetValue_System_String_" data-uid="EpNet.IdfObject.GetValue(System.String)">
+  GetValue(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the value of a field by its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetValue(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The field value as a string.</p>
 </dd>
   </dl>
 
@@ -992,6 +1292,186 @@ Class IdfObject
 
 
 
+  <a id="EpNet_IdfObject_SetComment_" data-uid="EpNet.IdfObject.SetComment*"></a>
+
+  <h3 id="EpNet_IdfObject_SetComment_System_Int32_System_String_" data-uid="EpNet.IdfObject.SetComment(System.Int32,System.String)">
+  SetComment(int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the comment for a field at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetComment(int index, string comment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the field.</p>
+</dd>
+    <dt><code>comment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The comment to set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfObject_SetNumber_" data-uid="EpNet.IdfObject.SetNumber*"></a>
+
+  <h3 id="EpNet_IdfObject_SetNumber_System_Int32_System_Double_" data-uid="EpNet.IdfObject.SetNumber(System.Int32,System.Double)">
+  SetNumber(int, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the numeric value of a field at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNumber(int index, double number)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the field.</p>
+</dd>
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The numeric value to set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfObject_SetNumber_" data-uid="EpNet.IdfObject.SetNumber*"></a>
+
+  <h3 id="EpNet_IdfObject_SetNumber_System_String_System_Double_" data-uid="EpNet.IdfObject.SetNumber(System.String,System.Double)">
+  SetNumber(string, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the numeric value of a field by its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNumber(string name, double number)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the field.</p>
+</dd>
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The numeric value to set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfObject_SetValue_" data-uid="EpNet.IdfObject.SetValue*"></a>
+
+  <h3 id="EpNet_IdfObject_SetValue_System_Int32_System_String_" data-uid="EpNet.IdfObject.SetValue(System.Int32,System.String)">
+  SetValue(int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of a field at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(int index, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the field.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The value to set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_IdfObject_SetValue_" data-uid="EpNet.IdfObject.SetValue*"></a>
+
+  <h3 id="EpNet_IdfObject_SetValue_System_String_System_String_" data-uid="EpNet.IdfObject.SetValue(System.String,System.String)">
+  SetValue(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of a field by its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(string name, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the field.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The value to set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="EpNet_IdfObject_ToString_" data-uid="EpNet.IdfObject.ToString*"></a>
 
   <h3 id="EpNet_IdfObject_ToString" data-uid="EpNet.IdfObject.ToString">
@@ -1094,7 +1574,7 @@ Class IdfObject
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd><p>List of selected values</p>
 </dd>
   </dl>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -77,7 +77,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -110,7 +110,7 @@ Class ExtensionMethods
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">ExtensionMethods</span></div>
     </dd>
   </dl>
@@ -134,7 +134,7 @@ Class ExtensionMethods
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Averages a list of result sets.</p>
+  <div class="markdown level1 summary"><p>Averages a list of result sets. If more than one frequency, picks the shorter one.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -144,7 +144,7 @@ Class ExtensionMethods
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>results</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -153,6 +153,270 @@ Class ExtensionMethods
     <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
     <dd><p>Resulting Result Set.</p>
 </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_AverageAll_" data-uid="EpNet.Results.ExtensionMethods.AverageAll*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_AverageAll_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__" data-uid="EpNet.Results.ExtensionMethods.AverageAll(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})">
+  AverageAll(IEnumerable&lt;ResultSet&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; AverageAll(this IEnumerable&lt;ResultSet&gt; mixedResults)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mixedResults</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_FirstAnnual_" data-uid="EpNet.Results.ExtensionMethods.FirstAnnual*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_FirstAnnual_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__" data-uid="EpNet.Results.ExtensionMethods.FirstAnnual(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})">
+  FirstAnnual(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet FirstAnnual(this IEnumerable&lt;ResultSet&gt; results, Func&lt;string, bool&gt; filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_FirstDaily_" data-uid="EpNet.Results.ExtensionMethods.FirstDaily*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_FirstDaily_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__" data-uid="EpNet.Results.ExtensionMethods.FirstDaily(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})">
+  FirstDaily(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet FirstDaily(this IEnumerable&lt;ResultSet&gt; results, Func&lt;string, bool&gt; filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_FirstHourly_" data-uid="EpNet.Results.ExtensionMethods.FirstHourly*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_FirstHourly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__" data-uid="EpNet.Results.ExtensionMethods.FirstHourly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})">
+  FirstHourly(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet FirstHourly(this IEnumerable&lt;ResultSet&gt; results, Func&lt;string, bool&gt; filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_FirstMonthly_" data-uid="EpNet.Results.ExtensionMethods.FirstMonthly*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_FirstMonthly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__" data-uid="EpNet.Results.ExtensionMethods.FirstMonthly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})">
+  FirstMonthly(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet FirstMonthly(this IEnumerable&lt;ResultSet&gt; results, Func&lt;string, bool&gt; filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_FirstRunPeriod_" data-uid="EpNet.Results.ExtensionMethods.FirstRunPeriod*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_FirstRunPeriod_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__" data-uid="EpNet.Results.ExtensionMethods.FirstRunPeriod(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})">
+  FirstRunPeriod(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet FirstRunPeriod(this IEnumerable&lt;ResultSet&gt; results, Func&lt;string, bool&gt; filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_FirstTimestep_" data-uid="EpNet.Results.ExtensionMethods.FirstTimestep*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_FirstTimestep_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__" data-uid="EpNet.Results.ExtensionMethods.FirstTimestep(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})">
+  FirstTimestep(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResultSet FirstTimestep(this IEnumerable&lt;ResultSet&gt; results, Func&lt;string, bool&gt; filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
   </dl>
 
 
@@ -182,7 +446,7 @@ Class ExtensionMethods
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>results</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
     <dd></dd>
     <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
@@ -208,6 +472,690 @@ Class ExtensionMethods
 
 
 
+  <a id="EpNet_Results_ExtensionMethods_GetAll_" data-uid="EpNet.Results.ExtensionMethods.GetAll*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GetAll_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__" data-uid="EpNet.Results.ExtensionMethods.GetAll(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})">
+  GetAll(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; GetAll(this IEnumerable&lt;ResultSet&gt; results, Func&lt;string, bool&gt; filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GetAnnual_" data-uid="EpNet.Results.ExtensionMethods.GetAnnual*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GetAnnual_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__" data-uid="EpNet.Results.ExtensionMethods.GetAnnual(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})">
+  GetAnnual(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; GetAnnual(this IEnumerable&lt;ResultSet&gt; results, Func&lt;string, bool&gt; filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GetDaily_" data-uid="EpNet.Results.ExtensionMethods.GetDaily*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GetDaily_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__" data-uid="EpNet.Results.ExtensionMethods.GetDaily(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})">
+  GetDaily(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; GetDaily(this IEnumerable&lt;ResultSet&gt; results, Func&lt;string, bool&gt; filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GetHourly_" data-uid="EpNet.Results.ExtensionMethods.GetHourly*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GetHourly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__" data-uid="EpNet.Results.ExtensionMethods.GetHourly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})">
+  GetHourly(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; GetHourly(this IEnumerable&lt;ResultSet&gt; results, Func&lt;string, bool&gt; filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GetMonthly_" data-uid="EpNet.Results.ExtensionMethods.GetMonthly*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GetMonthly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__" data-uid="EpNet.Results.ExtensionMethods.GetMonthly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})">
+  GetMonthly(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; GetMonthly(this IEnumerable&lt;ResultSet&gt; results, Func&lt;string, bool&gt; filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GetRunPeriod_" data-uid="EpNet.Results.ExtensionMethods.GetRunPeriod*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GetRunPeriod_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__" data-uid="EpNet.Results.ExtensionMethods.GetRunPeriod(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})">
+  GetRunPeriod(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; GetRunPeriod(this IEnumerable&lt;ResultSet&gt; results, Func&lt;string, bool&gt; filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GetTimestep_" data-uid="EpNet.Results.ExtensionMethods.GetTimestep*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GetTimestep_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__" data-uid="EpNet.Results.ExtensionMethods.GetTimestep(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})">
+  GetTimestep(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; GetTimestep(this IEnumerable&lt;ResultSet&gt; results, Func&lt;string, bool&gt; filter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GetZone_" data-uid="EpNet.Results.ExtensionMethods.GetZone*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GetZone_EpNet_Results_ResultSet_EpNet_IdfReader_" data-uid="EpNet.Results.ExtensionMethods.GetZone(EpNet.Results.ResultSet,EpNet.IdfReader)">
+  GetZone(ResultSet, IdfReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IdfObject GetZone(this ResultSet result, IdfReader idf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+    <dt><code>idf</code> <a class="xref" href="EpNet.IdfReader.html">IdfReader</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EpNet.IdfObject.html">IdfObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GetZoneArea_" data-uid="EpNet.Results.ExtensionMethods.GetZoneArea*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GetZoneArea_EpNet_Results_ResultSet_EpNet_IdfReader_" data-uid="EpNet.Results.ExtensionMethods.GetZoneArea(EpNet.Results.ResultSet,EpNet.IdfReader)">
+  GetZoneArea(ResultSet, IdfReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetZoneArea(this ResultSet result, IdfReader idf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+    <dt><code>idf</code> <a class="xref" href="EpNet.IdfReader.html">IdfReader</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GetZoneArea_" data-uid="EpNet.Results.ExtensionMethods.GetZoneArea*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GetZoneArea_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__EpNet_IdfReader_" data-uid="EpNet.Results.ExtensionMethods.GetZoneArea(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},EpNet.IdfReader)">
+  GetZoneArea(IEnumerable&lt;ResultSet&gt;, IdfReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetZoneArea(this IEnumerable&lt;ResultSet&gt; results, IdfReader idf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>idf</code> <a class="xref" href="EpNet.IdfReader.html">IdfReader</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GetZoneVolume_" data-uid="EpNet.Results.ExtensionMethods.GetZoneVolume*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GetZoneVolume_EpNet_Results_ResultSet_EpNet_IdfReader_" data-uid="EpNet.Results.ExtensionMethods.GetZoneVolume(EpNet.Results.ResultSet,EpNet.IdfReader)">
+  GetZoneVolume(ResultSet, IdfReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetZoneVolume(this ResultSet result, IdfReader idf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
+    <dd></dd>
+    <dt><code>idf</code> <a class="xref" href="EpNet.IdfReader.html">IdfReader</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GetZoneVolume_" data-uid="EpNet.Results.ExtensionMethods.GetZoneVolume*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GetZoneVolume_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__EpNet_IdfReader_" data-uid="EpNet.Results.ExtensionMethods.GetZoneVolume(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},EpNet.IdfReader)">
+  GetZoneVolume(IEnumerable&lt;ResultSet&gt;, IdfReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetZoneVolume(this IEnumerable&lt;ResultSet&gt; results, IdfReader idf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>idf</code> <a class="xref" href="EpNet.IdfReader.html">IdfReader</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GetZones_" data-uid="EpNet.Results.ExtensionMethods.GetZones*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GetZones_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__EpNet_IdfReader_" data-uid="EpNet.Results.ExtensionMethods.GetZones(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},EpNet.IdfReader)">
+  GetZones(IEnumerable&lt;ResultSet&gt;, IdfReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IdfObject&gt; GetZones(this IEnumerable&lt;ResultSet&gt; results, IdfReader idf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>idf</code> <a class="xref" href="EpNet.IdfReader.html">IdfReader</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GroupByBlock_" data-uid="EpNet.Results.ExtensionMethods.GroupByBlock*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GroupByBlock_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Collections_Generic_IEnumerable_EpNet_IdfObject__" data-uid="EpNet.Results.ExtensionMethods.GroupByBlock(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Collections.Generic.IEnumerable{EpNet.IdfObject})">
+  GroupByBlock(IEnumerable&lt;ResultSet&gt;, IEnumerable&lt;IdfObject&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, IEnumerable&lt;ResultSet&gt;&gt; GroupByBlock(this IEnumerable&lt;ResultSet&gt; results, IEnumerable&lt;IdfObject&gt; Idf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>Idf</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Dictionary</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GroupByComponent_" data-uid="EpNet.Results.ExtensionMethods.GroupByComponent*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GroupByComponent_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Collections_Generic_IEnumerable_System_String__" data-uid="EpNet.Results.ExtensionMethods.GroupByComponent(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Collections.Generic.IEnumerable{System.String})">
+  GroupByComponent(IEnumerable&lt;ResultSet&gt;, IEnumerable&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, IEnumerable&lt;ResultSet&gt;&gt; GroupByComponent(this IEnumerable&lt;ResultSet&gt; results, IEnumerable&lt;string&gt; componentSubstrings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>componentSubstrings</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Dictionary</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_GroupByZone_" data-uid="EpNet.Results.ExtensionMethods.GroupByZone*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_GroupByZone_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Collections_Generic_IEnumerable_EpNet_IdfObject__" data-uid="EpNet.Results.ExtensionMethods.GroupByZone(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Collections.Generic.IEnumerable{EpNet.IdfObject})">
+  GroupByZone(IEnumerable&lt;ResultSet&gt;, IEnumerable&lt;IdfObject&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, IEnumerable&lt;ResultSet&gt;&gt; GroupByZone(this IEnumerable&lt;ResultSet&gt; results, IEnumerable&lt;IdfObject&gt; Idf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>Idf</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Dictionary</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_SetReportType_" data-uid="EpNet.Results.ExtensionMethods.SetReportType*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_SetReportType_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_String_" data-uid="EpNet.Results.ExtensionMethods.SetReportType(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.String)">
+  SetReportType(IEnumerable&lt;ResultSet&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; SetReportType(this IEnumerable&lt;ResultSet&gt; results, string reportType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>reportType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_SetUnits_" data-uid="EpNet.Results.ExtensionMethods.SetUnits*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_SetUnits_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_String_" data-uid="EpNet.Results.ExtensionMethods.SetUnits(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.String)">
+  SetUnits(IEnumerable&lt;ResultSet&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; SetUnits(this IEnumerable&lt;ResultSet&gt; results, string units)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>units</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="EpNet_Results_ExtensionMethods_Sum_" data-uid="EpNet.Results.ExtensionMethods.Sum*"></a>
 
   <h3 id="EpNet_Results_ExtensionMethods_Sum_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__" data-uid="EpNet.Results.ExtensionMethods.Sum(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})">
@@ -215,7 +1163,7 @@ Class ExtensionMethods
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Sums a list of result sets.</p>
+  <div class="markdown level1 summary"><p>Sums a list of result sets. If more than one frequency, picks the shorter one.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -225,7 +1173,7 @@ Class ExtensionMethods
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>results</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -234,6 +1182,114 @@ Class ExtensionMethods
     <dt><a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a></dt>
     <dd><p>Resulting Result Set.</p>
 </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_SumAll_" data-uid="EpNet.Results.ExtensionMethods.SumAll*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_SumAll_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__" data-uid="EpNet.Results.ExtensionMethods.SumAll(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})">
+  SumAll(IEnumerable&lt;ResultSet&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; SumAll(this IEnumerable&lt;ResultSet&gt; mixedResults)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mixedResults</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_ToAnnual_" data-uid="EpNet.Results.ExtensionMethods.ToAnnual*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_ToAnnual_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__" data-uid="EpNet.Results.ExtensionMethods.ToAnnual(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})">
+  ToAnnual(IEnumerable&lt;ResultSet&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; ToAnnual(this IEnumerable&lt;ResultSet&gt; results)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_ToDaily_" data-uid="EpNet.Results.ExtensionMethods.ToDaily*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_ToDaily_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__" data-uid="EpNet.Results.ExtensionMethods.ToDaily(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})">
+  ToDaily(IEnumerable&lt;ResultSet&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; ToDaily(this IEnumerable&lt;ResultSet&gt; results)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
   </dl>
 
 
@@ -263,7 +1319,7 @@ Class ExtensionMethods
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>results</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
     <dd><p>List of result sets to process.</p>
 </dd>
     <dt><code>finalFrequency</code> <a class="xref" href="EpNet.Results.Frequencies.html">Frequencies</a></dt>
@@ -276,7 +1332,43 @@ Class ExtensionMethods
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_ToHourly_" data-uid="EpNet.Results.ExtensionMethods.ToHourly*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_ToHourly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__" data-uid="EpNet.Results.ExtensionMethods.ToHourly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})">
+  ToHourly(IEnumerable&lt;ResultSet&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; ToHourly(this IEnumerable&lt;ResultSet&gt; results)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -317,6 +1409,78 @@ Class ExtensionMethods
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
     <dd><p>Value in kWh</p>
 </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_ToMonthly_" data-uid="EpNet.Results.ExtensionMethods.ToMonthly*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_ToMonthly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__" data-uid="EpNet.Results.ExtensionMethods.ToMonthly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})">
+  ToMonthly(IEnumerable&lt;ResultSet&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; ToMonthly(this IEnumerable&lt;ResultSet&gt; results)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_ExtensionMethods_ToRunPeriod_" data-uid="EpNet.Results.ExtensionMethods.ToRunPeriod*"></a>
+
+  <h3 id="EpNet_Results_ExtensionMethods_ToRunPeriod_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__" data-uid="EpNet.Results.ExtensionMethods.ToRunPeriod(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})">
+  ToRunPeriod(IEnumerable&lt;ResultSet&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ResultSet&gt; ToRunPeriod(this IEnumerable&lt;ResultSet&gt; results)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd></dd>
   </dl>
 
 

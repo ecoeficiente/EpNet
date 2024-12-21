@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -77,7 +77,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -111,8 +111,8 @@ Class IdfReader
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</div>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">List</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</div>
       <div><span class="xref">IdfReader</span></div>
     </dd>
   </dl>
@@ -206,19 +206,27 @@ m["Conductivity"].Number = 0.03;</code></pre>
 
   <a id="EpNet_IdfReader__ctor_" data-uid="EpNet.IdfReader.#ctor*"></a>
 
-  <h3 id="EpNet_IdfReader__ctor" data-uid="EpNet.IdfReader.#ctor">
-  IdfReader()
+  <h3 id="EpNet_IdfReader__ctor_System_Boolean_" data-uid="EpNet.IdfReader.#ctor(System.Boolean)">
+  IdfReader(bool)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates an IdfReader object loading in.idf and Energy+.idd from the standard DesignBuilder installation path.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="EpNet.IdfReader.html">IdfReader</a> class.
+By default, this constructor loads <code>in.idf</code> and <code>Energy+.idd</code> from the standard DesignBuilder installation path.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IdfReader()</code></pre>
+    <pre><code class="lang-csharp hljs">public IdfReader(bool initializeDefaults = true)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializeDefaults</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If <code>true</code> (default), initializes the <a class="xref" href="EpNet.IdfReader.html">IdfReader</a> by loading <code>in.idf</code> and <code>Energy+.idd</code>
+from DesignBuilder's EnergyPlus installation path. If <code>false</code>, creates an empty <a class="xref" href="EpNet.IdfReader.html">IdfReader</a>.</p>
+</dd>
+  </dl>
 
 
 
@@ -542,7 +550,9 @@ m["Conductivity"].Number = 0.03;</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the encoding used for reading and writing the IDF file.
+Default encoding is UTF-8.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -626,7 +636,7 @@ m["Conductivity"].Number = 0.03;</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</dt>
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</dt>
     <dd><p>idf objects list from a class</p>
 </dd>
   </dl>
@@ -668,7 +678,7 @@ m["Conductivity"].Number = 0.03;</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</dt>
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</dt>
     <dd><p>idf objects list from a list of classes</p>
 </dd>
   </dl>
@@ -694,7 +704,8 @@ m["Conductivity"].Number = 0.03;</code></pre>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a new IdfObject to the IdfReader.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -704,7 +715,8 @@ m["Conductivity"].Number = 0.03;</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>value</code> <a class="xref" href="EpNet.IdfObject.html">IdfObject</a></dt>
-    <dd></dd>
+    <dd><p>The IdfObject to be added.</p>
+</dd>
   </dl>
 
 
@@ -859,7 +871,8 @@ Also as an extension method for DB.Api.Environment ApiEnvironment)</p>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Returns a new cloned instance of the IdfReader</p>
+  <div class="markdown level1 summary"><p>Creates a clone of the current IdfReader instance, including its list of IdfObjects.
+The cloned instance will have the same properties and a new copy of the IdfObjects.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -871,7 +884,7 @@ Also as an extension method for DB.Api.Environment ApiEnvironment)</p>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="EpNet.IdfReader.html">IdfReader</a></dt>
-    <dd><p>Cloned IdfReader instance</p>
+    <dd><p>A new IdfReader instance that is a deep clone of the current one.</p>
 </dd>
   </dl>
 
@@ -925,7 +938,7 @@ Also as an extension method for DB.Api.Environment ApiEnvironment)</p>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>List of all the idf objects from the specified idf classes.</p>
+  <div class="markdown level1 summary"><p>Retrieves a list of IdfObjects filtered by the specified IDF classes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -935,15 +948,16 @@ Also as an extension method for DB.Api.Environment ApiEnvironment)</p>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>idfClasses</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>idf classes to use as a filter</p>
+    <dt><code>idfClasses</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>An enumerable containing the IDF class names to filter.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</dt>
-    <dd></dd>
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="EpNet.IdfObject.html">IdfObject</a>&gt;</dt>
+    <dd><p>A list of IdfObjects that match the given IDF classes.</p>
+</dd>
   </dl>
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -77,7 +77,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -111,7 +111,7 @@ Class EsoReader
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">EsoReader</span></div>
     </dd>
   </dl>
@@ -127,6 +127,102 @@ Class EsoReader
   </div>
   <div>
       <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Serialize__1___0_">ExtensionMethods.Serialize&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Average_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__">ExtensionMethods.Average(IEnumerable&lt;ResultSet&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_AverageAll_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__">ExtensionMethods.AverageAll(IEnumerable&lt;ResultSet&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstAnnual_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__">ExtensionMethods.FirstAnnual(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstDaily_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__">ExtensionMethods.FirstDaily(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstHourly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__">ExtensionMethods.FirstHourly(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstMonthly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__">ExtensionMethods.FirstMonthly(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstRunPeriod_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__">ExtensionMethods.FirstRunPeriod(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstTimestep_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__">ExtensionMethods.FirstTimestep(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Get_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_String_System_String_EpNet_Results_Frequencies_">ExtensionMethods.Get(IEnumerable&lt;ResultSet&gt;, string, string, Frequencies)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetAll_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__">ExtensionMethods.GetAll(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetAnnual_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__">ExtensionMethods.GetAnnual(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetDaily_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__">ExtensionMethods.GetDaily(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetHourly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__">ExtensionMethods.GetHourly(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetMonthly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__">ExtensionMethods.GetMonthly(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetRunPeriod_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__">ExtensionMethods.GetRunPeriod(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetTimestep_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__">ExtensionMethods.GetTimestep(IEnumerable&lt;ResultSet&gt;, Func&lt;string, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZoneArea_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__EpNet_IdfReader_">ExtensionMethods.GetZoneArea(IEnumerable&lt;ResultSet&gt;, IdfReader)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZoneVolume_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__EpNet_IdfReader_">ExtensionMethods.GetZoneVolume(IEnumerable&lt;ResultSet&gt;, IdfReader)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZones_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__EpNet_IdfReader_">ExtensionMethods.GetZones(IEnumerable&lt;ResultSet&gt;, IdfReader)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GroupByBlock_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Collections_Generic_IEnumerable_EpNet_IdfObject__">ExtensionMethods.GroupByBlock(IEnumerable&lt;ResultSet&gt;, IEnumerable&lt;IdfObject&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GroupByComponent_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Collections_Generic_IEnumerable_System_String__">ExtensionMethods.GroupByComponent(IEnumerable&lt;ResultSet&gt;, IEnumerable&lt;string&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GroupByZone_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Collections_Generic_IEnumerable_EpNet_IdfObject__">ExtensionMethods.GroupByZone(IEnumerable&lt;ResultSet&gt;, IEnumerable&lt;IdfObject&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetReportType_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_String_">ExtensionMethods.SetReportType(IEnumerable&lt;ResultSet&gt;, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetUnits_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_String_">ExtensionMethods.SetUnits(IEnumerable&lt;ResultSet&gt;, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Sum_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__">ExtensionMethods.Sum(IEnumerable&lt;ResultSet&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SumAll_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__">ExtensionMethods.SumAll(IEnumerable&lt;ResultSet&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToAnnual_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__">ExtensionMethods.ToAnnual(IEnumerable&lt;ResultSet&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToDaily_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__">ExtensionMethods.ToDaily(IEnumerable&lt;ResultSet&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToFrequency_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__EpNet_Results_Frequencies_System_Boolean_">ExtensionMethods.ToFrequency(IEnumerable&lt;ResultSet&gt;, Frequencies, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToHourly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__">ExtensionMethods.ToHourly(IEnumerable&lt;ResultSet&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToMonthly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__">ExtensionMethods.ToMonthly(IEnumerable&lt;ResultSet&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToRunPeriod_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__">ExtensionMethods.ToRunPeriod(IEnumerable&lt;ResultSet&gt;)</a>
   </div>
   </dd></dl>
 
@@ -255,7 +351,7 @@ Class EsoReader
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -299,6 +395,84 @@ Class EsoReader
 
 
 
+  <a id="EpNet_Results_EsoReader_Item_" data-uid="EpNet.Results.EsoReader.Item*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_Item_System_Func_System_String_System_Boolean__" data-uid="EpNet.Results.EsoReader.Item(System.Func{System.String,System.Boolean})">
+  this[Func&lt;string, bool&gt;]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves all the ResultSets that meet the conditions specified by the filter function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet&gt; this[Func&lt;string, bool&gt; filter] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>A function that takes a string (component name) and returns a boolean indicating whether the ResultSet should be included.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd><p>An IEnumerable of ResultSet that meet the conditions specified by the filter function.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="EpNet_Results_EsoReader_Item_" data-uid="EpNet.Results.EsoReader.Item*"></a>
+
+  <h3 id="EpNet_Results_EsoReader_Item_System_String_" data-uid="EpNet.Results.EsoReader.Item(System.String)">
+  this[string]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves all the ResultSets that match the specified report type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ResultSet&gt; this[string reportType] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reportType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The report type to filter the ResultSets.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dd><p>An IEnumerable of ResultSet that match the specified report type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="EpNet_Results_EsoReader_OldResults_" data-uid="EpNet.Results.EsoReader.OldResults*"></a>
 
   <h3 id="EpNet_Results_EsoReader_OldResults" data-uid="EpNet.Results.EsoReader.OldResults">
@@ -320,7 +494,7 @@ Class EsoReader
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
     <dd><p>ResultSet list.</p>
 </dd>
   </dl>
@@ -353,7 +527,7 @@ Class EsoReader
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
     <dd><p>ResultSet list.</p>
 </dd>
   </dl>
@@ -483,7 +657,7 @@ Class EsoReader
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>results</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dt><code>results</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
     <dd><p>List of resultsets.</p>
 </dd>
   </dl>
@@ -596,7 +770,7 @@ Class EsoReader
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -633,7 +807,7 @@ Class EsoReader
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -672,7 +846,7 @@ Class EsoReader
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>&gt;</dt>
     <dd></dd>
   </dl>
 

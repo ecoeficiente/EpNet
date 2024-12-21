@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -77,7 +77,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -111,7 +111,7 @@ Class ResultSet
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">ResultSet</span></div>
     </dd>
   </dl>
@@ -127,6 +127,15 @@ Class ResultSet
   </div>
   <div>
       <a class="xref" href="EpNet.ExtensionMethods.html#EpNet_ExtensionMethods_Serialize__1___0_">ExtensionMethods.Serialize&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZone_EpNet_Results_ResultSet_EpNet_IdfReader_">ExtensionMethods.GetZone(ResultSet, IdfReader)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZoneArea_EpNet_Results_ResultSet_EpNet_IdfReader_">ExtensionMethods.GetZoneArea(ResultSet, IdfReader)</a>
+  </div>
+  <div>
+      <a class="xref" href="EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZoneVolume_EpNet_Results_ResultSet_EpNet_IdfReader_">ExtensionMethods.GetZoneVolume(ResultSet, IdfReader)</a>
   </div>
   </dd></dl>
 
@@ -325,7 +334,7 @@ Class ResultSet
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
     <dd><p>Numeric Result List.</p>
 </dd>
   </dl>
@@ -601,7 +610,7 @@ Class ResultSet
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>observed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dt><code>observed</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
     <dd><p>An IEnumerable of double representing the observed values.</p>
 </dd>
   </dl>
@@ -681,7 +690,7 @@ Class ResultSet
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><code>values</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -717,7 +726,7 @@ Class ResultSet
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><code>values</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -1370,7 +1379,7 @@ Class ResultSet
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>observed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dt><code>observed</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
     <dd><p>An enumerable of observed double values.</p>
 </dd>
   </dl>
@@ -1418,7 +1427,7 @@ Class ResultSet
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>observed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dt><code>observed</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
     <dd><p>An IEnumerable of double representing the observed values.</p>
 </dd>
   </dl>
@@ -1620,7 +1629,7 @@ Class ResultSet
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>observed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dt><code>observed</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
     <dd><p>An enumerable collection of doubles representing the actual observed values.</p>
 </dd>
   </dl>
@@ -1669,7 +1678,7 @@ relative to the mean observed value, providing a clear measure of prediction acc
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>observed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dt><code>observed</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
     <dd><p>An IEnumerable of double representing the observed values.</p>
 </dd>
   </dl>
@@ -1781,7 +1790,7 @@ relative to the mean observed value, providing a clear measure of prediction acc
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>observed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dt><code>observed</code> <span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
     <dd><p>An IEnumerable of double representing the observed values.</p>
 </dd>
   </dl>
@@ -2009,7 +2018,7 @@ relative to the mean observed value, providing a clear measure of prediction acc
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>.<a class="xref" href="EpNet.Results.ResultSet.TimeSeriesData.html">TimeSeriesData</a>&gt;</dt>
+    <dt><span class="xref">IEnumerable</span>&lt;<a class="xref" href="EpNet.Results.ResultSet.html">ResultSet</a>.<a class="xref" href="EpNet.Results.ResultSet.TimeSeriesData.html">TimeSeriesData</a>&gt;</dt>
     <dd><p>Time Series.</p>
 </dd>
   </dl>

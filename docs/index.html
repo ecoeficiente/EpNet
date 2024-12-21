@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
@@ -54,7 +54,7 @@
             <div id="navbar">
               <form class="search" role="search" id="search">
                 <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
@@ -63,23 +63,9 @@
     </header>
 
     <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
-          </div>
-        </div>
-      </div>
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
 
           <nav id="breadcrumb"></nav>
         </div>
@@ -94,8 +80,12 @@
 <p>EpNet library is developed and mantained by Germán Campos, <a href="https://www.ecoeficiente.es">www.ecoeficiente.es</a>.</p>
 </blockquote>
 <h2 id="latest-download-link">Latest download link:</h2>
-<p>01 Sep 2024 - Download latest <a href="https://github.com/ecoeficiente/EpNet/releases/download/v1.14/EpNet.dll" title="EpNet download">EpNet library</a>.</p>
-<p>And overwrite current <em>EpNet.dll</em> in *<em>c:\Program Files (x86)\DesignBuilder\Lib*</em> folder</p>
+<p>21 Dec 2024 - Download latest <a href="https://github.com/ecoeficiente/EpNet/releases/download/v1.15/EpNet.dll" title="EpNet download">EpNet library</a>.</p>
+<p>Overwrite current <em>EpNet.dll</em> in *<em>c:\Program Files (x86)\DesignBuilder\Lib*</em> folder</p>
+<p><strong>IMPORTANT</strong></p>
+<p>Right-click the file and select &quot;Properties.&quot;
+In the &quot;General&quot; tab, look at the bottom for a &quot;Security&quot; section.
+If there is no security section, you can skip this file. If there is, select the <strong>&quot;Unblock&quot;</strong> check box and click OK.</p>
 <h2 id="usage-examples">Usage examples:</h2>
 <p>The easiest way to understand how to use EpNet library is to look at the following examples and use the <a href="api/index.html">Api Reference</a>.</p>
 <p>The class that reads the idf file and stores the list of idf objects is <a class="xref" href="api/EpNet.IdfReader.html">IdfReader</a>.</p>

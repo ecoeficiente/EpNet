@@ -660,15 +660,6 @@ references:
   fullName.vb: EpNet.Field.Equals(Double)
   nameWithType: Field.Equals(double)
   nameWithType.vb: Field.Equals(Double)
-- uid: EpNet.Field.Equals(System.Object)
-  name: Equals(object)
-  href: api/EpNet.Field.html#EpNet_Field_Equals_System_Object_
-  commentId: M:EpNet.Field.Equals(System.Object)
-  name.vb: Equals(Object)
-  fullName: EpNet.Field.Equals(object)
-  fullName.vb: EpNet.Field.Equals(Object)
-  nameWithType: Field.Equals(object)
-  nameWithType.vb: Field.Equals(Object)
 - uid: EpNet.Field.Equals(System.String)
   name: Equals(string)
   href: api/EpNet.Field.html#EpNet_Field_Equals_System_String_
@@ -1389,6 +1380,12 @@ references:
   commentId: M:EpNet.IdfObject.Clone
   fullName: EpNet.IdfObject.Clone()
   nameWithType: IdfObject.Clone()
+- uid: EpNet.IdfObject.Clone(EpNet.IdfReader)
+  name: Clone(IdfReader)
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_Clone_EpNet_IdfReader_
+  commentId: M:EpNet.IdfObject.Clone(EpNet.IdfReader)
+  fullName: EpNet.IdfObject.Clone(EpNet.IdfReader)
+  nameWithType: IdfObject.Clone(IdfReader)
 - uid: EpNet.IdfObject.Clone*
   name: Clone
   href: api/EpNet.IdfObject.html#EpNet_IdfObject_Clone_
@@ -1438,6 +1435,19 @@ references:
   isSpec: "True"
   fullName: EpNet.IdfObject.Count
   nameWithType: IdfObject.Count
+- uid: EpNet.IdfObject.DefaultComments
+  name: DefaultComments()
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_DefaultComments
+  commentId: M:EpNet.IdfObject.DefaultComments
+  fullName: EpNet.IdfObject.DefaultComments()
+  nameWithType: IdfObject.DefaultComments()
+- uid: EpNet.IdfObject.DefaultComments*
+  name: DefaultComments
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_DefaultComments_
+  commentId: Overload:EpNet.IdfObject.DefaultComments
+  isSpec: "True"
+  fullName: EpNet.IdfObject.DefaultComments
+  nameWithType: IdfObject.DefaultComments
 - uid: EpNet.IdfObject.Equals(EpNet.IdfObject)
   name: Equals(IdfObject)
   href: api/EpNet.IdfObject.html#EpNet_IdfObject_Equals_EpNet_IdfObject_
@@ -1477,6 +1487,88 @@ references:
   isSpec: "True"
   fullName: EpNet.IdfObject.Fields
   nameWithType: IdfObject.Fields
+- uid: EpNet.IdfObject.GetComment(System.Int32)
+  name: GetComment(int)
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_GetComment_System_Int32_
+  commentId: M:EpNet.IdfObject.GetComment(System.Int32)
+  name.vb: GetComment(Integer)
+  fullName: EpNet.IdfObject.GetComment(int)
+  fullName.vb: EpNet.IdfObject.GetComment(Integer)
+  nameWithType: IdfObject.GetComment(int)
+  nameWithType.vb: IdfObject.GetComment(Integer)
+- uid: EpNet.IdfObject.GetComment*
+  name: GetComment
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_GetComment_
+  commentId: Overload:EpNet.IdfObject.GetComment
+  isSpec: "True"
+  fullName: EpNet.IdfObject.GetComment
+  nameWithType: IdfObject.GetComment
+- uid: EpNet.IdfObject.GetName(System.Int32)
+  name: GetName(int)
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_GetName_System_Int32_
+  commentId: M:EpNet.IdfObject.GetName(System.Int32)
+  name.vb: GetName(Integer)
+  fullName: EpNet.IdfObject.GetName(int)
+  fullName.vb: EpNet.IdfObject.GetName(Integer)
+  nameWithType: IdfObject.GetName(int)
+  nameWithType.vb: IdfObject.GetName(Integer)
+- uid: EpNet.IdfObject.GetName*
+  name: GetName
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_GetName_
+  commentId: Overload:EpNet.IdfObject.GetName
+  isSpec: "True"
+  fullName: EpNet.IdfObject.GetName
+  nameWithType: IdfObject.GetName
+- uid: EpNet.IdfObject.GetNumber(System.Int32)
+  name: GetNumber(int)
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_GetNumber_System_Int32_
+  commentId: M:EpNet.IdfObject.GetNumber(System.Int32)
+  name.vb: GetNumber(Integer)
+  fullName: EpNet.IdfObject.GetNumber(int)
+  fullName.vb: EpNet.IdfObject.GetNumber(Integer)
+  nameWithType: IdfObject.GetNumber(int)
+  nameWithType.vb: IdfObject.GetNumber(Integer)
+- uid: EpNet.IdfObject.GetNumber(System.String)
+  name: GetNumber(string)
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_GetNumber_System_String_
+  commentId: M:EpNet.IdfObject.GetNumber(System.String)
+  name.vb: GetNumber(String)
+  fullName: EpNet.IdfObject.GetNumber(string)
+  fullName.vb: EpNet.IdfObject.GetNumber(String)
+  nameWithType: IdfObject.GetNumber(string)
+  nameWithType.vb: IdfObject.GetNumber(String)
+- uid: EpNet.IdfObject.GetNumber*
+  name: GetNumber
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_GetNumber_
+  commentId: Overload:EpNet.IdfObject.GetNumber
+  isSpec: "True"
+  fullName: EpNet.IdfObject.GetNumber
+  nameWithType: IdfObject.GetNumber
+- uid: EpNet.IdfObject.GetValue(System.Int32)
+  name: GetValue(int)
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_GetValue_System_Int32_
+  commentId: M:EpNet.IdfObject.GetValue(System.Int32)
+  name.vb: GetValue(Integer)
+  fullName: EpNet.IdfObject.GetValue(int)
+  fullName.vb: EpNet.IdfObject.GetValue(Integer)
+  nameWithType: IdfObject.GetValue(int)
+  nameWithType.vb: IdfObject.GetValue(Integer)
+- uid: EpNet.IdfObject.GetValue(System.String)
+  name: GetValue(string)
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_GetValue_System_String_
+  commentId: M:EpNet.IdfObject.GetValue(System.String)
+  name.vb: GetValue(String)
+  fullName: EpNet.IdfObject.GetValue(string)
+  fullName.vb: EpNet.IdfObject.GetValue(String)
+  nameWithType: IdfObject.GetValue(string)
+  nameWithType.vb: IdfObject.GetValue(String)
+- uid: EpNet.IdfObject.GetValue*
+  name: GetValue
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_GetValue_
+  commentId: Overload:EpNet.IdfObject.GetValue
+  isSpec: "True"
+  fullName: EpNet.IdfObject.GetValue
+  nameWithType: IdfObject.GetValue
 - uid: EpNet.IdfObject.IdfClass
   name: IdfClass
   href: api/EpNet.IdfObject.html#EpNet_IdfObject_IdfClass
@@ -1621,6 +1713,72 @@ references:
   isSpec: "True"
   fullName: EpNet.IdfObject.RemoveFields
   nameWithType: IdfObject.RemoveFields
+- uid: EpNet.IdfObject.SetComment(System.Int32,System.String)
+  name: SetComment(int, string)
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_SetComment_System_Int32_System_String_
+  commentId: M:EpNet.IdfObject.SetComment(System.Int32,System.String)
+  name.vb: SetComment(Integer, String)
+  fullName: EpNet.IdfObject.SetComment(int, string)
+  fullName.vb: EpNet.IdfObject.SetComment(Integer, String)
+  nameWithType: IdfObject.SetComment(int, string)
+  nameWithType.vb: IdfObject.SetComment(Integer, String)
+- uid: EpNet.IdfObject.SetComment*
+  name: SetComment
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_SetComment_
+  commentId: Overload:EpNet.IdfObject.SetComment
+  isSpec: "True"
+  fullName: EpNet.IdfObject.SetComment
+  nameWithType: IdfObject.SetComment
+- uid: EpNet.IdfObject.SetNumber(System.Int32,System.Double)
+  name: SetNumber(int, double)
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_SetNumber_System_Int32_System_Double_
+  commentId: M:EpNet.IdfObject.SetNumber(System.Int32,System.Double)
+  name.vb: SetNumber(Integer, Double)
+  fullName: EpNet.IdfObject.SetNumber(int, double)
+  fullName.vb: EpNet.IdfObject.SetNumber(Integer, Double)
+  nameWithType: IdfObject.SetNumber(int, double)
+  nameWithType.vb: IdfObject.SetNumber(Integer, Double)
+- uid: EpNet.IdfObject.SetNumber(System.String,System.Double)
+  name: SetNumber(string, double)
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_SetNumber_System_String_System_Double_
+  commentId: M:EpNet.IdfObject.SetNumber(System.String,System.Double)
+  name.vb: SetNumber(String, Double)
+  fullName: EpNet.IdfObject.SetNumber(string, double)
+  fullName.vb: EpNet.IdfObject.SetNumber(String, Double)
+  nameWithType: IdfObject.SetNumber(string, double)
+  nameWithType.vb: IdfObject.SetNumber(String, Double)
+- uid: EpNet.IdfObject.SetNumber*
+  name: SetNumber
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_SetNumber_
+  commentId: Overload:EpNet.IdfObject.SetNumber
+  isSpec: "True"
+  fullName: EpNet.IdfObject.SetNumber
+  nameWithType: IdfObject.SetNumber
+- uid: EpNet.IdfObject.SetValue(System.Int32,System.String)
+  name: SetValue(int, string)
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_SetValue_System_Int32_System_String_
+  commentId: M:EpNet.IdfObject.SetValue(System.Int32,System.String)
+  name.vb: SetValue(Integer, String)
+  fullName: EpNet.IdfObject.SetValue(int, string)
+  fullName.vb: EpNet.IdfObject.SetValue(Integer, String)
+  nameWithType: IdfObject.SetValue(int, string)
+  nameWithType.vb: IdfObject.SetValue(Integer, String)
+- uid: EpNet.IdfObject.SetValue(System.String,System.String)
+  name: SetValue(string, string)
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_SetValue_System_String_System_String_
+  commentId: M:EpNet.IdfObject.SetValue(System.String,System.String)
+  name.vb: SetValue(String, String)
+  fullName: EpNet.IdfObject.SetValue(string, string)
+  fullName.vb: EpNet.IdfObject.SetValue(String, String)
+  nameWithType: IdfObject.SetValue(string, string)
+  nameWithType.vb: IdfObject.SetValue(String, String)
+- uid: EpNet.IdfObject.SetValue*
+  name: SetValue
+  href: api/EpNet.IdfObject.html#EpNet_IdfObject_SetValue_
+  commentId: Overload:EpNet.IdfObject.SetValue
+  isSpec: "True"
+  fullName: EpNet.IdfObject.SetValue
+  nameWithType: IdfObject.SetValue
 - uid: EpNet.IdfObject.ToString
   name: ToString()
   href: api/EpNet.IdfObject.html#EpNet_IdfObject_ToString
@@ -1703,15 +1861,15 @@ references:
   commentId: T:EpNet.IdfReader
   fullName: EpNet.IdfReader
   nameWithType: IdfReader
-- uid: EpNet.IdfReader.#ctor
-  name: IdfReader()
-  href: api/EpNet.IdfReader.html#EpNet_IdfReader__ctor
-  commentId: M:EpNet.IdfReader.#ctor
-  name.vb: New()
-  fullName: EpNet.IdfReader.IdfReader()
-  fullName.vb: EpNet.IdfReader.New()
-  nameWithType: IdfReader.IdfReader()
-  nameWithType.vb: IdfReader.New()
+- uid: EpNet.IdfReader.#ctor(System.Boolean)
+  name: IdfReader(bool)
+  href: api/EpNet.IdfReader.html#EpNet_IdfReader__ctor_System_Boolean_
+  commentId: M:EpNet.IdfReader.#ctor(System.Boolean)
+  name.vb: New(Boolean)
+  fullName: EpNet.IdfReader.IdfReader(bool)
+  fullName.vb: EpNet.IdfReader.New(Boolean)
+  nameWithType: IdfReader.IdfReader(bool)
+  nameWithType.vb: IdfReader.New(Boolean)
 - uid: EpNet.IdfReader.#ctor(System.String)
   name: IdfReader(string)
   href: api/EpNet.IdfReader.html#EpNet_IdfReader__ctor_System_String_
@@ -2691,6 +2849,22 @@ references:
   isSpec: "True"
   fullName: EpNet.Library.Library.IsBaseline
   nameWithType: Library.IsBaseline
+- uid: EpNet.Library.Library.OnOffDCV(System.Double,System.Double,System.Func{System.String,System.Boolean})
+  name: OnOffDCV(double, double, Func<string, bool>)
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_OnOffDCV_System_Double_System_Double_System_Func_System_String_System_Boolean__
+  commentId: M:EpNet.Library.Library.OnOffDCV(System.Double,System.Double,System.Func{System.String,System.Boolean})
+  name.vb: OnOffDCV(Double, Double, Func(Of String, Boolean))
+  fullName: EpNet.Library.Library.OnOffDCV(double, double, System.Func<string, bool>)
+  fullName.vb: EpNet.Library.Library.OnOffDCV(Double, Double, System.Func(Of String, Boolean))
+  nameWithType: Library.OnOffDCV(double, double, Func<string, bool>)
+  nameWithType.vb: Library.OnOffDCV(Double, Double, Func(Of String, Boolean))
+- uid: EpNet.Library.Library.OnOffDCV*
+  name: OnOffDCV
+  href: api/EpNet.Library.Library.html#EpNet_Library_Library_OnOffDCV_
+  commentId: Overload:EpNet.Library.Library.OnOffDCV
+  isSpec: "True"
+  fullName: EpNet.Library.Library.OnOffDCV
+  nameWithType: Library.OnOffDCV
 - uid: EpNet.Library.Library.OutdoorAirFromZone(System.String,System.String[])
   name: OutdoorAirFromZone(string, params string[])
   href: api/EpNet.Library.Library.html#EpNet_Library_Library_OutdoorAirFromZone_System_String_System_String___
@@ -3434,6 +3608,34 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.EsoReader.Id
   nameWithType: EsoReader.Id
+- uid: EpNet.Results.EsoReader.Item(System.Func{System.String,System.Boolean})
+  name: this[Func<string, bool>]
+  href: api/EpNet.Results.EsoReader.html#EpNet_Results_EsoReader_Item_System_Func_System_String_System_Boolean__
+  commentId: P:EpNet.Results.EsoReader.Item(System.Func{System.String,System.Boolean})
+  name.vb: this[](Func(Of String, Boolean))
+  fullName: EpNet.Results.EsoReader.this[System.Func<string, bool>]
+  fullName.vb: EpNet.Results.EsoReader.this[](System.Func(Of String, Boolean))
+  nameWithType: EsoReader.this[Func<string, bool>]
+  nameWithType.vb: EsoReader.this[](Func(Of String, Boolean))
+- uid: EpNet.Results.EsoReader.Item(System.String)
+  name: this[string]
+  href: api/EpNet.Results.EsoReader.html#EpNet_Results_EsoReader_Item_System_String_
+  commentId: P:EpNet.Results.EsoReader.Item(System.String)
+  name.vb: this[](String)
+  fullName: EpNet.Results.EsoReader.this[string]
+  fullName.vb: EpNet.Results.EsoReader.this[](String)
+  nameWithType: EsoReader.this[string]
+  nameWithType.vb: EsoReader.this[](String)
+- uid: EpNet.Results.EsoReader.Item*
+  name: this
+  href: api/EpNet.Results.EsoReader.html#EpNet_Results_EsoReader_Item_
+  commentId: Overload:EpNet.Results.EsoReader.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: EpNet.Results.EsoReader.this
+  fullName.vb: EpNet.Results.EsoReader.this[]
+  nameWithType: EsoReader.this
+  nameWithType.vb: EsoReader.this[]
 - uid: EpNet.Results.EsoReader.OldResults
   name: OldResults
   href: api/EpNet.Results.EsoReader.html#EpNet_Results_EsoReader_OldResults
@@ -3554,6 +3756,118 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ExtensionMethods.Average
   nameWithType: ExtensionMethods.Average
+- uid: EpNet.Results.ExtensionMethods.AverageAll(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
+  name: AverageAll(IEnumerable<ResultSet>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_AverageAll_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__
+  commentId: M:EpNet.Results.ExtensionMethods.AverageAll(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
+  name.vb: AverageAll(IEnumerable(Of ResultSet))
+  fullName: EpNet.Results.ExtensionMethods.AverageAll(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>)
+  fullName.vb: EpNet.Results.ExtensionMethods.AverageAll(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet))
+  nameWithType: ExtensionMethods.AverageAll(IEnumerable<ResultSet>)
+  nameWithType.vb: ExtensionMethods.AverageAll(IEnumerable(Of ResultSet))
+- uid: EpNet.Results.ExtensionMethods.AverageAll*
+  name: AverageAll
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_AverageAll_
+  commentId: Overload:EpNet.Results.ExtensionMethods.AverageAll
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.AverageAll
+  nameWithType: ExtensionMethods.AverageAll
+- uid: EpNet.Results.ExtensionMethods.FirstAnnual(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name: FirstAnnual(IEnumerable<ResultSet>, Func<string, bool>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstAnnual_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__
+  commentId: M:EpNet.Results.ExtensionMethods.FirstAnnual(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name.vb: FirstAnnual(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+  fullName: EpNet.Results.ExtensionMethods.FirstAnnual(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Func<string, bool>)
+  fullName.vb: EpNet.Results.ExtensionMethods.FirstAnnual(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Func(Of String, Boolean))
+  nameWithType: ExtensionMethods.FirstAnnual(IEnumerable<ResultSet>, Func<string, bool>)
+  nameWithType.vb: ExtensionMethods.FirstAnnual(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+- uid: EpNet.Results.ExtensionMethods.FirstAnnual*
+  name: FirstAnnual
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstAnnual_
+  commentId: Overload:EpNet.Results.ExtensionMethods.FirstAnnual
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.FirstAnnual
+  nameWithType: ExtensionMethods.FirstAnnual
+- uid: EpNet.Results.ExtensionMethods.FirstDaily(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name: FirstDaily(IEnumerable<ResultSet>, Func<string, bool>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstDaily_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__
+  commentId: M:EpNet.Results.ExtensionMethods.FirstDaily(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name.vb: FirstDaily(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+  fullName: EpNet.Results.ExtensionMethods.FirstDaily(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Func<string, bool>)
+  fullName.vb: EpNet.Results.ExtensionMethods.FirstDaily(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Func(Of String, Boolean))
+  nameWithType: ExtensionMethods.FirstDaily(IEnumerable<ResultSet>, Func<string, bool>)
+  nameWithType.vb: ExtensionMethods.FirstDaily(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+- uid: EpNet.Results.ExtensionMethods.FirstDaily*
+  name: FirstDaily
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstDaily_
+  commentId: Overload:EpNet.Results.ExtensionMethods.FirstDaily
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.FirstDaily
+  nameWithType: ExtensionMethods.FirstDaily
+- uid: EpNet.Results.ExtensionMethods.FirstHourly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name: FirstHourly(IEnumerable<ResultSet>, Func<string, bool>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstHourly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__
+  commentId: M:EpNet.Results.ExtensionMethods.FirstHourly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name.vb: FirstHourly(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+  fullName: EpNet.Results.ExtensionMethods.FirstHourly(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Func<string, bool>)
+  fullName.vb: EpNet.Results.ExtensionMethods.FirstHourly(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Func(Of String, Boolean))
+  nameWithType: ExtensionMethods.FirstHourly(IEnumerable<ResultSet>, Func<string, bool>)
+  nameWithType.vb: ExtensionMethods.FirstHourly(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+- uid: EpNet.Results.ExtensionMethods.FirstHourly*
+  name: FirstHourly
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstHourly_
+  commentId: Overload:EpNet.Results.ExtensionMethods.FirstHourly
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.FirstHourly
+  nameWithType: ExtensionMethods.FirstHourly
+- uid: EpNet.Results.ExtensionMethods.FirstMonthly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name: FirstMonthly(IEnumerable<ResultSet>, Func<string, bool>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstMonthly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__
+  commentId: M:EpNet.Results.ExtensionMethods.FirstMonthly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name.vb: FirstMonthly(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+  fullName: EpNet.Results.ExtensionMethods.FirstMonthly(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Func<string, bool>)
+  fullName.vb: EpNet.Results.ExtensionMethods.FirstMonthly(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Func(Of String, Boolean))
+  nameWithType: ExtensionMethods.FirstMonthly(IEnumerable<ResultSet>, Func<string, bool>)
+  nameWithType.vb: ExtensionMethods.FirstMonthly(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+- uid: EpNet.Results.ExtensionMethods.FirstMonthly*
+  name: FirstMonthly
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstMonthly_
+  commentId: Overload:EpNet.Results.ExtensionMethods.FirstMonthly
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.FirstMonthly
+  nameWithType: ExtensionMethods.FirstMonthly
+- uid: EpNet.Results.ExtensionMethods.FirstRunPeriod(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name: FirstRunPeriod(IEnumerable<ResultSet>, Func<string, bool>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstRunPeriod_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__
+  commentId: M:EpNet.Results.ExtensionMethods.FirstRunPeriod(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name.vb: FirstRunPeriod(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+  fullName: EpNet.Results.ExtensionMethods.FirstRunPeriod(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Func<string, bool>)
+  fullName.vb: EpNet.Results.ExtensionMethods.FirstRunPeriod(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Func(Of String, Boolean))
+  nameWithType: ExtensionMethods.FirstRunPeriod(IEnumerable<ResultSet>, Func<string, bool>)
+  nameWithType.vb: ExtensionMethods.FirstRunPeriod(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+- uid: EpNet.Results.ExtensionMethods.FirstRunPeriod*
+  name: FirstRunPeriod
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstRunPeriod_
+  commentId: Overload:EpNet.Results.ExtensionMethods.FirstRunPeriod
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.FirstRunPeriod
+  nameWithType: ExtensionMethods.FirstRunPeriod
+- uid: EpNet.Results.ExtensionMethods.FirstTimestep(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name: FirstTimestep(IEnumerable<ResultSet>, Func<string, bool>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstTimestep_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__
+  commentId: M:EpNet.Results.ExtensionMethods.FirstTimestep(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name.vb: FirstTimestep(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+  fullName: EpNet.Results.ExtensionMethods.FirstTimestep(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Func<string, bool>)
+  fullName.vb: EpNet.Results.ExtensionMethods.FirstTimestep(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Func(Of String, Boolean))
+  nameWithType: ExtensionMethods.FirstTimestep(IEnumerable<ResultSet>, Func<string, bool>)
+  nameWithType.vb: ExtensionMethods.FirstTimestep(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+- uid: EpNet.Results.ExtensionMethods.FirstTimestep*
+  name: FirstTimestep
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_FirstTimestep_
+  commentId: Overload:EpNet.Results.ExtensionMethods.FirstTimestep
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.FirstTimestep
+  nameWithType: ExtensionMethods.FirstTimestep
 - uid: EpNet.Results.ExtensionMethods.Get(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.String,System.String,EpNet.Results.Frequencies)
   name: Get(IEnumerable<ResultSet>, string, string, Frequencies)
   href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Get_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_String_System_String_EpNet_Results_Frequencies_
@@ -3570,6 +3884,271 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ExtensionMethods.Get
   nameWithType: ExtensionMethods.Get
+- uid: EpNet.Results.ExtensionMethods.GetAll(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name: GetAll(IEnumerable<ResultSet>, Func<string, bool>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetAll_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__
+  commentId: M:EpNet.Results.ExtensionMethods.GetAll(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name.vb: GetAll(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+  fullName: EpNet.Results.ExtensionMethods.GetAll(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Func<string, bool>)
+  fullName.vb: EpNet.Results.ExtensionMethods.GetAll(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Func(Of String, Boolean))
+  nameWithType: ExtensionMethods.GetAll(IEnumerable<ResultSet>, Func<string, bool>)
+  nameWithType.vb: ExtensionMethods.GetAll(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+- uid: EpNet.Results.ExtensionMethods.GetAll*
+  name: GetAll
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetAll_
+  commentId: Overload:EpNet.Results.ExtensionMethods.GetAll
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.GetAll
+  nameWithType: ExtensionMethods.GetAll
+- uid: EpNet.Results.ExtensionMethods.GetAnnual(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name: GetAnnual(IEnumerable<ResultSet>, Func<string, bool>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetAnnual_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__
+  commentId: M:EpNet.Results.ExtensionMethods.GetAnnual(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name.vb: GetAnnual(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+  fullName: EpNet.Results.ExtensionMethods.GetAnnual(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Func<string, bool>)
+  fullName.vb: EpNet.Results.ExtensionMethods.GetAnnual(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Func(Of String, Boolean))
+  nameWithType: ExtensionMethods.GetAnnual(IEnumerable<ResultSet>, Func<string, bool>)
+  nameWithType.vb: ExtensionMethods.GetAnnual(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+- uid: EpNet.Results.ExtensionMethods.GetAnnual*
+  name: GetAnnual
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetAnnual_
+  commentId: Overload:EpNet.Results.ExtensionMethods.GetAnnual
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.GetAnnual
+  nameWithType: ExtensionMethods.GetAnnual
+- uid: EpNet.Results.ExtensionMethods.GetDaily(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name: GetDaily(IEnumerable<ResultSet>, Func<string, bool>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetDaily_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__
+  commentId: M:EpNet.Results.ExtensionMethods.GetDaily(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name.vb: GetDaily(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+  fullName: EpNet.Results.ExtensionMethods.GetDaily(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Func<string, bool>)
+  fullName.vb: EpNet.Results.ExtensionMethods.GetDaily(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Func(Of String, Boolean))
+  nameWithType: ExtensionMethods.GetDaily(IEnumerable<ResultSet>, Func<string, bool>)
+  nameWithType.vb: ExtensionMethods.GetDaily(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+- uid: EpNet.Results.ExtensionMethods.GetDaily*
+  name: GetDaily
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetDaily_
+  commentId: Overload:EpNet.Results.ExtensionMethods.GetDaily
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.GetDaily
+  nameWithType: ExtensionMethods.GetDaily
+- uid: EpNet.Results.ExtensionMethods.GetHourly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name: GetHourly(IEnumerable<ResultSet>, Func<string, bool>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetHourly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__
+  commentId: M:EpNet.Results.ExtensionMethods.GetHourly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name.vb: GetHourly(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+  fullName: EpNet.Results.ExtensionMethods.GetHourly(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Func<string, bool>)
+  fullName.vb: EpNet.Results.ExtensionMethods.GetHourly(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Func(Of String, Boolean))
+  nameWithType: ExtensionMethods.GetHourly(IEnumerable<ResultSet>, Func<string, bool>)
+  nameWithType.vb: ExtensionMethods.GetHourly(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+- uid: EpNet.Results.ExtensionMethods.GetHourly*
+  name: GetHourly
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetHourly_
+  commentId: Overload:EpNet.Results.ExtensionMethods.GetHourly
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.GetHourly
+  nameWithType: ExtensionMethods.GetHourly
+- uid: EpNet.Results.ExtensionMethods.GetMonthly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name: GetMonthly(IEnumerable<ResultSet>, Func<string, bool>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetMonthly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__
+  commentId: M:EpNet.Results.ExtensionMethods.GetMonthly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name.vb: GetMonthly(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+  fullName: EpNet.Results.ExtensionMethods.GetMonthly(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Func<string, bool>)
+  fullName.vb: EpNet.Results.ExtensionMethods.GetMonthly(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Func(Of String, Boolean))
+  nameWithType: ExtensionMethods.GetMonthly(IEnumerable<ResultSet>, Func<string, bool>)
+  nameWithType.vb: ExtensionMethods.GetMonthly(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+- uid: EpNet.Results.ExtensionMethods.GetMonthly*
+  name: GetMonthly
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetMonthly_
+  commentId: Overload:EpNet.Results.ExtensionMethods.GetMonthly
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.GetMonthly
+  nameWithType: ExtensionMethods.GetMonthly
+- uid: EpNet.Results.ExtensionMethods.GetRunPeriod(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name: GetRunPeriod(IEnumerable<ResultSet>, Func<string, bool>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetRunPeriod_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__
+  commentId: M:EpNet.Results.ExtensionMethods.GetRunPeriod(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name.vb: GetRunPeriod(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+  fullName: EpNet.Results.ExtensionMethods.GetRunPeriod(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Func<string, bool>)
+  fullName.vb: EpNet.Results.ExtensionMethods.GetRunPeriod(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Func(Of String, Boolean))
+  nameWithType: ExtensionMethods.GetRunPeriod(IEnumerable<ResultSet>, Func<string, bool>)
+  nameWithType.vb: ExtensionMethods.GetRunPeriod(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+- uid: EpNet.Results.ExtensionMethods.GetRunPeriod*
+  name: GetRunPeriod
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetRunPeriod_
+  commentId: Overload:EpNet.Results.ExtensionMethods.GetRunPeriod
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.GetRunPeriod
+  nameWithType: ExtensionMethods.GetRunPeriod
+- uid: EpNet.Results.ExtensionMethods.GetTimestep(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name: GetTimestep(IEnumerable<ResultSet>, Func<string, bool>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetTimestep_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Func_System_String_System_Boolean__
+  commentId: M:EpNet.Results.ExtensionMethods.GetTimestep(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Func{System.String,System.Boolean})
+  name.vb: GetTimestep(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+  fullName: EpNet.Results.ExtensionMethods.GetTimestep(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Func<string, bool>)
+  fullName.vb: EpNet.Results.ExtensionMethods.GetTimestep(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Func(Of String, Boolean))
+  nameWithType: ExtensionMethods.GetTimestep(IEnumerable<ResultSet>, Func<string, bool>)
+  nameWithType.vb: ExtensionMethods.GetTimestep(IEnumerable(Of ResultSet), Func(Of String, Boolean))
+- uid: EpNet.Results.ExtensionMethods.GetTimestep*
+  name: GetTimestep
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetTimestep_
+  commentId: Overload:EpNet.Results.ExtensionMethods.GetTimestep
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.GetTimestep
+  nameWithType: ExtensionMethods.GetTimestep
+- uid: EpNet.Results.ExtensionMethods.GetZone(EpNet.Results.ResultSet,EpNet.IdfReader)
+  name: GetZone(ResultSet, IdfReader)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZone_EpNet_Results_ResultSet_EpNet_IdfReader_
+  commentId: M:EpNet.Results.ExtensionMethods.GetZone(EpNet.Results.ResultSet,EpNet.IdfReader)
+  fullName: EpNet.Results.ExtensionMethods.GetZone(EpNet.Results.ResultSet, EpNet.IdfReader)
+  nameWithType: ExtensionMethods.GetZone(ResultSet, IdfReader)
+- uid: EpNet.Results.ExtensionMethods.GetZone*
+  name: GetZone
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZone_
+  commentId: Overload:EpNet.Results.ExtensionMethods.GetZone
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.GetZone
+  nameWithType: ExtensionMethods.GetZone
+- uid: EpNet.Results.ExtensionMethods.GetZoneArea(EpNet.Results.ResultSet,EpNet.IdfReader)
+  name: GetZoneArea(ResultSet, IdfReader)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZoneArea_EpNet_Results_ResultSet_EpNet_IdfReader_
+  commentId: M:EpNet.Results.ExtensionMethods.GetZoneArea(EpNet.Results.ResultSet,EpNet.IdfReader)
+  fullName: EpNet.Results.ExtensionMethods.GetZoneArea(EpNet.Results.ResultSet, EpNet.IdfReader)
+  nameWithType: ExtensionMethods.GetZoneArea(ResultSet, IdfReader)
+- uid: EpNet.Results.ExtensionMethods.GetZoneArea(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},EpNet.IdfReader)
+  name: GetZoneArea(IEnumerable<ResultSet>, IdfReader)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZoneArea_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__EpNet_IdfReader_
+  commentId: M:EpNet.Results.ExtensionMethods.GetZoneArea(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},EpNet.IdfReader)
+  name.vb: GetZoneArea(IEnumerable(Of ResultSet), IdfReader)
+  fullName: EpNet.Results.ExtensionMethods.GetZoneArea(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, EpNet.IdfReader)
+  fullName.vb: EpNet.Results.ExtensionMethods.GetZoneArea(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), EpNet.IdfReader)
+  nameWithType: ExtensionMethods.GetZoneArea(IEnumerable<ResultSet>, IdfReader)
+  nameWithType.vb: ExtensionMethods.GetZoneArea(IEnumerable(Of ResultSet), IdfReader)
+- uid: EpNet.Results.ExtensionMethods.GetZoneArea*
+  name: GetZoneArea
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZoneArea_
+  commentId: Overload:EpNet.Results.ExtensionMethods.GetZoneArea
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.GetZoneArea
+  nameWithType: ExtensionMethods.GetZoneArea
+- uid: EpNet.Results.ExtensionMethods.GetZoneVolume(EpNet.Results.ResultSet,EpNet.IdfReader)
+  name: GetZoneVolume(ResultSet, IdfReader)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZoneVolume_EpNet_Results_ResultSet_EpNet_IdfReader_
+  commentId: M:EpNet.Results.ExtensionMethods.GetZoneVolume(EpNet.Results.ResultSet,EpNet.IdfReader)
+  fullName: EpNet.Results.ExtensionMethods.GetZoneVolume(EpNet.Results.ResultSet, EpNet.IdfReader)
+  nameWithType: ExtensionMethods.GetZoneVolume(ResultSet, IdfReader)
+- uid: EpNet.Results.ExtensionMethods.GetZoneVolume(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},EpNet.IdfReader)
+  name: GetZoneVolume(IEnumerable<ResultSet>, IdfReader)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZoneVolume_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__EpNet_IdfReader_
+  commentId: M:EpNet.Results.ExtensionMethods.GetZoneVolume(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},EpNet.IdfReader)
+  name.vb: GetZoneVolume(IEnumerable(Of ResultSet), IdfReader)
+  fullName: EpNet.Results.ExtensionMethods.GetZoneVolume(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, EpNet.IdfReader)
+  fullName.vb: EpNet.Results.ExtensionMethods.GetZoneVolume(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), EpNet.IdfReader)
+  nameWithType: ExtensionMethods.GetZoneVolume(IEnumerable<ResultSet>, IdfReader)
+  nameWithType.vb: ExtensionMethods.GetZoneVolume(IEnumerable(Of ResultSet), IdfReader)
+- uid: EpNet.Results.ExtensionMethods.GetZoneVolume*
+  name: GetZoneVolume
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZoneVolume_
+  commentId: Overload:EpNet.Results.ExtensionMethods.GetZoneVolume
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.GetZoneVolume
+  nameWithType: ExtensionMethods.GetZoneVolume
+- uid: EpNet.Results.ExtensionMethods.GetZones(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},EpNet.IdfReader)
+  name: GetZones(IEnumerable<ResultSet>, IdfReader)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZones_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__EpNet_IdfReader_
+  commentId: M:EpNet.Results.ExtensionMethods.GetZones(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},EpNet.IdfReader)
+  name.vb: GetZones(IEnumerable(Of ResultSet), IdfReader)
+  fullName: EpNet.Results.ExtensionMethods.GetZones(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, EpNet.IdfReader)
+  fullName.vb: EpNet.Results.ExtensionMethods.GetZones(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), EpNet.IdfReader)
+  nameWithType: ExtensionMethods.GetZones(IEnumerable<ResultSet>, IdfReader)
+  nameWithType.vb: ExtensionMethods.GetZones(IEnumerable(Of ResultSet), IdfReader)
+- uid: EpNet.Results.ExtensionMethods.GetZones*
+  name: GetZones
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GetZones_
+  commentId: Overload:EpNet.Results.ExtensionMethods.GetZones
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.GetZones
+  nameWithType: ExtensionMethods.GetZones
+- uid: EpNet.Results.ExtensionMethods.GroupByBlock(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Collections.Generic.IEnumerable{EpNet.IdfObject})
+  name: GroupByBlock(IEnumerable<ResultSet>, IEnumerable<IdfObject>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GroupByBlock_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Collections_Generic_IEnumerable_EpNet_IdfObject__
+  commentId: M:EpNet.Results.ExtensionMethods.GroupByBlock(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Collections.Generic.IEnumerable{EpNet.IdfObject})
+  name.vb: GroupByBlock(IEnumerable(Of ResultSet), IEnumerable(Of IdfObject))
+  fullName: EpNet.Results.ExtensionMethods.GroupByBlock(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Collections.Generic.IEnumerable<EpNet.IdfObject>)
+  fullName.vb: EpNet.Results.ExtensionMethods.GroupByBlock(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Collections.Generic.IEnumerable(Of EpNet.IdfObject))
+  nameWithType: ExtensionMethods.GroupByBlock(IEnumerable<ResultSet>, IEnumerable<IdfObject>)
+  nameWithType.vb: ExtensionMethods.GroupByBlock(IEnumerable(Of ResultSet), IEnumerable(Of IdfObject))
+- uid: EpNet.Results.ExtensionMethods.GroupByBlock*
+  name: GroupByBlock
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GroupByBlock_
+  commentId: Overload:EpNet.Results.ExtensionMethods.GroupByBlock
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.GroupByBlock
+  nameWithType: ExtensionMethods.GroupByBlock
+- uid: EpNet.Results.ExtensionMethods.GroupByComponent(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Collections.Generic.IEnumerable{System.String})
+  name: GroupByComponent(IEnumerable<ResultSet>, IEnumerable<string>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GroupByComponent_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:EpNet.Results.ExtensionMethods.GroupByComponent(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Collections.Generic.IEnumerable{System.String})
+  name.vb: GroupByComponent(IEnumerable(Of ResultSet), IEnumerable(Of String))
+  fullName: EpNet.Results.ExtensionMethods.GroupByComponent(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: EpNet.Results.ExtensionMethods.GroupByComponent(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: ExtensionMethods.GroupByComponent(IEnumerable<ResultSet>, IEnumerable<string>)
+  nameWithType.vb: ExtensionMethods.GroupByComponent(IEnumerable(Of ResultSet), IEnumerable(Of String))
+- uid: EpNet.Results.ExtensionMethods.GroupByComponent*
+  name: GroupByComponent
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GroupByComponent_
+  commentId: Overload:EpNet.Results.ExtensionMethods.GroupByComponent
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.GroupByComponent
+  nameWithType: ExtensionMethods.GroupByComponent
+- uid: EpNet.Results.ExtensionMethods.GroupByZone(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Collections.Generic.IEnumerable{EpNet.IdfObject})
+  name: GroupByZone(IEnumerable<ResultSet>, IEnumerable<IdfObject>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GroupByZone_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_Collections_Generic_IEnumerable_EpNet_IdfObject__
+  commentId: M:EpNet.Results.ExtensionMethods.GroupByZone(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.Collections.Generic.IEnumerable{EpNet.IdfObject})
+  name.vb: GroupByZone(IEnumerable(Of ResultSet), IEnumerable(Of IdfObject))
+  fullName: EpNet.Results.ExtensionMethods.GroupByZone(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, System.Collections.Generic.IEnumerable<EpNet.IdfObject>)
+  fullName.vb: EpNet.Results.ExtensionMethods.GroupByZone(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), System.Collections.Generic.IEnumerable(Of EpNet.IdfObject))
+  nameWithType: ExtensionMethods.GroupByZone(IEnumerable<ResultSet>, IEnumerable<IdfObject>)
+  nameWithType.vb: ExtensionMethods.GroupByZone(IEnumerable(Of ResultSet), IEnumerable(Of IdfObject))
+- uid: EpNet.Results.ExtensionMethods.GroupByZone*
+  name: GroupByZone
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_GroupByZone_
+  commentId: Overload:EpNet.Results.ExtensionMethods.GroupByZone
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.GroupByZone
+  nameWithType: ExtensionMethods.GroupByZone
+- uid: EpNet.Results.ExtensionMethods.SetReportType(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.String)
+  name: SetReportType(IEnumerable<ResultSet>, string)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetReportType_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_String_
+  commentId: M:EpNet.Results.ExtensionMethods.SetReportType(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.String)
+  name.vb: SetReportType(IEnumerable(Of ResultSet), String)
+  fullName: EpNet.Results.ExtensionMethods.SetReportType(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, string)
+  fullName.vb: EpNet.Results.ExtensionMethods.SetReportType(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), String)
+  nameWithType: ExtensionMethods.SetReportType(IEnumerable<ResultSet>, string)
+  nameWithType.vb: ExtensionMethods.SetReportType(IEnumerable(Of ResultSet), String)
+- uid: EpNet.Results.ExtensionMethods.SetReportType*
+  name: SetReportType
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetReportType_
+  commentId: Overload:EpNet.Results.ExtensionMethods.SetReportType
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.SetReportType
+  nameWithType: ExtensionMethods.SetReportType
+- uid: EpNet.Results.ExtensionMethods.SetUnits(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.String)
+  name: SetUnits(IEnumerable<ResultSet>, string)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetUnits_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__System_String_
+  commentId: M:EpNet.Results.ExtensionMethods.SetUnits(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},System.String)
+  name.vb: SetUnits(IEnumerable(Of ResultSet), String)
+  fullName: EpNet.Results.ExtensionMethods.SetUnits(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>, string)
+  fullName.vb: EpNet.Results.ExtensionMethods.SetUnits(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet), String)
+  nameWithType: ExtensionMethods.SetUnits(IEnumerable<ResultSet>, string)
+  nameWithType.vb: ExtensionMethods.SetUnits(IEnumerable(Of ResultSet), String)
+- uid: EpNet.Results.ExtensionMethods.SetUnits*
+  name: SetUnits
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SetUnits_
+  commentId: Overload:EpNet.Results.ExtensionMethods.SetUnits
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.SetUnits
+  nameWithType: ExtensionMethods.SetUnits
 - uid: EpNet.Results.ExtensionMethods.Sum(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
   name: Sum(IEnumerable<ResultSet>)
   href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_Sum_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__
@@ -3586,6 +4165,54 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ExtensionMethods.Sum
   nameWithType: ExtensionMethods.Sum
+- uid: EpNet.Results.ExtensionMethods.SumAll(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
+  name: SumAll(IEnumerable<ResultSet>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SumAll_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__
+  commentId: M:EpNet.Results.ExtensionMethods.SumAll(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
+  name.vb: SumAll(IEnumerable(Of ResultSet))
+  fullName: EpNet.Results.ExtensionMethods.SumAll(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>)
+  fullName.vb: EpNet.Results.ExtensionMethods.SumAll(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet))
+  nameWithType: ExtensionMethods.SumAll(IEnumerable<ResultSet>)
+  nameWithType.vb: ExtensionMethods.SumAll(IEnumerable(Of ResultSet))
+- uid: EpNet.Results.ExtensionMethods.SumAll*
+  name: SumAll
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_SumAll_
+  commentId: Overload:EpNet.Results.ExtensionMethods.SumAll
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.SumAll
+  nameWithType: ExtensionMethods.SumAll
+- uid: EpNet.Results.ExtensionMethods.ToAnnual(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
+  name: ToAnnual(IEnumerable<ResultSet>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToAnnual_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__
+  commentId: M:EpNet.Results.ExtensionMethods.ToAnnual(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
+  name.vb: ToAnnual(IEnumerable(Of ResultSet))
+  fullName: EpNet.Results.ExtensionMethods.ToAnnual(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>)
+  fullName.vb: EpNet.Results.ExtensionMethods.ToAnnual(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet))
+  nameWithType: ExtensionMethods.ToAnnual(IEnumerable<ResultSet>)
+  nameWithType.vb: ExtensionMethods.ToAnnual(IEnumerable(Of ResultSet))
+- uid: EpNet.Results.ExtensionMethods.ToAnnual*
+  name: ToAnnual
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToAnnual_
+  commentId: Overload:EpNet.Results.ExtensionMethods.ToAnnual
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.ToAnnual
+  nameWithType: ExtensionMethods.ToAnnual
+- uid: EpNet.Results.ExtensionMethods.ToDaily(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
+  name: ToDaily(IEnumerable<ResultSet>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToDaily_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__
+  commentId: M:EpNet.Results.ExtensionMethods.ToDaily(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
+  name.vb: ToDaily(IEnumerable(Of ResultSet))
+  fullName: EpNet.Results.ExtensionMethods.ToDaily(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>)
+  fullName.vb: EpNet.Results.ExtensionMethods.ToDaily(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet))
+  nameWithType: ExtensionMethods.ToDaily(IEnumerable<ResultSet>)
+  nameWithType.vb: ExtensionMethods.ToDaily(IEnumerable(Of ResultSet))
+- uid: EpNet.Results.ExtensionMethods.ToDaily*
+  name: ToDaily
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToDaily_
+  commentId: Overload:EpNet.Results.ExtensionMethods.ToDaily
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.ToDaily
+  nameWithType: ExtensionMethods.ToDaily
 - uid: EpNet.Results.ExtensionMethods.ToFrequency(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet},EpNet.Results.Frequencies,System.Boolean)
   name: ToFrequency(IEnumerable<ResultSet>, Frequencies, bool)
   href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToFrequency_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__EpNet_Results_Frequencies_System_Boolean_
@@ -3602,6 +4229,22 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ExtensionMethods.ToFrequency
   nameWithType: ExtensionMethods.ToFrequency
+- uid: EpNet.Results.ExtensionMethods.ToHourly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
+  name: ToHourly(IEnumerable<ResultSet>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToHourly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__
+  commentId: M:EpNet.Results.ExtensionMethods.ToHourly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
+  name.vb: ToHourly(IEnumerable(Of ResultSet))
+  fullName: EpNet.Results.ExtensionMethods.ToHourly(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>)
+  fullName.vb: EpNet.Results.ExtensionMethods.ToHourly(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet))
+  nameWithType: ExtensionMethods.ToHourly(IEnumerable<ResultSet>)
+  nameWithType.vb: ExtensionMethods.ToHourly(IEnumerable(Of ResultSet))
+- uid: EpNet.Results.ExtensionMethods.ToHourly*
+  name: ToHourly
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToHourly_
+  commentId: Overload:EpNet.Results.ExtensionMethods.ToHourly
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.ToHourly
+  nameWithType: ExtensionMethods.ToHourly
 - uid: EpNet.Results.ExtensionMethods.ToKWh(System.Double)
   name: ToKWh(double)
   href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToKWh_System_Double_
@@ -3618,6 +4261,38 @@ references:
   isSpec: "True"
   fullName: EpNet.Results.ExtensionMethods.ToKWh
   nameWithType: ExtensionMethods.ToKWh
+- uid: EpNet.Results.ExtensionMethods.ToMonthly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
+  name: ToMonthly(IEnumerable<ResultSet>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToMonthly_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__
+  commentId: M:EpNet.Results.ExtensionMethods.ToMonthly(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
+  name.vb: ToMonthly(IEnumerable(Of ResultSet))
+  fullName: EpNet.Results.ExtensionMethods.ToMonthly(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>)
+  fullName.vb: EpNet.Results.ExtensionMethods.ToMonthly(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet))
+  nameWithType: ExtensionMethods.ToMonthly(IEnumerable<ResultSet>)
+  nameWithType.vb: ExtensionMethods.ToMonthly(IEnumerable(Of ResultSet))
+- uid: EpNet.Results.ExtensionMethods.ToMonthly*
+  name: ToMonthly
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToMonthly_
+  commentId: Overload:EpNet.Results.ExtensionMethods.ToMonthly
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.ToMonthly
+  nameWithType: ExtensionMethods.ToMonthly
+- uid: EpNet.Results.ExtensionMethods.ToRunPeriod(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
+  name: ToRunPeriod(IEnumerable<ResultSet>)
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToRunPeriod_System_Collections_Generic_IEnumerable_EpNet_Results_ResultSet__
+  commentId: M:EpNet.Results.ExtensionMethods.ToRunPeriod(System.Collections.Generic.IEnumerable{EpNet.Results.ResultSet})
+  name.vb: ToRunPeriod(IEnumerable(Of ResultSet))
+  fullName: EpNet.Results.ExtensionMethods.ToRunPeriod(System.Collections.Generic.IEnumerable<EpNet.Results.ResultSet>)
+  fullName.vb: EpNet.Results.ExtensionMethods.ToRunPeriod(System.Collections.Generic.IEnumerable(Of EpNet.Results.ResultSet))
+  nameWithType: ExtensionMethods.ToRunPeriod(IEnumerable<ResultSet>)
+  nameWithType.vb: ExtensionMethods.ToRunPeriod(IEnumerable(Of ResultSet))
+- uid: EpNet.Results.ExtensionMethods.ToRunPeriod*
+  name: ToRunPeriod
+  href: api/EpNet.Results.ExtensionMethods.html#EpNet_Results_ExtensionMethods_ToRunPeriod_
+  commentId: Overload:EpNet.Results.ExtensionMethods.ToRunPeriod
+  isSpec: "True"
+  fullName: EpNet.Results.ExtensionMethods.ToRunPeriod
+  nameWithType: ExtensionMethods.ToRunPeriod
 - uid: EpNet.Results.Frequencies
   name: Frequencies
   href: api/EpNet.Results.Frequencies.html
